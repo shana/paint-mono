@@ -1,0 +1,6 @@
+2007-05-12  Miguel de Icaza  <miguel@novell.com>
+
+	* Document.cs (DpuX, DpuY): if the value passed is zero (our GDI+
+	was not able to get the DPI settings) set the DPI settings to 96.
+	
+
