@@ -81,32 +81,32 @@
     <AssemblyName>PaintDotNet.Data</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System">
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <Name>System</Name>
     </Reference>
-    <Reference Include="System.Drawing">
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Name>System.Drawing</Name>
     </Reference>
-    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Name>System.Runtime.Serialization.Formatters.Soap</Name>
     </Reference>
-    <Reference Include="System.Windows.Forms">
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <Name>System.Windows.Forms</Name>
     </Reference>
-    <Reference Include="System.Xml">
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <Name>System.XML</Name>
     </Reference>
-    <ProjectReference Include="..\PdnLib\PdnLib.csproj">
+    <ProjectReference Include="../PdnLib/PdnLib.csproj">
       <Name>PdnLib</Name>
       <Project>{1EADE568-A866-4DD4-9898-0A151E3F0E26}</Project>
       <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
     </ProjectReference>
-    <ProjectReference Include="..\Resources\Resources.csproj">
+    <ProjectReference Include="../Resources/Resources.csproj">
       <Name>Resources</Name>
       <Project>{0B173113-1F9B-4939-A62F-A176336F13AC}</Project>
       <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
     </ProjectReference>
-    <ProjectReference Include="..\SystemLayer\SystemLayer.csproj">
+    <ProjectReference Include="../SystemLayer/SystemLayer.csproj">
       <Name>SystemLayer</Name>
       <Project>{80572820-93A5-4278-A513-D902BEA2639C}</Project>
       <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>

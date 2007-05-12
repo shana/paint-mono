@@ -82,32 +82,32 @@
     <AssemblyName>PaintDotNet.Effects</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System">
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <Name>System</Name>
     </Reference>
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing">
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Name>System.Drawing</Name>
     </Reference>
-    <Reference Include="System.Windows.Forms">
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
       <Name>System.Windows.Forms</Name>
     </Reference>
-    <Reference Include="System.Xml" />
-    <ProjectReference Include="..\Data\Data.csproj">
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference Include="../Data/Data.csproj">
       <Project>{66681BB0-955D-451D-A466-94C045B1CF4A}</Project>
       <Name>Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PdnLib\PdnLib.csproj">
+    <ProjectReference Include="../PdnLib/PdnLib.csproj">
       <Name>PdnLib</Name>
       <Project>{1EADE568-A866-4DD4-9898-0A151E3F0E26}</Project>
       <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
     </ProjectReference>
-    <ProjectReference Include="..\Resources\Resources.csproj">
+    <ProjectReference Include="../Resources/Resources.csproj">
       <Name>Resources</Name>
       <Project>{0B173113-1F9B-4939-A62F-A176336F13AC}</Project>
       <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
     </ProjectReference>
-    <ProjectReference Include="..\SystemLayer\SystemLayer.csproj">
+    <ProjectReference Include="../SystemLayer/SystemLayer.csproj">
       <Project>{80572820-93A5-4278-A513-D902BEA2639C}</Project>
       <Name>SystemLayer</Name>
     </ProjectReference>
