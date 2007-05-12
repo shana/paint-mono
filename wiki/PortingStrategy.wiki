@@ -24,7 +24,7 @@ There are a number of cases where Paint.NET is using P/Invoke, in some cases it 
 In some other cases the P/Invokes are used to call into features in the various Windows.Forms controls that is not exposed in the Windows.Forms API but is part of the underlying Win32 control.   In these cases, sometimes the functionality is also part of the internals of Mono's Managed Windows.Forms implementation.   In those cases you can access the internal features by using Reflection and Invoke, for example, consider this code that replaces the call to P/Invoke with an internal call
 
 {{{
-	MethodInfo drop_down = typeof (ComboBox).GetMethod ("DropDownListBox");
+	MethodInfo drop_down = typeof (ComboBox).GetMethod ("DropDownListBox", BindingFlags.Instance|BindingFlags.NonPublic);
 	if (drop_down == null){
 		Console.WriteLine ("ShowComboBox: Warning, no DropDownlistBox found");
 		return;
