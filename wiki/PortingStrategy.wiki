@@ -11,12 +11,26 @@ Ideally the port would only require the src/!SystemLayer directory to be ported 
 
 In places that must be revisited in the future (unfinished implementation, stubs, routines turned into no-ops) I have added a WriteLine statement so we can keep track of what is missing.   A complete port should produce no output on the console.
 
-= Current State =
+== Current State ==
 
 It is currently possible to startup Paint.NET and do some simple painting operations, but I have not ported all of my changes from the old 2.72 port to 3.0 so there are many things that do not work.   I will post the old patch that I had here so that it can be used as a reference and to avoid duplicating work that was already done. 
 
 Since Paint.NET is a .NET 2.0 application it is best if you use Mono 1.2.4, and ideally use the trunk release of Mono from subversion as the 2.0 support is rapidly evolving in that branch. 
 
+== P/Invoke ==
+
+There are a number of cases where Paint.NET is using P/Invoke, in some cases it is using functionality from the Windows OS that is available in Unix in a different form.  Porting this code should be pretty straight forward.
+
+In some other cases the P/Invokes are used to call into features in the various Windows.Forms controls that is not exposed in the Windows.Forms API but is part of the underlying Win32 control.   In these cases, sometimes the functionality is also part of the internals of Mono's Managed Windows.Forms implementation.   In those cases you can access the internal features by using Reflection and Invoke, for example, consider this code that replaces the call to P/Invoke with an internal call
+
+{{	
+	MethodInfo drop_down = typeof (ComboBox).GetMethod ("DropDownListBox");
+	if (drop_down == null){
+		Console.WriteLine ("ShowComboBox: Warning, no DropDownlistBox found");
+		return;
+	}
+	drop_down.Invoke (comboBox, new object [0]);
+}}}
 == Directions ==
 
 The port is good enough to start the application, but many features are still not tested and there are many P/Invokes that remain in the source code.   I have not really spent much time trying to test it, but testing will exhibit many features that must be ported to Linux. 
