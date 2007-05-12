@@ -1,0 +1,338 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{056DF4A6-8466-4D9D-81F9-F65283126285}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Help</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Help</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="en\AdjustmentsMenu.html" />
+    <Content Include="en\CloneStamp.html" />
+    <Content Include="en\ColorsWindow.html" />
+    <Content Include="en\Curves.html" />
+    <Content Include="en\EditMenu.html" />
+    <Content Include="en\EffectsMenu.html" />
+    <Content Include="en\EraserTool.html" />
+    <Content Include="en\FAQ.html" />
+    <Content Include="en\Features.html" />
+    <Content Include="en\FileMenu.html" />
+    <Content Include="en\GradientTool.html" />
+    <Content Include="en\HelpMenu.html" />
+    <Content Include="en\HistoryWindow.html" />
+    <Content Include="en\ImageList.html" />
+    <Content Include="en\ImageMenu.html" />
+    <Content Include="en\Images\AboutDialog.jpg" />
+    <Content Include="en\Images\AcquireMenu.png" />
+    <Content Include="en\Images\AdjustmentsMenu.png" />
+    <Content Include="en\Images\BlursMenu.png" />
+    <Content Include="en\Images\CanvasSize.png" />
+    <Content Include="en\Images\CheckForUpdates.png" />
+    <Content Include="en\Images\ChooseDefaults.png" />
+    <Content Include="en\Images\CloudsEffect.png" />
+    <Content Include="en\Images\ColorsWindowLess.png" />
+    <Content Include="en\Images\ColorsWindowMore.png" />
+    <Content Include="en\Images\ComboSelect.jpg" />
+    <Content Include="en\Images\ComboSelect2.jpg" />
+    <Content Include="en\Images\CurvesExtreme.png" />
+    <Content Include="en\Images\CurvesLuminosity.png" />
+    <Content Include="en\Images\CurvesNull.png" />
+    <Content Include="en\Images\CurvesRGB.png" />
+    <Content Include="en\Images\DistortMenu.png" />
+    <Content Include="en\Images\EditMenu.png" />
+    <Content Include="en\Images\EffectsMenu.png" />
+    <Content Include="en\Images\FileMenu.png" />
+    <Content Include="en\Images\GradientFeature.png" />
+    <Content Include="en\Images\HelpMenu.png" />
+    <Content Include="en\Images\HistoryWindow.png" />
+    <Content Include="en\Images\ImageMenu.png" />
+    <Content Include="en\Images\LayerProperties.png" />
+    <Content Include="en\Images\LayersFlipMenu.png" />
+    <Content Include="en\Images\LayersMenu.png" />
+    <Content Include="en\Images\LayersWindow.png" />
+    <Content Include="en\Images\Levels1.png" />
+    <Content Include="en\Images\Levels2.png" />
+    <Content Include="en\Images\MainWindow.jpg" />
+    <Content Include="en\Images\MenuBar.png" />
+    <Content Include="en\Images\MoveTools.png" />
+    <Content Include="en\Images\NewDialog.png" />
+    <Content Include="en\Images\NewEffectsFeature.jpg" />
+    <Content Include="en\Images\PaintBucket_AfterFill.png" />
+    <Content Include="en\Images\PaintBucket_BeforeFill.png" />
+    <Content Include="en\Images\PaletteMenu.png" />
+    <Content Include="en\Images\PencilTool_After.png" />
+    <Content Include="en\Images\PencilTool_Before.png" />
+    <Content Include="en\Images\PixelTools.png" />
+    <Content Include="en\Images\PrintWizard.jpg" />
+    <Content Include="en\Images\RectangleSelect.jpg" />
+    <Content Include="en\Images\ResizeDialog.png" />
+    <Content Include="en\Images\RotateZoom.png" />
+    <Content Include="en\Images\SaveConfigDialog.jpg" />
+    <Content Include="en\Images\SelectionTools.png" />
+    <Content Include="en\Images\ShapeTools.png" />
+    <Content Include="en\Images\ShapeType_Interior.png" />
+    <Content Include="en\Images\ShapeType_InteriorAndOutline.png" />
+    <Content Include="en\Images\ShapeType_Outline.png" />
+    <Content Include="en\Images\StatusBar.png" />
+    <Content Include="en\Images\TextTool_using.png" />
+    <Content Include="en\Images\Toolbar.png" />
+    <Content Include="en\Images\Toolbar_ColorPicker.png" />
+    <Content Include="en\Images\Toolbar_CommonActions.png" />
+    <Content Include="en\Images\Toolbar_Gradient.png" />
+    <Content Include="en\Images\Toolbar_GradientTool.png" />
+    <Content Include="en\Images\Toolbar_GradientTool2.png" />
+    <Content Include="en\Images\Toolbar_MagicWandPaintBucket.png" />
+    <Content Include="en\Images\Toolbar_MoveSelectedPixels.png" />
+    <Content Include="en\Images\Toolbar_Rasterization.png" />
+    <Content Include="en\Images\Toolbar_ShapesBrushesFill.png" />
+    <Content Include="en\Images\Toolbar_Text.png" />
+    <Content Include="en\Images\Toolbar_ToolChoiceButton.png" />
+    <Content Include="en\Images\Toolbar_ViewControls.png" />
+    <Content Include="en\Images\ToolsWindow_Annotated.png" />
+    <Content Include="en\Images\UnsavedChanges1.png" />
+    <Content Include="en\Images\UnsavedChanges2.png" />
+    <Content Include="en\Images\UpdateOptions.png" />
+    <Content Include="en\Images\ViewMenu.png" />
+    <Content Include="en\Images\WindowMenu.png" />
+    <Content Include="en\index.html" />
+    <Content Include="en\KeyboardMouseCommands.html" />
+    <Content Include="en\LayersAndBlendModes.html" />
+    <Content Include="en\LayersMenu.html" />
+    <Content Include="en\LayersWindow.html" />
+    <Content Include="en\Levels.html" />
+    <Content Include="en\License.html" />
+    <Content Include="en\LineCurve.html" />
+    <Content Include="en\MagicWand.html" />
+    <Content Include="en\MainWindow.html" />
+    <Content Include="en\MenuBar.html" />
+    <Content Include="en\MoveTools.html" />
+    <Content Include="en\Paintbrush.html" />
+    <Content Include="en\PaintBucket.html" />
+    <Content Include="en\PixelTools.html" />
+    <Content Include="en\RecolorTool.html" />
+    <Content Include="en\RotateZoom.html" />
+    <Content Include="en\SelectionTools.html" />
+    <Content Include="en\ShapeTools.html" />
+    <Content Include="en\StatusBar.html" />
+    <Content Include="en\SystemRequirements.html" />
+    <Content Include="en\TextTool.html" />
+    <Content Include="en\Toolbar.html" />
+    <Content Include="en\ToolsWindow.html" />
+    <Content Include="en\Tutorials.html" />
+    <Content Include="en\UnattendedInstallation.html" />
+    <Content Include="en\ViewMenu.html" />
+    <Content Include="en\WebLinks.html" />
+    <Content Include="en\WhatsNew.html" />
+    <Content Include="en\WindowMenu.html" />
+    <Content Include="images\aaVSnoAA.png" />
+    <Content Include="images\BlendModes_Layer1.jpg" />
+    <Content Include="images\BlendModes_Layer2.jpg" />
+    <Content Include="images\BlendMode_Additive.jpg" />
+    <Content Include="images\BlendMode_ColorBurn.jpg" />
+    <Content Include="images\BlendMode_ColorDodge.jpg" />
+    <Content Include="images\BlendMode_Darken.jpg" />
+    <Content Include="images\BlendMode_Difference.jpg" />
+    <Content Include="images\BlendMode_Glow.jpg" />
+    <Content Include="images\BlendMode_Lighten.jpg" />
+    <Content Include="images\BlendMode_Multiply.jpg" />
+    <Content Include="images\BlendMode_Negation.jpg" />
+    <Content Include="images\BlendMode_Normal_128.jpg" />
+    <Content Include="images\BlendMode_Overlay.jpg" />
+    <Content Include="images\BlendMode_Reflect.jpg" />
+    <Content Include="images\BlendMode_Screen.jpg" />
+    <Content Include="images\BlendMode_Xor.jpg" />
+    <Content Include="images\bmw.jpg" />
+    <Content Include="images\bmw_AB_vs_noAB.jpg" />
+    <Content Include="images\bmw_after_90_cw_rotate.jpg" />
+    <Content Include="images\bmw_after_canvas_shrink.jpg" />
+    <Content Include="images\bmw_after_canvas_size.jpg" />
+    <Content Include="images\bmw_after_enlarge.jpg" />
+    <Content Include="images\bmw_after_horiz_flip.jpg" />
+    <Content Include="images\bmw_after_shrink.jpg" />
+    <Content Include="images\bmw_irregular_cropped.jpg" />
+    <Content Include="images\bmw_selected.jpg" />
+    <Content Include="images\BrushStyles.png" />
+    <Content Include="images\Camaro_160.jpg" />
+    <Content Include="images\Camaro_AddNoise.jpg" />
+    <Content Include="images\Camaro_Bulge1.jpg" />
+    <Content Include="images\Camaro_Bulge2.jpg" />
+    <Content Include="images\Camaro_Clouds1.jpg" />
+    <Content Include="images\Camaro_Clouds2.jpg" />
+    <Content Include="images\Camaro_EdgeDetect.jpg" />
+    <Content Include="images\Camaro_Emboss.jpg" />
+    <Content Include="images\Camaro_FrostedGlass.jpg" />
+    <Content Include="images\Camaro_GaussianBlur.jpg" />
+    <Content Include="images\Camaro_Glow.jpg" />
+    <Content Include="images\Camaro_Median.jpg" />
+    <Content Include="images\Camaro_MotionBlur.jpg" />
+    <Content Include="images\Camaro_OilPainting.jpg" />
+    <Content Include="images\Camaro_original.jpg" />
+    <Content Include="images\Camaro_Outline.jpg" />
+    <Content Include="images\Camaro_Pixelate.jpg" />
+    <Content Include="images\Camaro_PolarInversion.jpg" />
+    <Content Include="images\Camaro_RadialBlur.jpg" />
+    <Content Include="images\Camaro_Relief.jpg" />
+    <Content Include="images\Camaro_Sharpen.jpg" />
+    <Content Include="images\Camaro_TileReflection.jpg" />
+    <Content Include="images\Camaro_Twist.jpg" />
+    <Content Include="images\Camaro_Unfocus.jpg" />
+    <Content Include="images\Camaro_ZoomBlur.jpg" />
+    <Content Include="images\CircleSelection.png" />
+    <Content Include="images\CircleSquareSelection.png" />
+    <Content Include="images\CloneStamp_Laptop.jpg" />
+    <Content Include="images\CloneStamp_Stump.jpg" />
+    <Content Include="images\ColorSwatch.png" />
+    <Content Include="images\ConcentricCircleSelection.png" />
+    <Content Include="images\CurvesBMWBase.jpg" />
+    <Content Include="images\CurvesBMWExtreme.jpg" />
+    <Content Include="images\CurvesSampleBase.jpg" />
+    <Content Include="images\CurvesSampleLuminosity.jpg" />
+    <Content Include="images\CurvesSampleRGB.jpg" />
+    <Content Include="images\Eraser_Part1.jpg" />
+    <Content Include="images\Eraser_Part2.jpg" />
+    <Content Include="images\Eraser_Part3.jpg" />
+    <Content Include="images\Gradient_Alpha_Conical.jpg" />
+    <Content Include="images\Gradient_Alpha_Diamond.jpg" />
+    <Content Include="images\Gradient_Alpha_Linear.jpg" />
+    <Content Include="images\Gradient_Alpha_LinearReflected.jpg" />
+    <Content Include="images\Gradient_Alpha_Radial.jpg" />
+    <Content Include="images\Gradient_Conical.png" />
+    <Content Include="images\Gradient_CrossFade.jpg" />
+    <Content Include="images\Gradient_Diamond.png" />
+    <Content Include="images\Gradient_Linear.png" />
+    <Content Include="images\Gradient_LinearReflected.png" />
+    <Content Include="images\Gradient_Radial.png" />
+    <Content Include="images\grid.png" />
+    <Content Include="images\ImageList.jpg" />
+    <Content Include="images\LayerStack3D.jpg" />
+    <Content Include="images\LayerStack3D_0.jpg" />
+    <Content Include="images\LayerStack3D_128.jpg" />
+    <Content Include="images\LewistonSunset_small.jpg" />
+    <Content Include="images\LewistonSunset_small_AutoLevel.jpg" />
+    <Content Include="images\LewistonSunset_small_Brighter.jpg" />
+    <Content Include="images\LewistonSunset_small_BrighterAndMoreContrast.jpg" />
+    <Content Include="images\LewistonSunset_small_Desaturate.jpg" />
+    <Content Include="images\LewistonSunset_small_HueSaturation.jpg" />
+    <Content Include="images\LewistonSunset_small_Invert.jpg" />
+    <Content Include="images\LewistonSunset_small_Levels1.jpg" />
+    <Content Include="images\LewistonSunset_small_Levels2.jpg" />
+    <Content Include="images\LewistonSunset_small_MoreContrast.jpg" />
+    <Content Include="images\LewistonSunset_small_Sepia.jpg" />
+    <Content Include="images\Line_Bezier.png" />
+    <Content Include="images\Line_Spline.png" />
+    <Content Include="images\Line_Step1.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\MagicWand_Collect1.jpg" />
+    <Content Include="images\MagicWand_Collect3.jpg" />
+    <Content Include="images\MagicWand_Exclude1.jpg" />
+    <Content Include="images\MagicWand_Exclude2.jpg" />
+    <Content Include="images\MagicWand_Noncontiguous.png" />
+    <Content Include="images\MagicWand_tol25.jpg" />
+    <Content Include="images\MagicWand_tol31.jpg" />
+    <Content Include="images\MagicWand_tol50.jpg" />
+    <Content Include="images\MoveNubs.jpg" />
+    <Content Include="images\MoveNubs_MovedPixels.jpg" />
+    <Content Include="images\MoveNubs_MovedSelection.jpg" />
+    <Content Include="images\MoveNubs_ResizedPixels.jpg" />
+    <Content Include="images\MoveNubs_ResizedSelection.jpg" />
+    <Content Include="images\MoveNubs_RotatedPixels.jpg" />
+    <Content Include="images\MoveNubs_RotatedSelection.jpg" />
+    <Content Include="images\PaletteButtons.png" />
+    <Content Include="images\RecoloringAfter.jpg" />
+    <Content Include="images\RecoloringBefore.jpg" />
+    <Content Include="images\RedEyeEffectAfter.jpg" />
+    <Content Include="images\RedEyeEffectBefore.jpg" />
+    <Content Include="images\RedEyeEffectSelection.jpg" />
+    <Content Include="images\reflect_small.jpg" />
+    <Content Include="images\rulers.jpg" />
+    <Content Include="images\Shapes_Interior.png" />
+    <Content Include="images\Shapes_Outline.png" />
+    <Content Include="images\Shapes_OutlineAndInterior.png" />
+    <Content Include="images\TransparentCheckerboard.png" />
+    <Content Include="images\XorSelection.png" />
+    <Content Include="index.html" />
+    <Content Include="stylesheet.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Stub.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

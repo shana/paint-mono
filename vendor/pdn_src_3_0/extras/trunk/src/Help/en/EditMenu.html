@@ -1,0 +1,208 @@
+<html>
+
+<!-- #BeginTemplate "pdn_help.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- #BeginEditable "title" -->
+<title>Paint.NET Help - Edit Menu</title>
+<!-- #EndEditable -->
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<body>
+
+<div id="banner">
+	<a href="http://www.getpaint.net/">
+	<img border="0" src="../images/logo.png"></a><p>
+	&nbsp;</div>
+<div id="leftnav">
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="index.html">Overview</a><br>
+		</li>
+		<li><a href="Features.html">Features</a><br>
+		<a href="Tutorials.html">Tutorials</a><br>
+		<a href="WhatsNew.html">What&#39;s New?</a><br>
+		</li>
+	</ul>
+	<h3>Concepts</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="LayersAndBlendModes.html">Layers and Blend Modes</a></li>
+	</ul>
+	<h3>User Interface</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="KeyboardMouseCommands.html">Keyboard &amp; Mouse Commands</a></li>
+		<li><a href="MainWindow.html">Main Window</a></li>
+		<li><a href="ImageList.html">Image List</a></li>
+		<li><a href="MenuBar.html">Menu Bar</a>
+		<ul class="toc">
+			<li><a href="FileMenu.html">File</a></li>
+			<li><a href="EditMenu.html">Edit</a></li>
+			<li><a href="ViewMenu.html">View</a></li>
+			<li><a href="ImageMenu.html">Image</a></li>
+			<li><a href="LayersMenu.html">Layers</a>
+			<ul class="toc">
+				<li class="comment"><a href="RotateZoom.html">Rotate / Zoom</a></li>
+			</ul></li>
+			<li><a href="AdjustmentsMenu.html">Adjustments</a>&nbsp;
+				<ul class="toc">
+				    <li><a href="Curves.html">Curves</a></li>
+					<li><a href="Levels.html">Levels</a></li>
+				</ul></li>
+			<li><a href="EffectsMenu.html">Effects</a></li>
+			<li><a href="WindowMenu.html">Window</a></li>
+			<li><a href="HelpMenu.html">Help</a></li>
+		</ul>
+		</li>
+		<li><a href="Toolbar.html">Toolbar</a></li>
+		<li><a href="ToolsWindow.html">Tools Window</a><ul class="toc">
+			<li><a href="SelectionTools.html">Selection Tools</a></li>
+			<li><a href="MoveTools.html">Move Tools</a><br>
+			<a href="MagicWand.html">Magic Wand</a></li>
+			<li><a href="GradientTool.html">Gradient Tool</a><br>
+			<a href="Paintbrush.html">Paintbrush</a></li>
+			<li><a href="EraserTool.html">Eraser Tool</a></li>
+			<li><a href="PixelTools.html">Pixel Tools</a></li>
+			<li><a href="ShapeTools.html">Shape Tools</a></li>
+			<li><a href="LineCurve.html">Line / Curve Tool</a></li>
+			<li><a href="TextTool.html">Text Tool</a></li>
+			<li><a href="PaintBucket.html">Paint Bucket</a></li>
+			<li><a href="CloneStamp.html">Clone Stamp</a></li>
+			<li><a href="RecolorTool.html">Recolor Tool</a></li>
+		</ul>
+		</li>
+		<li><a href="HistoryWindow.html">History Window</a></li>
+		<li><a href="LayersWindow.html">Layers Window</a></li>
+		<li><a href="ColorsWindow.html">Colors Window</a></li>
+		<li><a href="StatusBar.html">Status Bar</a></li>
+	</ul>
+	</li>
+	<h3>Other</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="FAQ.html">FAQ (Frequently Asked Questions)</a></li>
+		<li><a href="UnattendedInstallation.html">Unattended Installation</a></li>
+		<li><a href="SystemRequirements.html">System Requirements</a></li>
+		<li><a href="WebLinks.html">Web Links</a></li>
+		<li><a href="License.html">License</a></li>
+	</ul>
+</div>
+<div id="content">
+	<!-- #BeginEditable "content" -->
+	<div id="content0">
+		<h2>Edit Menu</h2>
+		<p>The Edit Operations allow for easy manipulation of the image history, 
+		the selected region of the image, the selection itself, and the 
+		clipboard. </p>
+		<p>An important thing to note about selected regions is that all drawing 
+		operations are clipped to remain within them. For example, if you use 
+		the <a href="SelectionTools.html">Ellipse Select</a> tool to select a 
+		circular region in the middle of the image, you will be unable to draw 
+		anything outside of that circle while the selection is active.
+		<a href="EffectsMenu.html">Effects</a> and <a href="AdjustmentsMenu.html">
+		Adjustments</a> will only affect the selected area as well.</p>
+		<ul>
+			<li class="nobullet"><img border="0" src="Images/EditMenu.png"><p></p>
+			</li>
+			<li>
+			<h3><a name="Undo"></a>Undo </h3>
+			<p>This undoes the most recent action that you&#39;ve taken that affects 
+			the image, if any. This functionality is also available from the <a href="HistoryWindow.html">
+			History Window</a>.</p>
+			</li>
+			<li>
+			<h3><a name="Redo"></a>Redo </h3>
+			<p>This redoes the most recent action that you&#39;ve undone, if any. 
+			This functionality is also available from the <a href="HistoryWindow.html">
+			History Window</a>.</p>
+			</li>
+			<li>
+			<h3><a name="Cut"></a>Cut </h3>
+			<p>You may use this to remove a selected portion of the active 
+			layer. You can select a portion of the layer by using the <a href="SelectionTools.html">
+			Rectangle Select, Lasso Select, Ellipse Select</a>, or 
+			<a href="MagicWand.html">Magic Wand</a> tools. Once you perform the 
+			cut operation, that area of the layer is moved to the clipboard and 
+			replaced with transparent pixels. The current selection outline is 
+			also removed.</p>
+			</li>
+			<li>
+			<h3><a name="Copy"></a>Copy </h3>
+			<p>This is similar to the Cut command, except that the selected 
+			region remains on the active layer and the selection outline is not 
+			removed.</p>
+			</li>
+			<li>
+			<h3><a name="Paste"></a>Paste </h3>
+			<p>If there is an image in the clipboard, this command will allow 
+			you to paste it on to the active layer. The pasted pixels will then 
+			be selected and the <a href="MoveTools.html">Move Selected Pixels</a> 
+			tool will automatically be switched to. This will allow you to move, 
+			scale, or rotate the pixels into the desired location and 
+			orientation.</p>
+			<p>If the image being pasted is too wide and/or too tall for the 
+			current canvas size, you will be asked if you want to resize the 
+			canvas. This is a quick shortcut to the 
+			<a href="ImageMenu.html#CanvasSize">Image<b> → </b>Canvas Size</a> 
+			command so that you can make sure that what you are pasting will 
+			fit.</p>
+			</li>
+			<li>
+			<h3><a name="PasteInToNewLayer"></a>Paste in to New Layer </h3>
+			<p>This is similar to Paste, except that it creates a new layer, 
+			makes it active, and then performs the Paste command.</p>
+			</li>
+			<li>
+			<h3><a name="PasteInToNewImage"></a>Paste in to New Image</h3>
+			<p>This is similar to Paste, except that it first creates a new 
+			image, makes it active, and then pastes the contents of the 
+			clipboard in to it. The new image is exactly the same size as the 
+			image that is in the clipboard.</p>
+
+			</li>
+			<li>
+			<h3><a name="EraseSelection"></a>Erase Selection </h3>
+			<p>This command erases the currently selected region of the active 
+			layer. All pixels that lie within the selected region are placed 
+			with transparency. This is similar to the Cut command, except that 
+			the selected pixels are not copied to the clipboard.</p>
+			</li>
+			<li>
+			<h3><a name="FillSelection"></a>Fill Selection</h3>
+			<p>If there is a selected region, this will fill it with the current 
+			primary color.</p>
+			</li>
+			<li>
+			<h3><a name="InvertSelection"></a>Invert Selection </h3>
+			<p>If there is a selected region, this will cause all pixels that 
+			are selected to be unselected, and vice-versa.</p>
+			<h3></h3>
+			</li>
+			<li>
+			<h3><a name="SelectAll"></a>Select All </h3>
+			<p>This causes the entire canvas to be selected.</p>
+			<h3></h3>
+			</li>
+			<li>
+			<h3><a name="Deselect"></a>Deselect </h3>
+			<p>After you select this menu item, no pixels will be selected.</p>
+			</li>
+		</ul>
+	</div>
+	<!-- #EndEditable -->
+	<h4><br>
+	<br>
+	</h4>
+	<p align="center">
+	<font color="#808080" size="1">Copyright <font face="Times New Roman">© 2007 </font>
+	Rick Brewster, Tom Jackson, and past contributors. Portions Copyright
+	<font face="Times New Roman">© 2007 </font>Microsoft Corporation. All Rights 
+	Reserved.</font><font size="1"> <br>
+	</font>
+</div>
+</b>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
