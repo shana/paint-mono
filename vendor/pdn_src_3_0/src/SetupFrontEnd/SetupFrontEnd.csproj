@@ -1,0 +1,163 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A2FADDE-15A5-4904-96D3-8ECD113B715C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SetupFrontEnd</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PaintDotNet.Setup</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <ProjectReference Include="..\PdnLib\PdnLib.csproj">
+      <Project>{1EADE568-A866-4DD4-9898-0A151E3F0E26}</Project>
+      <Name>PdnLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Name>Resources</Name>
+      <Project>{0B173113-1F9B-4939-A62F-A176336F13AC}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\SystemLayer\SystemLayer.csproj">
+      <Project>{80572820-93A5-4278-A513-D902BEA2639C}</Project>
+      <Name>SystemLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreateMsiPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InstallDirPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InstallingPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IntroPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LicensePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Msi.cs" />
+    <Compile Include="NativeConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NativeDelegates.cs" />
+    <Compile Include="NativeMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OptionsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyNames.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReadyToInstallPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WizardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>@rem Embed manifest
+call "$(SolutionDir)Manifests\embedManifest.bat" "$(TargetPath)" "$(SolutionDir)Manifests\requireAdministrator.xml"
+call "$(SolutionDir)Manifests\embedManifest.bat" "$(ProjectDir)obj\$(ConfigurationName)\$(TargetFileName)" "$(SolutionDir)Manifests\requireAdministrator.xml"
+
+@rem copy English strings over
+copy "$(SolutionDir)\Strings\$(ConfigurationName)\PaintDotNet.Strings.3.resources" "$(TargetDir)"
+
+@rem Sign
+rem call "$(SolutionDir)signfile.bat" "$(ProjectDir)obj\$(ConfigurationName)\$(TargetFileName)"
+rem call "$(SolutionDir)signfile.bat" "$(TargetPath)"
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

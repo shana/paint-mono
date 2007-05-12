@@ -1,0 +1,2822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Application.ProductName.Bare" xml:space="preserve">
+    <value>Paint.NET</value>
+  </data>
+  <data name="Application.ProductName.Format" xml:space="preserve">
+    <value>{0} v{1}{2}</value>
+    <comment>{0} is Application.ProductName.Bare. {1} is the version number (e.g., "2.6"). {2} is either an empty string, or a version tag constructed with Application.ProductNage.Format (e.g., "Beta 5")</comment>
+  </data>
+  <data name="Application.ProductName.Tag.Format" xml:space="preserve">
+    <value> {0}</value>
+    <comment>{0} is the version tag, e.g. Beta 5</comment>
+  </data>
+  <data name="Application.Copyright.AllRightsReserved" xml:space="preserve">
+    <value>All Rights Reserved.</value>
+  </data>
+  <data name="LayerForm.Text" xml:space="preserve">
+    <value>레이어</value>
+  </data>
+  <data name="LayerForm.AddNewLayerButton.ToolTipText" xml:space="preserve">
+    <value>새 레이어 추가</value>
+  </data>
+  <data name="LayerForm.DeleteLayerButton.ToolTipText" xml:space="preserve">
+    <value>레이어 삭제</value>
+  </data>
+  <data name="LayerForm.MergeLayerDownButton.ToolTipText">
+    <value>레이어 아래로 병합</value>
+  </data>
+  <data name="LayerForm.DuplicateLayerButton.ToolTipText" xml:space="preserve">
+    <value>레이어 중복</value>
+  </data>
+  <data name="LayerForm.MoveLayerUpButton.ToolTipText" xml:space="preserve">
+    <value>레이어 위로 이동</value>
+  </data>
+  <data name="LayerForm.MoveLayerDownButton.ToolTipText" xml:space="preserve">
+    <value>레이어 아래로 이동</value>
+  </data>
+  <data name="LayerForm.PropertiesButton.ToolTipText" xml:space="preserve">
+    <value>등록 정보</value>
+  </data>
+  <data name="HistoryForm.Text" xml:space="preserve">
+    <value>기록</value>
+  </data>
+  <data name="HistoryForm.RewindButton.ToolTipText" xml:space="preserve">
+    <value>모두 실행 취소 (다시 감기)</value>
+  </data>
+  <data name="HistoryForm.UndoButton.ToolTipText" xml:space="preserve">
+    <value>실행 취소 (한 단계 뒤로)</value>
+  </data>
+  <data name="HistoryForm.FastForwardButton.ToolTipText" xml:space="preserve">
+    <value>모두 다시 실행 (앞으로 감기)</value>
+  </data>
+  <data name="HistoryForm.ClearHistoryButton.ToolTipText" xml:space="preserve">
+    <value>목록 지우기</value>
+  </data>
+  <data name="HistoryForm.RedoButton.ToolTipText" xml:space="preserve">
+    <value>다시 실행 (한 단계 앞으로)</value>
+  </data>
+  <data name="SavePaletteDialog.TypeANameLabel.Text">
+    <value>팔레트 이름을 입력하시오:</value>
+  </data>
+  <data name="SavePaletteDialog.PalettesLabel.Text">
+    <value>이미 저장된 팔레트:</value>
+  </data>
+  <data name="SavePaletteDialog.Text">
+    <value>현재 팔레트 저장</value>
+  </data>
+  <data name="ColorsForm.Text" xml:space="preserve">
+    <value>색</value>
+  </data>
+  <data name="ColorsForm.ColorAddButton.ToolTipText">
+    <value>팔레트에 색 추가</value>
+  </data>
+  <data name="ColorsForm.ColorDeleteButton.ToolTipText">
+    <value>팔레트에서 색 삭제</value>
+  </data>
+  <data name="ColorPalette.SaveHeader">
+    <value>; Paint.NET 팔레트 파일
+; 세미콜론으로 시작하는 줄은 주석입니다.
+; 색은 8개 숫자의 16진수로 쓰여집니다: aarrggbb
+; 예를 들면, 이것은 녹색을 지정합니다: FF00FF00
+; 알파 ('aa') 값은 색이 얼마나 투명한 지를 지정합니다. FF는 완전히 불투명하고, 00은 완전히 투명합니다.
+; 팔레트는 96가지의 색으로 구성되어야 합니다. 이 수보다 작으면, 남은 색 슬롯은 
+; 흰색(FFFFFFFF)으로 지정됩니다. 더 많이 있는 경우에는, 남은 색은 무시됩니다.</value>
+    <comment>This is written to the beginning of palette files, which are stored in text files (*.txt)</comment>
+  </data>
+  <data name="SystemLayer.UserDataDirName">
+    <value>Paint.NET 사용자 파일</value>
+    <comment>내 문서 폴더에 만들어지게될 디렉터리입니다.</comment>
+  </data>
+  <data name="ColorPalettes.UserDataSubDirName">
+    <value>팔레트</value>
+    <comment>SystemLayer.UserDataDirName이 참조하는 디렉터리에 만들어지게될 디렉터리입니다.</comment>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.ToolTipText">
+    <value>색상 팔레트 관리</value>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.SaveCurrentPaletteAs.Text">
+    <value>현재 팔레트를 다른 이름으로 저장(&amp;A)...</value>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.OpenPalettesFolder.Text">
+    <value>팔레트 폴더 열기(&amp;O)...</value>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.ResetToDefaultPalette.Text">
+    <value>팔레트 기본 값으로 다시 설정(&amp;R)</value>
+  </data>
+  <data name="ColorsForm.RedLabel.Text" xml:space="preserve">
+    <value>R:</value>
+  </data>
+  <data name="ColorsForm.BlueLabel.Text" xml:space="preserve">
+    <value>B:</value>
+  </data>
+  <data name="ColorsForm.GreenLabel.Text" xml:space="preserve">
+    <value>G:</value>
+  </data>
+  <data name="ColorsForm.HexLabel.Text" xml:space="preserve">
+    <value>16진수:</value>
+  </data>
+  <data name="ColorsForm.HueLabel.Text" xml:space="preserve">
+    <value>H:</value>
+  </data>
+  <data name="ColorsForm.SaturationLabel.Text" xml:space="preserve">
+    <value>S:</value>
+  </data>
+  <data name="ColorsForm.ValueLabel.Text" xml:space="preserve">
+    <value>V:</value>
+  </data>
+  <data name="ColorsForm.RgbHeader.Text" xml:space="preserve">
+    <value>RGB</value>
+  </data>
+  <data name="ColorsForm.HsvHeader.Text" xml:space="preserve">
+    <value>HSV</value>
+  </data>
+  <data name="ColorsForm.AlphaHeader.Text" xml:space="preserve">
+    <value>투명성 - 알파</value>
+  </data>
+  <data name="ColorsForm.MoreLessButton.Text.Less" xml:space="preserve">
+    <value>간단히</value>
+  </data>
+  <data name="ColorsForm.MoreLessButton.Text.More" xml:space="preserve">
+    <value>자세히</value>
+  </data>
+  <data name="WhichUserColor.Primary" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="WhichUserColor.Secondary" xml:space="preserve">
+    <value>보조</value>
+  </data>
+  <data name="MainToolBarForm.Text" xml:space="preserve">
+    <value>도구</value>
+  </data>
+  <data name="AboutDialog.Text.Format" xml:space="preserve">
+    <value>%s 정보</value>
+  </data>
+  <data name="Form.OkButton.Text" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Form.CancelButton.Text" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Form.SaveButton.Text">
+    <value>저장(&amp;S)</value>
+  </data>
+  <data name="Form.ResetButton.Text">
+    <value>원래대로(&amp;R)</value>
+  </data>
+  <data name="Form.CloseButton.Text">
+    <value>닫기</value>
+  </data>
+  <data name="AboutDialog.CreditsLabel.Text" xml:space="preserve">
+    <value>제작진:</value>
+  </data>
+  <data name="BrushConfigWidget.SolidBrush.Text" xml:space="preserve">
+    <value>단색</value>
+  </data>
+  <data name="HatchStyle.Horizontal" xml:space="preserve">
+    <value>가로</value>
+  </data>
+  <data name="HatchStyle.Min" xml:space="preserve">
+    <value>최소</value>
+  </data>
+  <data name="HatchStyle.Vertical" xml:space="preserve">
+    <value>세로</value>
+  </data>
+  <data name="HatchStyle.ForwardDiagonal" xml:space="preserve">
+    <value>앞방향 대각선</value>
+  </data>
+  <data name="HatchStyle.BackwardDiagonal" xml:space="preserve">
+    <value>역방향 대각선</value>
+  </data>
+  <data name="HatchStyle.Cross" xml:space="preserve">
+    <value>십자형</value>
+  </data>
+  <data name="HatchStyle.LargeGrid" xml:space="preserve">
+    <value>큰 모눈</value>
+  </data>
+  <data name="HatchStyle.Max" xml:space="preserve">
+    <value>최대</value>
+  </data>
+  <data name="HatchStyle.DiagonalCross" xml:space="preserve">
+    <value>십자형 대각선</value>
+  </data>
+  <data name="HatchStyle.Percent05" xml:space="preserve">
+    <value>Percent 05</value>
+  </data>
+  <data name="HatchStyle.Percent10" xml:space="preserve">
+    <value>Percent 10</value>
+  </data>
+  <data name="HatchStyle.Percent20" xml:space="preserve">
+    <value>Percent 20</value>
+  </data>
+  <data name="HatchStyle.Percent25" xml:space="preserve">
+    <value>Percent 25</value>
+  </data>
+  <data name="HatchStyle.Percent30" xml:space="preserve">
+    <value>Percent 30</value>
+  </data>
+  <data name="HatchStyle.Percent40" xml:space="preserve">
+    <value>Percent 40</value>
+  </data>
+  <data name="HatchStyle.Percent50" xml:space="preserve">
+    <value>Percent 50</value>
+  </data>
+  <data name="HatchStyle.Percent60" xml:space="preserve">
+    <value>Percent 60</value>
+  </data>
+  <data name="HatchStyle.Percent70" xml:space="preserve">
+    <value>Percent 70</value>
+  </data>
+  <data name="HatchStyle.Percent75" xml:space="preserve">
+    <value>Percent 75</value>
+  </data>
+  <data name="HatchStyle.Percent80" xml:space="preserve">
+    <value>Percent 80</value>
+  </data>
+  <data name="HatchStyle.Percent90" xml:space="preserve">
+    <value>Percent 90</value>
+  </data>
+  <data name="HatchStyle.LightDownwardDiagonal" xml:space="preserve">
+    <value>밝은 하향 대각선</value>
+  </data>
+  <data name="HatchStyle.LightUpwardDiagonal" xml:space="preserve">
+    <value>밝은 상향 대각선</value>
+  </data>
+  <data name="HatchStyle.DarkDownwardDiagonal" xml:space="preserve">
+    <value>어두운 하향 대각선</value>
+  </data>
+  <data name="HatchStyle.DarkUpwardDiagonal" xml:space="preserve">
+    <value>어두운 상향 대각선</value>
+  </data>
+  <data name="HatchStyle.WideDownwardDiagonal" xml:space="preserve">
+    <value>넓은 하향 대각선</value>
+  </data>
+  <data name="HatchStyle.WideUpwardDiagonal" xml:space="preserve">
+    <value>넓은 상향 대각선</value>
+  </data>
+  <data name="HatchStyle.LightVertical" xml:space="preserve">
+    <value>밝은 수직선</value>
+  </data>
+  <data name="HatchStyle.LightHorizontal" xml:space="preserve">
+    <value>밝은 수평선</value>
+  </data>
+  <data name="HatchStyle.NarrowVertical" xml:space="preserve">
+    <value>좁은 수직선</value>
+  </data>
+  <data name="HatchStyle.NarrowHorizontal" xml:space="preserve">
+    <value>좁은 수평선</value>
+  </data>
+  <data name="HatchStyle.DarkVertical" xml:space="preserve">
+    <value>어두운 수직선</value>
+  </data>
+  <data name="HatchStyle.DarkHorizontal" xml:space="preserve">
+    <value>어두운 수평선</value>
+  </data>
+  <data name="HatchStyle.DashedDownwardDiagonal" xml:space="preserve">
+    <value>파선 하향 대각선</value>
+  </data>
+  <data name="HatchStyle.DashedUpwardDiagonal" xml:space="preserve">
+    <value>파선 상향 대각선</value>
+  </data>
+  <data name="HatchStyle.DashedHorizontal" xml:space="preserve">
+    <value>파선 수평선</value>
+  </data>
+  <data name="HatchStyle.DashedVertical" xml:space="preserve">
+    <value>파선 수직선</value>
+  </data>
+  <data name="HatchStyle.SmallConfetti" xml:space="preserve">
+    <value>작은 색종이 조각</value>
+  </data>
+  <data name="HatchStyle.LargeConfetti" xml:space="preserve">
+    <value>색종이 조각</value>
+  </data>
+  <data name="HatchStyle.ZigZag" xml:space="preserve">
+    <value>지그 재그</value>
+  </data>
+  <data name="HatchStyle.Wave" xml:space="preserve">
+    <value>물결 무늬</value>
+  </data>
+  <data name="HatchStyle.DiagonalBrick" xml:space="preserve">
+    <value>벽돌 사선 무늬</value>
+  </data>
+  <data name="HatchStyle.HorizontalBrick" xml:space="preserve">
+    <value>수평 벽돌 무늬</value>
+  </data>
+  <data name="HatchStyle.Weave" xml:space="preserve">
+    <value>직물 무늬</value>
+  </data>
+  <data name="HatchStyle.Plaid" xml:space="preserve">
+    <value>격자 무늬</value>
+  </data>
+  <data name="HatchStyle.Divot" xml:space="preserve">
+    <value>양방향 사선</value>
+  </data>
+  <data name="HatchStyle.DottedGrid" xml:space="preserve">
+    <value>점선 눈금</value>
+  </data>
+  <data name="HatchStyle.DottedDiamond" xml:space="preserve">
+    <value>점선 다이아몬드</value>
+  </data>
+  <data name="HatchStyle.Shingle" xml:space="preserve">
+    <value>지붕 널</value>
+  </data>
+  <data name="HatchStyle.Trellis" xml:space="preserve">
+    <value>격자 울타리</value>
+  </data>
+  <data name="HatchStyle.Sphere" xml:space="preserve">
+    <value>구형</value>
+  </data>
+  <data name="HatchStyle.SmallGrid" xml:space="preserve">
+    <value>작은 모눈</value>
+  </data>
+  <data name="HatchStyle.SmallCheckerBoard" xml:space="preserve">
+    <value>좁은 체크 보드</value>
+  </data>
+  <data name="HatchStyle.LargeCheckerBoard" xml:space="preserve">
+    <value>넓은 체크 보드</value>
+  </data>
+  <data name="HatchStyle.OutlinedDiamond" xml:space="preserve">
+    <value>체크 무늬</value>
+  </data>
+  <data name="HatchStyle.SolidDiamond" xml:space="preserve">
+    <value>단색 다이아몬드</value>
+  </data>
+  <data name="BrushConfigWidget.FillStyleLabel.Text" xml:space="preserve">
+    <value>채우기:</value>
+  </data>
+  <data name="CanvasSizeAction.Name" xml:space="preserve">
+    <value>캔버스 크기</value>
+  </data>
+  <data name="CanvasSizeAction.ResizeDocument.OutOfMemory" xml:space="preserve">
+    <value>메모리가 부족하여 캔버스 크기를 조정할 수 없습니다.</value>
+  </data>
+  <data name="AnchorEdge.TopLeft" xml:space="preserve">
+    <value>왼쪽 위</value>
+  </data>
+  <data name="AnchorEdge.Top" xml:space="preserve">
+    <value>위쪽</value>
+  </data>
+  <data name="AnchorEdge.TopRight" xml:space="preserve">
+    <value>오른쪽 위</value>
+  </data>
+  <data name="AnchorEdge.Left" xml:space="preserve">
+    <value>왼쪽</value>
+  </data>
+  <data name="AnchorEdge.Middle" xml:space="preserve">
+    <value>중간</value>
+  </data>
+  <data name="AnchorEdge.Right" xml:space="preserve">
+    <value>오른쪽</value>
+  </data>
+  <data name="AnchorEdge.BottomLeft" xml:space="preserve">
+    <value>왼쪽 아래</value>
+  </data>
+  <data name="AnchorEdge.Bottom" xml:space="preserve">
+    <value>아래쪽</value>
+  </data>
+  <data name="AnchorEdge.BottomRight" xml:space="preserve">
+    <value>오른쪽 아래</value>
+  </data>
+  <data name="CanvasSizeDialog.Text" xml:space="preserve">
+    <value>캔버스 크기</value>
+  </data>
+  <data name="CanvasSizeDialog.AnchorHeader.Text" xml:space="preserve">
+    <value>Anchor</value>
+  </data>
+  <data name="CanvasSizeDialog.NewSpaceLabel.Text" xml:space="preserve">
+    <value>새 공간은 보조 색으로 채워집니다.</value>
+  </data>
+  <data name="CloneStampTool.Name" xml:space="preserve">
+    <value>무늬 찍기 복제</value>
+  </data>
+  <data name="CloneStampTool.HelpText" xml:space="preserve">
+    <value>원래 설정을 선택하려면 Ctrl과 왼쪽 단추를 누르고 있으시오.  다음에 복사하려면 왼쪽을 클릭한 후 끌어서 놓으시오.</value>
+  </data>
+  <data name="ColorDisplayWidget.SwapIconBox.ToolTipText" xml:space="preserve">
+    <value>색 교환
+바로가기 키 X</value>
+  </data>
+  <data name="ColorDisplayWidget.BlackAndWhiteIconBox.ToolTipText" xml:space="preserve">
+    <value>흑백</value>
+  </data>
+  <data name="ColorDisplayWidget.ForeColorRectangle.ToolTipText" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="ColorDisplayWidget.BackColorRectangle.ToolTipText" xml:space="preserve">
+    <value>보조</value>
+  </data>
+  <data name="ColorPickerTool.Name" xml:space="preserve">
+    <value>색 선택</value>
+  </data>
+  <data name="ColorPickerTool.HelpText" xml:space="preserve">
+    <value>기본 색을 설정하려면 왼쪽을, 보조 색을 설정하려면 오른쪽을 클릭하십시오.</value>
+  </data>
+  <data name="CommonAction.New" xml:space="preserve">
+    <value>새로 만들기</value>
+  </data>
+  <data name="CommonAction.Open" xml:space="preserve">
+    <value>열기</value>
+  </data>
+  <data name="CommonAction.Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="CommonAction.Print" xml:space="preserve">
+    <value>인쇄</value>
+  </data>
+  <data name="CommonAction.Cut" xml:space="preserve">
+    <value>잘라내기</value>
+  </data>
+  <data name="CommonAction.Copy" xml:space="preserve">
+    <value>복사</value>
+  </data>
+  <data name="CommonAction.Paste" xml:space="preserve">
+    <value>붙여넣기</value>
+  </data>
+  <data name="CommonAction.CropToSelection" xml:space="preserve">
+    <value>선택 영역에 맞춤</value>
+  </data>
+  <data name="CommonAction.Deselect" xml:space="preserve">
+    <value>선택 취소</value>
+  </data>
+  <data name="CommonAction.Undo" xml:space="preserve">
+    <value>실행 취소</value>
+  </data>
+  <data name="CommonAction.Redo" xml:space="preserve">
+    <value>다시 실행</value>
+  </data>
+  <data name="CommonAction.ZoomIn" xml:space="preserve">
+    <value>확대</value>
+  </data>
+  <data name="CommonAction.ZoomOut" xml:space="preserve">
+    <value>축소</value>
+  </data>
+  <data name="CropAction.Name" xml:space="preserve">
+    <value>선택 영역에 맞춤</value>
+  </data>
+  <data name="DeselectAction.Name" xml:space="preserve">
+    <value>선택 취소</value>
+  </data>
+  <data name="ExecuteFunction.ProgressDialog.Description.Text">
+    <value>잠시 기다려 주십시오...</value>
+  </data>
+  <data name="LayerPropertyChanging.HistoryMementoNameFormat" xml:space="preserve">
+    <value>레이어 {0}</value>
+    <comment>{0} represents the layer index</comment>
+  </data>
+  <data name="DocumentWorkspace.InitializeEffects.DllLoadFailed.Format" xml:space="preserve">
+    <value>{0}을(를) 로드하는 동안 오류가 발생하였습니다. 손상되었거나 다시 컴파일해야 합니다.</value>
+    <comment>{0} is a file name</comment>
+  </data>
+  <data name="Generic.OutOfMemory">
+    <value>메모리가 부족하여 이 작업을 완료할 수 없습니다.</value>
+  </data>
+  <data name="AddNewBlankLayer.HistoryMementoName" xml:space="preserve">
+    <value>새 레이어</value>
+  </data>
+  <data name="AddNewBlankLayer.LayerName.Format" xml:space="preserve">
+    <value>레이어 {0}</value>
+    <comment>{0} is the number of the new layer</comment>
+  </data>
+  <data name="DocumentWorkspace.DeleteLayerButtonClicked.MustHaveOneLayer" xml:space="preserve">
+    <value>이미지에 적어도 한 레이어가 있어야 합니다.</value>
+  </data>
+  <data name="DocumentWorkspace.DeleteLayerButtonClicked.Confirmation" xml:space="preserve">
+    <value>레이어를 삭제하시겠습니까?</value>
+  </data>
+  <data name="DeleteLayer.HistoryMementoName" xml:space="preserve">
+    <value>레이어 삭제</value>
+  </data>
+  <data name="DuplicateLayer.HistoryMementoName" xml:space="preserve">
+    <value>레이어 중복</value>
+  </data>
+  <data name="MergeLayerDown.HistoryMementoName">
+    <value>레이어 아래로 병합</value>
+  </data>
+  <data name="MoveLayerUp.HistoryMementoName" xml:space="preserve">
+    <value>레이어 위로 병합</value>
+  </data>
+  <data name="MoveLayerDown.HistoryMementoName" xml:space="preserve">
+    <value>레이어 아래로 병합</value>
+  </data>
+  <data name="ClearHistory.Confirmation" xml:space="preserve">
+    <value>목록을 지우시겠습니까?</value>
+  </data>
+  <data name="ClearHistory.HistoryMementoName" xml:space="preserve">
+    <value>목록 지우기</value>
+  </data>
+  <data name="EllipseSelectTool.Name" xml:space="preserve">
+    <value>타원 선택</value>
+  </data>
+  <data name="EllipseSelectTool.HelpText" xml:space="preserve">
+    <value>왼쪽 단추: 바꾸기. Ctrl+왼쪽: 추가. 오른쪽: 빼기. Ctrl+오른쪽: 반전. "SHIFT" 누르고 있기: 원으로 제한</value>
+  </data>
+  <data name="EllipseTool.Name" xml:space="preserve">
+    <value>타원</value>
+  </data>
+  <data name="EllipseTool.HelpText" xml:space="preserve">
+    <value>타원을 그리려면 클릭한 후 끌어서 놓으십시오. (보조 색을 사용하려면 오른쪽을 클릭하십시오). 원으로 제한하려면 "SHIFT"를 누르고 있으십시오.</value>
+  </data>
+  <data name="EllipseTool.StatusText.Format" xml:space="preserve">
+    <value>크기: {0}{1} x {2}{3}, 면적: {4} {5}</value>
+  </data>
+  <data name="EraserTool.Name" xml:space="preserve">
+    <value>지우개</value>
+  </data>
+  <data name="EraserTool.HelpText" xml:space="preserve">
+    <value>이미지 영역을 지우려면 클릭한 후 끌어서 놓으시오</value>
+  </data>
+  <data name="EraseSelectionAction.Name" xml:space="preserve">
+    <value>선택 영역 지움</value>
+  </data>
+  <data name="FillSelectionAction.Name">
+    <value>선택 영역 채움</value>
+  </data>
+  <data name="FlattenFunction.Name" xml:space="preserve">
+    <value>평평하게</value>
+  </data>
+  <data name="FlipDocumentHorizontalAction.Name" xml:space="preserve">
+    <value>좌우 대칭</value>
+  </data>
+  <data name="FlipDocumentVerticalAction.Name" xml:space="preserve">
+    <value>상하 대칭</value>
+  </data>
+  <data name="FlipLayerHorizontalAction.Name" xml:space="preserve">
+    <value>좌우 대칭</value>
+  </data>
+  <data name="FlipLayerVerticalAction.Name" xml:space="preserve">
+    <value>상하 대칭</value>
+  </data>
+  <data name="FreeformShapeTool.Name" xml:space="preserve">
+    <value>자유 곡선</value>
+  </data>
+  <data name="FreeformShapeTool.HelpText" xml:space="preserve">
+    <value>기본 색으로 자유 곡선을 그리려면 왼쪽을, 보조 색을 사용하려면 오른쪽을 클릭하십시오.</value>
+  </data>
+  <data name="ImportFromFileAction.Name" xml:space="preserve">
+    <value>파일에서 가져오기</value>
+  </data>
+  <data name="ImportFromFileAction.AskForCanvasResize.Confirmation" xml:space="preserve">
+    <value>가져온 이미지가 이미지 캔버스보다 더 큽니다.
+가져온 이미지에 맞게 캔버스를 확장하시겠습니까?</value>
+  </data>
+  <data name="ImportFromFileAction.AskForCanvasResize.OutOfMemory" xml:space="preserve">
+    <value>이미지 크기를 조정하기 위한 메모리가 부족합니다.</value>
+  </data>
+  <data name="ImportFromFileAction.ImportOneLayer.OutOfMemory" xml:space="preserve">
+    <value>레이어 크기를 조정하기 위한 메모리가 부족합니다.</value>
+  </data>
+  <data name="ImportFromFileAction.ImportOneFile.NewLayer.Format" xml:space="preserve">
+    <value>{0}: {1}</value>
+    <comment>{0} is the file being imported, {1} is the name of a layer within that file</comment>
+  </data>
+  <data name="ImportLayersDialog.Text" xml:space="preserve">
+    <value>레이어 가져오기</value>
+  </data>
+  <data name="ImportLayersDialog.AllButton.Text" xml:space="preserve">
+    <value>모두</value>
+  </data>
+  <data name="ImportLayersDialog.NoneButton.Text" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="ImportLayersDialog.LayersToInsertHeader.Text" xml:space="preserve">
+    <value>삽입할 레이어</value>
+  </data>
+  <data name="ImportLayersDialog.PreviewHeader.Text" xml:space="preserve">
+    <value>미리 보기</value>
+  </data>
+  <data name="InvertSelectionAction.Name" xml:space="preserve">
+    <value>선택 영역 반전</value>
+  </data>
+  <data name="LassoSelectTool.Name" xml:space="preserve">
+    <value>올가미 선택</value>
+  </data>
+  <data name="LassoSelectTool.HelpText" xml:space="preserve">
+    <value>왼쪽 단추: 바꾸기. Ctrl+왼쪽: 추가. 오른쪽: 빼기. Ctrl+오른쪽: 반전.</value>
+  </data>
+  <data name="GradientTool.Name">
+    <value>그라데이션</value>
+  </data>
+  <data name="GradientTool.HelpText">
+    <value>그리기 시작하려면 클릭한 후 끌어서 놓으시오. 각도를 제한하려면 "SHIFT"를 누르고 있으시오. 색을 거꾸로 되돌리려면 오른쪽 마우스 단추를 누르시오. </value>
+  </data>
+  <data name="GradientTool.HelpText.WhileAdjusting.Format">
+    <value>오프셋: {0}{1} x {2}{3}, 길이: {4} {5}, 각도: {6}°. 다른 마우스 단추를 누르고 있으면 양쪽 핸들을 모두 이동하게 됩니다.</value>
+  </data>
+  <data name="GradientTool.HelpText.Adjustable">
+    <value>그라데이션을 조정하려면 핸들을 끌어서 놓으십시오, 색을 비꾸려면 핸들 오른쪽을 클릭하십시오. 완료한 후엔 "ENTER"를 누르고 실행을 취소하려면 Esc를 누르십시오.</value>
+  </data>
+  <data name="LineTool.Name" xml:space="preserve">
+    <value>선 / 곡선</value>
+  </data>
+  <data name="LineTool.HelpText" xml:space="preserve">
+    <value>기본 색으로 그리려면 왼쪽을, 보조 색을 사용하려면 오른쪽을 클릭하십시오.</value>
+  </data>
+  <data name="LineTool.StatusText.Format" xml:space="preserve">
+    <value>오프셋: {0}{1} x {2}{3}, 길이: {4} {5}, 각도: {6}</value>
+  </data>
+  <data name="LineTool.PreCurveHelpText" xml:space="preserve">
+    <value>선을 곡선으로 만들려면 핸들을 끌어서 놓으십시오 (3차원 곡선을 만들려면 오른쪽 단추를 사용하십시오). 선을 완료하려면 "ENTER"를 누르고, 새로운 선은 다른 곳에서 그릴 수 있습니다.</value>
+  </data>
+  <data name="LineTool.CurvingHelpText" xml:space="preserve">
+    <value>곡선을 완료하거나 다른 곳에 새로운 선을 그리려면 ENTER를 누르시오. 핸들을 설정/해제하려면 Ctrl을 누르시오.</value>
+  </data>
+  <data name="LoadProgressDialog.Description" xml:space="preserve">
+    <value>로드하는 중:</value>
+  </data>
+  <data name="MagicWandTool.Name" xml:space="preserve">
+    <value>마술 봉</value>
+  </data>
+  <data name="MagicWandTool.HelpText" xml:space="preserve">
+    <value>비슷한 색의 영역을 선택하려면 클릭하시오. 추가하려면 Ctrl+왼쪽을, 빼려면 오른쪽을, 반전(XOR)하려면 Ctrl+SHIFT+왼쪽을 클릭하시오.</value>
+  </data>
+  <data name="MoveTool.Name" xml:space="preserve">
+    <value>선택한 픽셀 이동</value>
+  </data>
+  <data name="MoveTool.HelpText" xml:space="preserve">
+    <value>이동하려면 선택 영역을 끌어서 놓으시오. 배율을 조정하려면 핸들을 끌어서 놓으시오. 회전하려면 오른쪽 마우스 단추로 끌어서 놓으시오.</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.Translate" xml:space="preserve">
+    <value>픽셀 이동</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.Scale" xml:space="preserve">
+    <value>픽셀 배율</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.Rotate" xml:space="preserve">
+    <value>픽셀 회전</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.DropPixels" xml:space="preserve">
+    <value>픽셀 완료</value>
+  </data>
+  <data name="MoveSelectionTool.Name" xml:space="preserve">
+    <value>선택 영역 이동</value>
+  </data>
+  <data name="MoveSelectionTool.HelpText" xml:space="preserve">
+    <value>이동하려면 선택 영역을 끌어서 놓으시오. 배율을 조정하려면 핸들을 끌어서 놓으시오. 회전하려면 오른쪽 마우스 단추로 끌어서 놓으시오.</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.Translate" xml:space="preserve">
+    <value>선택 영역 이동</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.Scale" xml:space="preserve">
+    <value>선택 영역 배율</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.Rotate" xml:space="preserve">
+    <value>선택 영역 회전</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.DropSelection" xml:space="preserve">
+    <value>선택 영역 완료</value>
+  </data>
+  <data name="NewFileDialog.Text" xml:space="preserve">
+    <value>새로 만들기</value>
+  </data>
+  <data name="PaintBrushTool.Name" xml:space="preserve">
+    <value>브러시</value>
+  </data>
+  <data name="PaintBrushTool.HelpText" xml:space="preserve">
+    <value>기본 색으로 그리려면 왼쪽을, 보조 색으로 그리려면 오른쪽을 클릭하십시오.</value>
+  </data>
+  <data name="PaintBucketTool.Name" xml:space="preserve">
+    <value>페인트 통</value>
+  </data>
+  <data name="PaintBucketTool.HelpText" xml:space="preserve">
+    <value>기본 색으로 영역을 칠하려면 왼쪽을, 보조 색으로 칠하려면 오른쪽을 클릭하십시오.</value>
+  </data>
+  <data name="PanTool.Name" xml:space="preserve">
+    <value>이동(상하/좌우)</value>
+  </data>
+  <data name="PanTool.HelpText" xml:space="preserve">
+    <value>가깝게 확대할 때, 이미지를 탐색하려면 클릭한 후 끌어서 놓으시오.</value>
+  </data>
+  <data name="PdnInfo.AboutRedirectPage" xml:space="preserve">
+    <value>pdnabout.html</value>
+  </data>
+  <data name="PdnInfo.FullAppName.Format" xml:space="preserve">
+    <value>{0} ({1})</value>
+    <comment>{0} is the product name ("Paint.NET"), {1} is the version string ("2.2.2000.3000")</comment>
+  </data>
+  <data name="PdnInfo.VersionString.Format" xml:space="preserve">
+    <value>{0} {1} 빌드 {2}</value>
+    <comment>{0} is the friendly version name (configuration name), such as "Beta 2" or "Final". {1} is Debug or Release. {2} is the product version.</comment>
+  </data>
+  <data name="ProcessorArchitecture.X86" xml:space="preserve">
+    <value>x86</value>
+  </data>
+  <data name="ProcessorArchitecture.X64" xml:space="preserve">
+    <value>x64</value>
+  </data>
+  <data name="PdnInfo.FriendlyVersionString.ConfigWithSpace.Format" xml:space="preserve">
+    <value> {0}</value>
+  </data>
+  <data name="PdnInfo.FriendlyVersionString.Format" xml:space="preserve">
+    <value>버전 {0}{1}</value>
+    <comment>{0} is the version, such as "2.5". {1} is the configuration ("Beta 5") formatted via PdnInfo.FriendlyVersionString.ConfigWithSpace.Format, or it is an empty string if the configuration is "Final"</comment>
+  </data>
+  <data name="PencilTool.Name" xml:space="preserve">
+    <value>연필</value>
+  </data>
+  <data name="PencilTool.HelpText" xml:space="preserve">
+    <value>기본 색으로 자유 곡선의 한 픽셀 넓은 선을 그리려면 왼쪽을, 보조 색을 사용하려면 오른쪽을 클릭하십시오.</value>
+  </data>
+  <data name="PenConfigWidget.BrushWidthLabel" xml:space="preserve">
+    <value>브러시 너비:</value>
+  </data>
+  <data name="PenConfigWidget.Error.InvalidNumber" xml:space="preserve">
+    <value>잘못된 숫자입니다.</value>
+  </data>
+  <data name="PenConfigWidget.Error.TooSmall" xml:space="preserve">
+    <value>크기가 1보다 작음</value>
+  </data>
+  <data name="PenConfigWidget.Error.TooLarge" xml:space="preserve">
+    <value>크기가 100보다 큼</value>
+  </data>
+  <data name="ProgressDialog.PercentText.Text.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is a number from 0 to 100</comment>
+  </data>
+  <data name="RecolorTool.Name" xml:space="preserve">
+    <value>다시 색칠</value>
+  </data>
+  <data name="RecolorTool.HelpText" xml:space="preserve">
+    <value>보조 색을 기본 색으로 바꾸려면 왼쪽을 클릭하십시오.</value>
+  </data>
+  <data name="SelectionTool.MoveSelection" xml:space="preserve">
+    <value>선택 영역 이동</value>
+  </data>
+  <data name="SelectionTool.RotateSelection" xml:space="preserve">
+    <value>선택 영역 회전</value>
+  </data>
+  <data name="SelectionTool.ScaleSelection" xml:space="preserve">
+    <value>선택 영역 배율</value>
+  </data>
+  <data name="RectangleSelectTool.Name" xml:space="preserve">
+    <value>직사각형 선택</value>
+  </data>
+  <data name="RectangleSelectTool.HelpText" xml:space="preserve">
+    <value>왼쪽 단추: 바꾸기. Ctrl+왼쪽: 추가. 오른쪽: 빼기. Ctrl+오른쪽: 반전. "SHIFT" 누르고 있기: 정사각형으로 제한</value>
+  </data>
+  <data name="RectangleTool.Name" xml:space="preserve">
+    <value>직사각형</value>
+  </data>
+  <data name="RectangleTool.HelpText" xml:space="preserve">
+    <value>직사각형을 그리려면 클릭한 후 끌어서 놓으시오. (보조 색을 사용하려면 오른쪽을 사용하십시오). 정사각형으로 제한하려면 "SHIFT"를 누르고 있으십시오.</value>
+  </data>
+  <data name="RectangleTool.StatusText.Format" xml:space="preserve">
+    <value>크기: {0}{1} x {2}{3}, 면적: {4} {5}</value>
+  </data>
+  <data name="ResizeAction.Name" xml:space="preserve">
+    <value>크기 조정</value>
+  </data>
+  <data name="ResizeAction.PerformAction.UnspecifiedError" xml:space="preserve">
+    <value>이미지 크기를 조정하는 동안 지정되지 않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="ResizeAction.PerformAction.OutOfMemory" xml:space="preserve">
+    <value>메모리가 부족하여 이미지 크기를 조정할 수 없습니다.</value>
+  </data>
+  <data name="ResizeDialog.ResizedImageHeader.Text.Format" xml:space="preserve">
+    <value>새로운 크기: {0}</value>
+    <comment>{0} is a byte size, such as 3.8mb</comment>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.NearestNeighbor" xml:space="preserve">
+    <value>가장 가까운 이웃</value>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.Bicubic" xml:space="preserve">
+    <value>바이큐빅</value>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.SuperSampling" xml:space="preserve">
+    <value>최상 품질</value>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.Bilinear" xml:space="preserve">
+    <value>바이리니어</value>
+  </data>
+  <data name="ResizeDialog.Text" xml:space="preserve">
+    <value>크기 조정</value>
+  </data>
+  <data name="ResizeDialog.AsteriskLabel.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="ResizeDialog.PercentSignLabel.Text" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="ResizeDialog.PixelsLabel1.Text" xml:space="preserve">
+    <value>픽셀</value>
+  </data>
+  <data name="ResizeDialog.PixelsLabel2.Text" xml:space="preserve">
+    <value>픽셀</value>
+  </data>
+  <data name="ResizeDialog.PercentRB.Text" xml:space="preserve">
+    <value>백분율(&amp;B):</value>
+  </data>
+  <data name="ResizeDialog.AbsoluteRB.Text" xml:space="preserve">
+    <value>절대 크기로(&amp;B):</value>
+  </data>
+  <data name="ResizeDialog.PixelSizeHeader.Text" xml:space="preserve">
+    <value>픽셀 크기</value>
+  </data>
+  <data name="ResizeDialog.PrintSizeHeader.Text" xml:space="preserve">
+    <value>인쇄 크기</value>
+  </data>
+  <data name="ResizeDialog.CurrentImageSizeLabel.Text" xml:space="preserve">
+    <value>현재 페이지 크기:</value>
+  </data>
+  <data name="ResizeDialog.ResamplingLabel.Text" xml:space="preserve">
+    <value>재샘플링:</value>
+  </data>
+  <data name="ResizeDialog.NewWidthLabel1.Text" xml:space="preserve">
+    <value>너비:</value>
+  </data>
+  <data name="ResizeDialog.NewHeightLabel1.Text" xml:space="preserve">
+    <value>높이:</value>
+  </data>
+  <data name="ResizeDialog.NewWidthLabel2.Text" xml:space="preserve">
+    <value>너비:</value>
+  </data>
+  <data name="ResizeDialog.NewHeightLabel2.Text" xml:space="preserve">
+    <value>높이:</value>
+  </data>
+  <data name="ResizeDialog.ConstrainCheckBox.Text" xml:space="preserve">
+    <value>가로 세로 비율 유지(&amp;M)</value>
+  </data>
+  <data name="ResizeDialog.AsteriskTextLabel.SuperSampling" xml:space="preserve">
+    <value>* 상위 샘플링이 사용됩니다</value>
+  </data>
+  <data name="ResizeDialog.AsteriskTextLabel.Bicubic" xml:space="preserve">
+    <value>* Bicubic이 사용됩니다</value>
+  </data>
+  <data name="RotateAction.180CW" xml:space="preserve">
+    <value>180° CW</value>
+  </data>
+  <data name="RotateAction.270CW" xml:space="preserve">
+    <value>270° CW</value>
+  </data>
+  <data name="RotateAction.90CW" xml:space="preserve">
+    <value>90° CW</value>
+  </data>
+  <data name="RotateAction.180CCW" xml:space="preserve">
+    <value>180° CCW</value>
+  </data>
+  <data name="RotateAction.270CCW" xml:space="preserve">
+    <value>270° CCW</value>
+  </data>
+  <data name="RotateAction.90CCW" xml:space="preserve">
+    <value>90° CCW</value>
+  </data>
+  <data name="RotateAction.HistoryMementoName.Format" xml:space="preserve">
+    <value>{0} {1}</value>
+    <comment>{0} is the action name ("Rotate"), {1} is the angle (90 CW)</comment>
+  </data>
+  <data name="RotateAction.Name" xml:space="preserve">
+    <value>회전</value>
+  </data>
+  <data name="RoundedRectangleTool.Name" xml:space="preserve">
+    <value>모서리가 둥근 사각형</value>
+  </data>
+  <data name="RoundedRectangleTool.HelpText" xml:space="preserve">
+    <value>경계 직사각형을 그리려면 클릭한 후 끌어서 놓으십시오. (보조 색을 사용하려면 오른쪽을 클릭하십시오). 제한하려면 "SHIFT"를 누르고 있으십시오.</value>
+  </data>
+  <data name="RoundedRectangleTool.StatusText.Format" xml:space="preserve">
+    <value>경계 직사각형 크기: {0}{1} x {2}{3}, 면적: {4} {5}</value>
+  </data>
+  <data name="SaveConfigDialog.Text" xml:space="preserve">
+    <value>구성 파일 저장</value>
+  </data>
+  <data name="SaveConfigDialog.SettingsHeader.Text" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="SaveConfigDialog.DefaultsButton.Text" xml:space="preserve">
+    <value>기본값(&amp;F)</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Format" xml:space="preserve">
+    <value>파일 크기: {0}</value>
+    <comment>{0} is a file size, or some text in parenthesis (such as SaveConfigDialog.FileSizeText.Text.Error)</comment>
+  </data>
+  <data name="SaveConfigDialog.PreviewHeader.Text" xml:space="preserve">
+    <value>미리 보기</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Computing" xml:space="preserve">
+    <value>(계산 중)</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Error" xml:space="preserve">
+    <value>(오류)</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Computing.Format" xml:space="preserve">
+    <value>(계산 중: {0}%)</value>
+    <comment>{0} is a number between 0 and 100</comment>
+  </data>
+  <data name="SaveProgressDialog.Title" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="SaveProgressDialog.Description" xml:space="preserve">
+    <value>저장:</value>
+  </data>
+  <data name="SelectAllAction.Name" xml:space="preserve">
+    <value>모두 선택</value>
+  </data>
+  <data name="ShapeDrawTypeConfigWidget.OutlineButton.ToolTipText" xml:space="preserve">
+    <value>윤곽선 모양 그리기</value>
+  </data>
+  <data name="ShapeDrawTypeConfigWidget.InteriorButton.ToolTipText" xml:space="preserve">
+    <value>채워진 모양 그리기</value>
+  </data>
+  <data name="ShapeDrawTypeConfigWidget.BothButton.ToolTipText" xml:space="preserve">
+    <value>윤곽선으로 채워진 모양 그리기</value>
+  </data>
+  <data name="SplashForm.StatusLabel.Text" xml:space="preserve">
+    <value>시작하는 중...</value>
+  </data>
+  <data name="Startup.UnhandledError.Format" xml:space="preserve">
+    <value>처리되지 않은 오류가 있으므로 Paint.NET을 닫아야 합니다. 자세한 정보를 원하시면 데스크 탑에서 파일 '{0}'을(를) 참조하십시오.</value>
+    <comment>{0} is a filename</comment>
+  </data>
+  <data name="ToolConfigStrip.ResamplingLabel.Text">
+    <value>품질:</value>
+  </data>
+  <data name="ResamplingAlgorithm.Bilinear">
+    <value>부드럽게</value>
+  </data>
+  <data name="ResamplingAlgorithm.NearestNeighbor">
+    <value>모자이크</value>
+  </data>
+  <data name="ResamplingAlgorithm.Bicubic">
+    <value>바이큐빅</value>
+  </data>
+  <data name="ResamplingAlgorithm.SuperSampling">
+    <value>상위 샘플링</value>
+  </data>
+  <data name="ToolConfigStrip.ColorPickerLabel.Text">
+    <value>클릭한 후:</value>
+  </data>
+  <data name="ColorPickerClickBehavior.NoToolSwitch">
+    <value>도구를 전환하지 마십시오.</value>
+  </data>
+  <data name="ColorPickerClickBehavior.SwitchToLastTool">
+    <value>이전 도구로 전환</value>
+  </data>
+  <data name="ColorPickerClickBehavior.SwitchToPencilTool">
+    <value>연필 도구로 전환</value>
+  </data>
+  <data name="TextConfigWidget.Error.InvalidNumber" xml:space="preserve">
+    <value>잘못된 숫자입니다.</value>
+  </data>
+  <data name="TextConfigWidget.Error.TooSmall.Format" xml:space="preserve">
+    <value>크기가 {0}보다 작습니다.</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="TextConfigWidget.Error.TooLarge.Format" xml:space="preserve">
+    <value>크기가 {0}보다 큽니다.</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="TextConfigWidget.FontLabel.Text" xml:space="preserve">
+    <value>글꼴:</value>
+  </data>
+  <data name="TextConfigWidget.BoldButton.ToolTipText" xml:space="preserve">
+    <value>굵게</value>
+  </data>
+  <data name="TextConfigWidget.ItalicButton.ToolTipText" xml:space="preserve">
+    <value>기울임꼴</value>
+  </data>
+  <data name="TextConfigWidget.UnderlineButton.ToolTipText" xml:space="preserve">
+    <value>밑줄</value>
+  </data>
+  <data name="TextConfigWidget.AlignLeftButton.ToolTipText" xml:space="preserve">
+    <value>왼쪽 맞춤</value>
+  </data>
+  <data name="TextConfigWidget.AlignCenterButton.ToolTipText" xml:space="preserve">
+    <value>가운데 맞춤</value>
+  </data>
+  <data name="TextConfigWidget.AlignRightButton.ToolTipText" xml:space="preserve">
+    <value>오른쪽 맞춤</value>
+  </data>
+  <data name="TextTool.Name" xml:space="preserve">
+    <value>텍스트</value>
+  </data>
+  <data name="TextTool.HelpText" xml:space="preserve">
+    <value>텍스트 커서를 위치시키려면 왼쪽을 클릭한 후 텍스트를 입력하십시오. 텍스트는 기본 색으로 입력됩니다.</value>
+  </data>
+  <data name="TextTool.StatusText.StartTyping" xml:space="preserve">
+    <value>텍스트를 이동하려면 핸들을 끌어다 놓으십시오. 핸들과 커서를 숨기려면 Ctrl을 누르고 있으십시오. 핸들을 설정/해제하려면 Ctrl을 한 번 누르십시오.</value>
+  </data>
+  <data name="TextTool.StatusText.TextInfo.Format">
+    <value>Anchor 점: {0}{1}, {2}{3}</value>
+  </data>
+  <data name="ToleranceSliderControl.Tolerance" xml:space="preserve">
+    <value>허용 오차</value>
+  </data>
+  <data name="ToleranceSliderControl.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="WorkspaceOptionsConfigWidget.DrawGridToggleButton.ToolTipText" xml:space="preserve">
+    <value>확대할 때 눈금 표시</value>
+  </data>
+  <data name="WorkspaceOptionsConfigWidget.RulersToggleButton.ToolTipText" xml:space="preserve">
+    <value>눈금자</value>
+  </data>
+  <data name="ZoomTool.Name" xml:space="preserve">
+    <value>확대/축소</value>
+  </data>
+  <data name="ZoomTool.HelpText" xml:space="preserve">
+    <value>확대하려면 왼쪽을, 축소하려면 오른쪽을 클릭하고, 위로 당기려면 가운데를 클릭하십시오</value>
+  </data>
+  <data name="ZoomConfigWidget.ZoomInButton.ToolTipText" xml:space="preserve">
+    <value>확대</value>
+  </data>
+  <data name="ZoomConfigWidget.ZoomOutButton.ToolTipText" xml:space="preserve">
+    <value>축소</value>
+  </data>
+  <data name="ZoomBasis.FitToWindow" xml:space="preserve">
+    <value>창</value>
+  </data>
+  <data name="ZoomBasis.Selection" xml:space="preserve">
+    <value>선택 영역</value>
+  </data>
+  <data name="ZoomBasis.ScaleFactor" xml:space="preserve">
+    <value>비율</value>
+  </data>
+  <data name="ZoomConfigWidget.Error.InvalidNumber" xml:space="preserve">
+    <value>잘못된 숫자</value>
+  </data>
+  <data name="ZoomConfigWidget.Error.TooSmall" xml:space="preserve">
+    <value>확대/축소는 적어도 1%가 되어야 합니다</value>
+  </data>
+  <data name="ZoomConfigWidget.Error.TooLarge" xml:space="preserve">
+    <value>확대/축소는 3200%를 초과할 수 없습니다</value>
+  </data>
+  <data name="ZoomConfigWidget.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="StatusBar.Context.Help.Text.Format" xml:space="preserve">
+    <value>{0}: {1}</value>
+    <comment>{0} is the tool's name, {1} is its help text</comment>
+  </data>
+  <data name="AcquireImageAction.Name" xml:space="preserve">
+    <value>이미지 가져오기</value>
+  </data>
+  <data name="PasteInToNewImageAction.Error.NoClipboardImage" xml:space="preserve">
+    <value>클립보드에 사용 가능한 이미지가 없습니다.</value>
+  </data>
+  <data name="AcquireImageAction.Error.Clipboard.TransferError" xml:space="preserve">
+    <value>클립보드에서 이미지를 전달하는 동안 오류가 발생하였습니다.</value>
+  </data>
+  <data name="AcquireImageAction.Error.Clipboard.OutOfMemory" xml:space="preserve">
+    <value>클립보드에서 이미지를 복사하기 위한 메모리가 부족합니다.</value>
+  </data>
+  <data name="StatusBar.Size.Format" xml:space="preserve">
+    <value>{0}{1} x {2}{3}</value>
+    <comment>{0} is width, {1} is units (e.g. cm or px), {2} is height, {3} is units</comment>
+  </data>
+  <data name="Untitled.FriendlyName" xml:space="preserve">
+    <value>제목 없음</value>
+  </data>
+  <data name="MainForm.Title.Format.Normal" xml:space="preserve">
+    <value>{0} ({1}) - {2}</value>
+    <comment>{0} is friendly document name, {1} is zoom level, {2} is application name</comment>
+  </data>
+  <data name="MainForm.Title.Format.Minimized" xml:space="preserve">
+    <value>{0} - {1}</value>
+    <comment>{0} is friendly document name, {1} is application name</comment>
+  </data>
+  <data name="NewImageAction.Error.OutOfMemory" xml:space="preserve">
+    <value>메모리가 부족하여 새 이미지를 작성할 수 없습니다.</value>
+  </data>
+  <data name="NewImageAction.Name" xml:space="preserve">
+    <value>새 이미지</value>
+  </data>
+  <data name="LoadImage.Error.ImageTypeNotRecognized" xml:space="preserve">
+    <value>이미지 형식이 인식되지 않고, 열 수 없습니다.</value>
+  </data>
+  <data name="LoadImage.Error.InvalidFileName.Format" xml:space="preserve">
+    <value>파일 이름이 유효하지 않습니다.
+
+"{0}"</value>
+    <comment>{0} is a filename.</comment>
+  </data>
+  <data name="LoadImage.Error.BlankFileName" xml:space="preserve">
+    <value>파일 이름이 비어 있습니다.</value>
+  </data>
+  <data name="LoadImage.Error.ArgumentException" xml:space="preserve">
+    <value>파일을 여는 동안 오류가 발생하였습니다.</value>
+  </data>
+  <data name="LoadImage.Error.UnauthorizedAccessException" xml:space="preserve">
+    <value>요청하신 파일에 접근이 거부되었습니다 (권한 없이 접근).</value>
+  </data>
+  <data name="LoadImage.Error.SecurityException" xml:space="preserve">
+    <value>요청하신 파일에 접근이 거부되었습니다(보안 예외).</value>
+  </data>
+  <data name="LoadImage.Error.FileNotFoundException" xml:space="preserve">
+    <value>파일을 찾을 수 없습니다.</value>
+  </data>
+  <data name="LoadImage.Error.DirectoryNotFoundException" xml:space="preserve">
+    <value>디렉터리를 찾을 수 없습니다.</value>
+  </data>
+  <data name="LoadImage.Error.PathTooLongException" xml:space="preserve">
+    <value>파일 이름이 너무 깁니다.</value>
+  </data>
+  <data name="LoadImage.Error.IOException" xml:space="preserve">
+    <value>파일을 읽는 동안 예기치 못한 오류가 발생했습니다.</value>
+  </data>
+  <data name="LoadImage.Error.SerializationException" xml:space="preserve">
+    <value>파일이 손상되었거나 새로운 버전의 Paint.NET으로 저장되었습니다.</value>
+  </data>
+  <data name="LoadImage.Error.OutOfMemoryException" xml:space="preserve">
+    <value>메모리가 부족하여  이미지를 로드할 수 없습니다.</value>
+  </data>
+  <data name="LoadImage.Error.Exception" xml:space="preserve">
+    <value>파일을 여는 동안 지정되지 않은 오류가 있습니다.</value>
+  </data>
+  <data name="OpenImageAction.Name" xml:space="preserve">
+    <value>페이지 열기</value>
+  </data>
+  <data name="SavedWithOlderVersion.Format" xml:space="preserve">
+    <value>이 이미지는 이전 버전의 Paint.NET에서 저장되었습니다. 다시 이 이미지를 저장하면, 이전 버전에서 읽을 수 없게 됩니다.
+
+저장된 버전: Paint.NET v{0}
+현재 버전: Paint.NET v{1}</value>
+    <comment>{0} and {1} are version numbers</comment>
+  </data>
+  <data name="FileDialog.Types.AllImages" xml:space="preserve">
+    <value>모든 이미지 형식</value>
+  </data>
+  <data name="SaveAsDialog.Title" xml:space="preserve">
+    <value>다른 이름으로 저장</value>
+  </data>
+  <data name="WarnAboutFlattening.Text" xml:space="preserve">
+    <value>이 파일 형식으로 저장하면 모든 레이어 정보와 숨겨진 레이어를 버리게 되어 이미지를 평평하게 만듭니다. 
+계속하시겠습니까?</value>
+  </data>
+  <data name="WarnAboutFlattening.Title" xml:space="preserve">
+    <value>질문</value>
+  </data>
+  <data name="SaveImage.Error.UnauthorizedAccessException" xml:space="preserve">
+    <value>접근이 거부되었습니다. "파일" -&gt; "다른 이름으로 저장..." 을 사용하여 다른 위치에 또는 다른 이름으로 저장하십시오.</value>
+  </data>
+  <data name="SaveImage.Error.SecurityException" xml:space="preserve">
+    <value>접근이 거부되었습니다. "파일" -&gt; "다른 이름으로 저장..." 을 사용하여 다른 위치에 또는 다른 이름으로 저장하십시오.</value>
+  </data>
+  <data name="SaveImage.Error.DirectoryNotFoundException" xml:space="preserve">
+    <value>디렉터리를 찾을 수 없습니다. "파일" -&gt; "다른 이름으로 저장..." 을 사용하여 다른 위치로 저장하십시오.</value>
+  </data>
+  <data name="SaveImage.Error.IOException" xml:space="preserve">
+    <value>파일에 쓰는 동안 I/O 오류가 발생하였습니다.</value>
+  </data>
+  <data name="SaveImage.Error.OutOfMemoryException" xml:space="preserve">
+    <value>메모리가 부족하여 이미지를 저장할 수 없습니다.</value>
+  </data>
+  <data name="SaveImage.Error.Exception" xml:space="preserve">
+    <value>파일을 저장하는 동안 지정되지 않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="CopyAction.Error.TransferToClipboard" xml:space="preserve">
+    <value>클립보드에 이미지를 복사하는 동안 오류가 발생하였습니다.</value>
+  </data>
+  <data name="CopyAction.Error.OutOfMemory" xml:space="preserve">
+    <value>클립보드 작업을 완료하기 위한 메모리가 부족합니다.</value>
+  </data>
+  <data name="CopyAction.Error.Generic" xml:space="preserve">
+    <value>클립보드에 복사하는 동안 오류가 발생하였습니다.</value>
+  </data>
+  <data name="CutAction.Name" xml:space="preserve">
+    <value>잘라내기</value>
+  </data>
+  <data name="Effects.ApplyingDialog.Description" xml:space="preserve">
+    <value>렌더링 하는 중...</value>
+  </data>
+  <data name="Effects.RepeatMenuItem.Format" xml:space="preserve">
+    <value>반복 {0}</value>
+    <comment>{0} is the effect name</comment>
+  </data>
+  <data name="Effects.Name.Format.Configurable" xml:space="preserve">
+    <value>{0}...</value>
+    <comment>{0} is the effect name</comment>
+  </data>
+  <data name="PasteAction.Error.TransferFromClipboard" xml:space="preserve">
+    <value>클립보드에서 이미지를 가져오는 동안 오류가 발생하였습니다.</value>
+  </data>
+  <data name="PasteAction.Error.OutOfMemory" xml:space="preserve">
+    <value>메모리가 부족하여 클립보드에서 이미지를 가져올 수 없습니다.</value>
+  </data>
+  <data name="PasteAction.Error.NotRecognized" xml:space="preserve">
+    <value>클립보드에 있는 이미지를 인식할 수 없습니다. 그 이미지를 가져왔던 원래 응용 프로그램을 가지고 이미지를 다시 복사해 보십시오.</value>
+  </data>
+  <data name="PasteAction.Error.NoImage" xml:space="preserve">
+    <value>클립보드에 이미지가 없습니다.</value>
+  </data>
+  <data name="PasteAction.Question.ExpandCanvas" xml:space="preserve">
+    <value>붙여 넣은 이미지가 이미지 캔버스보다 더 큽니다.
+붙여 넣을 이미지에 맞게 캔버스를 확장하시겠습니까?</value>
+  </data>
+  <data name="NewLayerAction.Error.OutOfMemory" xml:space="preserve">
+    <value>메모리가 부족하여 새 레이어를 작성할 수 없습니다.</value>
+  </data>
+  <data name="FlattenAction.Question.DiscardHiddenLayers" xml:space="preserve">
+    <value>숨겨진 레이어를 버리시겠습니까?</value>
+  </data>
+  <data name="StatusBar.Progress.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="StatusBar.Context.SelectedArea.Text.Format" xml:space="preserve">
+    <value>왼쪽 위 선택: {0}{1}, {2}{3}. 경계 직사각형 크기: {4}{5} x {6}{7}. 면적: {8} {9} 제곱</value>
+    <comment>{0} is an X coordinate, {1} is units abbreviation, {2} is Y coordinate, {3} is units abbreviation, {4} is width, {5} is units abbreviation, {6} is height, {7} is units abbreviation, {8} is the area, {9} is plural units (pixels, inches)</comment>
+  </data>
+  <data name="StatusBar.Context.SelectedArea.Text.WithAngle.Format" xml:space="preserve">
+    <value>왼쪽 위 선택: {0}{1}, {2}{3}. 경계 직사각형 크기: {4}{5} x {6}{7}. 면적: {8} {9} 제곱. 각도: {10}°</value>
+    <comment>{0} is an X coordinate, {1} is units abbreviation, {2} is Y coordinate, {3} is units abbreviation, {4} is width, {5} is units abbreviation, {6} is height, {7} is units abbreviation, {8} is the area, {9} is plural units (pixels, inches), {10} is angle of rotation</comment>
+  </data>
+  <data name="WIA.Error.EnableMe" xml:space="preserve">
+    <value>이 기능을 사용하려면 Windows 이미지 인식 시스템 서비스를 사용 가능하게 해야 합니다.</value>
+  </data>
+  <data name="WIA.Error.UnableToLoad" xml:space="preserve">
+    <value>Windows 이미지 인식 (WIA) 라이브러리, "wiaaut.dll"이 사용 가능하지 않습니다. 문제 해결 정보를 받으려면 도움말 파일(도움말 메뉴 -&gt; 도움말 항목), 질문과 대답을 읽으십시오.</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.InfoText">
+    <value>원하는 파일 작업을 선택하십시오.</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.OpenButton.ActionText">
+    <value>열기(&amp;O)</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.OpenButton.ExplanationText">
+    <value>파일을 탭에서 여십시오.</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.ImportLayers.ActionText">
+    <value>레이어에 추가(&amp;A)</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.ImportLayers.ExplanationText">
+    <value>로드한 후 현재 이미지에 새 레이어로 추가</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.ImportLayers.ExplanationText.NoImagesYet">
+    <value>새 이미지에 새 레이어로 가져오기</value>
+  </data>
+  <data name="Menu.File.OpenRecent.None" xml:space="preserve">
+    <value>(없음)</value>
+  </data>
+  <data name="Menu.File.OpenRecent.ClearThisList" xml:space="preserve">
+    <value>이 목록 지우기(&amp;C)</value>
+  </data>
+  <data name="Menu.File.Text" xml:space="preserve">
+    <value>파일(&amp;F)</value>
+  </data>
+  <data name="Menu.File.New.Text" xml:space="preserve">
+    <value>새로 만들기(&amp;N)...</value>
+  </data>
+  <data name="Menu.File.Open.Text" xml:space="preserve">
+    <value>열기(&amp;O)...</value>
+  </data>
+  <data name="Menu.File.OpenRecent.Text" xml:space="preserve">
+    <value>최근 목록 열기(&amp;R)</value>
+  </data>
+  <data name="Menu.File.Close.Text">
+    <value>닫기(&amp;C)</value>
+  </data>
+  <data name="Menu.File.Acquire.Text" xml:space="preserve">
+    <value>가져오기(&amp;Q)</value>
+  </data>
+  <data name="Menu.File.Acquire.FromScannerOrCamera.Text" xml:space="preserve">
+    <value>스캐너 또는 카메라로부터(&amp;S)...</value>
+  </data>
+  <data name="Menu.File.Save.Text" xml:space="preserve">
+    <value>저장(&amp;S)</value>
+  </data>
+  <data name="Menu.File.SaveAs.Text" xml:space="preserve">
+    <value>다른 이름으로 저장(&amp;S)...</value>
+  </data>
+  <data name="Menu.File.Print.Text" xml:space="preserve">
+    <value>인쇄(&amp;P)...</value>
+  </data>
+  <data name="Menu.File.Exit.Text" xml:space="preserve">
+    <value>끝내기(&amp;X)</value>
+  </data>
+  <data name="Menu.Edit.Text" xml:space="preserve">
+    <value>편집(&amp;E)</value>
+  </data>
+  <data name="Menu.Edit.Undo.Text" xml:space="preserve">
+    <value>실행 취소(&amp;U)</value>
+  </data>
+  <data name="Menu.Edit.Redo.Text" xml:space="preserve">
+    <value>다시 실행(&amp;R)</value>
+  </data>
+  <data name="Menu.Edit.Cut.Text" xml:space="preserve">
+    <value>잘라내기(&amp;T)</value>
+  </data>
+  <data name="Menu.Edit.Copy.Text" xml:space="preserve">
+    <value>복사(&amp;C)</value>
+  </data>
+  <data name="Menu.Edit.Paste.Text" xml:space="preserve">
+    <value>붙여넣기(&amp;P)</value>
+  </data>
+  <data name="Menu.Edit.PasteInToNewLayer.Text" xml:space="preserve">
+    <value>새 레이어에 붙여넣기(&amp;L)</value>
+  </data>
+  <data name="Menu.Edit.PasteInToNewImage.Text" xml:space="preserve">
+    <value>새 이미지에 붙여넣기(&amp;M)</value>
+  </data>
+  <data name="Menu.Edit.EraseSelection.Text" xml:space="preserve">
+    <value>선택 영역 지움(&amp;E)</value>
+  </data>
+  <data name="Menu.Edit.FillSelection.Text" xml:space="preserve">
+    <value>선택 영역 채움(&amp;F)</value>
+  </data>
+  <data name="Menu.Edit.FillSelection.ShortcutKeysDisplayString" xml:space="preserve">
+    <value>백스페이스</value>
+  </data>
+  <data name="Menu.Edit.InvertSelection.Text" xml:space="preserve">
+    <value>선택 영역 반전(&amp;I)</value>
+  </data>
+  <data name="Menu.Edit.SelectAll.Text" xml:space="preserve">
+    <value>모두 선택(&amp;A)</value>
+  </data>
+  <data name="Menu.Edit.Deselect.Text" xml:space="preserve">
+    <value>선택 취소(&amp;D)</value>
+  </data>
+  <data name="Menu.View.Text" xml:space="preserve">
+    <value>보기(&amp;V)</value>
+  </data>
+  <data name="Menu.View.ZoomIn.Text" xml:space="preserve">
+    <value>확대(&amp;I)</value>
+  </data>
+  <data name="Menu.View.ZoomIn.ShortcutKeyDisplayString">
+    <value>Ctrl++</value>
+  </data>
+  <data name="Menu.View.ZoomOut.Text" xml:space="preserve">
+    <value>축소(&amp;O)</value>
+  </data>
+  <data name="Menu.View.ZoomOut.ShortcutKeyDisplayString">
+    <value>Ctrl+-</value>
+  </data>
+  <data name="Menu.View.ZoomToWindow.Text" xml:space="preserve">
+    <value>창으로 확대/축소(&amp;W)</value>
+  </data>
+  <data name="Menu.View.ZoomToSelection.Text" xml:space="preserve">
+    <value>선택 영역으로 확대/축소(&amp;S)</value>
+  </data>
+  <data name="Menu.View.ActualSize.Text" xml:space="preserve">
+    <value>실제 크기(&amp;A)</value>
+  </data>
+  <data name="Menu.View.Rulers.Text" xml:space="preserve">
+    <value>눈금자(&amp;R)</value>
+  </data>
+  <data name="Menu.View.Grid.Text" xml:space="preserve">
+    <value>눈금(&amp;G)</value>
+  </data>
+  <data name="Menu.View.Units.Text" xml:space="preserve">
+    <value>단위(&amp;U)</value>
+  </data>
+  <data name="Menu.Image.Text" xml:space="preserve">
+    <value>이미지(&amp;I)</value>
+  </data>
+  <data name="Menu.Image.Crop.Text" xml:space="preserve">
+    <value>선택 영역에 맞춤(&amp;P)</value>
+  </data>
+  <data name="Menu.Image.Resize.Text" xml:space="preserve">
+    <value>크기 조정(&amp;R)...</value>
+  </data>
+  <data name="Menu.Image.CanvasSize.Text" xml:space="preserve">
+    <value>캔버스 크기(&amp;S)...</value>
+  </data>
+  <data name="Menu.Image.Flip.Text" xml:space="preserve">
+    <value>대칭 이동(&amp;F)</value>
+  </data>
+  <data name="Menu.Image.Flip.Horizontal.Text" xml:space="preserve">
+    <value>가로(&amp;H)</value>
+  </data>
+  <data name="Menu.Image.Flip.Vertical.Text" xml:space="preserve">
+    <value>세로(&amp;V)</value>
+  </data>
+  <data name="Menu.Image.Rotate.Text" xml:space="preserve">
+    <value>회전(&amp;T)</value>
+  </data>
+  <data name="Menu.Image.Rotate.90CW.Text" xml:space="preserve">
+    <value>90° 시계방향(&amp;9)</value>
+  </data>
+  <data name="Menu.Image.Rotate.180CW.Text" xml:space="preserve">
+    <value>180° 시계방향(&amp;1)</value>
+  </data>
+  <data name="Menu.Image.Rotate.270CW.Text" xml:space="preserve">
+    <value>270° 시계방향(&amp;2)</value>
+  </data>
+  <data name="Menu.Image.Rotate.90CCW.Text" xml:space="preserve">
+    <value>90° 시계반대방향</value>
+  </data>
+  <data name="Menu.Image.Rotate.180CCW.Text" xml:space="preserve">
+    <value>180° 시계반대방향</value>
+  </data>
+  <data name="Menu.Image.Rotate.270CCW.Text" xml:space="preserve">
+    <value>270° 시계반대방향</value>
+  </data>
+  <data name="Menu.Image.Flatten.Text" xml:space="preserve">
+    <value>평평하게(&amp;F)</value>
+  </data>
+  <data name="Menu.Layers.Text" xml:space="preserve">
+    <value>레이어(&amp;L)</value>
+  </data>
+  <data name="Menu.Layers.AddNewLayer.Text" xml:space="preserve">
+    <value>새 레이어 추가(&amp;A)</value>
+  </data>
+  <data name="Menu.Layers.DeleteLayer.Text" xml:space="preserve">
+    <value>레이어 삭제(&amp;L)</value>
+  </data>
+  <data name="Menu.Layers.DuplicateLayer.Text" xml:space="preserve">
+    <value>레이어 중복(&amp;D)</value>
+  </data>
+  <data name="Menu.Layers.MergeLayerDown.Text">
+    <value>레이어 아래로 병합(&amp;M)</value>
+  </data>
+  <data name="Menu.Layers.ImportFromFile.Text" xml:space="preserve">
+    <value>파일 가져오기(&amp;I)...</value>
+  </data>
+  <data name="Menu.Layers.Adjustments.Text" xml:space="preserve">
+    <value>재조정(&amp;A)</value>
+  </data>
+  <data name="Menu.Layers.Flip.Text" xml:space="preserve">
+    <value>대칭 이동(&amp;L)</value>
+  </data>
+  <data name="Menu.Layers.Flip.Horizontal.Text" xml:space="preserve">
+    <value>가로(&amp;H)</value>
+  </data>
+  <data name="Menu.Layers.Flip.Vertical.Text" xml:space="preserve">
+    <value>세로(&amp;V)</value>
+  </data>
+  <data name="Menu.Layers.LayerProperties.Text" xml:space="preserve">
+    <value>레이어 등록정보(&amp;P)...</value>
+  </data>
+  <data name="Menu.Effects.Text" xml:space="preserve">
+    <value>효과(&amp;C)</value>
+  </data>
+  <data name="Menu.Tools.Text" xml:space="preserve">
+    <value>도구(&amp;T)</value>
+  </data>
+  <data name="Menu.Tools.AntiAliasing.Text" xml:space="preserve">
+    <value>앤티 별칭(&amp;A)</value>
+  </data>
+  <data name="Menu.Tools.AlphaBlending.Text" xml:space="preserve">
+    <value>알파 혼합(&amp;B)</value>
+  </data>
+  <data name="Menu.Window.Text" xml:space="preserve">
+    <value>창(&amp;W)</value>
+  </data>
+  <data name="Menu.Window.ResetWindowLocations.Text" xml:space="preserve">
+    <value>창위치 원래대로(&amp;R)</value>
+  </data>
+  <data name="Menu.Window.Translucent.Text" xml:space="preserve">
+    <value>투명</value>
+  </data>
+  <data name="Menu.Window.Tools.Text" xml:space="preserve">
+    <value>도구(&amp;T)</value>
+  </data>
+  <data name="Menu.Window.History.Text" xml:space="preserve">
+    <value>열어 본 페이지 목록(&amp;H)</value>
+  </data>
+  <data name="Menu.Window.Layers.Text" xml:space="preserve">
+    <value>레이어(&amp;L)</value>
+  </data>
+  <data name="Menu.Window.Colors.Text" xml:space="preserve">
+    <value>색상(&amp;C)</value>
+  </data>
+  <data name="Menu.Window.OpenMdiList.Text" xml:space="preserve">
+    <value>이미지 목록 보기(&amp;S)</value>
+  </data>
+  <data name="Menu.Window.NextTab.Text" xml:space="preserve">
+    <value>다음 탭(&amp;N)</value>
+  </data>
+  <data name="Menu.Window.PreviousTab.Text" xml:space="preserve">
+    <value>이전 탭(&amp;P)</value>
+  </data>
+  <data name="Menu.Help.Language.Text" xml:space="preserve">
+    <value>언어(&amp;G)</value>
+  </data>
+  <data name="Menu.Help.Text" xml:space="preserve">
+    <value>도움말(&amp;H)</value>
+  </data>
+  <data name="Menu.Help.HelpTopics.Text" xml:space="preserve">
+    <value>도움말 항목(&amp;H)</value>
+  </data>
+  <data name="Menu.Help.PdnWebsite.Text" xml:space="preserve">
+    <value>Paint.NET 웹사이트(&amp;P)...</value>
+  </data>
+  <data name="Menu.Help.Donate.Text" xml:space="preserve">
+    <value>기부(&amp;D)...</value>
+  </data>
+  <data name="Menu.Help.Forum.Text" xml:space="preserve">
+    <value>포럼(&amp;F)...</value>
+  </data>
+  <data name="Menu.Help.Tutorials.Text" xml:space="preserve">
+    <value>자습서(&amp;T)...</value>
+  </data>
+  <data name="Menu.Help.Plugins.Text" xml:space="preserve">
+    <value>플러그인(&amp;P)...</value>
+  </data>
+  <data name="Menu.Help.About.Text" xml:space="preserve">
+    <value>정보(&amp;A)...</value>
+  </data>
+  <data name="Menu.Help.Updates.Text" xml:space="preserve">
+    <value>업데이트(&amp;U)</value>
+  </data>
+  <data name="Menu.Help.CheckForUpdates.Text">
+    <value>업데이트 확인(&amp;F)...</value>
+  </data>
+  <data name="Menu.Help.SendFeedback.Text" xml:space="preserve">
+    <value>사용자 의견 보내기 또는 오류 보고...</value>
+  </data>
+  <data name="SendFeedback.Email.Body" xml:space="preserve">
+    <value>&lt;&lt; 여기에 사용자 의견을 입력하거나 버그를 보고할 수 있습니다 (영어만 사용 가능). &gt;&gt;</value>
+  </data>
+  <data name="SendFeedback.Email.Subject.Format" xml:space="preserve">
+    <value>다음에 대한 사용자 의견: {0}</value>
+  </data>
+  <data name="ScaleFactor.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="Utility.SizeStringFromBytes.GBFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="Utility.SizeStringFromBytes.MBFormat" xml:space="preserve">
+    <value>{0} MB</value>
+  </data>
+  <data name="Utility.SizeStringFromBytes.KBFormat" xml:space="preserve">
+    <value>{0} KB</value>
+  </data>
+  <data name="Utility.SizeStringFromBytes.BytesFormat" xml:space="preserve">
+    <value>{0} 바이트</value>
+  </data>
+  <data name="BitmapLayer.Properties.BlendOp.Name" xml:space="preserve">
+    <value>혼합 모드</value>
+  </data>
+  <data name="BmpFileType.Name" xml:space="preserve">
+    <value>비트맵 (BMP)</value>
+  </data>
+  <data name="FileTypeCollection.AllImageTypes" xml:space="preserve">
+    <value>모든 이미지 형식</value>
+  </data>
+  <data name="JpegSaveConfigWidget.QualityLabel.Text" xml:space="preserve">
+    <value>품질:</value>
+  </data>
+  <data name="Layer.Properties.IsBackground.Name" xml:space="preserve">
+    <value>배경 상태</value>
+  </data>
+  <data name="Layer.Properties.Name.Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Layer.Properties.Visible.Name" xml:space="preserve">
+    <value>표시 여부</value>
+  </data>
+  <data name="Layer.Properties.Opacity.Name" xml:space="preserve">
+    <value>불투명도</value>
+  </data>
+  <data name="Layer.Background.Name" xml:space="preserve">
+    <value>배경</value>
+  </data>
+  <data name="LayerPropertiesDialog.Text" xml:space="preserve">
+    <value>레이어 등록 정보</value>
+  </data>
+  <data name="LayerPropertiesDialog.VisibleCheckBox.Text" xml:space="preserve">
+    <value>표시</value>
+  </data>
+  <data name="LayerPropertiesDialog.NameLabel.Text" xml:space="preserve">
+    <value>이름:</value>
+  </data>
+  <data name="LayerPropertiesDialog.GeneralHeader.Text" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="BitmapLayerPropertiesDialog.BlendingHeader.Text" xml:space="preserve">
+    <value>혼합</value>
+  </data>
+  <data name="BitmapLayerPropertiesDialog.BlendModeLabel.Text" xml:space="preserve">
+    <value>모드:</value>
+  </data>
+  <data name="BitmapLayerPropertiesDialog.OpacityLabel.Text" xml:space="preserve">
+    <value>불투명도:</value>
+  </data>
+  <data name="UserBlendOps.NormalBlendOp.Name" xml:space="preserve">
+    <value>보통</value>
+  </data>
+  <data name="UserBlendOps.MultiplyBlendOp.Name" xml:space="preserve">
+    <value>곱하기</value>
+  </data>
+  <data name="UserBlendOps.AdditiveBlendOp.Name" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="UserBlendOps.ColorBurnBlendOp.Name" xml:space="preserve">
+    <value>색 굽기</value>
+  </data>
+  <data name="UserBlendOps.ColorDodgeBlendOp.Name" xml:space="preserve">
+    <value>색 회피율</value>
+  </data>
+  <data name="UserBlendOps.ReflectBlendOp.Name" xml:space="preserve">
+    <value>반사</value>
+  </data>
+  <data name="UserBlendOps.GlowBlendOp.Name" xml:space="preserve">
+    <value>글로우</value>
+  </data>
+  <data name="UserBlendOps.OverlayBlendOp.Name" xml:space="preserve">
+    <value>중첩</value>
+  </data>
+  <data name="UserBlendOps.NegationBlendOp.Name" xml:space="preserve">
+    <value>음수</value>
+  </data>
+  <data name="UserBlendOps.DifferenceBlendOp.Name" xml:space="preserve">
+    <value>차이</value>
+  </data>
+  <data name="UserBlendOps.ScreenBlendOp.Name" xml:space="preserve">
+    <value>화면</value>
+  </data>
+  <data name="UserBlendOps.LightenBlendOp.Name" xml:space="preserve">
+    <value>밝게</value>
+  </data>
+  <data name="UserBlendOps.DarkenBlendOp.Name" xml:space="preserve">
+    <value>어둡게</value>
+  </data>
+  <data name="UserBlendOps.XorBlendOp.Name" xml:space="preserve">
+    <value>Exclusive OR</value>
+  </data>
+  <data name="AngleChooserConfigDialog.AngleHeader.Text" xml:space="preserve">
+    <value>각도</value>
+  </data>
+  <data name="AutoLevel.Name" xml:space="preserve">
+    <value>자동 수준</value>
+  </data>
+  <data name="Effects.Blurring.Submenu.Name" xml:space="preserve">
+    <value>흐리게</value>
+  </data>
+  <data name="OutlineEffect.Name">
+    <value>윤곽선</value>
+  </data>
+  <data name="OutlineEffect.ConfigDialog.ThicknessLabel">
+    <value>두께</value>
+  </data>
+  <data name="OutlineEffect.ConfigDialog.IntensityLabel">
+    <value>강도</value>
+  </data>
+  <data name="MedianEffect.Name">
+    <value>미디어</value>
+  </data>
+  <data name="MedianEffect.ConfigDialog.RadiusLabel">
+    <value>반경</value>
+  </data>
+  <data name="MedianEffect.ConfigDialog.PercentileLabel">
+    <value>백분위수</value>
+  </data>
+  <data name="UnfocusEffect.Name">
+    <value>포커스 안함</value>
+  </data>
+  <data name="UnfocusEffect.ConfigDialog.AmountLabel">
+    <value>반경</value>
+  </data>
+  <data name="UnfocusEffect.ConfigDialog.UnitsLabel">
+    <value>픽셀</value>
+  </data>
+  <data name="ZoomBlurEffect.Name">
+    <value>확대/축소 흐리게</value>
+  </data>
+  <data name="ZoomBlurEffect.ConfigDialog.AmountLabel">
+    <value>확대/축소 양</value>
+  </data>
+  <data name="BlurEffect.Name" xml:space="preserve">
+    <value>Gaussian Blur</value>
+  </data>
+  <data name="GlowEffect.Amount1.Name" xml:space="preserve">
+    <value>반경</value>
+  </data>
+  <data name="GlowEffect.Amount2.Name" xml:space="preserve">
+    <value>밝기</value>
+  </data>
+  <data name="GlowEffect.Amount3.Name" xml:space="preserve">
+    <value>대비</value>
+  </data>
+  <data name="GlowEffect.Name" xml:space="preserve">
+    <value>글로우</value>
+  </data>
+  <data name="BulgeEffect.Name" xml:space="preserve">
+    <value>Bulge</value>
+  </data>
+  <data name="DistortSubmenu.Name" xml:space="preserve">
+    <value>비틀기</value>
+  </data>
+  <data name="TileEffect.Name" xml:space="preserve">
+    <value>파일 복제</value>
+  </data>
+  <data name="TwistEffect.Name" xml:space="preserve">
+    <value>비틀기</value>
+  </data>
+  <data name="BulgeEffect.BulgeAmount.Text" xml:space="preserve">
+    <value>Bulge</value>
+  </data>
+  <data name="TileEffect.Intensity.Text" xml:space="preserve">
+    <value>곡률</value>
+  </data>
+  <data name="TileEffect.Rotation.Text" xml:space="preserve">
+    <value>회전 각 (각도)</value>
+  </data>
+  <data name="TileEffect.SquareSize.Text" xml:space="preserve">
+    <value>정사각형 크기 (픽셀)</value>
+  </data>
+  <data name="TwistEffect.Antialias.Text" xml:space="preserve">
+    <value>품질</value>
+  </data>
+  <data name="TwistEffect.TwistAmount.Text" xml:space="preserve">
+    <value>비틀기 정도</value>
+  </data>
+  <data name="PolarInversionEffect.Name" xml:space="preserve">
+    <value>극 반전</value>
+  </data>
+  <data name="PolarInversionEffect.PolarInversionAmount.Text" xml:space="preserve">
+    <value>양</value>
+  </data>
+  <data name="PolarInversionEffect.Quality.Text" xml:space="preserve">
+    <value>품질</value>
+  </data>
+  <data name="BrightnessAndContrastAdjustment.Name" xml:space="preserve">
+    <value>밝기 / 대비</value>
+  </data>
+  <data name="BrightnessAndContrastAdjustment.Brightness" xml:space="preserve">
+    <value>밝기</value>
+  </data>
+  <data name="BrightnessAndContrastAdjustmnet.Contrast" xml:space="preserve">
+    <value>대비</value>
+  </data>
+  <data name="DesaturateEffect.Name" xml:space="preserve">
+    <value>흑백</value>
+  </data>
+  <data name="EdgeDetectEffect.Name" xml:space="preserve">
+    <value>가장자리 검색</value>
+  </data>
+  <data name="EmbossEffect.Name" xml:space="preserve">
+    <value>볼록 효과</value>
+  </data>
+  <data name="FrostedGlassEffect.Name" xml:space="preserve">
+    <value>서리로 덮인 유리</value>
+  </data>
+  <data name="FrostedGlassEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+    <value>분산형 반경</value>
+  </data>
+  <data name="FrostedGlassEffect.ConfigDialog.SliderUnitsName" xml:space="preserve">
+    <value>픽셀</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Name" xml:space="preserve">
+    <value>색상 / 채도</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Amount1Label" xml:space="preserve">
+    <value>색상</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Amount2Label" xml:space="preserve">
+    <value>채도</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Amount3Label" xml:space="preserve">
+    <value>밝기</value>
+  </data>
+  <data name="InvertColorsEffect.Name" xml:space="preserve">
+    <value>색 반전</value>
+  </data>
+  <data name="LevelsEffect.Name" xml:space="preserve">
+    <value>수준</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.OutputGroupBox.Text" xml:space="preserve">
+    <value>출력</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.OutputGammaUpDown.ToolTipText" xml:space="preserve">
+    <value>출력 감마</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchOutHigh.ToolTipText" xml:space="preserve">
+    <value>백색 점 출력 (선택하려면 두 번 클릭하시오)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchOutLow.ToolTipText" xml:space="preserve">
+    <value>흑색 점 출력 (선택하려면 두 번 클릭하시오)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.OutputHistogramGroupBox.Text" xml:space="preserve">
+    <value>출력 히스토그램</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.HistogramOutput.ToolTipText" xml:space="preserve">
+    <value>이 히스토그램은 결과 이미지의 색 분포를 미리 보기를 통해 보여줍니다.</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.InputHistogramGroupBox.Text" xml:space="preserve">
+    <value>입력 히스토그램</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.HistogramInput.ToolTipText" xml:space="preserve">
+    <value>이 히스토그램은 원래 이미지의 색 분포를 보여줍니다.</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.InputGroupBox.Text" xml:space="preserve">
+    <value>입력</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchInHigh.ToolTipText" xml:space="preserve">
+    <value>백색 점 입력 (선택하려면 두 번 클릭하시오)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchInLow.ToolTipText" xml:space="preserve">
+    <value>흑색 점 입력 (선택하려면 두 번 클릭하시오)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.RedMaskCheckBox.Text" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.RedMaskCheckBox.ToolTipText" xml:space="preserve">
+    <value>빨강 채널의 설정/해제 조작</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.GreenMaskCheckBox.Text" xml:space="preserve">
+    <value>G</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.GreenMaskCheckBox.ToolTipText" xml:space="preserve">
+    <value>녹색 채널의 설정/해제 조작</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.BlueMaskCheckBox.Text" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.BlueMaskCheckBox.ToolTipText" xml:space="preserve">
+    <value>파랑 채널의 설정/해제 조작</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.AutoButton.Text" xml:space="preserve">
+    <value>자동</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.AutoButton.ToolTipText" xml:space="preserve">
+    <value>이미지를 일치시키기 위해 백색 입력 점, 흑색 점과 감마 출력을 자동으로 조정합니다.</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.ResetButton.Text" xml:space="preserve">
+    <value>재설정</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.Text" xml:space="preserve">
+    <value>수준 조정</value>
+  </data>
+  <data name="MotionBlurEffect.Name" xml:space="preserve">
+    <value>동작 흐리게</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.Text" xml:space="preserve">
+    <value>동작 흐리게</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.DegreeLabel.Text" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.PixelsLabel.Text" xml:space="preserve">
+    <value>픽셀</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.CenteredCheckBox.Text" xml:space="preserve">
+    <value>가운데 맞춤</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.AngleHeader.Text" xml:space="preserve">
+    <value>각도</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.DistanceHeader.Text" xml:space="preserve">
+    <value>거리</value>
+  </data>
+  <data name="OilPaintingEffect.Name" xml:space="preserve">
+    <value>수묵화</value>
+  </data>
+  <data name="OilPaintingEffect.ConfigDialog.Amount1Label" xml:space="preserve">
+    <value>브러시 크기</value>
+  </data>
+  <data name="OilPaintingEffect.ConfigDialog.Amount2Label" xml:space="preserve">
+    <value>굵기</value>
+  </data>
+  <data name="PixelateEffect.Name" xml:space="preserve">
+    <value>모자이크</value>
+  </data>
+  <data name="PixelateEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+    <value>셀 크기</value>
+  </data>
+  <data name="PixelateEffect.ConfigDialog.SliderUnitsName" xml:space="preserve">
+    <value>픽셀</value>
+  </data>
+  <data name="RedEyeRemoveEffect.Name" xml:space="preserve">
+    <value>적목 현상 제거</value>
+  </data>
+  <data name="RedEyeRemoveEffect.ConfigDialog.Amount1Label" xml:space="preserve">
+    <value>허용 오차</value>
+  </data>
+  <data name="RedEyeRemoveEffect.ConfigDialog.Amount2Label" xml:space="preserve">
+    <value>채도 비율</value>
+  </data>
+  <data name="RedEyeRemoveEffectDialog.UsageHintLabel.Text" xml:space="preserve">
+    <value>힌트: 먼저 선택 영역 도구를 사용하여 각 눈을 선택하면 최상의 결과를 볼 수 있습니다.</value>
+  </data>
+  <data name="ReliefEffect.Name" xml:space="preserve">
+    <value>양각</value>
+  </data>
+  <data name="SharpenEffect.Name" xml:space="preserve">
+    <value>날카롭게 하기</value>
+  </data>
+  <data name="SharpenEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+    <value>양</value>
+  </data>
+  <data name="TwoAmountsConfigDialog.Reset.Text" xml:space="preserve">
+    <value>원래대로</value>
+  </data>
+  <data name="BlurEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+    <value>반경</value>
+  </data>
+  <data name="BlurEffect.ConfigDialog.SliderUnitsName" xml:space="preserve">
+    <value>픽셀</value>
+  </data>
+  <data name="AngleChooserConfigDialog.DegreeLabel.Text" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="WorkspaceOptionsConfigWidget.UnitsLabel.Text" xml:space="preserve">
+    <value>단위:</value>
+  </data>
+  <data name="MeasurementUnit.Pixel" xml:space="preserve">
+    <value>1픽셀</value>
+  </data>
+  <data name="MeasurementUnit.Inch" xml:space="preserve">
+    <value>인치</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter" xml:space="preserve">
+    <value>센티미터</value>
+  </data>
+  <data name="MeasurementUnit.Pixel.Plural" xml:space="preserve">
+    <value>픽셀</value>
+  </data>
+  <data name="MeasurementUnit.Inch.Plural" xml:space="preserve">
+    <value>인치</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter.Plural" xml:space="preserve">
+    <value>센티미터</value>
+  </data>
+  <data name="MeasurementUnit.Pixel.Abbreviation" xml:space="preserve">
+    <value>px</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter.Abbreviation" xml:space="preserve">
+    <value>cm.</value>
+  </data>
+  <data name="MeasurementUnit.Inch.Abbreviation" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="StatusBar.CursorInfo.Format" xml:space="preserve">
+    <value>{0}{1}, {2}{3}</value>
+    <comment>{0} is x offset, {1} is units, {2} is y offset, {3} is units</comment>
+  </data>
+  <data name="ResizeAction.ProgressDialog.Description" xml:space="preserve">
+    <value>크기 조정...</value>
+  </data>
+  <data name="ResizeDialog.ResolutionLabel.Text" xml:space="preserve">
+    <value>해상도:</value>
+  </data>
+  <data name="MeasurementUnit.Inch.Ratio" xml:space="preserve">
+    <value>픽셀/인치</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter.Ratio" xml:space="preserve">
+    <value>픽셀/센티미터</value>
+  </data>
+  <data name="MeasurementUnit.Pixel.Ratio" xml:space="preserve">
+    <value>픽셀</value>
+  </data>
+  <data name="UpdatesDialog.Text" xml:space="preserve">
+    <value>Paint.NET 업데이트</value>
+  </data>
+  <data name="UpdatesDialog.OptionsButton.Text">
+    <value>옵션(&amp;O)...</value>
+  </data>
+  <data name="UpdatesDialog.MoreInfoLink.Text" xml:space="preserve">
+    <value>추가 정보...</value>
+  </data>
+  <data name="UpdatesDialog.NewVersionLabel.Text">
+    <value>새 버전:</value>
+  </data>
+  <data name="UpdatesDialog.ProgressLabel.Text.Format">
+    <value>{0}%</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.StartupState">
+    <value>Paint.NET 업데이트 시스템이 초기화 되는 중입니다.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.StartupState">
+    <value>초기화 중</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ReadyToCheckState">
+    <value>Paint.NET 업데이트를 확인할 준비가 되었습니다.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ReadyToCheckState">
+    <value>지금 검사</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.CheckingState">
+    <value>Paint.NET은 새 버전이 현재 사용 가능한지 확인하고 있습니다.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.CheckingState">
+    <value>체크 인</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.UpdateAvailableState">
+    <value>Paint.NET의 새 버전이 사용 가능합니다. 다운로드하려면 아래 설치 단추를 눌러 업데이트를 설치하십시오.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.UpdateAvailableState">
+    <value>설치(&amp;I)</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.DownloadingState">
+    <value>Paint.NET의 업데이트가 다운로드되고 있습니다.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.DownloadingState">
+    <value>다운로드</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ExtractingState">
+    <value>업데이트가 다운로드되었고, 압축을 풀고 검증하는 중입니다.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ExtractingState">
+    <value>압축을 푸는 중</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ReadyToInstallState">
+    <value>Paint.NET 업데이트 설치를 닫아야 합니다. "확인"을 누르면 필요한 경우 변경 사항을 저장할 지 물을 것입니다.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ReadyToInstallState">
+    <value>확인</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.InstallingState">
+    <value>업데이트를 설치하는 중!</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.InstallingState">
+    <value>설치 중</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.DoneState">
+    <value>현재 사용 가능한 업데이트가 없습니다.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.DoneState">
+    <value>완료</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.AbortedState">
+    <value>업데이터가 중단되었습니다.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.AbortedState">
+    <value>
+    </value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ErrorState.Format">
+    <value>업데이트를 확인하는 동안 오류가 발생했습니다.
+
+{0}</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ErrorState">
+    <value>
+    </value>
+  </data>
+  <data name="UpdatesDialog.InfoLabel.Text" xml:space="preserve">
+    <value>Paint.NET의 새 버전이 사용 가능합니다. 다운로드하려면 설치 단추를 눌러서 설치하거나 며칠 후에 다시 나중에 설치하도록 알리려면 "닫기"를 누르십시오.</value>
+  </data>
+  <data name="UpdatesDialog.BetaWarningLabel.Text" xml:space="preserve">
+    <value>참고: 이것은 Paint.NET의 시험판 버전입니다. 안정적이지 않을 수 있습니다.</value>
+  </data>
+  <data name="UpdatesDialog.CloseButton.Text" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="UpdatesDialog.NewVersionZipLabel.Text" xml:space="preserve">
+    <value>다운로드:</value>
+  </data>
+  <data name="UpdatesDialog.CurrentVersionHeader.Text" xml:space="preserve">
+    <value>현재 설치된 버전</value>
+  </data>
+  <data name="UpdatesDialog.NewVersionHeader.Text" xml:space="preserve">
+    <value>새 버전</value>
+  </data>
+  <data name="UpdatesDialog.InstallButton.Text" xml:space="preserve">
+    <value>설치</value>
+  </data>
+  <data name="UpdatesOptionsDialog.Text">
+    <value>Paint.NET 업데이트 옵션</value>
+  </data>
+  <data name="UpdatesOptionsDialog.SaveButton.Text">
+    <value>저장(&amp;S)</value>
+  </data>
+  <data name="UpdatesOptionsDialog.AutoCheckBox.Text">
+    <value>Paint.NET 새 버전 자동 확인</value>
+  </data>
+  <data name="UpdatesOptionsDialog.BetaCheckBox.Text">
+    <value>시험판 (베타) 버전 확인</value>
+  </data>
+  <data name="UpdatesOptionsDialog.AllUsersNoticeLabel.Text">
+    <value>참고: 이 설정은 이 컴퓨터의 모든 사용자에게 적용됩니다.</value>
+  </data>
+  <data name="ExpiredDialog.Message" xml:space="preserve">
+    <value>이 Paint.NET 시험판 버전이 만료되었습니다 (30일).
+
+Paint.NET 웹 사이트에서 새로운 버전을 다운로드 하려면 "확인"을 누르십시오.</value>
+  </data>
+  <data name="ExpiredTaskDialog.InfoText">
+    <value>이 Paint.NET 시험판 버전이 만료되었습니다. Paint.NET을 계속 사용하려면, 최근 버전으로 업데이트 해야 합니다.</value>
+  </data>
+  <data name="ExpiredTaskDialog.CheckForUpdatesTB.ActionText">
+    <value>업데이트 확인(&amp;C)</value>
+  </data>
+  <data name="ExpiredTaskDialog.CheckForUpdatesTB.ExplanationText">
+    <value>업데이트가 사용 가능한 지 확인한 후 설치하십시오.</value>
+  </data>
+  <data name="ExpiredTaskDialog.GoToWebSiteTB.ActionText">
+    <value>Paint.NET 웹 사이트로 가기(&amp;G)</value>
+  </data>
+  <data name="ExpiredTaskDialog.GoToWebSiteTB.ExplanationText">
+    <value>업데이트를 확인할 수 없으면 웹사이트에서 수동으로 업데이트를 찾아야 합니다.</value>
+  </data>
+  <data name="ExpiredTaskDialog.DoNotCheckForUpdatesTB.ActionText">
+    <value>끝내기(&amp;X)</value>
+  </data>
+  <data name="ExpiredTaskDialog.DoNotCheckForUpdatesTB.ExplanationText">
+    <value>업데이트를 확인하지 않고 Paint.NET을 종료합니다.</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Text" xml:space="preserve">
+    <value>Paint.NET 업데이트</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Description.Downloading" xml:space="preserve">
+    <value>다운로드 하는 중...</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Description.Extracting" xml:space="preserve">
+    <value>추출하는 중...</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Error.Generic" xml:space="preserve">
+    <value>새 버전을 다운로드하고 설치하는 동안 오류가 발생했습니다. 도움말 -&gt; 업데이트 확인...' 메뉴를 사용하여 나중에 다시 시도하십시오.</value>
+  </data>
+  <data name="SetLanguage.PleaseRestartApplication" xml:space="preserve">
+    <value>변경 사항을 적용하려면 Paint.NET을 다시 시작해야 합니다.</value>
+  </data>
+  <data name="AddNoiseEffect.Amount1Label" xml:space="preserve">
+    <value>강도</value>
+  </data>
+  <data name="AddNoiseEffect.Amount2Label" xml:space="preserve">
+    <value>색 채도</value>
+  </data>
+  <data name="AddNoiseEffect.Name" xml:space="preserve">
+    <value>노이즈 추가</value>
+  </data>
+  <data name="ClearOpenRecentList.Dialog.Text" xml:space="preserve">
+    <value>최근 연 파일 목록을 지우시겠습니까?</value>
+  </data>
+  <data name="SepiaEffect.Name" xml:space="preserve">
+    <value>암갈색</value>
+  </data>
+  <data name="NonAdminErrorBox.Message" xml:space="preserve">
+    <value>시스템 관리자만 이 동작을 수행할 수 있습니다.</value>
+  </data>
+  <data name="GifSaveConfigWidget.ThresholdLabel.Text" xml:space="preserve">
+    <value>투명도 임계값:</value>
+  </data>
+  <data name="GifSaveConfigWidget.DitherLabel.Text" xml:space="preserve">
+    <value>디더링 수준:</value>
+  </data>
+  <data name="GifSaveConfigWidget.PreMultiplyAlphaCheckBox.Text" xml:space="preserve">
+    <value>알파 채널로 곱하기</value>
+  </data>
+  <data name="GifSaveConfigWidget.ThresholdInfoLabel.Text">
+    <value>임계값보다 작은 알파 값을 가진 픽셀은 완전히 투명하게 됩니다.</value>
+  </data>
+  <data name="SetupWizard.HelpText" xml:space="preserve">
+    <value>Paint.NET 설치 도움말 
+
+명령줄 옵션:
+
+/skipConfig  -  옵션과 설치 디렉터리 구성을 건너뜁니다. 다음 순서에 따라 MSI 등록정보를 사용하십시오: 1. 명령줄에서 지정된 정보, 2. HKLM\Software\Paint.NET에서 읽은 정보, 3. 기본값. 참고: 이 옵션을 사용하는 것은 사용권 계약에 동의함을 의미합니다.
+/auto  -  자동 설치. /skipConfig를 지정한 것이 됨. 자세한 설치 결과가 있는 마지막 마법사 페이지를 보여주지 않습니다.
+/createMsi  -  배포(AD/GPO) 목적으로 사용될 수 있는 MSI 패키지를 작성합니다. 명령줄에 지정된 모든 등록정보가 MSI 패키지로 병합됩니다. 따라서 나중에 변환할 필요가 없습니다..
+PROPERTY=VALUE  -  MSI 등록정보를 지정합니다. 자세한 정보를 원하시면 설치 후에 도움말 파일을 보십시오. 등록정보를 지정하기 위해 /saveMsi를 지정하실 필요가 없습니다.
+
+성공하면 0, 실패하면 0이 아닌 값이 반환됩니다.</value>
+  </data>
+  <data name="SetupWizard.x86Msi.LaunchCondition.NotAllowedOn64bitOS" xml:space="preserve">
+    <value>64비트 OS에 32비트 MSI가 설치되지 않을 수 있습니다.</value>
+  </data>
+  <data name="Error.OSRequirement" xml:space="preserve">
+    <value>Paint.NET은 Windows XP SP2, Windows Vista, Windows Server 2003 또는 그 이후 버전이 필요합니다..</value>
+  </data>
+  <data name="SetupWizard.Error.AdminRequired" xml:space="preserve">
+    <value>Paint.NET을 설치하려면 관리자 권한이 있어야 합니다.</value>
+  </data>
+  <data name="SetupWizard.CancelButton.Text" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="SetupWizard.BackButton.Text" xml:space="preserve">
+    <value>&lt; 뒤로(&amp;B)</value>
+  </data>
+  <data name="SetupWizard.NextButton.Text" xml:space="preserve">
+    <value>다음(&amp;N) &gt;</value>
+  </data>
+  <data name="SetupWizard.NextButton.Text.Finished" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="SetupWizard.CancelDialog.Message" xml:space="preserve">
+    <value>설치가 아직 끝나지 않았습니다. 취소하시겠습니까?</value>
+  </data>
+  <data name="SetupWizard.IntroPage.HeaderText" xml:space="preserve">
+    <value>설치 마법사</value>
+  </data>
+  <data name="SetupWizard.IntroPage.IntroText.Text.Format" xml:space="preserve">
+    <value>설치관리자가 {0} 설치를 도와줍니다.
+
+원하시는 설치 방법을 선택하신 후 "다음"을 클릭하십시오.</value>
+    <comment>{0} is the product name.</comment>
+  </data>
+  <data name="SetupWizard.IntroPage.QuickRB.Text" xml:space="preserve">
+    <value>빠른 설치</value>
+  </data>
+  <data name="SetupWizard.IntroPage.QuickDescription.Text" xml:space="preserve">
+    <value>대부분의 사용자에게 권장되는 선택입니다. 기본 옵션을 사용하거나, 이전 설치에 지정된 것과 같은 옵션으로 설치됩니다.</value>
+  </data>
+  <data name="SetupWizard.IntroPage.CustomRB.Text" xml:space="preserve">
+    <value>사용자 지정</value>
+  </data>
+  <data name="SetupWizard.IntroPage.CustomDescription.Text" xml:space="preserve">
+    <value>설치 디렉터리와 파일 유형 연결에 관련된 옵션을 변경하고 업데이트를 확인 할 수 있습니다.</value>
+  </data>
+  <data name="SetupWizard.IntroPage.ExpirationWarning.Format" xml:space="preserve">
+    <value>참고: 이것은 Paint.NET의 시험판 버전입니다. {0}에 만료될 예정입니다.</value>
+    <comment>{0} is a date.</comment>
+  </data>
+  <data name="SetupWizard.LicensePage.HeaderText" xml:space="preserve">
+    <value>사용권 계약</value>
+  </data>
+  <data name="SetupWizard.LicensePage.IntroText.Text" xml:space="preserve">
+    <value>지금 사용권 계약을 읽으십시오. 아래 사항에 동의하시면, "동의함"을 누른 후, "다음"을 누르십시오. 아니면 "취소"를 누르십시오.</value>
+  </data>
+  <data name="SetupWizard.LicensePage.DontAgreeButton.Text" xml:space="preserve">
+    <value>동의 안 함(&amp;D)</value>
+  </data>
+  <data name="SetupWizard.LicensePage.AgreeButton.Text" xml:space="preserve">
+    <value>동의함(&amp;A)</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.HeaderText" xml:space="preserve">
+    <value>옵션 구성</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.LaunchHandlingText.Text" xml:space="preserve">
+    <value>이 옵션을 사용하여 Paint.NET의 시작을 구성하십시오.</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.JpgPngBmpCheckBox.Text" xml:space="preserve">
+    <value>JPEG, PNG, BMP 이미지는 기본 이미지 편집기로 사용하십시오. </value>
+  </data>
+  <data name="SetupWizard.OptionsPage.TgaCheckBox.Text" xml:space="preserve">
+    <value>TGA 이미지의 기본 이미지 편집기로 사용</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.DesktopShortcutCheckBox.Text" xml:space="preserve">
+    <value>바탕 화면 바로 가기 만들기(&amp;D)</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.UpdatesText.Text" xml:space="preserve">
+    <value>Paint.NET은 사용 가능한 새로운 버전이 있는지 정기적으로 확인한 후 알려줍니다. 이 과정에서 사용자 컴퓨터로부터 전송되는 정보는 없습니다. 참고: Paint.NET이 작동하는 동안에만 새로운 버전을 알려줍니다.</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.CheckForUpdatesCheckBox.Text" xml:space="preserve">
+    <value>업데이트 자동 확인</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.CheckForBetasCheckBox.Text" xml:space="preserve">
+    <value>시험판 (베타) 버전 확인</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.HeaderText" xml:space="preserve">
+    <value>설치 폴더를 선택하십시오</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.IntroText.Text.Format" xml:space="preserve">
+    <value>설치 관리자가 다음 폴더에 {0}을(를) 설치합니다.
+
+이 폴더에 설치하려면, "다음"을 클릭하십시오. 다른 폴더에 설치하려면, 아래에 입력하거나 "찾아보기"를 클릭하십시오.</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.FolderLabel.Text" xml:space="preserve">
+    <value>폴더:</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.BrowseButton.Text" xml:space="preserve">
+    <value>찾아보기(&amp;B)...</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.DefaultTargetSubDir" xml:space="preserve">
+    <value>Paint.NET</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.BrowseForFolder.Description" xml:space="preserve">
+    <value>설치 폴더를 선택하십시오:</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.BadDirError.Message" xml:space="preserve">
+    <value>지정된 폴더를 생성할 수 없습니다. 설치할 다른 폴더를 선택해야 합니다.</value>
+  </data>
+  <data name="SetupWizard.ReadyToInstallPage.HeaderText" xml:space="preserve">
+    <value>설치 확인</value>
+  </data>
+  <data name="SetupWizard.ReadyToInstallPage.IntroText.Text.Format" xml:space="preserve">
+    <value>설치 관리자가 사용자 컴퓨터에 {0}을(를) 설치할 준비가 되었습니다.
+
+설치를 시작하려면 "다음"을 클릭하십시오.</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.HeaderText.Installing" xml:space="preserve">
+    <value>설치 중</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.HeaderText.Success" xml:space="preserve">
+    <value>성공적으로 설치되었습니다</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.HeaderText.Failure" xml:space="preserve">
+    <value>오류</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Uninstalling" xml:space="preserve">
+    <value>이전 버전을 제거하는 중...</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Installing.Format" xml:space="preserve">
+    <value>{0}이 설치되고 있습니다...</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Optimizing" xml:space="preserve">
+    <value>시스템 성능을 최적화하는 중 입니다. 1분 정도 시간이 걸릴 수 있습니다.</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Success.Format" xml:space="preserve">
+    <value>{0}이(가) 성공적으로 설치되었습니다. 이 설치 마법사를 닫으려면 "완료"를 누르십시오.</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Success.RebootRequired.Format" xml:space="preserve">
+    <value>{0}이(가) 성공적으로 설치되었습니다. 재부팅이 필요할 수 있습니다. 이 설치 마법사를 닫으려면 "완료"를 누르십시오.</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Failure.Format" xml:space="preserve">
+    <value>{0}을(를) 설치하는 동안 오류가 있었습니다.</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.PdnDonateBannerImage.Text">
+    <value>Paint.NET을 사용해 주셔서 감사합니다. 기부를 통해 다음 개발을 지원해 주시면 감사하겠습니다.</value>
+  </data>
+  <data name="SetupWizard.CreateMsiPage.HeaderText" xml:space="preserve">
+    <value>배포 마법사</value>
+  </data>
+  <data name="SetupWizard.CreateMsiPage.IntroText.Text.Creating" xml:space="preserve">
+    <value>MSI 패키지를 작성하는 중...</value>
+  </data>
+  <data name="SetupWizard.CreateMsiPage.IntroText.Text.Finished" xml:space="preserve">
+    <value>MSI 패키지가 다음 디렉터리에 설치되었습니다. '{0}'.</value>
+  </data>
+  <data name="Setup.DesktopShortcut.LinkName" xml:space="preserve">
+    <value>Paint.NET</value>
+  </data>
+  <data name="Setup.DesktopShortcut.Description" xml:space="preserve">
+    <value>이미지와 사진을 작성, 편집, 스캔하고 프린트 합니다.</value>
+  </data>
+  <data name="RotateZoomEffect.Name" xml:space="preserve">
+    <value>회전 / 확대/축소</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.FineTuningHeader.Text" xml:space="preserve">
+    <value>미세 조정</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.KeepBackgroundCheckBox.Text" xml:space="preserve">
+    <value>배경 보존</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.TileSourceCheckBox.Text" xml:space="preserve">
+    <value>바둑판식 배열</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.HeaderRoll.Text" xml:space="preserve">
+    <value>구르기 / 회전</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.AngleLabel.Text" xml:space="preserve">
+    <value>각도:</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.HeaderPan.Text" xml:space="preserve">
+    <value>이동(상하/좌우)</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.PanXLabel.Text" xml:space="preserve">
+    <value>좌우 이동:</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.PanYLabel.Text" xml:space="preserve">
+    <value>상하 이동:</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.PanResetButton.Text" xml:space="preserve">
+    <value>원래대로</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.ZoomResetButton.Text" xml:space="preserve">
+    <value>원래대로</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.TwistAngleLabel.Text" xml:space="preserve">
+    <value>비틀기 각도:</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.TwistRadiusLabel.Text" xml:space="preserve">
+    <value>비틀기 반경:</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.RollResetButton.Text" xml:space="preserve">
+    <value>원래대로</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.ResetAllButton.Text" xml:space="preserve">
+    <value>모두 원래대로(&amp;R)</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.HeaderZoom.Text" xml:space="preserve">
+    <value>확대/축소</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.ZoomLabel.Text.Format" xml:space="preserve">
+    <value>{0}x</value>
+  </data>
+  <data name="TgaSaveConfigWidget.BppLabel.Text" xml:space="preserve">
+    <value>색상 비트 수준:</value>
+  </data>
+  <data name="TgaSaveConfigWidget.RleCompressCheckBox.Text" xml:space="preserve">
+    <value>압축</value>
+  </data>
+  <data name="TgaSaveConfigWidget.Bpp24Radio.Text" xml:space="preserve">
+    <value>24 비트</value>
+  </data>
+  <data name="TgaSaveConfigWidget.Bpp32Radio.Text" xml:space="preserve">
+    <value>32비트</value>
+  </data>
+  <data name="LaunchLink.Error" xml:space="preserve">
+    <value>링크를 시작하는 동안 오류가  발생하였습니다.</value>
+  </data>
+  <data name="RadialBlurEffect.Name" xml:space="preserve">
+    <value>방사형 흐리게</value>
+  </data>
+  <data name="RadialBlurEffect.ConfigDialog.RadialLabel" xml:space="preserve">
+    <value>방사형 양 (각도)</value>
+  </data>
+  <data name="WebExceptionStatus.ConnectFailure" xml:space="preserve">
+    <value>원격 서비스 요소는 전송 수준에서 접촉될 수 없습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.ConnectionClosed" xml:space="preserve">
+    <value>연결이 중단되었습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.KeepAliveFailure" xml:space="preserve">
+    <value>연결 유지 헤더를 지정하는 요청으로의 연결이 예기치 않게 종료되었습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.MessageLengthLimitExceeded" xml:space="preserve">
+    <value>요청을 보낼 때 또는 서버로 부터 응답을 받을 때 지정된 제한을 초과했다는 메시지를 받았읍니다.</value>
+  </data>
+  <data name="WebExceptionStatus.NameResolutionFailure" xml:space="preserve">
+    <value>이름 확인자 서비스가 호스트 이름을 확인할 수 없습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.Pending" xml:space="preserve">
+    <value>내부 비동기 요구가 보류 중입니다.</value>
+  </data>
+  <data name="WebExceptionStatus.PipelineFailure" xml:space="preserve">
+    <value>내부 .NET 오류가 발생하였습니다.(WebExceptionStatus.PipelineFailure).</value>
+    <comment>This text is different than what is in the MSDN documentation.</comment>
+  </data>
+  <data name="WebExceptionStatus.ProtocolError" xml:space="preserve">
+    <value>서버로부터 받은 응답이 완료되었으나 프로토콜 수준의 오류를 표시했습니다. 예를 들면, "401 접근이 거부되었습니다" 같은 HTTP 프로토콜 오류가 이 상태에서 사용됩니다.</value>
+  </data>
+  <data name="WebExceptionStatus.ProtocolError.Format" xml:space="preserve">
+    <value>서버에서 다음 오류 메시지를 반환했습니다: HTTP {1} ({0})</value>
+    <comment>{0} is a string name from the System.Net.HttpStatusCode enumeration. {1} is an integer, such as 404</comment>
+  </data>
+  <data name="WebExceptionStatus.ProxyNameResolutionFailure" xml:space="preserve">
+    <value>이름 확인자 서비스가 호스트 이름을 확인할 수 없습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.ReceiveFailure" xml:space="preserve">
+    <value>원격 서버로 부터 완전한 응답을 받지 못했습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.RequestCanceled" xml:space="preserve">
+    <value>내부 오류가 발생하였습니다(WebExceptionStatus.RequestCanceled).</value>
+    <comment>This text is different than what is in the MSDN documentation.</comment>
+  </data>
+  <data name="WebExceptionStatus.SecureChannelFailure" xml:space="preserve">
+    <value>보안 채널 연결에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.SendFailure" xml:space="preserve">
+    <value>보안 채널 연결에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.ServerProtocolViolation" xml:space="preserve">
+    <value>서버 응답이 유효한 HTTP 응답이 아닙니다.</value>
+  </data>
+  <data name="WebExceptionStatus.Success" xml:space="preserve">
+    <value>오류가 없습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.Timeout" xml:space="preserve">
+    <value>요청의 시간 제한 기간안에 아무 응답도 받지못했습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.TrustFailure" xml:space="preserve">
+    <value>서버 인증서가 유효하지 않습니다.</value>
+  </data>
+  <data name="WebExceptionStatus.UnknownError" xml:space="preserve">
+    <value>알 수 없는 유형의 예외가 발생했습니다.</value>
+  </data>
+  <data name="CurvesEffect.Name" xml:space="preserve">
+    <value>곡선</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.Text" xml:space="preserve">
+    <value>곡선</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.InputHeader.Text" xml:space="preserve">
+    <value>입력 히스토그램</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.TransferHeader.Text" xml:space="preserve">
+    <value>변환 지도</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.OutputHeader.Text" xml:space="preserve">
+    <value>출력 히스토그램</value>
+  </data>
+  <data name="CurveControlRgb.Red" xml:space="preserve">
+    <value>빨강</value>
+  </data>
+  <data name="CurveControlRgb.Green" xml:space="preserve">
+    <value>녹색</value>
+  </data>
+  <data name="CurveControlRgb.Blue" xml:space="preserve">
+    <value>파랑</value>
+  </data>
+  <data name="CurveControlLuminosity.Luminosity" xml:space="preserve">
+    <value>광도</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.HelpText.Text" xml:space="preserve">
+    <value>팁: 조정 점을 삭제하려면 오른쪽을 클릭하십시오.</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.Coordinates.Format" xml:space="preserve">
+    <value>({0}, {1})</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.ResetButton.Text" xml:space="preserve">
+    <value>원래대로(&amp;R)</value>
+  </data>
+  <data name="ColorTransferMode.Luminosity" xml:space="preserve">
+    <value>광도</value>
+  </data>
+  <data name="ColorTransferMode.Rgb" xml:space="preserve">
+    <value>RGB</value>
+  </data>
+  <data name="CrashLog.HeaderText.Format" xml:space="preserve">
+    <value>Paint.NET이 중단되었으므로 이 텍스트 파일이 생성되었습니다.
+이 파일을 {0}(으)로 메일로 보내시면 문제를 진단하여 해결하겠습니다.
+</value>
+    <comment>{0} is an e-mail address, such as paint.net@hotmail.com</comment>
+  </data>
+  <data name="SwapLayerFunction.Name" xml:space="preserve">
+    <value>레이어 교환</value>
+  </data>
+  <data name="ExecuteFunction.GenericOutOfMemory">
+    <value>메모리가 부족하여 이 작업을 수행할 수 없습니다.</value>
+  </data>
+  <data name="ExecuteFunction.GenericError">
+    <value>동작을 수행하는 동안 오류가 발생했습니다.</value>
+  </data>
+  <data name="FontSmoothing.None">
+    <value>없음</value>
+  </data>
+  <data name="FontSmoothing.Sharp">
+    <value>선명하게</value>
+  </data>
+  <data name="FontSmoothing.Smooth">
+    <value>부드럽게</value>
+  </data>
+  <data name="ToolStripChooser.ChooseToolButton.Text">
+    <value>도구(&amp;T):</value>
+  </data>
+  <data name="ToleranceConfig.ToleranceLabel.Text">
+    <value>허용 오차:</value>
+  </data>
+  <data name="Updates.ExtractingState.GenericError">
+    <value>다운로드 압축을 푸는 동안 오류가 발생하였습니다.</value>
+  </data>
+  <data name="Updates.DownloadingState.GenericError">
+    <value>업데이트를 다운로드하는 동안 지정되지 않은 오류가 있습니다.</value>
+  </data>
+  <data name="Updates.CheckingState.GenericError">
+    <value>업데이트를 확인하는 동안 지정되지 않은 오류가 있습니다.</value>
+  </data>
+  <data name="UnsavedChangesDialog.Text">
+    <value>저장되지 않은 변경 사항</value>
+  </data>
+  <data name="UnsavedChangesDialog.InfoLabel.Text">
+    <value>열려 있는 다음의 이미지에 저장되지 않은 변경 사항이 있습니다. 주 창에서 이미지를 표시하기 위해 미리 보기를 클릭할 수 있습니다.</value>
+  </data>
+  <data name="UnsavedChangesDialog.DocumentListHeader.Text">
+    <value>이미지</value>
+  </data>
+  <data name="UnsavedChangesDialog.SaveButton.ActionText">
+    <value>저장(&amp;S)</value>
+  </data>
+  <data name="UnsavedChangesDialog.SaveButton.ExplanationText">
+    <value>위의 목록에 있는 이미지를 저장한 후 종료하십시오.</value>
+  </data>
+  <data name="UnsavedChangesDialog.DontSaveButton.ActionText">
+    <value>저장 안함(&amp;N)</value>
+  </data>
+  <data name="UnsavedChangesDialog.DontSaveButton.ExplanationText">
+    <value>저장되지 않은 변경 사항을 삭제한 후 종료하십시오.</value>
+  </data>
+  <data name="UnsavedChangesDialog.CancelButton.ActionText">
+    <value>취소</value>
+  </data>
+  <data name="UnsavedChangesDialog.CancelButton.ExplanationText">
+    <value>Paint.NET으로 되돌아 가십시오.</value>
+  </data>
+  <data name="TaskButton.Cancel.ActionText">
+    <value>취소</value>
+  </data>
+  <data name="TaskButton.Cancel.ExplanationText">
+    <value>
+    </value>
+  </data>
+  <data name="ControlShadow.BetaTag.Text.Format">
+    <value>이것은 시험판 버전이므로 테스트 목적으로만 사용할 것을 권장합니다. {1}에 만료됩니다. 그 전에 업데이트를 다운로드 할 수 있습니다.
+www.getpaint.net</value>
+    <comment>{0} is the full application name, e.g. "Paint.NET v3.0 (Beta 1 Release build 3.0.2460.34921). {1} is a date string.</comment>
+  </data>
+  <data name="ToolChooserStrip.ChooseToolDefaults.Text">
+    <value>기본값 선택(&amp;D)...</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.IntroText.Text">
+    <value>Paint.NET을 시작할 때 활성화된 도구를 선택할 수 있습니다. 이 경우에 도구 상자 항목들이 기본값으로 설정되어야 합니다.</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.LoadFromToolBarButton.Text">
+    <value>도구 모음으로부터 로드(&amp;L)</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ResetButton.Text">
+    <value>원래대로(&amp;R)</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.DefaultToolText.Text">
+    <value>기본 설정 도구:</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Resampling.HeaderLabel.Text">
+    <value>선택한 픽셀 옮기기</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.BrushPenShapeType.HeaderLabel.Text">
+    <value>모양, 브러시와 채우기</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Text.HeaderLabel.Text">
+    <value>텍스트</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Gradient.HeaderLabel.Text">
+    <value>그라데이션</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Tolerance.HeaderLabel.Text">
+    <value>마술 봉, 페인트 통, 다시 칠하기</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.ColorPickerBehavior.HeaderLabel.Text">
+    <value>색 선택</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.AlphaBlendingAntialiasing.HeaderLabel.Text">
+    <value>래스터화</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.Text">
+    <value>기본 설정값 선택</value>
+  </data>
+  <data name="CloseWorkspaceAction.Title">
+    <value>저장되지 않은 변경 사항</value>
+  </data>
+  <data name="CloseWorkspaceAction.SaveButton.ActionText">
+    <value>저장(&amp;S)</value>
+  </data>
+  <data name="CloseWorkspaceAction.SaveButton.ExplanationText">
+    <value>이미지를 저장한 후 종료합니다.</value>
+  </data>
+  <data name="CloseWorkspaceAction.DontSaveButton.ActionText">
+    <value>저장 안함(&amp;N)</value>
+  </data>
+  <data name="CloseWorkspaceAction.DontSaveButton.ExplanationText">
+    <value>저장되지 않은 변경 사항은 삭제됩니다.</value>
+  </data>
+  <data name="CloseWorkspaceAction.CancelButton.ActionText">
+    <value>취소</value>
+  </data>
+  <data name="CloseWorkspaceAction.CancelButton.ExplanationText">
+    <value>Paint.NET으로 되돌아 갑니다.</value>
+  </data>
+  <data name="CloseWorkspaceAction.IntroText.Format">
+    <value>{0}은(는) 저장되지 않은 변경 사항이 있습니다. 어떻게 하시겠습니까?</value>
+  </data>
+  <data name="GradientType.LinearClamped">
+    <value>선형</value>
+  </data>
+  <data name="GradientType.LinearReflected">
+    <value>선형 (반사된)</value>
+  </data>
+  <data name="GradientType.LinearDiamond">
+    <value>다이아몬드형</value>
+  </data>
+  <data name="GradientType.Radial">
+    <value>방사형</value>
+  </data>
+  <data name="GradientType.Conical">
+    <value>원추형</value>
+  </data>
+  <data name="GradientChannels.AllColorChannels.Text">
+    <value>색상 모드</value>
+  </data>
+  <data name="GradientChannels.AlphaChannelOnly.Text">
+    <value>투명 모드</value>
+  </data>
+  <data name="AlphaBlendingSplitButton.BlendingEnabled.Text">
+    <value>일반 혼합</value>
+  </data>
+  <data name="AlphaBlendingSplitButton.BlendingOverwrite.Text">
+    <value>덮어쓰기</value>
+  </data>
+  <data name="AntiAliasingSplitButton.Enabled.Text">
+    <value>앤티별칭 사용</value>
+  </data>
+  <data name="AntiAliasingSplitButton.Disabled.Text">
+    <value>앤티별칭 사용 안 함</value>
+  </data>
+  <data name="ToolsControl.ToolToolTip.Format">
+    <value>{0}
+바로 가기 키: {1}</value>
+    <comment>{0} is the tool's name (e.g. "Magic Wand"). {1} is a character that is the shortcut key (e.g. "C")</comment>
+  </data>
+  <data name="ToolConfigStrip.PenSizeIncButton.ToolTipText">
+    <value>브러시 크기 크게
+바로 가기: ] (Ctrl을 누르고 있으면 5씩 증가합니다)</value>
+  </data>
+  <data name="ToolConfigStrip.PenSizeDecButton.ToolTipText">
+    <value>브러시 크기 작게
+바로 가기: [ (Ctrl을 누르고 있으면 5씩 감소합니다)</value>
+  </data>
+  <data name="Effects.Render.Submenu.Name" xml:space="preserve">
+    <value>렌더링</value>
+  </data>
+  <data name="CloudsEffect.Name">
+    <value>클라우드</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.UsageLabel">
+    <value>클라우드에 그려진 색을 변경하려면, "색" 창에서 기본 색과 보조 색을 지정해야 합니다.</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.ScaleLabel">
+    <value>배율</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.RoughnessLabel">
+    <value>거친 정도</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.SeedHeader.Text">
+    <value>임의 노이즈</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.BlendModeHeader.Text">
+    <value>혼합 모드</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.ReseedButton.Text">
+    <value>다시 임의로(&amp;R)</value>
+  </data>
+</root>

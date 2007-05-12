@@ -1,0 +1,151 @@
+<html>
+
+<!-- #BeginTemplate "pdn_help.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- #BeginEditable "title" -->
+<title>Paint.NET Help - Layers Window</title>
+<!-- #EndEditable -->
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<body>
+
+<div id="banner">
+	<a href="http://www.getpaint.net/">
+	<img border="0" src="../images/logo.png"></a><p>
+	&nbsp;</div>
+<div id="leftnav">
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="index.html">Overview</a><br>
+		</li>
+		<li><a href="Features.html">Features</a><br>
+		<a href="Tutorials.html">Tutorials</a><br>
+		<a href="WhatsNew.html">What&#39;s New?</a><br>
+		</li>
+	</ul>
+	<h3>Concepts</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="LayersAndBlendModes.html">Layers and Blend Modes</a></li>
+	</ul>
+	<h3>User Interface</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="KeyboardMouseCommands.html">Keyboard &amp; Mouse Commands</a></li>
+		<li><a href="MainWindow.html">Main Window</a></li>
+		<li><a href="ImageList.html">Image List</a></li>
+		<li><a href="MenuBar.html">Menu Bar</a>
+		<ul class="toc">
+			<li><a href="FileMenu.html">File</a></li>
+			<li><a href="EditMenu.html">Edit</a></li>
+			<li><a href="ViewMenu.html">View</a></li>
+			<li><a href="ImageMenu.html">Image</a></li>
+			<li><a href="LayersMenu.html">Layers</a>
+			<ul class="toc">
+				<li class="comment"><a href="RotateZoom.html">Rotate / Zoom</a></li>
+			</ul></li>
+			<li><a href="AdjustmentsMenu.html">Adjustments</a>&nbsp;
+				<ul class="toc">
+				    <li><a href="Curves.html">Curves</a></li>
+					<li><a href="Levels.html">Levels</a></li>
+				</ul></li>
+			<li><a href="EffectsMenu.html">Effects</a></li>
+			<li><a href="WindowMenu.html">Window</a></li>
+			<li><a href="HelpMenu.html">Help</a></li>
+		</ul>
+		</li>
+		<li><a href="Toolbar.html">Toolbar</a></li>
+		<li><a href="ToolsWindow.html">Tools Window</a><ul class="toc">
+			<li><a href="SelectionTools.html">Selection Tools</a></li>
+			<li><a href="MoveTools.html">Move Tools</a><br>
+			<a href="MagicWand.html">Magic Wand</a></li>
+			<li><a href="GradientTool.html">Gradient Tool</a><br>
+			<a href="Paintbrush.html">Paintbrush</a></li>
+			<li><a href="EraserTool.html">Eraser Tool</a></li>
+			<li><a href="PixelTools.html">Pixel Tools</a></li>
+			<li><a href="ShapeTools.html">Shape Tools</a></li>
+			<li><a href="LineCurve.html">Line / Curve Tool</a></li>
+			<li><a href="TextTool.html">Text Tool</a></li>
+			<li><a href="PaintBucket.html">Paint Bucket</a></li>
+			<li><a href="CloneStamp.html">Clone Stamp</a></li>
+			<li><a href="RecolorTool.html">Recolor Tool</a></li>
+		</ul>
+		</li>
+		<li><a href="HistoryWindow.html">History Window</a></li>
+		<li><a href="LayersWindow.html">Layers Window</a></li>
+		<li><a href="ColorsWindow.html">Colors Window</a></li>
+		<li><a href="StatusBar.html">Status Bar</a></li>
+	</ul>
+	</li>
+	<h3>Other</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="FAQ.html">FAQ (Frequently Asked Questions)</a></li>
+		<li><a href="UnattendedInstallation.html">Unattended Installation</a></li>
+		<li><a href="SystemRequirements.html">System Requirements</a></li>
+		<li><a href="WebLinks.html">Web Links</a></li>
+		<li><a href="License.html">License</a></li>
+	</ul>
+</div>
+<div id="content">
+	<!-- #BeginEditable "content" -->
+	<h2>Layers Window</h2>
+	<p>This window allows you to manage the multiple layers that an image may 
+	contain in Paint.NET. There is always one active layer, and all drawing 
+	affects only that layer. Each layer may be given a name, and may have a 
+	blending mode and opacity set. You may also make a layer visible or 
+	invisible by setting the checkbox appropriately.</p>
+	<p>You may think of the layers of an image as representing a stack of 
+	transparency sheets placed one on top of the other. Images that are on lower 
+	layers will show through to the top, but only if the layers on top do not 
+	occlude them.</p>
+	<ul>
+		<li class="nobullet">
+		<img border="0" src="Images/LayersWindow.png"></li>
+	</ul>
+	<p>
+	There are also six buttons on the bottom of the layer window. From 
+	left-to-right they are:</p>
+	<ul>
+		<li><h3><a name="AddNewLayer"></a>Add New Layer</h3><p>This will add a 
+		new, completely transparent layer to the image. It will have a generic 
+		name that indicates what layer position it has been placed at, such as 
+		&quot;Layer 4.&quot;</p></li>
+		<li><h3><a name="DeleteLayer"></a>Delete Layer</h3><p>This will delete 
+		the active layer from the image. You may not delete a layer if it is the 
+		only one in the image.</p></li>
+		<li><h3><a name="DuplicateLayer"></a>Duplicate Layer</h3><p>This will 
+		take the active layer, duplicate its contents and attributes, and place 
+		it in the image after the original layer.</p></li>
+		<li><h3><a name="MergeLayerDown"></a>Merge Layer Down</h3>
+		<p>This will take the current layer and merge it into the layer below 
+		it.</p></li>
+		<li>
+		<h3><a name="MoveLayerUp"></a>Move Layer Up</h3><p>This will move the 
+		current layer to a higher position in the layer order.</p></li>
+		<li><h3><a name="MoveLayerDown"></a>Move Layer Down</h3><p>This will 
+		move the current layer to a lower position in the layer order.</p></li>
+		<li><h3><a name="LayerProperties"></a>Layer Properties</h3><p>This will 
+		bring up the properties for the active layer. From here you may give the 
+		layer a different name, toggle its visibility, and set its blending 
+		properties.</p>
+		<p>
+	<img border="0" src="Images/LayerProperties.png"></p></li>
+	</ul>
+	<!-- #EndEditable -->
+	<h4><br>
+	<br>
+	</h4>
+	<p align="center">
+	<font color="#808080" size="1">Copyright <font face="Times New Roman">© 2007 </font>
+	Rick Brewster, Tom Jackson, and past contributors. Portions Copyright
+	<font face="Times New Roman">© 2007 </font>Microsoft Corporation. All Rights 
+	Reserved.</font><font size="1"> <br>
+	</font>
+</div>
+</b>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

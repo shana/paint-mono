@@ -1,0 +1,171 @@
+<html>
+
+<!-- #BeginTemplate "pdn_help.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- #BeginEditable "title" -->
+<title>Paint.NET Help - Levels</title>
+<!-- #EndEditable -->
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<body>
+
+<div id="banner">
+	<a href="http://www.getpaint.net/">
+	<img border="0" src="../images/logo.png"></a><p>
+	&nbsp;</div>
+<div id="leftnav">
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="index.html">Overview</a><br>
+		</li>
+		<li><a href="Features.html">Features</a><br>
+		<a href="Tutorials.html">Tutorials</a><br>
+		<a href="WhatsNew.html">What&#39;s New?</a><br>
+		</li>
+	</ul>
+	<h3>Concepts</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="LayersAndBlendModes.html">Layers and Blend Modes</a></li>
+	</ul>
+	<h3>User Interface</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="KeyboardMouseCommands.html">Keyboard &amp; Mouse Commands</a></li>
+		<li><a href="MainWindow.html">Main Window</a></li>
+		<li><a href="ImageList.html">Image List</a></li>
+		<li><a href="MenuBar.html">Menu Bar</a>
+		<ul class="toc">
+			<li><a href="FileMenu.html">File</a></li>
+			<li><a href="EditMenu.html">Edit</a></li>
+			<li><a href="ViewMenu.html">View</a></li>
+			<li><a href="ImageMenu.html">Image</a></li>
+			<li><a href="LayersMenu.html">Layers</a>
+			<ul class="toc">
+				<li class="comment"><a href="RotateZoom.html">Rotate / Zoom</a></li>
+			</ul></li>
+			<li><a href="AdjustmentsMenu.html">Adjustments</a>&nbsp;
+				<ul class="toc">
+				    <li><a href="Curves.html">Curves</a></li>
+					<li><a href="Levels.html">Levels</a></li>
+				</ul></li>
+			<li><a href="EffectsMenu.html">Effects</a></li>
+			<li><a href="WindowMenu.html">Window</a></li>
+			<li><a href="HelpMenu.html">Help</a></li>
+		</ul>
+		</li>
+		<li><a href="Toolbar.html">Toolbar</a></li>
+		<li><a href="ToolsWindow.html">Tools Window</a><ul class="toc">
+			<li><a href="SelectionTools.html">Selection Tools</a></li>
+			<li><a href="MoveTools.html">Move Tools</a><br>
+			<a href="MagicWand.html">Magic Wand</a></li>
+			<li><a href="GradientTool.html">Gradient Tool</a><br>
+			<a href="Paintbrush.html">Paintbrush</a></li>
+			<li><a href="EraserTool.html">Eraser Tool</a></li>
+			<li><a href="PixelTools.html">Pixel Tools</a></li>
+			<li><a href="ShapeTools.html">Shape Tools</a></li>
+			<li><a href="LineCurve.html">Line / Curve Tool</a></li>
+			<li><a href="TextTool.html">Text Tool</a></li>
+			<li><a href="PaintBucket.html">Paint Bucket</a></li>
+			<li><a href="CloneStamp.html">Clone Stamp</a></li>
+			<li><a href="RecolorTool.html">Recolor Tool</a></li>
+		</ul>
+		</li>
+		<li><a href="HistoryWindow.html">History Window</a></li>
+		<li><a href="LayersWindow.html">Layers Window</a></li>
+		<li><a href="ColorsWindow.html">Colors Window</a></li>
+		<li><a href="StatusBar.html">Status Bar</a></li>
+	</ul>
+	</li>
+	<h3>Other</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="FAQ.html">FAQ (Frequently Asked Questions)</a></li>
+		<li><a href="UnattendedInstallation.html">Unattended Installation</a></li>
+		<li><a href="SystemRequirements.html">System Requirements</a></li>
+		<li><a href="WebLinks.html">Web Links</a></li>
+		<li><a href="License.html">License</a></li>
+	</ul>
+</div>
+<div id="content">
+	<!-- #BeginEditable "content" -->
+
+
+	<h2>Levels Adjustment</h2>
+	<p>The Levels adjustment can be used to alter the color range (or 
+	&quot;exposure&quot;) of an image, including gamma adjustments, on a 
+	channel-by-channel basis. Most adjustments performed using levels consist of 
+	changing a pictures input and output white point, black point, and grey 
+	point. The white point of an image is the brightest color that appears in 
+	the image, while the black point is the darkest color that will appear in an 
+	image. The grey point represents the average color of the entire image.</p>
+	<p align="center"><img border="0" src="Images/Levels1.png"> </p>
+	<p>Each of these color points of an image may be adjusted using Levels. In 
+	the dialog above, there are 5 numeric inputs and 5 color swatches. The two 
+	along the left side in the &#39;Input&#39; section indicate the input white and 
+	black points. These colors may be adjusted using the numeric inputs, the 
+	slider, or by double-clicking on the color swatches. The white point on this 
+	side is the color that should be adjusted to become the white point selected 
+	on the right side. When the adjustment is performed, colors in the image as 
+	bright or brighter than this color will adjust to be equal to the output 
+	white point (in the above screenshot, the output white point has been left 
+	at its default value, white). Correspondingly, the input black point has 
+	been adjusted in the dialog pictured above, so the darkest colors of the 
+	output image will be adjusted to be simply black. By adjusting the white 
+	point to be slightly darker, we are making that same dark color be as bright 
+	as white in the output, and by adjusting the black point to be slightly 
+	brighter, we are making those dark colors of the image absolutely black. 
+	Also, in the dialog above, the output grey point has been adjusted to be 
+	slightly brighter. While this does not effect the whites and blacks of the 
+	image, it causes the overall color of the image to be brightened.</p>
+	<p align="center"><img border="1" src="../images/LewistonSunset_small.jpg" width="320" height="240">
+	<img border="1" src="../images/LewistonSunset_small_Levels1.jpg" width="320" height="240"></p>
+	<p>These adjustments end up stretching the range of an image, visible 
+	through the histograms on each side of the levels dialog. The histogram on 
+	the left indicates the color curve of the image before any adjustment, this 
+	histogram represents the amount of an image that is equal to a given color. 
+	In the case of the one pictured above, the histogram indicates that a 
+	significant portion of the image is nearly black, with a second bulge around 
+	40% brightness. Also, the small spike at the top edge of the input histogram 
+	indicates that there is a small portion of the image that is completely 
+	white.</p>
+	<p>With Level&#39;s default settings, the output histogram will be equal to the 
+	input histogram. Every adjustment that is performed on the image, however, 
+	will cause the output histogram to be updated to represent the changes that 
+	will result in the output image. Causing the output histogram to be spread 
+	thinner results in an image with higher contrast. Squishing the histogram to 
+	a single peak, on the other had, will result in an image with very low 
+	contrast. Any of the adjustments between these extremes are possible with 
+	levels. In the screenshot above, a significant portion of the image is 
+	&#39;blacked out&#39;, resulting in a large spike at the bottom end. The same is 
+	true of the top end, where much of the image is &#39;whited out&#39;. Overall, the 
+	histogram has been stretched very thin, as evident from the high contrast 
+	present in the image.</p>
+	<p>Up to this point, all adjustments have been performed on a all channels, 
+	red, green and blue. By using the R, G, B checkboxes (pictured below), 
+	individual channels may be adjusted separately (as well as two at a time). 
+	In the picture below, the gamma has been adjusted for the green and blue 
+	channels at the same time, causing the level of cyan in the image to drop 
+	overall. This accentuates the red of the image, as shown in the picture 
+	below.</p>
+	<p align="center"><img border="0" src="Images/Levels2.png"></p>
+	<p align="center"><img border="1" src="../images/LewistonSunset_small.jpg" width="320" height="240">
+	<img border="1" src="../images/LewistonSunset_small_Levels2.jpg" width="320" height="240"></p>
+
+	<!-- #EndEditable -->
+	<h4><br>
+	<br>
+	</h4>
+	<p align="center">
+	<font color="#808080" size="1">Copyright <font face="Times New Roman">© 2007 </font>
+	Rick Brewster, Tom Jackson, and past contributors. Portions Copyright
+	<font face="Times New Roman">© 2007 </font>Microsoft Corporation. All Rights 
+	Reserved.</font><font size="1"> <br>
+	</font>
+</div>
+</b>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

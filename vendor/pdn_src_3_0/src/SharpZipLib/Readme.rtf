@@ -1,0 +1,111 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f28\fnil\fcharset128\fprq0{\*\panose 00000000000000000000}ArialMT;}
+{\f29\fnil\fcharset128\fprq2{\*\panose 00000000000000000000}TimesNewRomanPSMT;}{\f30\fnil\fcharset128\fprq2{\*\panose 00000000000000000000}Arial-BoldMT;}{\f31\fnil\fcharset128\fprq2{\*\panose 00000000000000000000}TimesNewRomanPS-BoldMT;}
+{\f68\fnil\fcharset128\fprq0{\*\panose 00000000000000000000}@ArialMT;}{\f69\fnil\fcharset128\fprq2{\*\panose 00000000000000000000}@TimesNewRomanPSMT;}{\f70\fnil\fcharset128\fprq2{\*\panose 00000000000000000000}@Arial-BoldMT;}
+{\f71\fnil\fcharset128\fprq2{\*\panose 00000000000000000000}@TimesNewRomanPS-BoldMT;}{\f72\froman\fcharset238\fprq2 Times New Roman CE;}{\f73\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f75\froman\fcharset161\fprq2 Times New Roman Greek;}
+{\f76\froman\fcharset162\fprq2 Times New Roman Tur;}{\f77\froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f78\froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f79\froman\fcharset186\fprq2 Times New Roman Baltic;}}{\colortbl;\red0\green0\blue0;
+\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;
+\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green0\blue129;}{\stylesheet{\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 
+\fs24\lang3081\langfe1033\cgrid\langnp3081\langfenp1033 \snext0 Normal;}{\*\cs10 \additive Default Paragraph Font;}{\*\cs15 \additive \ul\cf2 \sbasedon10 Hyperlink;}}{\info{\author john}{\operator john}{\creatim\yr2006\mo11\dy4\hr2\min10}
+{\revtim\yr2006\mo11\dy4\hr2\min13}{\version5}{\edmins3}{\nofpages3}{\nofwords573}{\nofchars3268}{\nofcharsws4013}{\vern8229}}\widowctrl\ftnbj\aenddoc\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\hyphcaps0\horzdoc\dghspace120\dgvspace120
+\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3\jcompress\viewkind4\viewscale100\nolnhtadjtbl \fet0\sectd \linex0\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}
+{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}
+{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain 
+\ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs24\lang3081\langfe1033\cgrid\langnp3081\langfenp1033 {\fs44\cf1\lang1041\langfe1033\loch\af28\dbch\af28\langnp1041 \hich\af0\dbch\af28\loch\f28 #ZipLib
+\par }{\cf1\lang5129\langfe1033\dbch\af28\langnp5129 \hich\af0\dbch\af28\loch\f0 Version 0.85
+\par }{\cf1\lang1041\langfe1033\loch\af29\dbch\af29\langnp1041 
+\par }{\b\fs32\cf1\lang1041\langfe1033\loch\af30\dbch\af30\langnp1041 \hich\af0\dbch\af30\loch\f30 Introduction
+\par 
+\par }{\cf1\lang5129\langfe1033\dbch\af30\langnp5129 \hich\af0\dbch\af30\loch\f0 Initially I had ported the GNU Classpath ZIP library over to .NET because I needed gzip/zip\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 
+compression and I didn't want to wrap the C zip library (or to use a zip library wrapper).
+\par 
+\par \hich\af0\dbch\af30\loch\f0 Now I have included bzip2 and tar compression due to popular demand. I have changed the library name for\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 
+consistency reasons with other tools and libraries to #ZipLib (speak : SharpZipLib), and I have altered\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 the namespace structure as well.
+\par 
+\par \hich\af0\dbch\af30\loch\f0 Some classes/\hich\af0\dbch\af30\loch\f0 namespaces were moved for clarity reasons.
+\par 
+\par \hich\af0\dbch\af30\loch\f0 The namespace change will affect most existing users, other than that existing classes were bug fixed\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 only (class compatibility was a top priority). Please see doc\\
+changes.txt for more information.
+\par }{\cf1\lang1041\langfe1033\loch\af29\dbch\af29\langnp1041 
+\par }{\b\fs32\cf1\lang1041\langfe1033\loch\af30\dbch\af30\langnp1041 \hich\af0\dbch\af30\loch\f30 License
+\par 
+\par }{\cf1\lang5129\langfe1033\dbch\af30\langnp5129 \hich\af0\dbch\af30\loch\f0 The \hich\af0\dbch\af30\loch\f0 software is released under the GPL with an exception which allows linking with non GPL\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 
+programs. The exception to the GPL is as follows:
+\par 
+\par \hich\af0\dbch\af30\loch\f0 Linking this library statically or dynamically with other modules is\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 making a combined work based on this library. Thu\hich\af0\dbch\af30\loch\f0 s, the terms and
+\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 conditions of the GNU General Public \hich\af0\dbch\af30\loch\f0 L\hich\af0\dbch\af30\loch\f0 icense cover the whole\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 combination.
+\par 
+\par \hich\af0\dbch\af30\loch\f0 As a special exception, the copyright holders of this library give you\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 permission to link this library with independent modules to produce an\hich\af0\dbch\af30\loch\f0  
+\hich\af0\dbch\af30\loch\f0 executable, regardless of the license terms of these independent\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 modules, and to copy and distribute the resulting executable under\hich\af0\dbch\af30\loch\f0  
+\hich\af0\dbch\af30\loch\f0 terms of your choice, provided that\hich\af0\dbch\af30\loch\f0  you also meet, for each linked \hich\af0\dbch\af30\loch\f0 independent module, the terms and conditions of the licen\hich\af0\dbch\af30\loch\f0 se of that
+\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 module. An\hich\af0\dbch\af30\loch\f0  independent module is a module \hich\af0\dbch\af30\loch\f0 which is not derived from\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 
+or based on this library.
+\par 
+\par \hich\af0\dbch\af30\loch\f0 If you modify this library, you may extend\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 this exception to your version of the library, but you are not\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 
+obligated to do so. If you do not wish to do\hich\af0\dbch\af30\loch\f0  so, delete this\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 exception statement from your version.
+\par 
+\par }{\b\cf1\lang5129\langfe1033\dbch\af30\langnp5129 \hich\af0\dbch\af30\loch\f0 Note : }{\cf1\lang5129\langfe1033\dbch\af30\langnp5129 \hich\af0\dbch\af30\loch\f0 I've changed the exception a bit according to the newest GNU Classpath
+\hich\af0\dbch\af30\loch\f0  \hich\af0\dbch\af30\loch\f0 e\hich\af0\dbch\af30\loch\f0 xception. Old versions did have another exception, but the new one is clearer and it
+\par \hich\af0\dbch\af30\loch\f0 doesn't break compatibility with th\hich\af0\dbch\af30\loch\f0 e old one.
+\par }{\cf1\lang1041\langfe1033\loch\af29\dbch\af29\langnp1041 
+\par }{\b\fs32\cf1\lang1041\langfe1033\loch\af31\dbch\af31\langnp1041 \hich\af0\dbch\af31\loch\f31 Building the library
+\par 
+\par }{\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 Currently there are two ways to build this library :
+\par }{\b\cf1\lang5129\langfe1033\dbch\af31\langnp5129 
+\par \hich\af0\dbch\af31\loch\f0 NAnt }{\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 (}{\cf17\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 http://nant.sourceforge.net}{
+\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 )
+\par \hich\af0\dbch\af31\loch\f0 This is a free makefile replacement, I encourage the use of this free build automation
+\par \hich\af0\dbch\af31\loch\f0 utility. Just run the SharpZiplib.build in the\hich\af0\dbch\af31\loch\f0  src/ directory. (see the nant documentation
+\par \hich\af0\dbch\af31\loch\f0 for more information about nant)
+\par 
+\par }{\b\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 SharpDevelop }{\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 (}{\cf17\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 
+http://www.icsharpcode.net/OpenSource/SD}{\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 )
+\par \hich\af0\dbch\af31\loch\f0 This is a free IDE (I'm the main developer this is my 'primary' project) - give it a try.
+\par }{\b\fs32\cf1\lang1041\langfe1033\loch\af31\dbch\af31\langnp1041 
+\par \hich\af0\dbch\af31\loch\f31 Namespace Layout
+\par 
+\par }{\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 ICSharpCode.SharpZipLib.Tar.*
+\par \tab \hich\af0\dbch\af31\loch\f0 Tar implementation
+\par \hich\af0\dbch\af31\loch\f0 ICSharpCode.SharpZipLib.GZip.*
+\par \tab \hich\af0\dbch\af31\loch\f0 Gzip implementation
+\par \hich\af0\dbch\af31\loch\f0 ICSharpCode.SharpZipLib.BZip2.*
+\par \tab \hich\af0\dbch\af31\loch\f0 Bzip2 implementation
+\par \hich\af0\dbch\af31\loch\f0 ICSharpCode.SharpZipLib.Zip
+\par \tab \hich\af0\dbch\af31\loch\f0 Zip implementation
+\par \hich\af0\dbch\af31\loch\f0 ICSharpCode.SharpZipLib.Zip.Compression.Streams
+\par \tab \hich\af0\dbch\af31\loch\f0 Inf\hich\af0\dbch\af31\loch\f0 later/Deflater streams
+\par }{\cf1\lang1041\langfe1033\loch\af29\dbch\af29\langnp1041 
+\par }{\b\fs32\cf1\lang1041\langfe1033\loch\af31\dbch\af31\langnp1041 \hich\af0\dbch\af31\loch\f31 Reporting Bugs/Submit Patches
+\par 
+\par }{\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 If you want to submit a patch write to }{\cf17\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 mike@icsharpcode.net}{
+\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 . If it is a bugfix then it is required that\hich\af0\dbch\af31\loch\f0  \hich\af0\dbch\af31\loch\f0 
+you write a unit test demonstrating the bug. If you find a bug send me a case (generally a file t\hich\af0\dbch\af31\loch\f0 hat\hich\af0\dbch\af31\loch\f0  \hich\af0\dbch\af31\loch\f0 
+fails) or preferably a unit test demonstrating the bug. I'll try to fix it.
+\par }{\b\fs32\cf1\lang1041\langfe1033\loch\af31\dbch\af31\langnp1041 
+\par \hich\af0\dbch\af31\loch\f31 Credits
+\par 
+\par }{\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 #ZipLib has been developed by Mike Krueger (mike@icsharpcode.net), however, much existing\hich\af0\dbch\af31\loch\f0  \hich\af0\dbch\af31\loch\f0 
+Java code helped a lot in speeding the creation of this library. Therefore c\hich\af0\dbch\af31\loch\f0 redits fly out to others.
+\par 
+\par \hich\af0\dbch\af31\loch\f0 Zip/Gzip implementation :
+\par \hich\af0\dbch\af31\loch\f0 A Java version of the zlib which was originally created by the Free Software\hich\af0\dbch\af31\loch\f0  \hich\af0\dbch\af31\loch\f0 Foundation (FSF). So all credits should go to the FSF and the authors who have
+\hich\af0\dbch\af31\loch\f0  \hich\af0\dbch\af31\loch\f0 worked on this piece of code.
+\par 
+\par \hich\af0\dbch\af31\loch\f0 Without the zlib authors the Java zlib wouldn't be possible :
+\par \hich\af0\dbch\af31\loch\f0 Jean-loup Gailly(jloup@gzip.org)
+\par \hich\af0\dbch\af31\loch\f0 Mark Adler(}{\field{\*\fldinst {\cf1\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0  \hich\af0\dbch\af31\loch\f0 HYPERLINK \hich\af0\dbch\af31\loch\f0 "\hich\af0\dbch\af31\loch\f0 mailto:
+\hich\af0\dbch\af31\loch\f0 madler@alumni.caltech.edu\hich\af0\dbch\af31\loch\f0 "\hich\af0\dbch\af31\loch\f0  }{\cf1\lang5129\langfe1033\dbch\af31\langnp5129 {\*\datafield 
+00d0c9ea79f9bace118c8200aa004ba90b02000000170000001a0000006d00610064006c0065007200400061006c0075006d006e0069002e00630061006c0074006500630068002e006500640075000000e0c9ea79f9bace118c8200aa004ba90b420000006d00610069006c0074006f003a006d00610064006c0065007200
+400061006c0075006d006e0069002e00630061006c0074006500630068002e006500640075000000}}}{\fldrslt {\cs15\ul\cf2\lang5129\langfe1033\dbch\af31\langnp5129 \hich\af0\dbch\af31\loch\f0 madler@alumni.caltech.edu}}}{\cf1\lang5129\langfe1033\dbch\af31\langnp5129 
+\hich\af0\dbch\af31\loch\f0 )\hich\af0\dbch\af31\loch\f0  \hich\af0\dbch\af31\loch\f0 and contributors of zlib.
+\par 
+\par \hich\af0\dbch\af31\loch\f0 For the bzip2 implementation :
+\par \hich\af0\dbch\af31\loch\f0 Julian R Seward
+\par 
+\par \hich\af0\dbch\af31\loch\f0 The Java port was done by Keiron Liddle, Aftex S\hich\af0\dbch\af31\loch\f0 oftware(keiron@aftexsw.com)
+\par 
+\par \hich\af0\dbch\af31\loch\f0 Credits for the tar implementation fly out to :
+\par \hich\af0\dbch\af31\loch\f0 Timothy Gerard Endres(time@gjt.org)
+\par 
+\par \hich\af0\dbch\af31\loch\f0 Special thanks to Christoph Wille for beta testing, suggestions and the setup of the Web site.}{\fs20\cf1\lang5129\langfe1033\dbch\af31\langnp5129 
+\par }{\fs20\lang5129\langfe1033\dbch\af31\langnp5129 
+\par }}
