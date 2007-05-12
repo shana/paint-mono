@@ -327,6 +327,11 @@ namespace PaintDotNet
 
             set
             {
+		if (value == 0.0)
+		{
+		    value = 96.0;
+		}
+		    
                 if (value <= 0.0)
                 {
                     throw new ArgumentOutOfRangeException("value", value, "must be > 0.0");
@@ -396,6 +401,11 @@ namespace PaintDotNet
 
             set
             {
+		if (value == 0.0)
+		{
+		    value = 96.0;
+		}
+		    
                 if (value <= 0.0)
                 {
                     throw new ArgumentOutOfRangeException("value", value, "must be > 0.0");
@@ -1276,6 +1286,7 @@ namespace PaintDotNet
 
             // Transfer metadata
 
+	    Console.WriteLine ("Resolutions: {0} {1}", image.HorizontalResolution, image.VerticalResolution);
             // Sometimes GDI+ does not honor the resolution tags that we
             // put in manually via the EXIF properties.
             document.DpuUnit = MeasurementUnit.Inch;
