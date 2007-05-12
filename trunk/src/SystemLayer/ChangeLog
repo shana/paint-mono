@@ -1,0 +1,6 @@
+2007-05-12  Miguel de Icaza  <miguel@novell.com>
+
+	* PdnGraphics.cs: Add patch from Sebastien from 1.0 port. 
+
+	
+

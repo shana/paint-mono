@@ -269,70 +269,9 @@ namespace PaintDotNet.SystemLayer
 
         private static void DrawPolyLineImpl(Graphics g, Color color, Point[] points)
         {
-            if (points.Length < 1)
-            {
-                return;
-            }
-
-            uint nativeColor = (uint)(color.R  + (color.G << 8) + (color.B << 16));
-
-            IntPtr hdc = IntPtr.Zero;
-            IntPtr pen = IntPtr.Zero;
-            IntPtr oldObject = IntPtr.Zero;
-
-            try
-            {
-                hdc = g.GetHdc();
-                pen = SafeNativeMethods.CreatePen(NativeConstants.PS_SOLID, 1, nativeColor);
-
-                if (pen == IntPtr.Zero)
-                {
-                    NativeMethods.ThrowOnWin32Error("CreatePen returned NULL");
-                }
-
-                oldObject = SafeNativeMethods.SelectObject(hdc, pen);
-
-                NativeStructs.POINT pt;
-                bool bResult = SafeNativeMethods.MoveToEx(hdc, points[0].X, points[0].Y, out pt);
-                
-                if (!bResult)
-                {
-                    NativeMethods.ThrowOnWin32Error("MoveToEx returned false");
-                }
-
-                for (int i = 1; i < points.Length; ++i)
-                {
-                    bResult = SafeNativeMethods.LineTo(hdc, points[i].X, points[i].Y);
-
-                    if (!bResult)
-                    {
-                        NativeMethods.ThrowOnWin32Error("LineTo returned false");
-                    }
-                }
-            }
-
-            finally
-            {
-                if (oldObject != IntPtr.Zero)
-                {
-                    SafeNativeMethods.SelectObject(hdc, oldObject);
-                    oldObject = IntPtr.Zero;
-                }
-
-                if (pen != IntPtr.Zero)
-                {
-                    SafeNativeMethods.DeleteObject(pen);
-                    pen = IntPtr.Zero;
-                }
-
-                if (hdc != IntPtr.Zero)
-                {
-                    g.ReleaseHdc(hdc);
-                    hdc = IntPtr.Zero;
-                }
-            }
-
-            GC.KeepAlive(g);
+		using (Pen pen = new Pen (color)) {
+			g.DrawLines (pen, points);
+		}
         }
 
         /// <summary>
