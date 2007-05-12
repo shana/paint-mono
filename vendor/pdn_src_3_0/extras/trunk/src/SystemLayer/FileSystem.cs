@@ -19,11 +19,13 @@ namespace PaintDotNet.SystemLayer
 {
     public static class FileSystem
     {
+ 
         private const string sessionLockFileName = "session.lock";
         private static string tempDir;
         private static Stream sessionToken;
         private static Random random = new Random();
 
+#if WINDOWS
         /// <summary>
         /// Creates a file stream with the given filename that is deleted when either the
         /// stream is closed, or the application is terminated.
@@ -35,6 +37,7 @@ namespace PaintDotNet.SystemLayer
         /// <returns>A Stream with read and write access.</returns>
         public static FileStream CreateTempFile(string fileName)
         {
+        	FileStream stream;
             IntPtr hFile = SafeNativeMethods.CreateFileW(
                 fileName,
                 NativeConstants.GENERIC_READ | NativeConstants.GENERIC_WRITE,
@@ -52,8 +55,6 @@ namespace PaintDotNet.SystemLayer
             }
 
             SafeFileHandle sfhFile = new SafeFileHandle(hFile, true);
-            FileStream stream;
-            
             try
             {
                 stream = new FileStream(sfhFile, FileAccess.ReadWrite);
@@ -459,7 +460,92 @@ namespace PaintDotNet.SystemLayer
 
             GC.KeepAlive(input);
         }
+#else
+        public static FileStream CreateTempFile(string fileName)
+	{
+	    return new FileStream (fileName, FileMode.Create, FileAccess.ReadWrite);
+	}
 
+	public static FileStream OpenStreamingFile (string fileName, FileAccess fileAccess)
+	{
+	    return new FileStream (fileName, FileMode.Create, fileAccess);
+	}
+
+        [CLSCompliant(false)]
+        public unsafe static void WriteToStream(FileStream output, void *pvBuffer, uint length)
+	{
+	    WriteToStream (output.Handle, pvBuffer, length);
+	}
+
+        public unsafe static void WriteToStream(IntPtr hFile, void* pvBuffer, uint _length)
+	{
+	    long length = _length;
+	    
+	    while (length > 0){
+		long written = Mono.Unix.Native.Syscall.write ((int) hFile, (IntPtr) pvBuffer, (ulong) length);
+		if (written == -1)
+		    throw new Exception ("Write returned -1");
+		length -= written;
+		pvBuffer = (void *) (((long)(IntPtr) pvBuffer) +  written);
+	    }
+	}
+
+        public unsafe static void WriteToStreamingFileGather(FileStream outputFile, void *[] ppvBuffers, uint[] lengths)
+	{
+            if (ppvBuffers.Length != lengths.Length)
+            {
+                throw new ArgumentException("ppvBuffers.Length != lengths.Length");
+            }
+
+            IntPtr hFile = outputFile.Handle;
+
+            for (int i = 0; i < ppvBuffers.Length; ++i)
+            {
+                WriteToStream(outputFile.Handle, ppvBuffers[i], lengths[i]);
+            }
+	}
+
+        public unsafe static void ReadFromStreamScatter(FileStream input, void*[] ppvBuffers, uint[] lengths)
+        {
+            if (ppvBuffers.Length != lengths.Length)
+            {
+                throw new ArgumentException("ppvBuffers.Length != lengths.Length");
+            }
+
+            for (int i = 0; i < ppvBuffers.Length; ++i)
+            {
+                if (lengths[i] > 0)
+                {
+                    ReadFromStream(input, ppvBuffers[i], lengths[i]);
+                }
+            }
+	}
+
+        [CLSCompliant(false)]
+        public unsafe static void ReadFromStream(FileStream input, void* pvBuffer, uint length)
+        {
+            void *pvRead = pvBuffer;
+
+            while (length > 0)
+            {
+                long read;
+                read = Mono.Unix.Native.Syscall.read ((int)input.Handle, pvRead, length);
+
+                if (read < 0)
+                {
+                    throw new Exception ("read(2) returned < 0 (error)");
+                }
+
+                if (read == 0)
+                {
+                    throw new EndOfStreamException();
+                }
+
+                pvRead = (void *)((byte *)pvRead + read);
+                length -= (uint) read;
+            }
+	}	
+#endif
         static FileSystem()
         {
             // Determine root path of where we store our persisted data
@@ -565,53 +651,7 @@ namespace PaintDotNet.SystemLayer
 
         private static bool EnableCompression(string filePath)
         {
-            IntPtr hFile = IntPtr.Zero;
-
-            try
-            {
-                hFile = SafeNativeMethods.CreateFileW(
-                    filePath,
-                    NativeConstants.GENERIC_READ | NativeConstants.GENERIC_WRITE,
-                    NativeConstants.FILE_SHARE_READ | NativeConstants.FILE_SHARE_WRITE | NativeConstants.FILE_SHARE_DELETE,
-                    IntPtr.Zero,
-                    NativeConstants.OPEN_EXISTING,
-                    NativeConstants.FILE_FLAG_BACKUP_SEMANTICS,
-                    IntPtr.Zero);
-
-                if (hFile == NativeConstants.INVALID_HANDLE_VALUE)
-                {
-                    int dwError = Marshal.GetLastWin32Error();
-                    return false;
-                }
-
-                ushort cType = NativeConstants.COMPRESSION_FORMAT_DEFAULT;
-                uint dwBytes = 0;
-                bool bResult;
-
-                unsafe
-                {
-                    bResult = NativeMethods.DeviceIoControl(
-                        hFile,
-                        NativeConstants.FSCTL_SET_COMPRESSION,
-                        new IntPtr(&cType),
-                        sizeof(ushort),
-                        IntPtr.Zero,
-                        0,
-                        ref dwBytes,
-                        IntPtr.Zero);
-                }
-
-                return bResult;
-            }
-
-            finally
-            {
-                if (hFile != IntPtr.Zero)
-                {
-                    SafeNativeMethods.CloseHandle(hFile);
-                    hFile = IntPtr.Zero;
-                }
-            }
+		return false;
         }
 
         private static void Application_ApplicationExit(object sender, EventArgs e)

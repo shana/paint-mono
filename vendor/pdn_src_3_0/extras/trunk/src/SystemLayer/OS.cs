@@ -139,35 +139,9 @@ namespace PaintDotNet.SystemLayer
             return result;
         }
 
-        // Requires:
-        // * Windows XP SP2 or later
-        // * Windows Server 2003 SP1 or later
-        // * Windows Vista
-        // * or later (must be NT-based)
         public static bool CheckOSRequirement()
         {
-            // Just say "no" to Windows 9x
-            if (Environment.OSVersion.Platform != PlatformID.Win32NT)
-            {
-                return false;
-            }
-
-            // Windows Vista or later?
-            bool winVista = OS.CheckWindowsVersion(6, 0, 0);
-
-            // Windows 2003 or later?
-            bool win2k3 = OS.CheckWindowsVersion(5, 2, 0);
-
-            // Windows 2003 SP1 or later?
-            bool win2k3SP1 = OS.CheckWindowsVersion(5, 2, 1);
-
-            // Windows XP or later?
-            bool winXP = OS.CheckWindowsVersion(5, 1, 0);
-
-            // Windows XP SP2 or later?
-            bool winXPSP2 = OS.CheckWindowsVersion(5, 1, 2);
-
-            return winVista || (win2k3 && win2k3SP1) || (winXP && winXPSP2);
+			return true;
         }
     }
 }

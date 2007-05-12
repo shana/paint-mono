@@ -459,7 +459,7 @@ namespace PaintDotNet
             {
                 this.realUpdateRects = UI.GetUpdateRegion(this);
 
-                if (realUpdateRects.Length >= 5) // '5' chosen arbitrarily
+                if (realUpdateRects != null && realUpdateRects.Length >= 5) // '5' chosen arbitrarily
                 {
                     this.realUpdateRects = null;
                 }

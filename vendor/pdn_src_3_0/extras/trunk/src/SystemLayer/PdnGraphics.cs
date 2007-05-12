@@ -132,42 +132,9 @@ namespace PaintDotNet.SystemLayer
             dstMatrix.TransformPoints(points);
             dstRect.Location = points[0];
 
-            IntPtr hdc = IntPtr.Zero;
-            IntPtr hbitmap = IntPtr.Zero;
-            IntPtr chdc = IntPtr.Zero;
-            IntPtr old = IntPtr.Zero;
-
-            try
-            {
-                hdc = dst.GetHdc();
-                chdc = SafeNativeMethods.CreateCompatibleDC(hdc);
-                old = SafeNativeMethods.SelectObject(chdc, srcBitmapHandle);
-                SafeNativeMethods.BitBlt(hdc, dstRect.Left, dstRect.Top, dstRect.Width, 
-                    dstRect.Height, chdc, srcOffsetX, srcOffsetY, NativeConstants.SRCCOPY);
-            }
-
-            finally
-            {
-                if (old != IntPtr.Zero)
-                {
-                    SafeNativeMethods.SelectObject(chdc, old);
-                    old = IntPtr.Zero;
-                }
-
-                if (chdc != IntPtr.Zero)
-                {
-                    SafeNativeMethods.DeleteDC(chdc);
-                    chdc = IntPtr.Zero;
-                }
-            
-                if (hdc != IntPtr.Zero)
-                {
-                    dst.ReleaseHdc(hdc);
-                    hdc = IntPtr.Zero;
-                }
-            }
-
-            GC.KeepAlive(dst);
+	    using (Bitmap sys_drawing_bitmap = Image.FromHbitmap (srcBitmapHandle)){
+  	        dst.DrawImage (sys_drawing_bitmap, dstRect, srcOffsetX, srcOffsetY, dstRect.Width, dstRect.Height, GraphicsUnit.Pixel);
+	    }
         }
         
         internal unsafe static void GetRegionScans(IntPtr hRgn, out Rectangle[] scans, out int area)
@@ -262,27 +229,18 @@ namespace PaintDotNet.SystemLayer
         /// and process the data for the 'out' variables.</remarks>
         public static void GetRegionScans(Region region, out Rectangle[] scans, out int area)
         {
-            using (NullGraphics nullGraphics = new NullGraphics())
-            {
-                IntPtr hRgn = IntPtr.Zero;
-                
-                try
-                {
-                    hRgn = region.GetHrgn(nullGraphics.Graphics);
-                    GetRegionScans(hRgn, out scans, out area);
-                }
-
-                finally
-                {
-                    if (hRgn != IntPtr.Zero)
-                    {
-                        SafeNativeMethods.DeleteObject(hRgn);
-                        hRgn = IntPtr.Zero;
-                    }
-                }
-            }
-
-            GC.KeepAlive(region);
+	    using (Matrix matrix = new Matrix ()) {
+		    RectangleF [] s = region.GetRegionScans (matrix);
+		    scans = new Rectangle [s.Length];
+		    area = 0;
+		    for (int i = 0; i < s.Length; i++){
+			    scans [i].X      = (int) s [i].X;
+			    scans [i].Y      = (int) s [i].Y;
+			    scans [i].Width  = (int) s [i].Width;
+			    scans [i].Height = (int) s [i].Height;
+			    area += scans[i].Width * scans[i].Height;
+		    }
+	    }
         }
 
         /// <summary>
@@ -392,7 +350,9 @@ namespace PaintDotNet.SystemLayer
         {
             try
             {
-                FillRectanglesImpl(g, color, rects);
+		using(Brush b = new SolidBrush (color)){
+			g.FillRectangles (b, rects);
+		}
             }
 
             catch (Exception ex)

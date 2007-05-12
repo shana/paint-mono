@@ -41,9 +41,7 @@ namespace PaintDotNet.SystemLayer
         /// </summary>
         public ulong GetTickCount()
         {
-            ulong tick;
-            SafeNativeMethods.QueryPerformanceCounter(out tick);
-            return tick / countsPerMs;
+		return (ulong) DateTime.UtcNow.Ticks;
         }
 
         /// <summary>
@@ -52,9 +50,7 @@ namespace PaintDotNet.SystemLayer
         /// </summary>
         public double GetTickCountDouble()
         {
-            ulong tick;
-            SafeNativeMethods.QueryPerformanceCounter(out tick);
-            return (double)tick / countsPerMsDouble;
+		return (double)DateTime.UtcNow.Ticks;
         }
 
         /// <summary>
@@ -62,16 +58,7 @@ namespace PaintDotNet.SystemLayer
         /// </summary>
         public Timing()
         {
-            ulong frequency;
-
-            if (!SafeNativeMethods.QueryPerformanceFrequency(out frequency))
-            {
-                NativeMethods.ThrowOnWin32Error("QueryPerformanceFrequency returned false");
-            }
-
-            countsPerMs = frequency / 1000;
-            countsPerMsDouble = (double)frequency / 1000.0;
-            birthTick = GetTickCount();
+		birthTick = GetTickCount();
         }
     }
 }

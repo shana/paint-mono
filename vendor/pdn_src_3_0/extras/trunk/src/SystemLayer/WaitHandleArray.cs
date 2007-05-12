@@ -89,7 +89,7 @@ namespace PaintDotNet.SystemLayer
         /// </summary>
         public void WaitAll()
         {
-            WaitForAll(NativeConstants.INFINITE);
+		WaitHandle.WaitAll(waitHandles);
         }
 
         public bool AreAllSignaled()
@@ -99,16 +99,7 @@ namespace PaintDotNet.SystemLayer
 
         public bool AreAllSignaled(uint msTimeout)
         {
-            uint result = WaitForAll(msTimeout);
-
-            if (result >= NativeConstants.WAIT_OBJECT_0 && result < NativeConstants.WAIT_OBJECT_0 + this.Length)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+		return WaitHandle.WaitAll (waitHandles, (int) msTimeout, false);
         }
 
         /// <summary>
@@ -121,8 +112,7 @@ namespace PaintDotNet.SystemLayer
         /// </returns>
         public int WaitAny()
         {
-            int returnVal = (int)SafeNativeMethods.WaitForMultipleObjects(this.nativeHandles, false, NativeConstants.INFINITE);
-            return returnVal;
+		return (int) WaitHandle.WaitAny (waitHandles, -1, false);		
         }
     }
 }

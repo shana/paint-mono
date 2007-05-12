@@ -46,7 +46,7 @@ namespace PaintDotNet.SystemLayer
                 return isAdmin;
             }
         }
-
+		
         /// <summary>
         /// Gets a flag indicating whether the current user is able to elevate to obtain
         /// administrator-level privileges.
@@ -64,37 +64,9 @@ namespace PaintDotNet.SystemLayer
         {
             get
             {
-                bool returnVal = false;
-                const string keyName = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System";
-                const string valueName = "EnableLUA";
-                
-                try
-                {
-                    if (Environment.OSVersion.Version >= OS.WindowsVista)
-                    {
-                        using (RegistryKey key = Registry.LocalMachine.OpenSubKey(keyName, false))
-                        {
-                            if (key != null)
-                            {
-                                RegistryValueKind valueKind = key.GetValueKind(valueName);
-
-                                if (valueKind == RegistryValueKind.DWord)
-                                {
-                                    int value = unchecked((int)key.GetValue(valueName));
-                                    returnVal = (value == 1);
-                                }
-                            }
-                        }
-                    }
-                }
-
-                catch (Exception ex)
-                {
-                    Tracing.Ping(ex.ToString());
-                    returnVal = false;
-                }
-
-                return returnVal;
+				Console.WriteLine ("PORT: CanElevateToAdministrator is always false");
+			
+				return false;
             }
         }
 

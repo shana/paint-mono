@@ -16,6 +16,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Drawing.Imaging;
 
 namespace PaintDotNet.SystemLayer
 {
@@ -26,28 +27,8 @@ namespace PaintDotNet.SystemLayer
     [CLSCompliant(false)]
     public unsafe static class Memory
     {
-        private static IntPtr hHeap;
-
-        static Memory()
-        {
-            hHeap = SafeNativeMethods.HeapCreate(0, IntPtr.Zero, IntPtr.Zero);
-
-            uint info = 2;
-
-            try
-            {
-                // Enable the low-fragmentation heap (LFH)
-                SafeNativeMethods.HeapSetInformation(hHeap, 
-                    NativeConstants.HeapCompatibilityInformation,
-                    (void *)&info,
-                    sizeof(uint));
-            } 
-
-            catch (Exception)
-            {
-                // If that method isn't available, like on Win2K, don't worry about it.
-            }                    
-            
+	static Memory ()
+	{
             Application.ApplicationExit += new EventHandler(Application_ApplicationExit);
         }
 
@@ -56,27 +37,14 @@ namespace PaintDotNet.SystemLayer
         /// </summary>
         public static ulong TotalPhysicalBytes
         {
-            get
-            {
-                NativeStructs.MEMORYSTATUSEX mse = new NativeStructs.MEMORYSTATUSEX();
-                mse.dwLength = (uint)sizeof(NativeStructs.MEMORYSTATUSEX);
-
-                bool result = NativeMethods.GlobalMemoryStatusEx(ref mse);
-
-                if (!result)
-                {
-                    NativeMethods.ThrowOnWin32Error("GlobalMemoryStatusEx");
-                }
-
-                return mse.ullTotalPhys;
+	    get {
+		    Console.WriteLine ("PORT: TotalPhysicalBytes");
+		    return Int32.MaxValue;
             }
         }
 
         private static void DestroyHeap()
         {
-            IntPtr hHeap2 = hHeap;
-            hHeap = IntPtr.Zero;
-            SafeNativeMethods.HeapDestroy(hHeap2);
         }
 
         private static void Application_ApplicationExit(object sender, EventArgs e)
@@ -92,26 +60,7 @@ namespace PaintDotNet.SystemLayer
         /// <exception cref="OutOfMemoryException">Thrown if the memory manager could not fulfill the request for a memory block at least as large as <b>bytes</b>.</exception>
         public static IntPtr Allocate(ulong bytes)
         {
-            if (hHeap == IntPtr.Zero)
-            {
-                throw new InvalidOperationException("heap has already been destroyed");
-            }
-            else
-            {
-                IntPtr block = SafeNativeMethods.HeapAlloc(hHeap, 0, new UIntPtr(bytes));
-
-                if (block == IntPtr.Zero)
-                {
-                    throw new OutOfMemoryException("HeapAlloc returned a null pointer");
-                }
-
-                if (bytes > 0)
-                {
-                    GC.AddMemoryPressure((long)bytes);
-                }
-
-                return block;
-            }
+		return System.Runtime.InteropServices.Marshal.AllocHGlobal ((IntPtr)bytes);
         }
 
         /// <summary>
@@ -126,21 +75,13 @@ namespace PaintDotNet.SystemLayer
         /// </remarks>
         public static IntPtr AllocateLarge(ulong bytes)
         {
-            IntPtr block = SafeNativeMethods.VirtualAlloc(IntPtr.Zero, new UIntPtr(bytes), 
-                NativeConstants.MEM_COMMIT, NativeConstants.PAGE_READWRITE);
-
-            if (block == IntPtr.Zero)
-            {
-                throw new OutOfMemoryException("VirtualAlloc returned a null pointer");
-            }
-
-            if (bytes > 0)
-            {
-                GC.AddMemoryPressure((long)bytes);
-            }
-
-            return block;
+	    if (!warn_shown){
+		    warn_shown = true;
+		    Console.WriteLine ("PORT: Memory.AllocateLarge probably should call mmap to allocate");
+	    }
+	    return System.Runtime.InteropServices.Marshal.AllocHGlobal ((IntPtr) bytes);
         }
+	static bool warn_shown;
 
         /// <summary>
         /// Allocates a bitmap of the given height and width. Pixel data may be read/written directly, 
@@ -163,43 +104,15 @@ namespace PaintDotNet.SystemLayer
         /// </remarks>
         public static IntPtr AllocateBitmap(int width, int height, out IntPtr handle)
         {
-            NativeStructs.BITMAPINFO bmi = new NativeStructs.BITMAPINFO();
-            bmi.bmiHeader.biSize = (uint)sizeof(NativeStructs.BITMAPINFOHEADER);
-            bmi.bmiHeader.biWidth = width;
-            bmi.bmiHeader.biHeight = -height;
-            bmi.bmiHeader.biPlanes = 1;
-            bmi.bmiHeader.biBitCount = 32;
-            bmi.bmiHeader.biCompression = NativeConstants.BI_RGB;
-            bmi.bmiHeader.biSizeImage = 0;
-            bmi.bmiHeader.biXPelsPerMeter = 96;
-            bmi.bmiHeader.biYPelsPerMeter = 96;
-            bmi.bmiHeader.biClrUsed = 0;
-            bmi.bmiHeader.biClrImportant = 0;
-
-            IntPtr pvBits;
-            IntPtr hBitmap = SafeNativeMethods.CreateDIBSection(
-                IntPtr.Zero,
-                ref bmi,
-                NativeConstants.DIB_RGB_COLORS,
-                out pvBits,
-                IntPtr.Zero,
-                0);
-
-            if (hBitmap == IntPtr.Zero)
-            {
-                throw new OutOfMemoryException("CreateDIBSection returned NULL (" + Marshal.GetLastWin32Error().ToString() + ") while attempting to allocate " + width + "x" + height + " bitmap");
-            }
-
-            handle = hBitmap;
-            long bytes = (long)width * (long)height * 4;
-
-            if (bytes > 0)
-            {
-                GC.AddMemoryPressure(bytes);
-            }
-
-            return pvBits;
+	    IntPtr pvBits = System.Runtime.InteropServices.Marshal.AllocHGlobal (width * height * 4);
+	    if (pvBits == IntPtr.Zero)
+		    throw new OutOfMemoryException("AllocHGlobal returned NULL (" + Marshal.GetLastWin32Error().ToString() + ") while attempting to allocate " + width + "x" + height + " bitmap");
+	    
+	    GdipCreateBitmapFromScan0 (width, height, width * 4, PixelFormat.Format32bppArgb, pvBits, out handle);
+	    return pvBits;
         }
+        [DllImport("gdiplus.dll", SetLastError = true)]
+	internal static extern int GdipCreateBitmapFromScan0 (int width, int height, int stride, PixelFormat format, IntPtr scan0, out IntPtr bmp);
 
         /// <summary>
         /// Frees a bitmap previously allocated with AllocateBitmap.
@@ -209,20 +122,10 @@ namespace PaintDotNet.SystemLayer
         /// <param name="height">The height of the bitmap, as specified in the original call to AllocateBitmap.</param>
         public static void FreeBitmap(IntPtr handle, int width, int height)
         {
-            long bytes = (long)width * (long)height * 4;
-
-            bool bResult = SafeNativeMethods.DeleteObject(handle);
-
-            if (!bResult)
-            {
-                NativeMethods.ThrowOnWin32Error("DeleteObject returned false");
-            }
-
-            if (bytes > 0)
-            {
-                GC.RemoveMemoryPressure(bytes);
-            }
+	    GdipDisposeImage (handle);
         }
+	[DllImport("gdiplus.dll")]
+	internal static extern int GdipDisposeImage (IntPtr image);
 
         /// <summary>
         /// Frees a block of memory previously allocated with Allocate().
@@ -231,29 +134,7 @@ namespace PaintDotNet.SystemLayer
         /// <exception cref="InvalidOperationException">There was an error freeing the block.</exception>
         public static void Free(IntPtr block)
         {
-            if (Memory.hHeap != IntPtr.Zero)
-            {
-                long bytes = (long)SafeNativeMethods.HeapSize(hHeap, 0, block);
-
-                bool result = SafeNativeMethods.HeapFree(hHeap, 0, block);
-
-                if (!result)
-                {
-                    int error = System.Runtime.InteropServices.Marshal.GetLastWin32Error();
-                    throw new InvalidOperationException("HeapFree returned an error: " + error.ToString());
-                }
-
-                if (bytes > 0)
-                {
-                    GC.RemoveMemoryPressure(bytes);
-                }
-            }
-            else
-            {
-#if REPORTLEAKS
-                throw new InvalidOperationException("memory leak! check the debug output for more info, and http://blogs.msdn.com/ricom/archive/2004/12/10/279612.aspx to track it down");
-#endif
-            }
+		System.Runtime.InteropServices.Marshal.FreeHGlobal (block);
         }
 
         /// <summary>
@@ -263,18 +144,7 @@ namespace PaintDotNet.SystemLayer
         /// <param name="bytes">The size of the block.</param>
         public static void FreeLarge(IntPtr block, ulong bytes)
         {
-            bool result = SafeNativeMethods.VirtualFree(block, UIntPtr.Zero, NativeConstants.MEM_RELEASE);
-
-            if (!result)
-            {
-                int error = System.Runtime.InteropServices.Marshal.GetLastWin32Error();
-                throw new InvalidOperationException("VirtualFree returned an error: " + error.ToString());
-            }
-
-            if (bytes > 0)
-            {
-                GC.RemoveMemoryPressure((long)bytes);
-            }
+	  System.Runtime.InteropServices.Marshal.FreeHGlobal (block);
         }
 
         /// <summary>
@@ -291,31 +161,7 @@ namespace PaintDotNet.SystemLayer
         /// </remarks>
         public static void ProtectBlockLarge(IntPtr block, ulong size, bool readAccess, bool writeAccess)
         {
-            uint flOldProtect;
-            uint flNewProtect;
-
-            if (readAccess && writeAccess)
-            {
-                flNewProtect = NativeConstants.PAGE_READWRITE;
-            }
-            else if (readAccess && !writeAccess)
-            {
-                flNewProtect = NativeConstants.PAGE_READONLY;
-            }
-            else if (!readAccess && !writeAccess)
-            {
-                flNewProtect = NativeConstants.PAGE_NOACCESS;
-            }
-            else
-            {
-                throw new InvalidOperationException("May not specify a page to be write-only");
-            }
-
-#if DEBUGSPEW
-            Tracing.Ping("ProtectBlockLarge: block #" + block.ToString() + ", read: " + readAccess + ", write: " + writeAccess);
-#endif
-
-            SafeNativeMethods.VirtualProtect(block, new UIntPtr(size), flNewProtect, out flOldProtect);
+		Console.WriteLine ("PORT: Memory.ProtectBlockLarge: should use mmap instead of alloc, and use mprotect here");
         }
 
         /// <summary>

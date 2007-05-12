@@ -148,9 +148,16 @@ namespace PaintDotNet
             string[] requiredFiles =
                 new string[]
                 {
+#if WINDOWS
                     "ICSharpCode.SharpZipLib.dll",
                     "Interop.WIA.dll",
-                    "PaintDotNet.Data.dll",
+                    "SetupNgen.exe",
+                    "ShellExtension_x64.dll",
+                    "ShellExtension_x86.dll",
+                    "UpdateMonitor.exe",
+                    "WiaProxy32.exe",
+#else
+				    "PaintDotNet.Data.dll",
                     "PaintDotNet.Effects.dll",
                     "PaintDotNet.Resources.dll",
                     "PaintDotNet.Strings.3.DE.resources",
@@ -163,12 +170,8 @@ namespace PaintDotNet
                     "PaintDotNet.Strings.3.ZH-CN.resources",
                     "PaintDotNet.StylusReader.dll",
                     "PaintDotNet.SystemLayer.dll",
-                    "PdnLib.dll",
-                    "SetupNgen.exe",
-                    "ShellExtension_x64.dll",
-                    "ShellExtension_x86.dll",
-                    "UpdateMonitor.exe",
-                    "WiaProxy32.exe"
+                    "PdnLib.dll"
+#endif
                 };
 
             string dirName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);

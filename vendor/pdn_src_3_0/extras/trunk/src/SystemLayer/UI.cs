@@ -28,6 +28,39 @@ namespace PaintDotNet.SystemLayer
         private static float xScale;
         private static float yScale;
 
+	static MethodInfo object_from_handle;
+	static MethodInfo get_clip_rectangles;
+
+	static void init_types ()
+	{
+		Console.WriteLine ("-----HERE------");
+		try {
+			Type t = typeof (Control).Assembly.GetType ("System.Windows.Forms.Hwnd");
+			if (t == null){
+				Console.WriteLine ("PORT: Not able to get the intenral type Hwnd");
+				return;
+			}
+			object_from_handle = t.GetMethod ("ObjectFromHandle");
+			if (object_from_handle == null){
+				Console.WriteLine ("PORT: No ObjectFromHandle available");
+				return;
+			}
+			get_clip_rectangles = t.GetMethod ("get_ClipRectangles");
+			if (get_clip_rectangles == null){
+				Console.WriteLine ("PORT: Not able to get the intenral get_ClipRectangles");
+				return;
+			}
+			Console.WriteLine ("Got {0} and {1}", get_clip_rectangles, object_from_handle);
+		} finally {
+			Console.WriteLine ("-------Finished--------");
+		}
+	}
+	    
+	static UI ()
+	{
+		init_types ();
+	}
+	    
         /// <summary>
         /// Indicates to the OS that this application is aware of high-DPI modes and handles
         /// it correctly. On some OS versions, if this function is not called then the application
@@ -388,10 +421,13 @@ namespace PaintDotNet.SystemLayer
         /// </remarks>
         private static void SetControlRedrawImpl(Control control, bool enabled)
         {
-            SafeNativeMethods.SendMessageW(control.Handle, NativeConstants.WM_SETREDRAW, enabled ? new IntPtr(1) : IntPtr.Zero, IntPtr.Zero);
-            GC.KeepAlive(control);
-        }
-
+		if (ywarn_shown)
+			return;
+		Console.WriteLine ("UI.SetControlRedrawImpl: Not implemented");
+		ywarn_shown = true;
+	}
+	static bool ywarn_shown;
+	    
         private static Dictionary<Control, int> controlRedrawStack = new Dictionary<Control, int>();
 
         /// <summary>
@@ -496,7 +532,7 @@ namespace PaintDotNet.SystemLayer
             return (pushCount == 0);
         }
 
-        private static IntPtr hRgn = SafeNativeMethods.CreateRectRgn(0, 0, 1, 1);
+	private static IntPtr hRgn = IntPtr.Zero;
 
         /// <summary>
         /// This method retrieves the update region of a control.
@@ -511,13 +547,25 @@ namespace PaintDotNet.SystemLayer
         /// </remarks>
         public static Rectangle[] GetUpdateRegion(Control control)
         {
-            SafeNativeMethods.GetUpdateRgn(control.Handle, hRgn, false);
-            Rectangle[] scans;
-            int area;
-            PdnGraphics.GetRegionScans(hRgn, out scans, out area);
-            GC.KeepAlive(control);
-            return scans;
+#if false
+		if (get_clip_rectangles != null){
+			object hwnd = object_from_handle.Invoke (null, new object [] {control.Handle});
+			if (hwnd != null){
+				Rectangle [] rect = (Rectangle []) get_clip_rectangles.Invoke (hwnd, new object [0]);
+
+				Console.WriteLine ("Returning {0} rectangles for {1} that has {2},{3}", rect.Length, control, control.Width, control.Height);
+				foreach (Rectangle r in rect){
+					Console.WriteLine (r);
+				}
+				return rect;
+			}
+		} 
+		Console.WriteLine ("WARNING: Failed to calle the rect stuff");
+		Console.WriteLine ("Bounds: {0}", control.Bounds);
+#endif
+		return new Rectangle[1] { new Rectangle(0, 0, control.Width, control.Height) };
         }
+	static bool xwarn_shown;
 
         /// <summary>
         /// Sets a form's opacity.
@@ -535,39 +583,8 @@ namespace PaintDotNet.SystemLayer
                 throw new ArgumentOutOfRangeException("opacity", "must be in the range [0, 1]");
             }
 
-            uint exStyle = SafeNativeMethods.GetWindowLongW(form.Handle, NativeConstants.GWL_EXSTYLE);
-
-            byte bOldAlpha = 255;
-
-            if ((exStyle & NativeConstants.GWL_EXSTYLE) != 0)
-            {
-                uint dwOldKey;
-                uint dwOldFlags;
-                bool result = SafeNativeMethods.GetLayeredWindowAttributes(form.Handle, out dwOldKey, out bOldAlpha, out dwOldFlags);
-            }
-
-            byte bNewAlpha = (byte)(opacity * 255.0);
-            uint newExStyle = exStyle;
-
-            if (bNewAlpha != 255)
-            {
-                newExStyle |= NativeConstants.WS_EX_LAYERED;
-            }
-
-            if (newExStyle != exStyle || (newExStyle & NativeConstants.WS_EX_LAYERED) != 0)
-            {
-                if (newExStyle != exStyle)
-                {
-                    SafeNativeMethods.SetWindowLongW(form.Handle, NativeConstants.GWL_EXSTYLE, newExStyle);
-                }
-
-                if ((newExStyle & NativeConstants.WS_EX_LAYERED) != 0)
-                {
-                    SafeNativeMethods.SetLayeredWindowAttributes(form.Handle, 0, bNewAlpha, NativeConstants.LWA_ALPHA);
-                }
-            }
-
-            GC.KeepAlive(form);
+	    form.Opacity = opacity;
+	    
         }
 
         /// <summary>
@@ -629,8 +646,13 @@ namespace PaintDotNet.SystemLayer
         // TODO: get rid of this somehow! (this will happen when Layers window is rewritten, post-3.0)
         public static bool HideHorizontalScrollBar(Control c)
         {
-            return SafeNativeMethods.ShowScrollBar(c.Handle, NativeConstants.SB_HORZ, false);
+		if (!warn_shown){
+			Console.WriteLine ("PORT: HideHorizontalScrollBar missing");
+			warn_shown = true;
+		}
+		return true;
         }
+        static bool warn_shown;
 
         public static void RestoreWindow(IWin32Window window)
         {
