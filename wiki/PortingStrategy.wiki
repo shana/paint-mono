@@ -1,13 +1,15 @@
 #summary Paint.NET Porting Strategy
 #labels Phase-Deploy,plan,Phase-Implementation
 
-= Introduction =
+= Basics =
 
 Paint.NET has a very clean isolation between the engine and the system specific components.   
 
-The ideal scenario is to ship a SystemLayer.dll file that will replace the one that comes with the official distribution of Paint.NET.    Although I had originally hoped that the code could continue to support Mono and .NET on the same codebase, Rick suggested that I avoid this and go directly the route of replacing the library.
+The ideal scenario is to ship a !SystemLayer.dll file that will replace the one that comes with the official distribution of Paint.NET.    Although I had originally hoped that the code could continue to support Mono and .NET on the same codebase, Rick suggested that I avoid this and go directly the route of replacing the library.
 
-Ideally the port would only require the src/SystemLayer directory to be ported but currently Paint.NET still contains a few places in the core engine that must be modified (for example, at startup the program checks the list of libraries and resources to be in the target directory, but some of these assemblies are not necessary for Linux or are useless on Linux) this has required some changes in the core of Paint.NET.
+Ideally the port would only require the src/!SystemLayer directory to be ported but currently Paint.NET still contains a few places in the core engine that must be modified (for example, at startup the program checks the list of libraries and resources to be in the target directory, but some of these assemblies are not necessary for Linux or are useless on Linux) this has required some changes in the core of Paint.NET.
+
+In places that must be revisited in the future (unfinished implementation, stubs, routines turned into no-ops) I have added a WriteLine statement so we can keep track of what is missing.   A complete port should produce no output on the console.
 
 = Current State =
 
