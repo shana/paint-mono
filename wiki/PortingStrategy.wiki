@@ -1,0 +1,34 @@
+#summary Paint.NET Porting Strategy
+#labels Phase-Deploy,plan,Phase-Implementation
+
+= Introduction =
+
+Paint.NET has a very clean isolation between the engine and the system specific components.   
+
+The ideal scenario is to ship a SystemLayer.dll file that will replace the one that comes with the official distribution of Paint.NET.    Although I had originally hoped that the code could continue to support Mono and .NET on the same codebase, Rick suggested that I avoid this and go directly the route of replacing the library.
+
+Ideally the port would only require the src/SystemLayer directory to be ported but currently Paint.NET still contains a few places in the core engine that must be modified (for example, at startup the program checks the list of libraries and resources to be in the target directory, but some of these assemblies are not necessary for Linux or are useless on Linux) this has required some changes in the core of Paint.NET.
+
+= Current State =
+
+It is currently possible to startup Paint.NET and do some simple painting operations, but I have not ported all of my changes from the old 2.72 port to 3.0 so there are many things that do not work.   I will post the old patch that I had here so that it can be used as a reference and to avoid duplicating work that was already done. 
+
+Since Paint.NET is a .NET 2.0 application it is best if you use Mono 1.2.4, and ideally use the trunk release of Mono from subversion as the 2.0 support is rapidly evolving in that branch. 
+
+== Directions ==
+
+The port is good enough to start the application, but many features are still not tested and there are many P/Invokes that remain in the source code.   I have not really spent much time trying to test it, but testing will exhibit many features that must be ported to Linux. 
+
+= Building Paint.NET on Linux =
+
+To build Paint.NET you will need to use Mono Develop from our subversion repository.  I know that this is suboptimal, but it is the only easy way of building Paint.NET without writing Makefiles from scratch.
+
+To build it you must:
+    * Open the src/paintdotnet.sln solution
+    * Rebuild the solution.
+
+I *welcome* any contributions along the lines of making this work with plain Makefiles, as it would solve some of the above mentioned problems.
+
+= Contributing =
+
+If you want to contribute to this effort, please mail me your login information, and I will add you to this project. 
