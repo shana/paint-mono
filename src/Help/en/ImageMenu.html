@@ -1,0 +1,242 @@
+<html>
+
+<!-- #BeginTemplate "pdn_help.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- #BeginEditable "title" -->
+<title>Paint.NET Help - Image Menu</title>
+<!-- #EndEditable -->
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<body>
+
+<div id="banner">
+	<a href="http://www.getpaint.net/">
+	<img border="0" src="../images/logo.png"></a><p>
+	&nbsp;</div>
+<div id="leftnav">
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="index.html">Overview</a><br>
+		</li>
+		<li><a href="Features.html">Features</a><br>
+		<a href="Tutorials.html">Tutorials</a><br>
+		<a href="WhatsNew.html">What&#39;s New?</a><br>
+		</li>
+	</ul>
+	<h3>Concepts</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="LayersAndBlendModes.html">Layers and Blend Modes</a></li>
+	</ul>
+	<h3>User Interface</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="KeyboardMouseCommands.html">Keyboard &amp; Mouse Commands</a></li>
+		<li><a href="MainWindow.html">Main Window</a></li>
+		<li><a href="ImageList.html">Image List</a></li>
+		<li><a href="MenuBar.html">Menu Bar</a>
+		<ul class="toc">
+			<li><a href="FileMenu.html">File</a></li>
+			<li><a href="EditMenu.html">Edit</a></li>
+			<li><a href="ViewMenu.html">View</a></li>
+			<li><a href="ImageMenu.html">Image</a></li>
+			<li><a href="LayersMenu.html">Layers</a>
+			<ul class="toc">
+				<li class="comment"><a href="RotateZoom.html">Rotate / Zoom</a></li>
+			</ul></li>
+			<li><a href="AdjustmentsMenu.html">Adjustments</a>&nbsp;
+				<ul class="toc">
+				    <li><a href="Curves.html">Curves</a></li>
+					<li><a href="Levels.html">Levels</a></li>
+				</ul></li>
+			<li><a href="EffectsMenu.html">Effects</a></li>
+			<li><a href="WindowMenu.html">Window</a></li>
+			<li><a href="HelpMenu.html">Help</a></li>
+		</ul>
+		</li>
+		<li><a href="Toolbar.html">Toolbar</a></li>
+		<li><a href="ToolsWindow.html">Tools Window</a><ul class="toc">
+			<li><a href="SelectionTools.html">Selection Tools</a></li>
+			<li><a href="MoveTools.html">Move Tools</a><br>
+			<a href="MagicWand.html">Magic Wand</a></li>
+			<li><a href="GradientTool.html">Gradient Tool</a><br>
+			<a href="Paintbrush.html">Paintbrush</a></li>
+			<li><a href="EraserTool.html">Eraser Tool</a></li>
+			<li><a href="PixelTools.html">Pixel Tools</a></li>
+			<li><a href="ShapeTools.html">Shape Tools</a></li>
+			<li><a href="LineCurve.html">Line / Curve Tool</a></li>
+			<li><a href="TextTool.html">Text Tool</a></li>
+			<li><a href="PaintBucket.html">Paint Bucket</a></li>
+			<li><a href="CloneStamp.html">Clone Stamp</a></li>
+			<li><a href="RecolorTool.html">Recolor Tool</a></li>
+		</ul>
+		</li>
+		<li><a href="HistoryWindow.html">History Window</a></li>
+		<li><a href="LayersWindow.html">Layers Window</a></li>
+		<li><a href="ColorsWindow.html">Colors Window</a></li>
+		<li><a href="StatusBar.html">Status Bar</a></li>
+	</ul>
+	</li>
+	<h3>Other</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="FAQ.html">FAQ (Frequently Asked Questions)</a></li>
+		<li><a href="UnattendedInstallation.html">Unattended Installation</a></li>
+		<li><a href="SystemRequirements.html">System Requirements</a></li>
+		<li><a href="WebLinks.html">Web Links</a></li>
+		<li><a href="License.html">License</a></li>
+	</ul>
+</div>
+<div id="content">
+	<!-- #BeginEditable "content" -->
+<h2>Image Menu</h2>
+<p>	This menu contains commands that affect all layers of the current image. 
+This contrasts to the commands in the <a href="LayersMenu.html">Layers menu</a>, 
+which only affect the currently active layer.</p>
+	<blockquote>
+		<img border="0" src="Images/ImageMenu.png"><p> </p></blockquote>
+	<ul>
+		<li>
+		<h3><a name="CropToSelection"></a>Crop to Selection
+		</h3><p>This menu item is only available if a selection is active. 
+		Clicking on this menu item will cause the image to be replaced with only 
+		the area that was selected. If the selection is not a rectangle or 
+		square, then the bounding rectangle around the selection will be used. 
+		However, the pixels that were not in the selection will be made 
+		transparent.</p>
+		
+		<p>Original image:</p>
+		<img border="1" src="../images/bmw.jpg">
+		
+		<p>Here we have selected the area we want to crop using the
+		<a href="SelectionTools.html">Lasso selection tool</a>:</p>
+		<img border="1" src="../images/bmw_selected.jpg">
+		
+		<p>Here is the new image after having clicked on the Crop to Selection 
+		menu item. Note that the bounding rectangle of the selection outline was 
+		used to determine the new image&#39;s size, but that any pixel that was 
+		outside of the selection was made transparent. Also, keep in mind that 
+		the checkerboard pattern is used to indicate areas of the image that are 
+		transparent. It is not actually part of the image.</p>
+		<img border="1" src="../images/bmw_irregular_cropped.jpg">
+		
+		</li>
+		<li>
+		<h3><a name="Resize"></a>Resize
+		</h3><p>This command lets you change the size of the image. In so doing, 
+		the image is either stretched or shrunken to the size you specify. You 
+		may specify a relative percentage to resize the image by, or you specify 
+		the absolute pixel or print size that you desire. If the &quot;Maintain 
+		aspect ratio&quot; option is checked, then typing a new Width value will 
+		maintain a proportional Height value, and vice versa.</p>
+		
+		<p>If you choose to modify the print size of an image, the pixel size 
+		will be based on the resolution, which defaults to 96 pixels per inch, 
+		which is the same as 37.8 pixels per centimeter. For example, if you 
+		specify the image to be 1 inch wide, and the resolution is 96 
+		pixels/inch, then the image will be resized to be 96 pixels wide.</p>
+		
+		<p>You can use this dialog to affect the print size of an image by 
+		adjusting just the resolution. Note that if you only modify the 
+		resolution of the image, the pixel size will remain the same and no 
+		resampling is performed. </p>
+		
+		<p>There are multiple types of resampling that you may choose. 
+		&quot;Resampling&quot; is the process of computing what the new pixels should be 
+		based on what the old pixels are. Some algorithms produce better looking 
+		results, but take longer to complete. It is recommended that you use the 
+		default option, &quot;Best Quality,&quot; unless you have a specific need for and 
+		understanding of the other choices (<a href="http://en.wikipedia.org/wiki/Bilinear_interpolation">Bilinear</a>,
+		<a href="http://en.wikipedia.org/wiki/Bicubic_interpolation">Bicubic</a>, 
+		and 
+		<a href="http://en.wikipedia.org/wiki/Nearest_neighbor_interpolation">
+		Nearest Neighbor</a>). Best Quality will automatically choose either
+		<a href="http://en.wikipedia.org/wiki/Bicubic_interpolation">Bicubic</a> 
+		or 
+		<a href="http://en.wikipedia.org/wiki/Super_sampling">Super Sampling</a> 
+		depending on the new size that you specify.</p>
+		<h3></h3><img border="0" src="Images/ResizeDialog.png">
+		
+		<p>Original image:</p>
+		<img border="1" src="../images/bmw.jpg">
+		
+		<p>After being enlarged, using the Resize command:</p>
+		<img border="1" src="../images/bmw_after_enlarge.jpg">
+		
+		<p>After being shrunken, using the Resize command:</p>
+		<img border="1" src="../images/bmw_after_shrink.jpg">
+		<p>Depending on the type of image that you are shrinking, you may want 
+		to use the <a href="EffectsMenu.html#Sharpen">Sharpen effect</a> with a 
+		value of 1 or 2 after using the Resize command.</li>
+		<li>
+		<h3><a name="CanvasSize"></a>Canvas Size
+		</h3><p>This command lets you enlarge or shrink the image canvas without 
+		changing the size of the image itself. It works similarly to the Resize 
+		dialog, but adds an Anchor selection. If the image canvas is enlarged, 
+		the new area will be filled with the secondary color.</p>
+		<h3>
+		</h3>
+		<img border="0" src="Images/CanvasSize.png">
+		
+		<p>Original image:</p>
+		<img border="1" src="../images/bmw.jpg">
+		
+		<p>After enlarging the canvas and using the center anchor point (the 
+		secondary color is set to white in this case):</p>
+		<img border="1" src="../images/bmw_after_canvas_size.jpg">
+		
+		<p>After shrinking the canvas and using the center anchor point:</p>
+		<img border="1" src="../images/bmw_after_canvas_shrink.jpg">
+		</li>
+		<li>
+		<h3><a name="Flip"></a>Flip
+		</h3><p>This submenu allows you to flip the image horizontally or 
+		vertically.</p><h3>
+		
+		</h3><p>Original image:</p><h3>
+		<img border="1" src="../images/bmw.jpg">
+		
+		</h3><p>After being flipped horizontally:</p><h3>
+		<img border="1" src="../images/bmw_after_horiz_flip.jpg">
+		</h3></li>
+		<li>
+		<h3><a name="Rotate"></a>Rotate
+		</h3><p>This submenu gives you several commands for rotating the image 
+		by 90, 180, or 270 degrees in either the clockwise or counter-clockwise 
+		directions.</p><h3>
+		
+		</h3><p>Original image:</p><h3>
+		<img border="1" src="../images/bmw.jpg">
+		
+		</h3><p>After being rotated 90 degrees clockwise:</p>
+		<img border="1" src="../images/bmw_after_90_cw_rotate.jpg"><h3>
+		
+		</h3></li>
+		<li>
+		<h3><a name="Flatten"></a>Flatten
+		</h3><p>This takes the multiple layers of an image and combines them 
+		into one layer. It is only available if the image has more than one 
+		layer.</p></li>
+	</ul>
+
+
+	</blockquote>
+
+
+	<!-- #EndEditable -->
+	<h4><br>
+	<br>
+	</h4>
+	<p align="center">
+	<font color="#808080" size="1">Copyright <font face="Times New Roman">© 2007 </font>
+	Rick Brewster, Tom Jackson, and past contributors. Portions Copyright
+	<font face="Times New Roman">© 2007 </font>Microsoft Corporation. All Rights 
+	Reserved.</font><font size="1"> <br>
+	</font>
+</div>
+</b>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

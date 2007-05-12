@@ -1,0 +1,185 @@
+<html>
+
+<!-- #BeginTemplate "pdn_help.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- #BeginEditable "title" -->
+<title>Paint.NET Help - Gradient Tool</title>
+<!-- #EndEditable -->
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<body>
+
+<div id="banner">
+	<a href="http://www.getpaint.net/">
+	<img border="0" src="../images/logo.png"></a><p>
+	&nbsp;</div>
+<div id="leftnav">
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="index.html">Overview</a><br>
+		</li>
+		<li><a href="Features.html">Features</a><br>
+		<a href="Tutorials.html">Tutorials</a><br>
+		<a href="WhatsNew.html">What&#39;s New?</a><br>
+		</li>
+	</ul>
+	<h3>Concepts</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="LayersAndBlendModes.html">Layers and Blend Modes</a></li>
+	</ul>
+	<h3>User Interface</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="KeyboardMouseCommands.html">Keyboard &amp; Mouse Commands</a></li>
+		<li><a href="MainWindow.html">Main Window</a></li>
+		<li><a href="ImageList.html">Image List</a></li>
+		<li><a href="MenuBar.html">Menu Bar</a>
+		<ul class="toc">
+			<li><a href="FileMenu.html">File</a></li>
+			<li><a href="EditMenu.html">Edit</a></li>
+			<li><a href="ViewMenu.html">View</a></li>
+			<li><a href="ImageMenu.html">Image</a></li>
+			<li><a href="LayersMenu.html">Layers</a>
+			<ul class="toc">
+				<li class="comment"><a href="RotateZoom.html">Rotate / Zoom</a></li>
+			</ul></li>
+			<li><a href="AdjustmentsMenu.html">Adjustments</a>&nbsp;
+				<ul class="toc">
+				    <li><a href="Curves.html">Curves</a></li>
+					<li><a href="Levels.html">Levels</a></li>
+				</ul></li>
+			<li><a href="EffectsMenu.html">Effects</a></li>
+			<li><a href="WindowMenu.html">Window</a></li>
+			<li><a href="HelpMenu.html">Help</a></li>
+		</ul>
+		</li>
+		<li><a href="Toolbar.html">Toolbar</a></li>
+		<li><a href="ToolsWindow.html">Tools Window</a><ul class="toc">
+			<li><a href="SelectionTools.html">Selection Tools</a></li>
+			<li><a href="MoveTools.html">Move Tools</a><br>
+			<a href="MagicWand.html">Magic Wand</a></li>
+			<li><a href="GradientTool.html">Gradient Tool</a><br>
+			<a href="Paintbrush.html">Paintbrush</a></li>
+			<li><a href="EraserTool.html">Eraser Tool</a></li>
+			<li><a href="PixelTools.html">Pixel Tools</a></li>
+			<li><a href="ShapeTools.html">Shape Tools</a></li>
+			<li><a href="LineCurve.html">Line / Curve Tool</a></li>
+			<li><a href="TextTool.html">Text Tool</a></li>
+			<li><a href="PaintBucket.html">Paint Bucket</a></li>
+			<li><a href="CloneStamp.html">Clone Stamp</a></li>
+			<li><a href="RecolorTool.html">Recolor Tool</a></li>
+		</ul>
+		</li>
+		<li><a href="HistoryWindow.html">History Window</a></li>
+		<li><a href="LayersWindow.html">Layers Window</a></li>
+		<li><a href="ColorsWindow.html">Colors Window</a></li>
+		<li><a href="StatusBar.html">Status Bar</a></li>
+	</ul>
+	</li>
+	<h3>Other</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="FAQ.html">FAQ (Frequently Asked Questions)</a></li>
+		<li><a href="UnattendedInstallation.html">Unattended Installation</a></li>
+		<li><a href="SystemRequirements.html">System Requirements</a></li>
+		<li><a href="WebLinks.html">Web Links</a></li>
+		<li><a href="License.html">License</a></li>
+	</ul>
+</div>
+<div id="content">
+	<!-- #BeginEditable "content" -->
+	<h2>Gradient Tool</h2>
+	<p>The Gradient Tool allows you to draw gradients in several formats. With 
+	its transparency mode, you can also &quot;fade&quot; or &quot;blend&quot; two images together.</p>
+	<h3>Gradient Types</h3>
+	<p>Each gradient type can be chosen from the <a href="Toolbar.html#Gradient">
+	Gradient section of the toolbar</a>:</p>
+	<blockquote>
+		<p>
+		<img border="0" src="Images/Toolbar_GradientTool.png" width="382" height="72"></p>
+	</blockquote>
+	<p>The first column of gradients below shows how the gradient looks when 
+	drawn in Color mode with two opaque colors (alpha value of 255). </p>
+	<p>The second column shows the effect of drawing a gradient with the 
+	Transparency Mode on the following image:</p>
+	<blockquote>
+		<p><img border="1" src="../images/Camaro_160.jpg"></p>
+	</blockquote>
+	<ul>
+		<li>Linear<br>
+			<img border="1" src="../images/Gradient_Linear.png">
+			<img border="1" src="../images/Gradient_Alpha_Linear.jpg"><br>
+&nbsp;</li>
+		<li>Linear (Reflected)<br>
+		<img border="1" src="../images/Gradient_LinearReflected.png">
+		<img border="1" src="../images/Gradient_Alpha_LinearReflected.jpg" width="160" height="100"> <br>
+&nbsp;</li>
+		<li>Diamond<br>
+		<img border="1" src="../images/Gradient_Diamond.png">
+		<img border="1" src="../images/Gradient_Alpha_Diamond.jpg" width="160" height="100"><br>
+&nbsp;</li>
+		<li>Radial<br>
+		<img border="1" src="../images/Gradient_Radial.png">
+		<img border="1" src="../images/Gradient_Alpha_Radial.jpg" width="160" height="100"><br>
+&nbsp;</li>
+		<li>Conical<br>
+		<img border="1" src="../images/Gradient_Conical.png">
+		<img border="1" src="../images/Gradient_Alpha_Conical.jpg" width="160" height="100"></li>
+	</ul>
+	<h3>Drawing a Gradient</h3>
+	<p>To draw a gradient, simply click and drag on the canvas as if you were 
+	drawing a line. The gradient will be drawn as you move the mouse which 
+	should let you quickly figure out the placement for the gradient you want to 
+	draw. After you release the mouse button, you will be able to adjust the 
+	gradient control points by moving the circular nubs. Right-clicking on a nub 
+	will swap the roles of the primary and secondary colors. If you move a nub 
+	while holding both mouse buttons, then both nubs will be moved.</p>
+	<h3>Color Mode</h3>
+	<p>The default type of gradient is a color gradient that affects all color 
+	channels and the alpha channel. The gradient will be drawn such that it 
+	fades from the primary color to the secondary color. If you use the right 
+	mouse button, then the roles of the primary and secondary colors will be 
+	reversed. The gradients in the first column above were drawn using the 
+	default colors of black and white.</p>
+	<h3>Transparency Mode (&quot;Fading&quot; / &quot;Blending&quot;)</h3>
+	<p>The special transparency mode can be used to fade out part of an image. 
+	This can also be quite useful for blending two images together. To access 
+	this mode, click on the button that controls the Gradient mode in the 
+	toolbar and select Transparency Mode:</p>
+	<blockquote>
+		<p><img border="0" src="Images/Toolbar_GradientTool2.png"></p>
+	</blockquote>
+	<p>This type of gradient will only affect the alpha channel of the current 
+	layer. The gradient will fade <i>from</i> the alpha value of the primary 
+	color <i>to </i>the inverse of the alpha value of the secondary color. If 
+	you use the right mouse button, then the gradient will fade <i>from </i>the 
+	inverse of the alpha value of the secondary color <i>to </i>the alpha value 
+	of the primary color. To put it more simply, treat transparency gradients as 
+	always fading from opaque (255 alpha) to transparent (0 alpha).</p>
+	<p>To do a &quot;fade&quot; or &quot;blend&quot;, place the two images on separate layers, and 
+	then use a transparency gradient on the top layer.</p>
+	<p>As an example, using the two-layer discussed in Layers and Blend Modes, 
+	the following cross-faded image can be easily created by drawing a 
+	transparency gradient from left to right on the layer with the picture of 
+	Seattle:</p>
+	<blockquote>
+		<p><img border="1" src="../images/Gradient_CrossFade.jpg"></p>
+	</blockquote>
+	<!-- #EndEditable -->
+	<h4><br>
+	<br>
+	</h4>
+	<p align="center">
+	<font color="#808080" size="1">Copyright <font face="Times New Roman">© 2007 </font>
+	Rick Brewster, Tom Jackson, and past contributors. Portions Copyright
+	<font face="Times New Roman">© 2007 </font>Microsoft Corporation. All Rights 
+	Reserved.</font><font size="1"> <br>
+	</font>
+</div>
+</b>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

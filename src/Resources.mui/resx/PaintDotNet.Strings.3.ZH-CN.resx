@@ -1,0 +1,2760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--      Microsoft ResX Schema           Version 2.0          The primary goals of this format is to allow a simple XML format      that is mostly human readable. The generation and parsing of the      various data types are done through the TypeConverter classes      associated with the data types.          Example:          ... ado.net/XML headers & schema ...     <resheader name="resmimetype">text/microsoft-resx</resheader>     <resheader name="version">2.0</resheader>     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>     <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>     <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>     <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>     <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">         <value>[base64 mime encoded serialized .NET Framework object]</value>     </data>     <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>         <comment>This is a comment</comment>     </data>                      There are any number of "resheader" rows that contain simple      name/value pairs.          Each data row contains a name, and value. The row also contains a      type or mimetype. Type corresponds to a .NET class that support      text/value conversion through the TypeConverter architecture.      Classes that don't support this are serialized and stored with the      mimetype set.          The mimetype is used for serialized objects, and tells the      ResXResourceReader how to depersist the object. This is currently not      extensible. For a given mimetype the value must be set accordingly:          Note - application/x-microsoft.net.object.binary.base64 is the format      that the ResXResourceWriter will generate, however the reader can      read any of the formats listed below.          mimetype: application/x-microsoft.net.object.binary.base64     value   : The object must be serialized with              : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter             : and then encoded with base64 encoding.          mimetype: application/x-microsoft.net.object.soap.base64     value   : The object must be serialized with              : System.Runtime.Serialization.Formatters.Soap.SoapFormatter             : and then encoded with base64 encoding.      mimetype: application/x-microsoft.net.object.bytearray.base64     value   : The object must be serialized into a byte array              : using a System.ComponentModel.TypeConverter             : and then encoded with base64 encoding.     -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Application.ProductName.Bare" xml:space="preserve">
+<value>Paint.NET</value>
+  </data>
+  <data name="Application.ProductName.Format" xml:space="preserve">
+<value>{0} v{1}{2}</value>
+    <comment>{0} is Application.ProductName.Bare. {1} is the version number (e.g., "2.6"). {2} is either an empty string, or a version tag constructed with Application.ProductNage.Format (e.g., "Beta 5")</comment>
+  </data>
+  <data name="Application.ProductName.Tag.Format" xml:space="preserve">
+    <value> {0}</value>
+    <comment>{0} is the version tag, e.g. Beta 5</comment>
+  </data>
+  <data name="Application.Copyright.AllRightsReserved" xml:space="preserve">
+<value>版权所有。</value>
+  </data>
+  <data name="LayerForm.Text" xml:space="preserve">
+<value>图层</value>
+  </data>
+  <data name="LayerForm.AddNewLayerButton.ToolTipText" xml:space="preserve">
+<value>增加新图层</value>
+  </data>
+  <data name="LayerForm.DeleteLayerButton.ToolTipText" xml:space="preserve">
+<value>删除图层</value>
+  </data>
+  <data name="LayerForm.MergeLayerDownButton.ToolTipText">
+<value>向下合并图层</value>
+  </data>
+  <data name="LayerForm.DuplicateLayerButton.ToolTipText" xml:space="preserve">
+<value>复制图层</value>
+  </data>
+  <data name="LayerForm.MoveLayerUpButton.ToolTipText" xml:space="preserve">
+<value>向上移动图层</value>
+  </data>
+  <data name="LayerForm.MoveLayerDownButton.ToolTipText" xml:space="preserve">
+<value>向下移动图层</value>
+  </data>
+  <data name="LayerForm.PropertiesButton.ToolTipText" xml:space="preserve">
+<value>属性</value>
+  </data>
+  <data name="HistoryForm.Text" xml:space="preserve">
+<value>历史记录</value>
+  </data>
+  <data name="HistoryForm.RewindButton.ToolTipText" xml:space="preserve">
+<value>撤消所有</value>
+  </data>
+  <data name="HistoryForm.UndoButton.ToolTipText" xml:space="preserve">
+<value>撤消</value>
+  </data>
+  <data name="HistoryForm.FastForwardButton.ToolTipText" xml:space="preserve">
+<value>重做所有</value>
+  </data>
+  <data name="HistoryForm.ClearHistoryButton.ToolTipText" xml:space="preserve">
+<value>清除历史记录</value>
+  </data>
+  <data name="HistoryForm.RedoButton.ToolTipText" xml:space="preserve">
+<value>重做</value>
+  </data>
+  <data name="SavePaletteDialog.TypeANameLabel.Text">
+<value>输入调色板名字:</value>
+  </data>
+  <data name="SavePaletteDialog.PalettesLabel.Text">
+<value>调色板已经被保存:</value>
+  </data>
+  <data name="SavePaletteDialog.Text">
+<value>保存现在的调色板</value>
+  </data>
+  <data name="ColorsForm.Text" xml:space="preserve">
+<value>颜色</value>
+  </data>
+  <data name="ColorsForm.ColorAddButton.ToolTipText">
+<value>将颜色加入调色板</value>
+  </data>
+  <data name="ColorsForm.ColorDeleteButton.ToolTipText">
+<value>从调色板中删除颜色</value>
+  </data>
+  <data name="ColorPalette.SaveHeader">
+<value>; Paint.NET 调色板文件; 以分号开始的行是注释
+; 颜色以8位数字的形式组成:aarrggbb
+; 例如, 这代表绿色:FF00FF00
+; 阿尔法(Alpha) &apos;aa&apos; 代表颜色的透明度。FF 是完全不透明， 00 是完全透明
+; 一个调色板必须由96种颜色组成。如果少于这个，那么剩余颜色
+; slots将设置成白色 (FFFFFFFF).如果多于这个，那么剩余颜色将被忽略</value>
+    <comment>This is written to the beginning of palette files, which are stored in text files (*.txt)</comment>
+  </data>
+  <data name="SystemLayer.UserDataDirName">
+<value>Paint.NET 用户文件</value>
+    <comment>This is a directory that will be created in the My Documents folder.</comment>
+  </data>
+  <data name="ColorPalettes.UserDataSubDirName">
+<value>调色板</value>
+    <comment>This is a directory that will be created in the directory that SystemLayer.UserDataDirName refers to.</comment>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.ToolTipText">
+<value>管理调色板</value>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.SaveCurrentPaletteAs.Text">
+<value>保存当前调色板为... (&amp;A)</value>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.OpenPalettesFolder.Text">
+<value>打开调色板文件夹 (&amp;O)</value>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.ResetToDefaultPalette.Text">
+<value>重设到默认调色板 (&amp;R)</value>
+  </data>
+  <data name="ColorsForm.RedLabel.Text" xml:space="preserve">
+<value>红:</value>
+  </data>
+  <data name="ColorsForm.BlueLabel.Text" xml:space="preserve">
+<value>蓝:</value>
+  </data>
+  <data name="ColorsForm.GreenLabel.Text" xml:space="preserve">
+<value>绿:</value>
+  </data>
+  <data name="ColorsForm.HexLabel.Text" xml:space="preserve">
+<value>Hex:</value>
+  </data>
+  <data name="ColorsForm.HueLabel.Text" xml:space="preserve">
+<value>H:</value>
+  </data>
+  <data name="ColorsForm.SaturationLabel.Text" xml:space="preserve">
+<value>S:</value>
+  </data>
+  <data name="ColorsForm.ValueLabel.Text" xml:space="preserve">
+<value>V:</value>
+  </data>
+  <data name="ColorsForm.RgbHeader.Text" xml:space="preserve">
+<value>RGB</value>
+  </data>
+  <data name="ColorsForm.HsvHeader.Text" xml:space="preserve">
+<value>HSV</value>
+  </data>
+  <data name="ColorsForm.AlphaHeader.Text" xml:space="preserve">
+<value>透明度 - 阿尔法(Alpha) </value>
+  </data>
+  <data name="ColorsForm.MoreLessButton.Text.Less" xml:space="preserve">
+<value>一般</value>
+  </data>
+  <data name="ColorsForm.MoreLessButton.Text.More" xml:space="preserve">
+<value>高级</value>
+  </data>
+  <data name="WhichUserColor.Primary" xml:space="preserve">
+<value>前景色</value>
+  </data>
+  <data name="WhichUserColor.Secondary" xml:space="preserve">
+<value>背景色</value>
+  </data>
+  <data name="MainToolBarForm.Text" xml:space="preserve">
+<value>工具</value>
+  </data>
+  <data name="AboutDialog.Text.Format" xml:space="preserve">
+<value>关于 {0}</value>
+  </data>
+  <data name="Form.OkButton.Text" xml:space="preserve">
+<value>确定</value>
+  </data>
+  <data name="Form.CancelButton.Text" xml:space="preserve">
+<value>取消</value>
+  </data>
+  <data name="Form.SaveButton.Text">
+<value>保存(&amp;S)</value>
+  </data>
+  <data name="Form.ResetButton.Text">
+<value>重设(&amp;R)</value>
+  </data>
+  <data name="Form.CloseButton.Text">
+<value>关闭</value>
+  </data>
+  <data name="AboutDialog.CreditsLabel.Text" xml:space="preserve">
+<value>开发者:</value>
+  </data>
+  <data name="BrushConfigWidget.SolidBrush.Text" xml:space="preserve">
+<value>实心颜色</value>
+  </data>
+  <data name="HatchStyle.Horizontal" xml:space="preserve">
+<value>水平线</value>
+  </data>
+  <data name="HatchStyle.Min" xml:space="preserve">
+<value>迷你</value>
+  </data>
+  <data name="HatchStyle.Vertical" xml:space="preserve">
+<value>垂直线</value>
+  </data>
+  <data name="HatchStyle.ForwardDiagonal" xml:space="preserve">
+<value>前斜</value>
+  </data>
+  <data name="HatchStyle.BackwardDiagonal" xml:space="preserve">
+<value>后斜</value>
+  </data>
+  <data name="HatchStyle.Cross" xml:space="preserve">
+<value>十字交叉</value>
+  </data>
+  <data name="HatchStyle.LargeGrid" xml:space="preserve">
+<value>大格</value>
+  </data>
+  <data name="HatchStyle.Max" xml:space="preserve">
+<value>最大(Max)</value>
+  </data>
+  <data name="HatchStyle.DiagonalCross" xml:space="preserve">
+<value>对角线交叉</value>
+  </data>
+  <data name="HatchStyle.Percent05" xml:space="preserve">
+<value>百分之  5</value>
+  </data>
+  <data name="HatchStyle.Percent10" xml:space="preserve">
+<value>百分之 10</value>
+  </data>
+  <data name="HatchStyle.Percent20" xml:space="preserve">
+<value>百分之 20</value>
+  </data>
+  <data name="HatchStyle.Percent25" xml:space="preserve">
+<value>百分之 25</value>
+  </data>
+  <data name="HatchStyle.Percent30" xml:space="preserve">
+<value>百分之 30</value>
+  </data>
+  <data name="HatchStyle.Percent40" xml:space="preserve">
+<value>百分之 40</value>
+  </data>
+  <data name="HatchStyle.Percent50" xml:space="preserve">
+<value>百分之 50</value>
+  </data>
+  <data name="HatchStyle.Percent60" xml:space="preserve">
+<value>百分之 60</value>
+  </data>
+  <data name="HatchStyle.Percent70" xml:space="preserve">
+<value>百分之 70</value>
+  </data>
+  <data name="HatchStyle.Percent75" xml:space="preserve">
+<value>百分之 75</value>
+  </data>
+  <data name="HatchStyle.Percent80" xml:space="preserve">
+<value>百分之 80</value>
+  </data>
+  <data name="HatchStyle.Percent90" xml:space="preserve">
+<value>百分之 90</value>
+  </data>
+  <data name="HatchStyle.LightDownwardDiagonal" xml:space="preserve">
+    <value>Light Downward Diagonal</value>
+  </data>
+  <data name="HatchStyle.LightUpwardDiagonal" xml:space="preserve">
+<value>轻前斜线</value>
+  </data>
+  <data name="HatchStyle.DarkDownwardDiagonal" xml:space="preserve">
+<value>重后斜线</value>
+  </data>
+  <data name="HatchStyle.DarkUpwardDiagonal" xml:space="preserve">
+<value>重前斜线</value>
+  </data>
+  <data name="HatchStyle.WideDownwardDiagonal" xml:space="preserve">
+<value>宽后斜线</value>
+  </data>
+  <data name="HatchStyle.WideUpwardDiagonal" xml:space="preserve">
+<value>宽前斜线</value>
+  </data>
+  <data name="HatchStyle.LightVertical" xml:space="preserve">
+<value>轻垂直线</value>
+  </data>
+  <data name="HatchStyle.LightHorizontal" xml:space="preserve">
+<value>轻水平线</value>
+  </data>
+  <data name="HatchStyle.NarrowVertical" xml:space="preserve">
+<value>小间距垂直线</value>
+  </data>
+  <data name="HatchStyle.NarrowHorizontal" xml:space="preserve">
+<value>小间距平行线</value>
+  </data>
+  <data name="HatchStyle.DarkVertical" xml:space="preserve">
+<value>重垂直线</value>
+  </data>
+  <data name="HatchStyle.DarkHorizontal" xml:space="preserve">
+<value>重平行线</value>
+  </data>
+  <data name="HatchStyle.DashedDownwardDiagonal" xml:space="preserve">
+<value>间断后斜线</value>
+  </data>
+  <data name="HatchStyle.DashedUpwardDiagonal" xml:space="preserve">
+<value>间断前斜线</value>
+  </data>
+  <data name="HatchStyle.DashedHorizontal" xml:space="preserve">
+<value>间断平行线</value>
+  </data>
+  <data name="HatchStyle.DashedVertical" xml:space="preserve">
+<value>间断垂直线</value>
+  </data>
+  <data name="HatchStyle.SmallConfetti" xml:space="preserve">
+<value>小纸屑</value>
+  </data>
+  <data name="HatchStyle.LargeConfetti" xml:space="preserve">
+<value>大纸屑</value>
+  </data>
+  <data name="HatchStyle.ZigZag" xml:space="preserve">
+<value>锯齿</value>
+  </data>
+  <data name="HatchStyle.Wave" xml:space="preserve">
+<value>波浪</value>
+  </data>
+  <data name="HatchStyle.DiagonalBrick" xml:space="preserve">
+<value>斜砖</value>
+  </data>
+  <data name="HatchStyle.HorizontalBrick" xml:space="preserve">
+<value>横砖</value>
+  </data>
+  <data name="HatchStyle.Weave" xml:space="preserve">
+<value>编织</value>
+  </data>
+  <data name="HatchStyle.Plaid" xml:space="preserve">
+<value>格子花呢</value>
+  </data>
+  <data name="HatchStyle.Divot" xml:space="preserve">
+<value>草皮</value>
+  </data>
+  <data name="HatchStyle.DottedGrid" xml:space="preserve">
+<value>点方格</value>
+  </data>
+  <data name="HatchStyle.DottedDiamond" xml:space="preserve">
+<value>点菱形</value>
+  </data>
+  <data name="HatchStyle.Shingle" xml:space="preserve">
+<value>鹅卵石</value>
+  </data>
+  <data name="HatchStyle.Trellis" xml:space="preserve">
+<value>格架</value>
+  </data>
+  <data name="HatchStyle.Sphere" xml:space="preserve">
+<value>球</value>
+  </data>
+  <data name="HatchStyle.SmallGrid" xml:space="preserve">
+<value>小格</value>
+  </data>
+  <data name="HatchStyle.SmallCheckerBoard" xml:space="preserve">
+<value>小国际象棋盘</value>
+  </data>
+  <data name="HatchStyle.LargeCheckerBoard" xml:space="preserve">
+<value>大国际象棋盘</value>
+  </data>
+  <data name="HatchStyle.OutlinedDiamond" xml:space="preserve">
+<value>空心菱形</value>
+  </data>
+  <data name="HatchStyle.SolidDiamond" xml:space="preserve">
+<value>实心菱形</value>
+  </data>
+  <data name="BrushConfigWidget.FillStyleLabel.Text" xml:space="preserve">
+<value>填充:</value>
+  </data>
+  <data name="CanvasSizeAction.Name" xml:space="preserve">
+<value>画布尺寸</value>
+  </data>
+  <data name="CanvasSizeAction.ResizeDocument.OutOfMemory" xml:space="preserve">
+<value>内存不足无法完成画布尺寸重设。</value>
+  </data>
+  <data name="AnchorEdge.TopLeft" xml:space="preserve">
+<value>左上</value>
+  </data>
+  <data name="AnchorEdge.Top" xml:space="preserve">
+<value>上</value>
+  </data>
+  <data name="AnchorEdge.TopRight" xml:space="preserve">
+<value>右上</value>
+  </data>
+  <data name="AnchorEdge.Left" xml:space="preserve">
+<value>左</value>
+  </data>
+  <data name="AnchorEdge.Middle" xml:space="preserve">
+<value>中</value>
+  </data>
+  <data name="AnchorEdge.Right" xml:space="preserve">
+<value>右</value>
+  </data>
+  <data name="AnchorEdge.BottomLeft" xml:space="preserve">
+<value>左下</value>
+  </data>
+  <data name="AnchorEdge.Bottom" xml:space="preserve">
+<value>下</value>
+  </data>
+  <data name="AnchorEdge.BottomRight" xml:space="preserve">
+<value>右下</value>
+  </data>
+  <data name="CanvasSizeDialog.Text" xml:space="preserve">
+<value>画布尺寸</value>
+  </data>
+  <data name="CanvasSizeDialog.AnchorHeader.Text" xml:space="preserve">
+<value>锁定</value>
+  </data>
+  <data name="CanvasSizeDialog.NewSpaceLabel.Text" xml:space="preserve">
+    <value>新空间将由背景色填充。</value>
+  </data>
+  <data name="CloneStampTool.Name" xml:space="preserve">
+<value>克隆图形</value>
+  </data>
+  <data name="CloneStampTool.HelpText" xml:space="preserve">
+<value>按Ctrl键的同时左击选择物体。然后按左键拖动复制</value>
+  </data>
+  <data name="ColorDisplayWidget.SwapIconBox.ToolTipText" xml:space="preserve">
+<value>交换颜色
+快捷键: X</value>
+  </data>
+  <data name="ColorDisplayWidget.BlackAndWhiteIconBox.ToolTipText" xml:space="preserve">
+<value>黑白效果</value>
+  </data>
+  <data name="ColorDisplayWidget.ForeColorRectangle.ToolTipText" xml:space="preserve">
+<value>前景色</value>
+  </data>
+  <data name="ColorDisplayWidget.BackColorRectangle.ToolTipText" xml:space="preserve">
+<value>背景色</value>
+  </data>
+  <data name="ColorPickerTool.Name" xml:space="preserve">
+<value>取色工具</value>
+  </data>
+  <data name="ColorPickerTool.HelpText" xml:space="preserve">
+<value>左击设置前景色，右击设置背景色</value>
+  </data>
+  <data name="CommonAction.New" xml:space="preserve">
+<value>新建</value>
+  </data>
+  <data name="CommonAction.Open" xml:space="preserve">
+<value>打开</value>
+  </data>
+  <data name="CommonAction.Save" xml:space="preserve">
+<value>保存</value>
+  </data>
+  <data name="CommonAction.Print" xml:space="preserve">
+<value>打印</value>
+  </data>
+  <data name="CommonAction.Cut" xml:space="preserve">
+<value>剪切</value>
+  </data>
+  <data name="CommonAction.Copy" xml:space="preserve">
+<value>拷贝</value>
+  </data>
+  <data name="CommonAction.Paste" xml:space="preserve">
+<value>粘贴</value>
+  </data>
+  <data name="CommonAction.CropToSelection" xml:space="preserve">
+<value>剪切选择区域</value>
+  </data>
+  <data name="CommonAction.Deselect" xml:space="preserve">
+<value>取消选择</value>
+  </data>
+  <data name="CommonAction.Undo" xml:space="preserve">
+<value>取消</value>
+  </data>
+  <data name="CommonAction.Redo" xml:space="preserve">
+<value>重做</value>
+  </data>
+  <data name="CommonAction.ZoomIn" xml:space="preserve">
+<value>放大</value>
+  </data>
+  <data name="CommonAction.ZoomOut" xml:space="preserve">
+<value>缩小</value>
+  </data>
+  <data name="CropAction.Name" xml:space="preserve">
+<value>剪切选择区域</value>
+  </data>
+  <data name="DeselectAction.Name" xml:space="preserve">
+<value>取消选择</value>
+  </data>
+  <data name="ExecuteFunction.ProgressDialog.Description.Text">
+<value>请等候...</value>
+  </data>
+  <data name="LayerPropertyChanging.HistoryMementoNameFormat" xml:space="preserve">
+<value>图层 {0}</value>
+    <comment>{0} represents the layer index</comment>
+  </data>
+  <data name="DocumentWorkspace.InitializeEffects.DllLoadFailed.Format" xml:space="preserve">
+<value>提取 {0} 时出现错误。它可能已被破坏或需要重新编译。</value>
+    <comment>{0} is a file name</comment>
+  </data>
+  <data name="Generic.OutOfMemory">
+<value>无足够内存完成操作。</value>
+  </data>
+  <data name="AddNewBlankLayer.HistoryMementoName" xml:space="preserve">
+<value>新图层</value>
+  </data>
+  <data name="AddNewBlankLayer.LayerName.Format" xml:space="preserve">
+<value>图层 {0}</value>
+    <comment>{0} is the number of the new layer</comment>
+  </data>
+  <data name="DocumentWorkspace.DeleteLayerButtonClicked.MustHaveOneLayer" xml:space="preserve">
+<value>图像中最少需要有一个图层。</value>
+  </data>
+  <data name="DocumentWorkspace.DeleteLayerButtonClicked.Confirmation" xml:space="preserve">
+<value>删除图层?</value>
+  </data>
+  <data name="DeleteLayer.HistoryMementoName" xml:space="preserve">
+<value>删除图层</value>
+  </data>
+  <data name="DuplicateLayer.HistoryMementoName" xml:space="preserve">
+<value>复制图层</value>
+  </data>
+  <data name="MergeLayerDown.HistoryMementoName">
+<value>向下合并图层</value>
+  </data>
+  <data name="MoveLayerUp.HistoryMementoName" xml:space="preserve">
+<value>向上移动图层</value>
+  </data>
+  <data name="MoveLayerDown.HistoryMementoName" xml:space="preserve">
+<value>向下移动图层</value>
+  </data>
+  <data name="ClearHistory.Confirmation" xml:space="preserve">
+<value>清除历史记录?</value>
+  </data>
+  <data name="ClearHistory.HistoryMementoName" xml:space="preserve">
+<value>清除历史记录</value>
+  </data>
+  <data name="EllipseSelectTool.Name" xml:space="preserve">
+<value>椭圆选择工具</value>
+  </data>
+  <data name="EllipseSelectTool.HelpText" xml:space="preserve">
+<value>左键:替换。Ctrl+左键:添加。 右键:减去。Ctrl+右键:反转。按住 shift:约束成圆形.</value>
+  </data>
+  <data name="EllipseTool.Name" xml:space="preserve">
+<value>椭圆</value>
+  </data>
+  <data name="EllipseTool.HelpText" xml:space="preserve">
+    <value>点击并且拖动画椭圆 (右击使用背景色)。按住Shift键 约束成圆形。</value>
+  </data>
+  <data name="EllipseTool.StatusText.Format" xml:space="preserve">
+<value>尺寸:{0}{1} x {2}{3}, 区域: {4} {5}</value>
+  </data>
+  <data name="EraserTool.Name" xml:space="preserve">
+<value>橡皮擦</value>
+  </data>
+  <data name="EraserTool.HelpText" xml:space="preserve">
+<value>点击并且拖动可以清除图象</value>
+  </data>
+  <data name="EraseSelectionAction.Name" xml:space="preserve">
+<value>清除选择区</value>
+  </data>
+  <data name="FillSelectionAction.Name">
+    <value>填充选择区</value>
+  </data>
+  <data name="FlattenFunction.Name" xml:space="preserve">
+<value>合并所有图层</value>
+  </data>
+  <data name="FlipDocumentHorizontalAction.Name" xml:space="preserve">
+<value>水平翻转 (所有图层)</value>
+  </data>
+  <data name="FlipDocumentVerticalAction.Name" xml:space="preserve">
+<value>垂直翻转 (所有图层)</value>
+  </data>
+  <data name="FlipLayerHorizontalAction.Name" xml:space="preserve">
+<value>水平翻转</value>
+  </data>
+  <data name="FlipLayerVerticalAction.Name" xml:space="preserve">
+<value>垂直翻转</value>
+  </data>
+  <data name="FreeformShapeTool.Name" xml:space="preserve">
+<value>自由变形</value>
+  </data>
+  <data name="FreeformShapeTool.HelpText" xml:space="preserve">
+<value>左击用前景色画图，右击用背景色。</value>
+  </data>
+  <data name="ImportFromFileAction.Name" xml:space="preserve">
+<value>从文件导入</value>
+  </data>
+  <data name="ImportFromFileAction.AskForCanvasResize.Confirmation" xml:space="preserve">
+<value>导入图形大于当前画布尺寸。
+是否扩大画片去适应导入图形?</value>
+  </data>
+  <data name="ImportFromFileAction.AskForCanvasResize.OutOfMemory" xml:space="preserve">
+<value>无足够内存调整图形大小。</value>
+  </data>
+  <data name="ImportFromFileAction.ImportOneLayer.OutOfMemory" xml:space="preserve">
+<value>无足够内存调整图层大小。</value>
+  </data>
+  <data name="ImportFromFileAction.ImportOneFile.NewLayer.Format" xml:space="preserve">
+    <value>{0}: {1}</value>
+    <comment>{0} is the file being imported, {1} is the name of a layer within that file</comment>
+  </data>
+  <data name="ImportLayersDialog.Text" xml:space="preserve">
+<value>导入图层</value>
+  </data>
+  <data name="ImportLayersDialog.AllButton.Text" xml:space="preserve">
+<value>所有</value>
+  </data>
+  <data name="ImportLayersDialog.NoneButton.Text" xml:space="preserve">
+<value>无</value>
+  </data>
+  <data name="ImportLayersDialog.LayersToInsertHeader.Text" xml:space="preserve">
+<value>要导入的图层</value>
+  </data>
+  <data name="ImportLayersDialog.PreviewHeader.Text" xml:space="preserve">
+<value>预览</value>
+  </data>
+  <data name="InvertSelectionAction.Name" xml:space="preserve">
+<value>反选</value>
+  </data>
+  <data name="LassoSelectTool.Name" xml:space="preserve">
+<value>套索选择</value>
+  </data>
+  <data name="LassoSelectTool.HelpText" xml:space="preserve">
+<value>左键:替换。Ctrl+左键:添加。 右键:减去。Ctrl+右键:反转。</value>
+  </data>
+  <data name="GradientTool.Name">
+<value>渐变</value>
+  </data>
+  <data name="GradientTool.HelpText">
+<value>点击并且拖动产生渐变。按住 shift 产生45度的增量角。右键使用倒转色。</value>
+  </data>
+  <data name="GradientTool.HelpText.WhileAdjusting.Format">
+<value>偏移:{0}{1} x {2}{3}, 距离:{4} {5}, 角度:{6}°. 按住另一鼠标按键可以同时移动两个结点。</value>
+  </data>
+  <data name="GradientTool.HelpText.Adjustable">
+<value>拖动结点可以调整渐变。右键点击结点可以交换颜色。Enter 键结束，或者 Esc 键取消。</value>
+  </data>
+  <data name="LineTool.Name" xml:space="preserve">
+<value>直线 / 曲线 </value>
+  </data>
+  <data name="LineTool.HelpText" xml:space="preserve">
+<value>左键点击并且拖动可以使用前景色画线，右键使用背景色。</value>
+  </data>
+  <data name="LineTool.StatusText.Format" xml:space="preserve">
+<value>偏移:{0}{1} x {2}{3}, 距离:{4} {5}, 角度: {6}°</value>
+  </data>
+  <data name="LineTool.PreCurveHelpText" xml:space="preserve">
+<value>拖动结点画曲线 (右键画贝塞尔曲线), 或按Enter完成， 或在其它地方画新线。</value>
+  </data>
+  <data name="LineTool.CurvingHelpText" xml:space="preserve">
+<value>按Enter键结束曲线，或在其它地方画新线。按Ctrl键显示或隐藏结点。</value>
+  </data>
+  <data name="LoadProgressDialog.Description" xml:space="preserve">
+<value>提取中:</value>
+  </data>
+  <data name="MagicWandTool.Name" xml:space="preserve">
+<value>魔术棒</value>
+  </data>
+  <data name="MagicWandTool.HelpText" xml:space="preserve">
+<value>点击选择一个颜色相近的区域。用Ctrl加左键去增加，右键减掉，Ctrl+Shift+左键去反选 (xor)。</value>
+  </data>
+  <data name="MoveTool.Name" xml:space="preserve">
+<value>移动选择象素</value>
+  </data>
+  <data name="MoveTool.HelpText" xml:space="preserve">
+<value>拖动选择可以移动位置。拖动结点可以按比例缩放。用拖动鼠标右键可以旋转。</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.Translate" xml:space="preserve">
+<value>移动象素</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.Scale" xml:space="preserve">
+<value>按比例缩放象素</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.Rotate" xml:space="preserve">
+<value>旋转象素</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.DropPixels" xml:space="preserve">
+<value>完成象素</value>
+  </data>
+  <data name="MoveSelectionTool.Name" xml:space="preserve">
+<value>移动选择区</value>
+  </data>
+  <data name="MoveSelectionTool.HelpText" xml:space="preserve">
+<value>拖动选择可以移动位置。拖动结点可以按比例缩放。用拖动鼠标右键可以旋转。</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.Translate" xml:space="preserve">
+<value>移动选择区</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.Scale" xml:space="preserve">
+<value>缩放选择区</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.Rotate" xml:space="preserve">
+<value>旋转选择区</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.DropSelection" xml:space="preserve">
+<value>结束选择区</value>
+  </data>
+  <data name="NewFileDialog.Text" xml:space="preserve">
+<value>新建</value>
+  </data>
+  <data name="PaintBrushTool.Name" xml:space="preserve">
+<value>画笔</value>
+  </data>
+  <data name="PaintBrushTool.HelpText" xml:space="preserve">
+<value>左键拖动使用前景色，右键使用背景色</value>
+  </data>
+  <data name="PaintBucketTool.Name" xml:space="preserve">
+<value>涂料瓶</value>
+  </data>
+  <data name="PaintBucketTool.HelpText" xml:space="preserve">
+<value>左键使用前景色填充，右键使用背景色。</value>
+  </data>
+  <data name="PanTool.Name" xml:space="preserve">
+<value>面板</value>
+  </data>
+  <data name="PanTool.HelpText" xml:space="preserve">
+<value>当画像大于窗口是可以在窗口内移动图像。</value>
+  </data>
+  <data name="PdnInfo.AboutRedirectPage" xml:space="preserve">
+<value>pdnabout.html</value>
+  </data>
+  <data name="PdnInfo.FullAppName.Format" xml:space="preserve">
+    <value>{0} ({1})</value>
+    <comment>{0} is the product name ("Paint.NET"), {1} is the version string ("2.2.2000.3000")</comment>
+  </data>
+  <data name="PdnInfo.VersionString.Format" xml:space="preserve">
+<value>{0} {1} build {2}</value>
+    <comment>{0} is the friendly version name (configuration name), such as "Beta 2" or "Final". {1} is Debug or Release. {2} is the product version.</comment>
+  </data>
+  <data name="ProcessorArchitecture.X86" xml:space="preserve">
+<value>x86</value>
+  </data>
+  <data name="ProcessorArchitecture.X64" xml:space="preserve">
+<value>x64</value>
+  </data>
+  <data name="PdnInfo.FriendlyVersionString.ConfigWithSpace.Format" xml:space="preserve">
+    <value> {0}</value>
+  </data>
+  <data name="PdnInfo.FriendlyVersionString.Format" xml:space="preserve">
+<value>版本号 {0}{1}</value>
+    <comment>{0} is the version, such as "2.5". {1} is the configuration ("Beta 5") formatted via PdnInfo.FriendlyVersionString.ConfigWithSpace.Format, or it is an empty string if the configuration is "Final"</comment>
+  </data>
+  <data name="PencilTool.Name" xml:space="preserve">
+<value>铅笔</value>
+  </data>
+  <data name="PencilTool.HelpText" xml:space="preserve">
+<value>左键用前景色画图，右键用背景色。</value>
+  </data>
+  <data name="PenConfigWidget.BrushWidthLabel" xml:space="preserve">
+<value>刷子宽度:</value>
+  </data>
+  <data name="PenConfigWidget.Error.InvalidNumber" xml:space="preserve">
+<value>无效数字</value>
+  </data>
+  <data name="PenConfigWidget.Error.TooSmall" xml:space="preserve">
+<value>尺寸小于1</value>
+  </data>
+  <data name="PenConfigWidget.Error.TooLarge" xml:space="preserve">
+<value>尺寸大于100</value>
+  </data>
+  <data name="ProgressDialog.PercentText.Text.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is a number from 0 to 100</comment>
+  </data>
+  <data name="RecolorTool.Name" xml:space="preserve">
+<value>重新着色</value>
+  </data>
+  <data name="RecolorTool.HelpText" xml:space="preserve">
+<value>左击用背景色调换前景色。</value>
+  </data>
+  <data name="SelectionTool.MoveSelection" xml:space="preserve">
+<value>移动选择区</value>
+  </data>
+  <data name="SelectionTool.RotateSelection" xml:space="preserve">
+<value>旋转选择区</value>
+  </data>
+  <data name="SelectionTool.ScaleSelection" xml:space="preserve">
+<value>缩放选择区</value>
+  </data>
+  <data name="RectangleSelectTool.Name" xml:space="preserve">
+<value>矩形选择工具</value>
+  </data>
+  <data name="RectangleSelectTool.HelpText" xml:space="preserve">
+<value>左键:替换。Ctrl+左键:添加。 右键:减去。Ctrl+右键:反转。按住 shift:强制成正方形。</value>
+  </data>
+  <data name="RectangleTool.Name" xml:space="preserve">
+<value>矩形</value>
+  </data>
+  <data name="RectangleTool.HelpText" xml:space="preserve">
+    <value>点击并且拖动左键绘制矩形 （右键使用背景色）按住Shift绘制正方形。</value>
+  </data>
+  <data name="RectangleTool.StatusText.Format" xml:space="preserve">
+<value>尺寸:{0}{1} x {2}{3}, 区域: {4} {5}</value>
+  </data>
+  <data name="ResizeAction.Name" xml:space="preserve">
+<value>调整尺寸</value>
+  </data>
+  <data name="ResizeAction.PerformAction.UnspecifiedError" xml:space="preserve">
+<value>在调整尺寸时发现一个不能确定的错误。</value>
+  </data>
+  <data name="ResizeAction.PerformAction.OutOfMemory" xml:space="preserve">
+<value>没有足够的内存空间调整图片尺寸。</value>
+  </data>
+  <data name="ResizeDialog.ResizedImageHeader.Text.Format" xml:space="preserve">
+<value>新尺寸: {0}</value>
+    <comment>{0} is a byte size, such as 3.8mb</comment>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.NearestNeighbor" xml:space="preserve">
+<value>最接近方式</value>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.Bicubic" xml:space="preserve">
+<value>Bicubic二元方式</value>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.SuperSampling" xml:space="preserve">
+<value>最好质量</value>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.Bilinear" xml:space="preserve">
+<value>双线性</value>
+  </data>
+  <data name="ResizeDialog.Text" xml:space="preserve">
+<value>调整尺寸</value>
+  </data>
+  <data name="ResizeDialog.AsteriskLabel.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="ResizeDialog.PercentSignLabel.Text" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="ResizeDialog.PixelsLabel1.Text" xml:space="preserve">
+<value>象素</value>
+  </data>
+  <data name="ResizeDialog.PixelsLabel2.Text" xml:space="preserve">
+<value>象素</value>
+  </data>
+  <data name="ResizeDialog.PercentRB.Text" xml:space="preserve">
+<value>通过百分比(&amp;B):</value>
+  </data>
+  <data name="ResizeDialog.AbsoluteRB.Text" xml:space="preserve">
+<value>通过决对尺寸(&amp;B):</value>
+  </data>
+  <data name="ResizeDialog.PixelSizeHeader.Text" xml:space="preserve">
+<value>象素尺寸</value>
+  </data>
+  <data name="ResizeDialog.PrintSizeHeader.Text" xml:space="preserve">
+<value>打印尺寸</value>
+  </data>
+  <data name="ResizeDialog.CurrentImageSizeLabel.Text" xml:space="preserve">
+<value>当前图像尺寸:</value>
+  </data>
+  <data name="ResizeDialog.ResamplingLabel.Text" xml:space="preserve">
+<value>取样方式:</value>
+  </data>
+  <data name="ResizeDialog.NewWidthLabel1.Text" xml:space="preserve">
+<value>宽:</value>
+  </data>
+  <data name="ResizeDialog.NewHeightLabel1.Text" xml:space="preserve">
+<value>高:</value>
+  </data>
+  <data name="ResizeDialog.NewWidthLabel2.Text" xml:space="preserve">
+<value>宽:</value>
+  </data>
+  <data name="ResizeDialog.NewHeightLabel2.Text" xml:space="preserve">
+<value>高:</value>
+  </data>
+  <data name="ResizeDialog.ConstrainCheckBox.Text" xml:space="preserve">
+<value>修改方向比例(&amp;M)</value>
+  </data>
+  <data name="ResizeDialog.AsteriskTextLabel.SuperSampling" xml:space="preserve">
+<value>* 将使用超级取样方式</value>
+  </data>
+  <data name="ResizeDialog.AsteriskTextLabel.Bicubic" xml:space="preserve">
+<value>* 将使用二元取样方式</value>
+  </data>
+  <data name="RotateAction.180CW" xml:space="preserve">
+<value>顺时针方向 180度</value>
+  </data>
+  <data name="RotateAction.270CW" xml:space="preserve">
+<value>顺时针方向 270度</value>
+  </data>
+  <data name="RotateAction.90CW" xml:space="preserve">
+<value>顺时针方向 90度</value>
+  </data>
+  <data name="RotateAction.180CCW" xml:space="preserve">
+<value>逆时针方向 180度 </value>
+  </data>
+  <data name="RotateAction.270CCW" xml:space="preserve">
+<value>逆时针方向 270度</value>
+  </data>
+  <data name="RotateAction.90CCW" xml:space="preserve">
+<value>逆时针方向 90度 </value>
+  </data>
+  <data name="RotateAction.HistoryMementoName.Format" xml:space="preserve">
+    <value>{0} {1}</value>
+    <comment>{0} is the action name ("Rotate"), {1} is the angle (90 CW)</comment>
+  </data>
+  <data name="RotateAction.Name" xml:space="preserve">
+<value>旋转</value>
+  </data>
+  <data name="RoundedRectangleTool.Name" xml:space="preserve">
+<value>圆角矩形</value>
+  </data>
+  <data name="RoundedRectangleTool.HelpText" xml:space="preserve">
+    <value>点击并拖动绘制圆角矩形 （右键使用背景色）。按住shift键绘制圆角正方形。</value>
+  </data>
+  <data name="RoundedRectangleTool.StatusText.Format" xml:space="preserve">
+<value>边界矩形尺寸:{0}{1} x {2}{3}, 区域: {4} {5}</value>
+  </data>
+  <data name="SaveConfigDialog.Text" xml:space="preserve">
+<value>保存配置</value>
+  </data>
+  <data name="SaveConfigDialog.SettingsHeader.Text" xml:space="preserve">
+<value>设置</value>
+  </data>
+  <data name="SaveConfigDialog.DefaultsButton.Text" xml:space="preserve">
+<value>预置(&amp;F)</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Format" xml:space="preserve">
+<value>文件尺寸: {0}</value>
+    <comment>{0} is a file size, or some text in parenthesis (such as SaveConfigDialog.FileSizeText.Text.Error)</comment>
+  </data>
+  <data name="SaveConfigDialog.PreviewHeader.Text" xml:space="preserve">
+<value>预览</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Computing" xml:space="preserve">
+<value>(computing)</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Error" xml:space="preserve">
+<value>(error)</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Computing.Format" xml:space="preserve">
+<value>(computing) {0}%)</value>
+    <comment>{0} is a number between 0 and 100</comment>
+  </data>
+  <data name="SaveProgressDialog.Title" xml:space="preserve">
+<value>保存中</value>
+  </data>
+  <data name="SaveProgressDialog.Description" xml:space="preserve">
+<value>保存中:</value>
+  </data>
+  <data name="SelectAllAction.Name" xml:space="preserve">
+<value>选择所有</value>
+  </data>
+  <data name="ShapeDrawTypeConfigWidget.OutlineButton.ToolTipText" xml:space="preserve">
+<value>绘制空心图</value>
+  </data>
+  <data name="ShapeDrawTypeConfigWidget.InteriorButton.ToolTipText" xml:space="preserve">
+<value>绘制填充图</value>
+  </data>
+  <data name="ShapeDrawTypeConfigWidget.BothButton.ToolTipText" xml:space="preserve">
+<value>绘制有边线的填充图</value>
+  </data>
+  <data name="SplashForm.StatusLabel.Text" xml:space="preserve">
+    <value>Starting...</value>
+  </data>
+  <data name="Startup.UnhandledError.Format" xml:space="preserve">
+<value>There was an unhandled error, and Paint.NET must be closed.发现一个不明错误，需要关闭Paint.NET。为了解更多的信息请查看文件 &apos;{0}&apos;，它已经被保存在你的桌面。</value>
+    <comment>{0} is a filename</comment>
+  </data>
+  <data name="ToolConfigStrip.ResamplingLabel.Text">
+<value>质量:</value>
+  </data>
+  <data name="ResamplingAlgorithm.Bilinear">
+<value>光滑</value>
+  </data>
+  <data name="ResamplingAlgorithm.NearestNeighbor">
+<value>象素单元方式</value>
+  </data>
+  <data name="ResamplingAlgorithm.Bicubic">
+<value>Bicubic二元方式</value>
+  </data>
+  <data name="ResamplingAlgorithm.SuperSampling">
+<value>超级取样</value>
+  </data>
+  <data name="ToolConfigStrip.ColorPickerLabel.Text">
+<value>点击后:</value>
+  </data>
+  <data name="ColorPickerClickBehavior.NoToolSwitch">
+<value>不能更换工具</value>
+  </data>
+  <data name="ColorPickerClickBehavior.SwitchToLastTool">
+<value>换成前一个工具</value>
+  </data>
+  <data name="ColorPickerClickBehavior.SwitchToPencilTool">
+<value>换成铅笔工具</value>
+  </data>
+  <data name="TextConfigWidget.Error.InvalidNumber" xml:space="preserve">
+<value>无效数字</value>
+  </data>
+  <data name="TextConfigWidget.Error.TooSmall.Format" xml:space="preserve">
+<value>尺寸小于 {0}</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="TextConfigWidget.Error.TooLarge.Format" xml:space="preserve">
+<value>尺寸大于 {0}</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="TextConfigWidget.FontLabel.Text" xml:space="preserve">
+<value>字体:</value>
+  </data>
+  <data name="TextConfigWidget.BoldButton.ToolTipText" xml:space="preserve">
+<value>粗体</value>
+  </data>
+  <data name="TextConfigWidget.ItalicButton.ToolTipText" xml:space="preserve">
+<value>斜体</value>
+  </data>
+  <data name="TextConfigWidget.UnderlineButton.ToolTipText" xml:space="preserve">
+<value>下划线</value>
+  </data>
+  <data name="TextConfigWidget.AlignLeftButton.ToolTipText" xml:space="preserve">
+<value>左对齐</value>
+  </data>
+  <data name="TextConfigWidget.AlignCenterButton.ToolTipText" xml:space="preserve">
+<value>中心线对齐</value>
+  </data>
+  <data name="TextConfigWidget.AlignRightButton.ToolTipText" xml:space="preserve">
+<value>右对齐</value>
+  </data>
+  <data name="TextTool.Name" xml:space="preserve">
+<value>T文本</value>
+  </data>
+  <data name="TextTool.HelpText" xml:space="preserve">
+<value>左击放置文本光标，然后输入文字。文本将使用前景色书写。</value>
+  </data>
+  <data name="TextTool.StatusText.StartTyping" xml:space="preserve">
+<value>拖动结点移动文本位置。Hold按住 Ctrl 键可以隐藏结点和光标。按Ctrl键显示或隐藏结点。</value>
+  </data>
+  <data name="TextTool.StatusText.TextInfo.Format">
+    <value>锁定点: {0}{1}, {2}{3}</value>
+  </data>
+  <data name="ToleranceSliderControl.Tolerance" xml:space="preserve">
+<value>容限</value>
+  </data>
+  <data name="ToleranceSliderControl.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="WorkspaceOptionsConfigWidget.DrawGridToggleButton.ToolTipText" xml:space="preserve">
+<value>放大时显示网格</value>
+  </data>
+  <data name="WorkspaceOptionsConfigWidget.RulersToggleButton.ToolTipText" xml:space="preserve">
+<value>标尺</value>
+  </data>
+  <data name="ZoomTool.Name" xml:space="preserve">
+<value>缩放</value>
+  </data>
+  <data name="ZoomTool.HelpText" xml:space="preserve">
+<value>左击放大，右击缩小，中键滑行。</value>
+  </data>
+  <data name="ZoomConfigWidget.ZoomInButton.ToolTipText" xml:space="preserve">
+<value>放大</value>
+  </data>
+  <data name="ZoomConfigWidget.ZoomOutButton.ToolTipText" xml:space="preserve">
+<value>缩小</value>
+  </data>
+  <data name="ZoomBasis.FitToWindow" xml:space="preserve">
+<value>窗口</value>
+  </data>
+  <data name="ZoomBasis.Selection" xml:space="preserve">
+<value>选择区</value>
+  </data>
+  <data name="ZoomBasis.ScaleFactor" xml:space="preserve">
+<value>因子</value>
+  </data>
+  <data name="ZoomConfigWidget.Error.InvalidNumber" xml:space="preserve">
+<value>无效数字</value>
+  </data>
+  <data name="ZoomConfigWidget.Error.TooSmall" xml:space="preserve">
+<value>焦距不能小于1%</value>
+  </data>
+  <data name="ZoomConfigWidget.Error.TooLarge" xml:space="preserve">
+<value>焦距不能大于 3200%</value>
+  </data>
+  <data name="ZoomConfigWidget.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="StatusBar.Context.Help.Text.Format" xml:space="preserve">
+    <value>{0}: {1}</value>
+    <comment>{0} is the tool's name, {1} is its help text</comment>
+  </data>
+  <data name="AcquireImageAction.Name" xml:space="preserve">
+<value>取得图像</value>
+  </data>
+  <data name="PasteInToNewImageAction.Error.NoClipboardImage" xml:space="preserve">
+<value>剪切板中无可用图像。</value>
+  </data>
+  <data name="AcquireImageAction.Error.Clipboard.TransferError" xml:space="preserve">
+<value>当从剪切板导入图像时发现一个错误。</value>
+  </data>
+  <data name="AcquireImageAction.Error.Clipboard.OutOfMemory" xml:space="preserve">
+<value>无足够内存从剪切板导入图像。</value>
+  </data>
+  <data name="StatusBar.Size.Format" xml:space="preserve">
+    <value>{0}{1} x {2}{3}</value>
+    <comment>{0} is width, {1} is units (e.g. cm or px), {2} is height, {3} is units</comment>
+  </data>
+  <data name="Untitled.FriendlyName" xml:space="preserve">
+<value>无命名</value>
+  </data>
+  <data name="MainForm.Title.Format.Normal" xml:space="preserve">
+    <value>{0} ({1}) - {2}</value>
+    <comment>{0} is friendly document name, {1} is zoom level, {2} is application name</comment>
+  </data>
+  <data name="MainForm.Title.Format.Minimized" xml:space="preserve">
+    <value>{0} - {1}</value>
+    <comment>{0} is friendly document name, {1} is application name</comment>
+  </data>
+  <data name="NewImageAction.Error.OutOfMemory" xml:space="preserve">
+<value>没有足够的内存空间建立新图像。</value>
+  </data>
+  <data name="NewImageAction.Name" xml:space="preserve">
+<value>新建图像</value>
+  </data>
+  <data name="LoadImage.Error.ImageTypeNotRecognized" xml:space="preserve">
+<value>不支持的图像格式，无法打开。</value>
+  </data>
+  <data name="LoadImage.Error.InvalidFileName.Format" xml:space="preserve">
+<value>无效的文件名。
+
+&quot;{0}&quot;</value>
+    <comment>{0} is a filename.</comment>
+  </data>
+  <data name="LoadImage.Error.BlankFileName" xml:space="preserve">
+<value>空文件名。</value>
+  </data>
+  <data name="LoadImage.Error.ArgumentException" xml:space="preserve">
+<value>打开文件时发现一个错误。</value>
+  </data>
+  <data name="LoadImage.Error.UnauthorizedAccessException" xml:space="preserve">
+<value>无法访问指定文件 (没有授权的访问)。</value>
+  </data>
+  <data name="LoadImage.Error.SecurityException" xml:space="preserve">
+<value>无法访问指定文件 (保密性异常)。</value>
+  </data>
+  <data name="LoadImage.Error.FileNotFoundException" xml:space="preserve">
+<value>无法找到指定文件。</value>
+  </data>
+  <data name="LoadImage.Error.DirectoryNotFoundException" xml:space="preserve">
+<value>无法找到指定目录。</value>
+  </data>
+  <data name="LoadImage.Error.PathTooLongException" xml:space="preserve">
+<value>文件名过长。</value>
+  </data>
+  <data name="LoadImage.Error.IOException" xml:space="preserve">
+<value>在从媒体读取文件时发生错误。</value>
+  </data>
+  <data name="LoadImage.Error.SerializationException" xml:space="preserve">
+<value>文件损坏或是由新版本 Paint.NET 生成。</value>
+  </data>
+  <data name="LoadImage.Error.OutOfMemoryException" xml:space="preserve">
+<value>无足够内存读取图像。</value>
+  </data>
+  <data name="LoadImage.Error.Exception" xml:space="preserve">
+<value>当打开文件时发现一个没有定义的错误。</value>
+  </data>
+  <data name="OpenImageAction.Name" xml:space="preserve">
+<value>打开图像</value>
+  </data>
+  <data name="SavedWithOlderVersion.Format" xml:space="preserve">
+<value>图像由老版本Paint.NET生成，如果保存将无法被老版本打开。
+
+生成的由:Paint.NET v{0}
+Current version:Paint.NET v{1}</value>
+    <comment>{0} and {1} are version numbers</comment>
+  </data>
+  <data name="FileDialog.Types.AllImages" xml:space="preserve">
+<value>所有文件类型</value>
+  </data>
+  <data name="SaveAsDialog.Title" xml:space="preserve">
+<value>另存为</value>
+  </data>
+  <data name="WarnAboutFlattening.Text" xml:space="preserve">
+<value>用这个格式保存将损失所有图层信息，包括隐藏的图层。
+是否继续?</value>
+  </data>
+  <data name="WarnAboutFlattening.Title" xml:space="preserve">
+<value>问题</value>
+  </data>
+  <data name="SaveImage.Error.UnauthorizedAccessException" xml:space="preserve">
+<value>访问被拒绝。使用 文件-&gt;另存为... 可以保存为一个不同的位置和名字。</value>
+  </data>
+  <data name="SaveImage.Error.SecurityException" xml:space="preserve">
+<value>访问被拒绝。使用 文件-&gt;另存为... 可以保存为一个不同的位置和名字。</value>
+  </data>
+  <data name="SaveImage.Error.DirectoryNotFoundException" xml:space="preserve">
+<value>无法找到指定目录。使用 文件-&gt;另存为... 可以保存为到一个不同的位置。</value>
+  </data>
+  <data name="SaveImage.Error.IOException" xml:space="preserve">
+<value>写文件时发生一个 I/O 错误。</value>
+  </data>
+  <data name="SaveImage.Error.OutOfMemoryException" xml:space="preserve">
+<value>没有足够的内存空间保存图像。</value>
+  </data>
+  <data name="SaveImage.Error.Exception" xml:space="preserve">
+<value>保存文件时发现一个没有定义的错误。</value>
+  </data>
+  <data name="CopyAction.Error.TransferToClipboard" xml:space="preserve">
+<value>从剪切板复制图像时发生了一个错误。</value>
+  </data>
+  <data name="CopyAction.Error.OutOfMemory" xml:space="preserve">
+<value>没有足够内存完成剪切板操作。</value>
+  </data>
+  <data name="CopyAction.Error.Generic" xml:space="preserve">
+<value>当向剪切板复制图像时发生了一个错误。</value>
+  </data>
+  <data name="CutAction.Name" xml:space="preserve">
+<value>剪切</value>
+  </data>
+  <data name="Effects.ApplyingDialog.Description" xml:space="preserve">
+    <value>渲染 ...</value>
+  </data>
+  <data name="Effects.RepeatMenuItem.Format" xml:space="preserve">
+<value>重复 {0}</value>
+    <comment>{0} is the effect name</comment>
+  </data>
+  <data name="Effects.Name.Format.Configurable" xml:space="preserve">
+    <value>{0}...</value>
+    <comment>{0} is the effect name</comment>
+  </data>
+  <data name="PasteAction.Error.TransferFromClipboard" xml:space="preserve">
+<value>从剪切板读取图像时发现一个错误。</value>
+  </data>
+  <data name="PasteAction.Error.OutOfMemory" xml:space="preserve">
+    <value>无足够内存从剪切板中粘贴。</value>
+  </data>
+  <data name="PasteAction.Error.NotRecognized" xml:space="preserve">
+<value>无法识别剪切板中的图像。请试着用原程序重新复制。</value>
+  </data>
+  <data name="PasteAction.Error.NoImage" xml:space="preserve">
+<value>剪切板不包含图像。</value>
+  </data>
+  <data name="PasteAction.Question.ExpandCanvas" xml:space="preserve">
+<value>导入图形大于当前画布尺寸。
+是不扩大图布?</value>
+  </data>
+  <data name="NewLayerAction.Error.OutOfMemory" xml:space="preserve">
+<value>没有足够的内存建新图层。</value>
+  </data>
+  <data name="FlattenAction.Question.DiscardHiddenLayers" xml:space="preserve">
+<value>是否删除隐藏图层？</value>
+  </data>
+  <data name="StatusBar.Progress.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="StatusBar.Context.SelectedArea.Text.Format" xml:space="preserve">
+<value>选择区左上角:{0}{1}, {2}{3}. 边界矩形尺寸:{4}{5} x {6}{7}。区域: {8} {9} 方形</value>
+    <comment>{0} is an X coordinate, {1} is units abbreviation, {2} is Y coordinate, {3} is units abbreviation, {4} is width, {5} is units abbreviation, {6} is height, {7} is units abbreviation, {8} is the area, {9} is plural units (pixels, inches)</comment>
+  </data>
+  <data name="StatusBar.Context.SelectedArea.Text.WithAngle.Format" xml:space="preserve">
+<value>选择区左上角:{0}{1}, {2}{3}. 边界矩形尺寸:{4}{5} x {6}{7}。区域: {8} {9} 方形。角度: {10}°</value>
+    <comment>{0} is an X coordinate, {1} is units abbreviation, {2} is Y coordinate, {3} is units abbreviation, {4} is width, {5} is units abbreviation, {6} is height, {7} is units abbreviation, {8} is the area, {9} is plural units (pixels, inches), {10} is angle of rotation</comment>
+  </data>
+  <data name="WIA.Error.EnableMe" xml:space="preserve">
+<value>必须开启 揥indows Image Acquisition?系统服务才能执行这个功能。</value>
+  </data>
+  <data name="WIA.Error.UnableToLoad" xml:space="preserve">
+<value>无法找到 Windows Image Acquisition (WIA) library, &quot;wiaaut.dll&quot; 。请参考帮助文件 (帮助 -&gt; 帮助主题), 在 揊requently Asked Questions</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.InfoText">
+<value>怎么处理文件?</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.OpenButton.ActionText">
+<value>打开(&amp;O)</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.OpenButton.ExplanationText">
+<value>在不同的框架打开文件。</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.ImportLayers.ActionText">
+<value>添加到图层(&amp;A)</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.ImportLayers.ExplanationText">
+<value>添加到当前图像中的新图层。</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.ImportLayers.ExplanationText.NoImagesYet">
+<value>输入到新图像中的新图层。</value>
+  </data>
+  <data name="Menu.File.OpenRecent.None" xml:space="preserve">
+<value>(无)</value>
+  </data>
+  <data name="Menu.File.OpenRecent.ClearThisList" xml:space="preserve">
+<value>清除列表(&amp;C)</value>
+  </data>
+  <data name="Menu.File.Text" xml:space="preserve">
+<value>文件(&amp;F)</value>
+  </data>
+  <data name="Menu.File.New.Text" xml:space="preserve">
+    <value>新建(&amp;N) ...</value>
+  </data>
+  <data name="Menu.File.Open.Text" xml:space="preserve">
+    <value>打开(&amp;O) ...</value>
+  </data>
+  <data name="Menu.File.OpenRecent.Text" xml:space="preserve">
+<value>最近打开的文件(&amp;R)</value>
+  </data>
+  <data name="Menu.File.Close.Text">
+<value>关闭(&amp;C)</value>
+  </data>
+  <data name="Menu.File.Acquire.Text" xml:space="preserve">
+<value>获取(&amp;Q)</value>
+  </data>
+  <data name="Menu.File.Acquire.FromScannerOrCamera.Text" xml:space="preserve">
+    <value>从扫描器或照相机(&amp;S) ...</value>
+  </data>
+  <data name="Menu.File.Save.Text" xml:space="preserve">
+<value>保存(&amp;S)</value>
+  </data>
+  <data name="Menu.File.SaveAs.Text" xml:space="preserve">
+<value>保存为(&amp;A) ...</value>
+  </data>
+  <data name="Menu.File.Print.Text" xml:space="preserve">
+    <value>打印(&amp;P) ...</value>
+  </data>
+  <data name="Menu.File.Exit.Text" xml:space="preserve">
+<value>退出(&amp;X)</value>
+  </data>
+  <data name="Menu.Edit.Text" xml:space="preserve">
+<value>编辑(&amp;E)</value>
+  </data>
+  <data name="Menu.Edit.Undo.Text" xml:space="preserve">
+<value>撤消(&amp;U)</value>
+  </data>
+  <data name="Menu.Edit.Redo.Text" xml:space="preserve">
+<value>重做(&amp;R)</value>
+  </data>
+  <data name="Menu.Edit.Cut.Text" xml:space="preserve">
+<value>剪切(&amp;T)</value>
+  </data>
+  <data name="Menu.Edit.Copy.Text" xml:space="preserve">
+<value>拷贝(&amp;C)</value>
+  </data>
+  <data name="Menu.Edit.Paste.Text" xml:space="preserve">
+<value>粘贴(&amp;P)</value>
+  </data>
+  <data name="Menu.Edit.PasteInToNewLayer.Text" xml:space="preserve">
+<value>粘贴到最图层(&amp;L)</value>
+  </data>
+  <data name="Menu.Edit.PasteInToNewImage.Text" xml:space="preserve">
+<value>粘贴到最图片(&amp;M)</value>
+  </data>
+  <data name="Menu.Edit.EraseSelection.Text" xml:space="preserve">
+<value>取消选择(&amp;E)</value>
+  </data>
+  <data name="Menu.Edit.FillSelection.Text" xml:space="preserve">
+    <value>填充选择区(&amp;F)</value>
+  </data>
+  <data name="Menu.Edit.FillSelection.ShortcutKeysDisplayString" xml:space="preserve">
+    <value>退格</value>
+  </data>
+  <data name="Menu.Edit.InvertSelection.Text" xml:space="preserve">
+<value>反选(&amp;I)</value>
+  </data>
+  <data name="Menu.Edit.SelectAll.Text" xml:space="preserve">
+<value>选择所有(&amp;A)</value>
+  </data>
+  <data name="Menu.Edit.Deselect.Text" xml:space="preserve">
+<value>删除(&amp;D)</value>
+  </data>
+  <data name="Menu.View.Text" xml:space="preserve">
+<value>视图(&amp;V)</value>
+  </data>
+  <data name="Menu.View.ZoomIn.Text" xml:space="preserve">
+<value>放大(&amp;I)</value>
+  </data>
+  <data name="Menu.View.ZoomIn.ShortcutKeyDisplayString">
+<value>Ctrl++</value>
+  </data>
+  <data name="Menu.View.ZoomOut.Text" xml:space="preserve">
+<value>缩小(&amp;O)</value>
+  </data>
+  <data name="Menu.View.ZoomOut.ShortcutKeyDisplayString">
+<value>Ctrl+-</value>
+  </data>
+  <data name="Menu.View.ZoomToWindow.Text" xml:space="preserve">
+<value>缩放到窗口大小(&amp;W)</value>
+  </data>
+  <data name="Menu.View.ZoomToSelection.Text" xml:space="preserve">
+<value>缩放到选择区域大小(&amp;S)</value>
+  </data>
+  <data name="Menu.View.ActualSize.Text" xml:space="preserve">
+<value>实际尺寸(&amp;A)</value>
+  </data>
+  <data name="Menu.View.Rulers.Text" xml:space="preserve">
+<value>标尺(&amp;R)</value>
+  </data>
+  <data name="Menu.View.Grid.Text" xml:space="preserve">
+<value>网格(&amp;G)</value>
+  </data>
+  <data name="Menu.View.Units.Text" xml:space="preserve">
+<value>单位(&amp;U)</value>
+  </data>
+  <data name="Menu.Image.Text" xml:space="preserve">
+<value>图像(&amp;I)</value>
+  </data>
+  <data name="Menu.Image.Crop.Text" xml:space="preserve">
+<value>剪去选择区域(&amp;P)</value>
+  </data>
+  <data name="Menu.Image.Resize.Text" xml:space="preserve">
+    <value>调整尺寸(&amp;R) ...</value>
+  </data>
+  <data name="Menu.Image.CanvasSize.Text" xml:space="preserve">
+    <value>画布尺寸(&amp;S) ...</value>
+  </data>
+  <data name="Menu.Image.Flip.Text" xml:space="preserve">
+<value>翻转(&amp;F)</value>
+  </data>
+  <data name="Menu.Image.Flip.Horizontal.Text" xml:space="preserve">
+<value>水平方向(&amp;H)</value>
+  </data>
+  <data name="Menu.Image.Flip.Vertical.Text" xml:space="preserve">
+<value>垂直方向(&amp;V)</value>
+  </data>
+  <data name="Menu.Image.Rotate.Text" xml:space="preserve">
+<value>旋转(&amp;T)</value>
+  </data>
+  <data name="Menu.Image.Rotate.90CW.Text" xml:space="preserve">
+<value>顺时针方向 90度(&amp;9)</value>
+  </data>
+  <data name="Menu.Image.Rotate.180CW.Text" xml:space="preserve">
+<value>顺时针方向 180度(&amp;1)</value>
+  </data>
+  <data name="Menu.Image.Rotate.270CW.Text" xml:space="preserve">
+<value>顺时针方向 270度(&amp;2)</value>
+  </data>
+  <data name="Menu.Image.Rotate.90CCW.Text" xml:space="preserve">
+<value>逆时针方向 90度 </value>
+  </data>
+  <data name="Menu.Image.Rotate.180CCW.Text" xml:space="preserve">
+<value>逆时针方向 180度 </value>
+  </data>
+  <data name="Menu.Image.Rotate.270CCW.Text" xml:space="preserve">
+<value>逆时针方向 270度</value>
+  </data>
+  <data name="Menu.Image.Flatten.Text" xml:space="preserve">
+<value>平板化(&amp;F)</value>
+  </data>
+  <data name="Menu.Layers.Text" xml:space="preserve">
+<value>图层(&amp;L)</value>
+  </data>
+  <data name="Menu.Layers.AddNewLayer.Text" xml:space="preserve">
+<value>添加新图层(&amp;A)</value>
+  </data>
+  <data name="Menu.Layers.DeleteLayer.Text" xml:space="preserve">
+<value>删除图层(&amp;L)</value>
+  </data>
+  <data name="Menu.Layers.DuplicateLayer.Text" xml:space="preserve">
+<value>复制图层(&amp;D)</value>
+  </data>
+  <data name="Menu.Layers.MergeLayerDown.Text">
+<value>向下合并图层(&amp;M)</value>
+  </data>
+  <data name="Menu.Layers.ImportFromFile.Text" xml:space="preserve">
+    <value>从文件导入(&amp;I) ...</value>
+  </data>
+  <data name="Menu.Layers.Adjustments.Text" xml:space="preserve">
+<value>调整(&amp;A)</value>
+  </data>
+  <data name="Menu.Layers.Flip.Text" xml:space="preserve">
+<value>翻转(&amp;L)</value>
+  </data>
+  <data name="Menu.Layers.Flip.Horizontal.Text" xml:space="preserve">
+<value>水平方向(&amp;H)</value>
+  </data>
+  <data name="Menu.Layers.Flip.Vertical.Text" xml:space="preserve">
+<value>垂直方向(&amp;V)</value>
+  </data>
+  <data name="Menu.Layers.LayerProperties.Text" xml:space="preserve">
+<value>图层属性(&amp;P) ...</value>
+  </data>
+  <data name="Menu.Effects.Text" xml:space="preserve">
+<value>效果(&amp;C)</value>
+  </data>
+  <data name="Menu.Tools.Text" xml:space="preserve">
+<value>工具(&amp;T)</value>
+  </data>
+  <data name="Menu.Tools.AntiAliasing.Text" xml:space="preserve">
+<value>反锯齿(&amp;A)</value>
+  </data>
+  <data name="Menu.Tools.AlphaBlending.Text" xml:space="preserve">
+<value>Alpha 混合(&amp;B)</value>
+  </data>
+  <data name="Menu.Window.Text" xml:space="preserve">
+<value>窗口(&amp;W)</value>
+  </data>
+  <data name="Menu.Window.ResetWindowLocations.Text" xml:space="preserve">
+<value>重设窗口位置(&amp;R)</value>
+  </data>
+  <data name="Menu.Window.Translucent.Text" xml:space="preserve">
+<value>半透明</value>
+  </data>
+  <data name="Menu.Window.Tools.Text" xml:space="preserve">
+<value>工具(&amp;T)</value>
+  </data>
+  <data name="Menu.Window.History.Text" xml:space="preserve">
+<value>历史记录(&amp;H)</value>
+  </data>
+  <data name="Menu.Window.Layers.Text" xml:space="preserve">
+<value>图层(&amp;L)</value>
+  </data>
+  <data name="Menu.Window.Colors.Text" xml:space="preserve">
+<value>颜色(&amp;C)</value>
+  </data>
+  <data name="Menu.Window.OpenMdiList.Text" xml:space="preserve">
+<value>显示图像列表(&amp;S)</value>
+  </data>
+  <data name="Menu.Window.NextTab.Text" xml:space="preserve">
+<value>下一个框架(&amp;N)</value>
+  </data>
+  <data name="Menu.Window.PreviousTab.Text" xml:space="preserve">
+<value>上一个框架(&amp;P)</value>
+  </data>
+  <data name="Menu.Help.Language.Text" xml:space="preserve">
+<value>语言(&amp;G)</value>
+  </data>
+  <data name="Menu.Help.Text" xml:space="preserve">
+<value>帮助(&amp;H)</value>
+  </data>
+  <data name="Menu.Help.HelpTopics.Text" xml:space="preserve">
+<value>帮助主题(&amp;H)</value>
+  </data>
+  <data name="Menu.Help.PdnWebsite.Text" xml:space="preserve">
+    <value>Paint.NET 网站(&amp;P) ...</value>
+  </data>
+  <data name="Menu.Help.Donate.Text" xml:space="preserve">
+    <value>捐献(&amp;D) ...  </value>
+  </data>
+  <data name="Menu.Help.Forum.Text" xml:space="preserve">
+    <value>论坛(&amp;F) ... </value>
+  </data>
+  <data name="Menu.Help.Tutorials.Text" xml:space="preserve">
+    <value>指南(&amp;T) ... </value>
+  </data>
+  <data name="Menu.Help.Plugins.Text" xml:space="preserve">
+    <value>插件(&amp;P) ... </value>
+  </data>
+  <data name="Menu.Help.About.Text" xml:space="preserve">
+    <value>关于(&amp;A) ... </value>
+  </data>
+  <data name="Menu.Help.Updates.Text" xml:space="preserve">
+<value>更新(&amp;U)</value>
+  </data>
+  <data name="Menu.Help.CheckForUpdates.Text">
+<value>检查更新(&amp;O) ... </value>
+  </data>
+  <data name="Menu.Help.SendFeedback.Text" xml:space="preserve">
+<value>发送反馈或错误报告...</value>
+  </data>
+  <data name="SendFeedback.Email.Body" xml:space="preserve">
+<value>&lt;&lt; 输入反馈或错误报告 (请使用英文). &gt;&gt;</value>
+  </data>
+  <data name="SendFeedback.Email.Subject.Format" xml:space="preserve">
+<value>反馈对: {0}</value>
+  </data>
+  <data name="ScaleFactor.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="Utility.SizeStringFromBytes.GBFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="Utility.SizeStringFromBytes.MBFormat" xml:space="preserve">
+    <value>{0} MB</value>
+  </data>
+  <data name="Utility.SizeStringFromBytes.KBFormat" xml:space="preserve">
+    <value>{0} KB</value>
+  </data>
+  <data name="Utility.SizeStringFromBytes.BytesFormat" xml:space="preserve">
+<value>{0} 字节</value>
+  </data>
+  <data name="BitmapLayer.Properties.BlendOp.Name" xml:space="preserve">
+<value>混和方式</value>
+  </data>
+  <data name="BmpFileType.Name" xml:space="preserve">
+    <value>Bitmap (BMP)</value>
+  </data>
+  <data name="FileTypeCollection.AllImageTypes" xml:space="preserve">
+<value>所有文件类型</value>
+  </data>
+  <data name="JpegSaveConfigWidget.QualityLabel.Text" xml:space="preserve">
+<value>质量:</value>
+  </data>
+  <data name="Layer.Properties.IsBackground.Name" xml:space="preserve">
+<value>背景状态</value>
+  </data>
+  <data name="Layer.Properties.Name.Name" xml:space="preserve">
+<value>名</value>
+  </data>
+  <data name="Layer.Properties.Visible.Name" xml:space="preserve">
+<value>可见性</value>
+  </data>
+  <data name="Layer.Properties.Opacity.Name" xml:space="preserve">
+<value>不透明性</value>
+  </data>
+  <data name="Layer.Background.Name" xml:space="preserve">
+<value>背景</value>
+  </data>
+  <data name="LayerPropertiesDialog.Text" xml:space="preserve">
+<value>图层属性</value>
+  </data>
+  <data name="LayerPropertiesDialog.VisibleCheckBox.Text" xml:space="preserve">
+<value>可见的</value>
+  </data>
+  <data name="LayerPropertiesDialog.NameLabel.Text" xml:space="preserve">
+<value>名:</value>
+  </data>
+  <data name="LayerPropertiesDialog.GeneralHeader.Text" xml:space="preserve">
+<value>一般</value>
+  </data>
+  <data name="BitmapLayerPropertiesDialog.BlendingHeader.Text" xml:space="preserve">
+<value>混合</value>
+  </data>
+  <data name="BitmapLayerPropertiesDialog.BlendModeLabel.Text" xml:space="preserve">
+<value>方式:</value>
+  </data>
+  <data name="BitmapLayerPropertiesDialog.OpacityLabel.Text" xml:space="preserve">
+<value>不透明:</value>
+  </data>
+  <data name="UserBlendOps.NormalBlendOp.Name" xml:space="preserve">
+<value>标准</value>
+  </data>
+  <data name="UserBlendOps.MultiplyBlendOp.Name" xml:space="preserve">
+<value>倍增</value>
+  </data>
+  <data name="UserBlendOps.AdditiveBlendOp.Name" xml:space="preserve">
+<value>添加</value>
+  </data>
+  <data name="UserBlendOps.ColorBurnBlendOp.Name" xml:space="preserve">
+<value>颜色加深</value>
+  </data>
+  <data name="UserBlendOps.ColorDodgeBlendOp.Name" xml:space="preserve">
+<value>漂白混色</value>
+  </data>
+  <data name="UserBlendOps.ReflectBlendOp.Name" xml:space="preserve">
+<value>反射</value>
+  </data>
+  <data name="UserBlendOps.GlowBlendOp.Name" xml:space="preserve">
+<value>发光</value>
+  </data>
+  <data name="UserBlendOps.OverlayBlendOp.Name" xml:space="preserve">
+<value>重叠</value>
+  </data>
+  <data name="UserBlendOps.NegationBlendOp.Name" xml:space="preserve">
+<value>相反</value>
+  </data>
+  <data name="UserBlendOps.DifferenceBlendOp.Name" xml:space="preserve">
+<value>差分</value>
+  </data>
+  <data name="UserBlendOps.ScreenBlendOp.Name" xml:space="preserve">
+<value>屏幕</value>
+  </data>
+  <data name="UserBlendOps.LightenBlendOp.Name" xml:space="preserve">
+<value>减轻</value>
+  </data>
+  <data name="UserBlendOps.DarkenBlendOp.Name" xml:space="preserve">
+<value>转暗</value>
+  </data>
+  <data name="UserBlendOps.XorBlendOp.Name" xml:space="preserve">
+<value>Xor</value>
+  </data>
+  <data name="AngleChooserConfigDialog.AngleHeader.Text" xml:space="preserve">
+<value>角度</value>
+  </data>
+  <data name="AutoLevel.Name" xml:space="preserve">
+<value>自动色阶</value>
+  </data>
+  <data name="Effects.Blurring.Submenu.Name" xml:space="preserve">
+<value>模糊</value>
+  </data>
+  <data name="OutlineEffect.Name">
+<value>轮廓</value>
+  </data>
+  <data name="OutlineEffect.ConfigDialog.ThicknessLabel">
+<value>厚度</value>
+  </data>
+  <data name="OutlineEffect.ConfigDialog.IntensityLabel">
+<value>强度</value>
+  </data>
+  <data name="MedianEffect.Name">
+<value>中间化</value>
+  </data>
+  <data name="MedianEffect.ConfigDialog.RadiusLabel">
+<value>半径</value>
+  </data>
+  <data name="MedianEffect.ConfigDialog.PercentileLabel">
+<value>百分率</value>
+  </data>
+  <data name="UnfocusEffect.Name">
+<value>无焦点</value>
+  </data>
+  <data name="UnfocusEffect.ConfigDialog.AmountLabel">
+<value>半径</value>
+  </data>
+  <data name="UnfocusEffect.ConfigDialog.UnitsLabel">
+<value>象素</value>
+  </data>
+  <data name="ZoomBlurEffect.Name">
+<value>变焦模糊</value>
+  </data>
+  <data name="ZoomBlurEffect.ConfigDialog.AmountLabel">
+<value>焦距数</value>
+  </data>
+  <data name="BlurEffect.Name" xml:space="preserve">
+<value>高斯模糊</value>
+  </data>
+  <data name="GlowEffect.Amount1.Name" xml:space="preserve">
+<value>半径</value>
+  </data>
+  <data name="GlowEffect.Amount2.Name" xml:space="preserve">
+<value>亮度</value>
+  </data>
+  <data name="GlowEffect.Amount3.Name" xml:space="preserve">
+<value>对比度</value>
+  </data>
+  <data name="GlowEffect.Name" xml:space="preserve">
+<value>发光</value>
+  </data>
+  <data name="BulgeEffect.Name" xml:space="preserve">
+<value>凸起</value>
+  </data>
+  <data name="DistortSubmenu.Name" xml:space="preserve">
+<value>变形</value>
+  </data>
+  <data name="TileEffect.Name" xml:space="preserve">
+<value>反射</value>
+  </data>
+  <data name="TwistEffect.Name" xml:space="preserve">
+<value>扭曲</value>
+  </data>
+  <data name="BulgeEffect.BulgeAmount.Text" xml:space="preserve">
+<value>凸起</value>
+  </data>
+  <data name="TileEffect.Intensity.Text" xml:space="preserve">
+<value>曲率</value>
+  </data>
+  <data name="TileEffect.Rotation.Text" xml:space="preserve">
+<value>转角 (度)</value>
+  </data>
+  <data name="TileEffect.SquareSize.Text" xml:space="preserve">
+<value>方形尺寸 (象素)</value>
+  </data>
+  <data name="TwistEffect.Antialias.Text" xml:space="preserve">
+<value>质量</value>
+  </data>
+  <data name="TwistEffect.TwistAmount.Text" xml:space="preserve">
+<value>扭曲数</value>
+  </data>
+  <data name="PolarInversionEffect.Name" xml:space="preserve">
+<value>极面倒转</value>
+  </data>
+  <data name="PolarInversionEffect.PolarInversionAmount.Text" xml:space="preserve">
+<value>数量</value>
+  </data>
+  <data name="PolarInversionEffect.Quality.Text" xml:space="preserve">
+<value>质量</value>
+  </data>
+  <data name="BrightnessAndContrastAdjustment.Name" xml:space="preserve">
+<value>亮度 / 对比度</value>
+  </data>
+  <data name="BrightnessAndContrastAdjustment.Brightness" xml:space="preserve">
+<value>亮度</value>
+  </data>
+  <data name="BrightnessAndContrastAdjustmnet.Contrast" xml:space="preserve">
+<value>对比度</value>
+  </data>
+  <data name="DesaturateEffect.Name" xml:space="preserve">
+<value>黑白效果</value>
+  </data>
+  <data name="EdgeDetectEffect.Name" xml:space="preserve">
+<value>边缘强化</value>
+  </data>
+  <data name="EmbossEffect.Name" xml:space="preserve">
+<value>浮雕</value>
+  </data>
+  <data name="FrostedGlassEffect.Name" xml:space="preserve">
+<value>磨砂玻璃</value>
+  </data>
+  <data name="FrostedGlassEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+<value>分散半径</value>
+  </data>
+  <data name="FrostedGlassEffect.ConfigDialog.SliderUnitsName" xml:space="preserve">
+<value>象素</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Name" xml:space="preserve">
+<value>色相 / 饱和度</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Amount1Label" xml:space="preserve">
+<value>色相</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Amount2Label" xml:space="preserve">
+<value>饱和度</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Amount3Label" xml:space="preserve">
+<value>亮度</value>
+  </data>
+  <data name="InvertColorsEffect.Name" xml:space="preserve">
+<value>反色</value>
+  </data>
+  <data name="LevelsEffect.Name" xml:space="preserve">
+<value>色阶</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.OutputGroupBox.Text" xml:space="preserve">
+<value>输出</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.OutputGammaUpDown.ToolTipText" xml:space="preserve">
+<value>输出加玛</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchOutHigh.ToolTipText" xml:space="preserve">
+<value>输出白点 (双击选择)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchOutLow.ToolTipText" xml:space="preserve">
+<value>输出黑点 (双击选择)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.OutputHistogramGroupBox.Text" xml:space="preserve">
+<value>输出柱状图</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.HistogramOutput.ToolTipText" xml:space="preserve">
+<value>这个柱状图表现目标图像的颜色的分布。</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.InputHistogramGroupBox.Text" xml:space="preserve">
+<value>输入柱状图</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.HistogramInput.ToolTipText" xml:space="preserve">
+<value>这个柱状图表现原图像的颜色的分布。</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.InputGroupBox.Text" xml:space="preserve">
+<value>输入</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchInHigh.ToolTipText" xml:space="preserve">
+<value>输入白点 (双击选择)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchInLow.ToolTipText" xml:space="preserve">
+<value>输入黑点 (双击选择)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.RedMaskCheckBox.Text" xml:space="preserve">
+<value>红</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.RedMaskCheckBox.ToolTipText" xml:space="preserve">
+<value>选择处理红色通道</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.GreenMaskCheckBox.Text" xml:space="preserve">
+<value>绿</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.GreenMaskCheckBox.ToolTipText" xml:space="preserve">
+<value>选择处理绿色通道</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.BlueMaskCheckBox.Text" xml:space="preserve">
+<value>蓝</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.BlueMaskCheckBox.ToolTipText" xml:space="preserve">
+<value>选择处理蓝色通道</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.AutoButton.Text" xml:space="preserve">
+<value>自动</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.AutoButton.ToolTipText" xml:space="preserve">
+<value>自动调节输入白点，黑点和输出加玛来优化图像。</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.ResetButton.Text" xml:space="preserve">
+<value>重设</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.Text" xml:space="preserve">
+<value>色阶调整</value>
+  </data>
+  <data name="MotionBlurEffect.Name" xml:space="preserve">
+<value>运动模糊</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.Text" xml:space="preserve">
+<value>运动模糊</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.DegreeLabel.Text" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.PixelsLabel.Text" xml:space="preserve">
+<value>象素</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.CenteredCheckBox.Text" xml:space="preserve">
+<value>居中</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.AngleHeader.Text" xml:space="preserve">
+<value>角度</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.DistanceHeader.Text" xml:space="preserve">
+<value>距离</value>
+  </data>
+  <data name="OilPaintingEffect.Name" xml:space="preserve">
+<value>油漆</value>
+  </data>
+  <data name="OilPaintingEffect.ConfigDialog.Amount1Label" xml:space="preserve">
+<value>刷子尺寸</value>
+  </data>
+  <data name="OilPaintingEffect.ConfigDialog.Amount2Label" xml:space="preserve">
+<value>粗糙</value>
+  </data>
+  <data name="PixelateEffect.Name" xml:space="preserve">
+<value>颗粒</value>
+  </data>
+  <data name="PixelateEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+<value>颗粒尺寸</value>
+  </data>
+  <data name="PixelateEffect.ConfigDialog.SliderUnitsName" xml:space="preserve">
+<value>象素</value>
+  </data>
+  <data name="RedEyeRemoveEffect.Name" xml:space="preserve">
+<value>去红眼</value>
+  </data>
+  <data name="RedEyeRemoveEffect.ConfigDialog.Amount1Label" xml:space="preserve">
+<value>容限</value>
+  </data>
+  <data name="RedEyeRemoveEffect.ConfigDialog.Amount2Label" xml:space="preserve">
+<value>饱和度</value>
+  </data>
+  <data name="RedEyeRemoveEffectDialog.UsageHintLabel.Text" xml:space="preserve">
+<value>提示:为得到最好效果，请用选择工具去选择每只眼睛。</value>
+  </data>
+  <data name="ReliefEffect.Name" xml:space="preserve">
+<value>浮雕</value>
+  </data>
+  <data name="SharpenEffect.Name" xml:space="preserve">
+<value>尖锐</value>
+  </data>
+  <data name="SharpenEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+<value>数量</value>
+  </data>
+  <data name="TwoAmountsConfigDialog.Reset.Text" xml:space="preserve">
+<value>重设</value>
+  </data>
+  <data name="BlurEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+<value>半径</value>
+  </data>
+  <data name="BlurEffect.ConfigDialog.SliderUnitsName" xml:space="preserve">
+<value>象素</value>
+  </data>
+  <data name="AngleChooserConfigDialog.DegreeLabel.Text" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="WorkspaceOptionsConfigWidget.UnitsLabel.Text" xml:space="preserve">
+<value>单位:</value>
+  </data>
+  <data name="MeasurementUnit.Pixel" xml:space="preserve">
+<value>象素</value>
+  </data>
+  <data name="MeasurementUnit.Inch" xml:space="preserve">
+<value>英寸</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter" xml:space="preserve">
+<value>厘米</value>
+  </data>
+  <data name="MeasurementUnit.Pixel.Plural" xml:space="preserve">
+<value>象素</value>
+  </data>
+  <data name="MeasurementUnit.Inch.Plural" xml:space="preserve">
+<value>英寸</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter.Plural" xml:space="preserve">
+<value>厘米</value>
+  </data>
+  <data name="MeasurementUnit.Pixel.Abbreviation" xml:space="preserve">
+<value>象素</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter.Abbreviation" xml:space="preserve">
+<value>厘米</value>
+  </data>
+  <data name="MeasurementUnit.Inch.Abbreviation" xml:space="preserve">
+<value>英寸</value>
+  </data>
+  <data name="StatusBar.CursorInfo.Format" xml:space="preserve">
+    <value>{0}{1}, {2}{3}</value>
+    <comment>{0} is x offset, {1} is units, {2} is y offset, {3} is units</comment>
+  </data>
+  <data name="ResizeAction.ProgressDialog.Description" xml:space="preserve">
+    <value>调整尺寸... </value>
+  </data>
+  <data name="ResizeDialog.ResolutionLabel.Text" xml:space="preserve">
+<value>分辨率:</value>
+  </data>
+  <data name="MeasurementUnit.Inch.Ratio" xml:space="preserve">
+<value>象素/英寸</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter.Ratio" xml:space="preserve">
+<value>象素/厘米</value>
+  </data>
+  <data name="MeasurementUnit.Pixel.Ratio" xml:space="preserve">
+<value>象素</value>
+  </data>
+  <data name="UpdatesDialog.Text" xml:space="preserve">
+<value>Paint.NET更新</value>
+  </data>
+  <data name="UpdatesDialog.OptionsButton.Text">
+<value>选项(&amp;O) ... </value>
+  </data>
+  <data name="UpdatesDialog.MoreInfoLink.Text" xml:space="preserve">
+<value>更多信息...</value>
+  </data>
+  <data name="UpdatesDialog.NewVersionLabel.Text">
+<value>新版本:</value>
+  </data>
+  <data name="UpdatesDialog.ProgressLabel.Text.Format">
+    <value>{0}%</value>        
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.StartupState">
+<value>下在初始化Paint.NET更新系统。</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.StartupState">
+<value>初始化</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ReadyToCheckState">
+<value>Paint.NET已准备好检查更新。</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ReadyToCheckState">
+<value>开始检查</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.CheckingState">
+<value>Paint.NET正在栓查是否有更新的版本。</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.CheckingState">
+<value>检查中</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.UpdateAvailableState">
+<value>发现了新版本 Paint.NET。可以点击下下面的&quot;下载&quot;按钮下载并且安装。</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.UpdateAvailableState">
+<value>安装(&amp;I)</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.DownloadingState">
+<value>正在下载Paint.NET更新。</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.DownloadingState">
+<value>下载中</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ExtractingState">
+<value>更新已被下载完成，正在解压。</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ExtractingState">
+<value>解压中</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ReadyToInstallState">
+<value>必须关闭Paint.NET才能开始安装更新。在点击确定和，系统将提示是否保存所有的改变。</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ReadyToInstallState">
+<value>确定</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.InstallingState">
+<value>正在安装更新！</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.InstallingState">
+<value>正在安装</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.DoneState">
+<value>没发现更新。</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.DoneState">
+<value>完成</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.AbortedState">
+<value>更新被中断。</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.AbortedState">
+    <value></value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ErrorState.Format">
+<value>在检查更新时发生一个错误。
+
+{0}</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ErrorState">
+    <value></value>
+  </data>
+  <data name="UpdatesDialog.InfoLabel.Text" xml:space="preserve">
+<value>发现了新版本 Paint.NET。您可以点击安装按钮下载并且安装，或是点击关闭（系统装重新提示您在几天后）。</value>
+  </data>
+  <data name="UpdatesDialog.BetaWarningLabel.Text" xml:space="preserve">
+<value>注意:这不是最终版本。它可能不稳定。</value>
+  </data>
+  <data name="UpdatesDialog.CloseButton.Text" xml:space="preserve">
+<value>关闭</value>
+  </data>
+  <data name="UpdatesDialog.NewVersionZipLabel.Text" xml:space="preserve">
+<value>下载:</value>
+  </data>
+  <data name="UpdatesDialog.CurrentVersionHeader.Text" xml:space="preserve">
+<value>当前安装的版本</value>
+  </data>
+  <data name="UpdatesDialog.NewVersionHeader.Text" xml:space="preserve">
+<value>新版本</value>
+  </data>
+  <data name="UpdatesDialog.InstallButton.Text" xml:space="preserve">
+<value>安装</value>
+  </data>
+  <data name="UpdatesOptionsDialog.Text">
+<value>Paint.NET更新选项</value>
+  </data>
+  <data name="UpdatesOptionsDialog.SaveButton.Text">
+<value>保存(&amp;S)</value>
+  </data>
+  <data name="UpdatesOptionsDialog.AutoCheckBox.Text">
+<value>自动检查新版本</value>
+  </data>
+  <data name="UpdatesOptionsDialog.BetaCheckBox.Text">
+<value>检查试用版</value>
+  </data>
+  <data name="UpdatesOptionsDialog.AllUsersNoticeLabel.Text">
+<value>注意:这个设置将影响这台计算机上的所有用户。</value>
+  </data>
+  <data name="ExpiredDialog.Message" xml:space="preserve">
+<value>测试版已经过期 (30 天)。
+
+点击确定到Paint.NET网站下载新版本。</value>
+  </data>
+  <data name="ExpiredTaskDialog.InfoText">
+<value>测试版已经过期。 必须下载新版本的Paint.NET。</value>
+  </data>
+  <data name="ExpiredTaskDialog.CheckForUpdatesTB.ActionText">
+<value>检查更新程序(&amp;C)</value>
+  </data>
+  <data name="ExpiredTaskDialog.CheckForUpdatesTB.ExplanationText">
+<value>检查是否有更新， 并且安装。</value>
+  </data>
+  <data name="ExpiredTaskDialog.GoToWebSiteTB.ActionText">
+<value>打开Paint.NET网点(&amp;G)</value>
+  </data>
+  <data name="ExpiredTaskDialog.GoToWebSiteTB.ExplanationText">
+<value>如果检查更新不能正学工作，你可以手动到网点下载更新。</value>
+  </data>
+  <data name="ExpiredTaskDialog.DoNotCheckForUpdatesTB.ActionText">
+<value>退出(&amp;X)</value>
+  </data>
+  <data name="ExpiredTaskDialog.DoNotCheckForUpdatesTB.ExplanationText">
+<value>不检查更新直接退出Paint.NET。</value>
+  </data>  
+  <data name="DownloadAndUnzipUpdateDialog.Text" xml:space="preserve">
+<value>Paint.NET更新</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Description.Downloading" xml:space="preserve">
+    <value>下载中...</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Description.Extracting" xml:space="preserve">
+    <value>解压中...</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Error.Generic" xml:space="preserve">
+<value>当下载和安装新版本时发生了一个错误。 请过一会在试  &quot;帮助 -&gt; 检查更新...&quot;</value>
+  </data>
+  <data name="SetLanguage.PleaseRestartApplication" xml:space="preserve">
+<value>必须重启Paint.NET去使改变生效。</value>
+  </data>
+  <data name="AddNoiseEffect.Amount1Label" xml:space="preserve">
+<value>强度</value>
+  </data>
+  <data name="AddNoiseEffect.Amount2Label" xml:space="preserve">
+<value>色彩饱和度</value>
+  </data>
+  <data name="AddNoiseEffect.Name" xml:space="preserve">
+<value>增加杂点</value>
+  </data>
+  <data name="ClearOpenRecentList.Dialog.Text" xml:space="preserve">
+<value>确定要清空最近打开文件列表吗？</value>
+  </data>
+  <data name="SepiaEffect.Name" xml:space="preserve">
+<value>去色</value>
+  </data>
+  <data name="NonAdminErrorBox.Message" xml:space="preserve">
+<value>只有系统管理员可以执行这项操作。</value>
+  </data>
+  <data name="GifSaveConfigWidget.ThresholdLabel.Text" xml:space="preserve">
+<value>透明度:</value>
+  </data>
+  <data name="GifSaveConfigWidget.DitherLabel.Text" xml:space="preserve">
+<value>抖动级别:</value>
+  </data>
+  <data name="GifSaveConfigWidget.PreMultiplyAlphaCheckBox.Text" xml:space="preserve">
+<value>倍增alpha通道</value>
+  </data>
+  <data name="GifSaveConfigWidget.ThresholdInfoLabel.Text">
+    <value>Alpha值小于起点的象素将完全透明。</value>
+  </data>
+  <data name="SetupWizard.HelpText" xml:space="preserve">
+<value>Paint.NET 安装文件帮助
+
+命令行选项:
+
+/skipConfig  -  跳过配置和安装目录选项。使用MSI属性有以下的优先性:1. 支持命令行， 2. 从HKLM\Software\Paint.NET中读取, 3. 假设值。注意:使用这个选项去接受用户许可。
+/auto  -  自动安装。Infers /skipConfig.不显示最终结果页。
+/createMsi  -  为开发(AD/GPO)目的创建MSI。所有命令已经加入MSI，不需要做任何改造。
+PROPERTY=VALUE  -  设置MSI属性。要了解更多的信息请在安装结束后参照帮助文件。不需要用 /saveMsi 说明属性。
+
+返回0代表成功，其它代表失败。</value>
+  </data>
+  <data name="SetupWizard.x86Msi.LaunchCondition.NotAllowedOn64bitOS" xml:space="preserve">
+<value>32-bit MSI 不能安装在 64-bit 系统。</value>
+  </data>
+  <data name="Error.OSRequirement" xml:space="preserve">
+<value>Paint.NET 需要 Windows XP SP2, Windows Vista, Windows Server 2003, 或更新版本。</value>
+  </data>
+  <data name="SetupWizard.Error.AdminRequired" xml:space="preserve">
+<value>只有管理员才能安装Paint.NET。</value>
+  </data>
+  <data name="SetupWizard.CancelButton.Text" xml:space="preserve">
+<value>取消</value>
+  </data>
+  <data name="SetupWizard.BackButton.Text" xml:space="preserve">
+<value>&lt; 上一步(&amp;B)</value>
+  </data>
+  <data name="SetupWizard.NextButton.Text" xml:space="preserve">
+<value>下一步(&amp;N) &gt;</value>
+  </data>
+  <data name="SetupWizard.NextButton.Text.Finished" xml:space="preserve">
+<value>完成</value>
+  </data>
+  <data name="SetupWizard.CancelDialog.Message" xml:space="preserve">
+<value>安装过程还没有完成。你确定要退出吗?</value>
+  </data>
+  <data name="SetupWizard.IntroPage.HeaderText" xml:space="preserve">
+<value>安装向导</value>
+  </data>
+  <data name="SetupWizard.IntroPage.IntroText.Text.Format" xml:space="preserve">
+<value>安装程序将帮助你安装 {0}。
+
+选择安装方案，然后点击下一步。</value>
+    <comment>{0} is the product name.</comment>
+  </data>
+  <data name="SetupWizard.IntroPage.QuickRB.Text" xml:space="preserve">
+<value>快速安装</value>
+  </data>
+  <data name="SetupWizard.IntroPage.QuickDescription.Text" xml:space="preserve">
+<value>这个推荐方案适合大部分用户。安装程序将使用默认设置，或使用与以前安装同样的设置。</value>
+  </data>
+  <data name="SetupWizard.IntroPage.CustomRB.Text" xml:space="preserve">
+<value>自定义</value>
+  </data>
+  <data name="SetupWizard.IntroPage.CustomDescription.Text" xml:space="preserve">
+<value>可以修改安装目录，文件关联和更新选项。</value>
+  </data>
+  <data name="SetupWizard.IntroPage.ExpirationWarning.Format" xml:space="preserve">
+<value>注意:这测试版将在{0} 后过程。</value>
+    <comment>{0} is a date.</comment>
+  </data>
+  <data name="SetupWizard.LicensePage.HeaderText" xml:space="preserve">
+<value>用户许可</value>
+  </data>
+  <data name="SetupWizard.LicensePage.IntroText.Text" xml:space="preserve">
+<value>请用几分钟时间认真阅读用户许可。如果你接受，请选择&quot;我同意&quot;，然后点击&quot;下一步&quot;。否则点击&quot;取消&quot;。</value>
+  </data>
+  <data name="SetupWizard.LicensePage.DontAgreeButton.Text" xml:space="preserve">
+<value>不同意(&amp;D)</value>
+  </data>
+  <data name="SetupWizard.LicensePage.AgreeButton.Text" xml:space="preserve">
+<value>同意(&amp;A)</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.HeaderText" xml:space="preserve">
+<value>配置选项</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.LaunchHandlingText.Text" xml:space="preserve">
+<value>使用这些选项设置如果开始Paint.NET。</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.JpgPngBmpCheckBox.Text" xml:space="preserve">
+<value>用它作为默认的 JPEG, PNG, 和 BMP图像编辑器。</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.TgaCheckBox.Text" xml:space="preserve">
+<value>用它作为默认的TGA图像编辑器。</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.DesktopShortcutCheckBox.Text" xml:space="preserve">
+<value>在桌面创建快洁方式</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.UpdatesText.Text" xml:space="preserve">
+<value>Paint.NET可以定期地检查是否有新版本并且提示您。这个过程中不会从您的计算机收集任何信息。注意:只有当你使用Paint.NET时才能收到新版本提示。</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.CheckForUpdatesCheckBox.Text" xml:space="preserve">
+<value>自动检查更新</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.CheckForBetasCheckBox.Text" xml:space="preserve">
+<value>检查试用版</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.HeaderText" xml:space="preserve">
+<value>选择安装目录</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.IntroText.Text.Format" xml:space="preserve">
+<value>安装程序将安装{0} 到下面的目录。
+
+要安装到这个目录，点击&quot;下一步&quot;。要安装到其它目录请输入目录名或点击&quot;更改目录&quot;选择。</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.FolderLabel.Text" xml:space="preserve">
+<value>目标目录:</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.BrowseButton.Text" xml:space="preserve">
+<value>更改目录(&amp;B) ... </value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.DefaultTargetSubDir" xml:space="preserve">
+<value>Paint.NET</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.BrowseForFolder.Description" xml:space="preserve">
+<value>选择安装目录:</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.BadDirError.Message" xml:space="preserve">
+<value>无法创建指定目录。需要选择其它目录去完成安装。</value>
+  </data>
+  <data name="SetupWizard.ReadyToInstallPage.HeaderText" xml:space="preserve">
+<value>确定安装</value>
+  </data>
+  <data name="SetupWizard.ReadyToInstallPage.IntroText.Text.Format" xml:space="preserve">
+<value>安装程序已经准备好安装{0}在您的计算机。
+
+点击&quot;下一步&quot;开始安装。</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.HeaderText.Installing" xml:space="preserve">
+<value>正在安装</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.HeaderText.Success" xml:space="preserve">
+<value>安装成功</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.HeaderText.Failure" xml:space="preserve">
+<value>错误</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Uninstalling" xml:space="preserve">
+    <value>删除以前版本 ...</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Installing.Format" xml:space="preserve">
+    <value>正在安装 {0} ...</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Optimizing" xml:space="preserve">
+<value>优化系统性能。这个操作可以需要几分钟时间。</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Success.Format" xml:space="preserve">
+<value>成功安装 {0}。点击&quot;完成&quot;关闭安装向导。</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Success.RebootRequired.Format" xml:space="preserve">
+<value>成功安装 {0}。完成这一操作需要重启动。点击&quot;完成&quot;关闭安装向导。</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Failure.Format" xml:space="preserve">
+<value>安装 {0} 时出现错误。</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.PdnDonateBannerImage.Text">
+<value>非常感谢您使用Paint.NET. 如果您希望它发展的更好请捐款给开发组！</value>
+  </data>
+  <data name="SetupWizard.CreateMsiPage.HeaderText" xml:space="preserve">
+<value>开发向导</value>
+  </data>
+  <data name="SetupWizard.CreateMsiPage.IntroText.Text.Creating" xml:space="preserve">
+    <value>创建MSI安装包文件 ...</value>
+  </data>
+  <data name="SetupWizard.CreateMsiPage.IntroText.Text.Finished" xml:space="preserve">
+<value>已经被保存到: &apos;{0}&apos;.</value>
+  </data>
+  <data name="Setup.DesktopShortcut.LinkName" xml:space="preserve">
+<value>Paint.NET</value>
+  </data>
+  <data name="Setup.DesktopShortcut.Description" xml:space="preserve">
+<value>创建，编辑，扫描和打印像和照片。</value>
+  </data>
+  <data name="RotateZoomEffect.Name" xml:space="preserve">
+<value>旋转 / 缩放</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.FineTuningHeader.Text" xml:space="preserve">
+<value>数字调节</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.KeepBackgroundCheckBox.Text" xml:space="preserve">
+<value>保持背景</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.TileSourceCheckBox.Text" xml:space="preserve">
+<value>瓷砖效果</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.HeaderRoll.Text" xml:space="preserve">
+<value>滚动 / 旋转</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.AngleLabel.Text" xml:space="preserve">
+<value>角度:</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.HeaderPan.Text" xml:space="preserve">
+<value>面板</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.PanXLabel.Text" xml:space="preserve">
+<value>X轴方向:</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.PanYLabel.Text" xml:space="preserve">
+<value>Y轴方向:</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.PanResetButton.Text" xml:space="preserve">
+<value>重设</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.ZoomResetButton.Text" xml:space="preserve">
+<value>重设</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.TwistAngleLabel.Text" xml:space="preserve">
+<value>扭曲角度:</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.TwistRadiusLabel.Text" xml:space="preserve">
+<value>扭曲半径:</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.RollResetButton.Text" xml:space="preserve">
+<value>重设</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.ResetAllButton.Text" xml:space="preserve">
+<value>重设所有 (&amp;R)</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.HeaderZoom.Text" xml:space="preserve">
+<value>缩放</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.ZoomLabel.Text.Format" xml:space="preserve">
+<value>{0}x</value>
+  </data>
+  <data name="TgaSaveConfigWidget.BppLabel.Text" xml:space="preserve">
+<value>色度:</value>
+  </data>
+  <data name="TgaSaveConfigWidget.RleCompressCheckBox.Text" xml:space="preserve">
+<value>压缩 (RLE)</value>
+  </data>
+  <data name="TgaSaveConfigWidget.Bpp24Radio.Text" xml:space="preserve">
+<value>24-位</value>
+  </data>
+  <data name="TgaSaveConfigWidget.Bpp32Radio.Text" xml:space="preserve">
+<value>32-位</value>
+  </data>
+  <data name="LaunchLink.Error" xml:space="preserve">
+<value>调用连接时发生错误。</value>
+  </data>
+  <data name="RadialBlurEffect.Name" xml:space="preserve">
+<value>放射模糊</value>
+  </data>
+  <data name="RadialBlurEffect.ConfigDialog.RadialLabel" xml:space="preserve">
+<value>放射数 (度)</value>
+  </data>
+  <data name="WebExceptionStatus.ConnectFailure" xml:space="preserve">
+<value>无法连续移动服务。</value>
+  </data>
+  <data name="WebExceptionStatus.ConnectionClosed" xml:space="preserve">
+<value>连接已被提前关闭。</value>
+  </data>
+  <data name="WebExceptionStatus.KeepAliveFailure" xml:space="preserve">
+<value>连接被意外中断。</value>
+  </data>
+  <data name="WebExceptionStatus.MessageLengthLimitExceeded" xml:space="preserve">
+<value>服务器响应超出了特点限制。</value>
+  </data>
+  <data name="WebExceptionStatus.NameResolutionFailure" xml:space="preserve">
+<value>无法找到指定服务器。</value>
+  </data>
+  <data name="WebExceptionStatus.Pending" xml:space="preserve">
+<value>一个未决的内部异步请求。</value>
+  </data>
+  <data name="WebExceptionStatus.PipelineFailure" xml:space="preserve">
+<value>发生一个内部 .NET 错误r (WebExceptionStatus.PipelineFailure)。</value>
+    <comment>This text is different than what is in the MSDN documentation.</comment>
+  </data>
+  <data name="WebExceptionStatus.ProtocolError" xml:space="preserve">
+<value>接收到服务器回应，但是标示协议错误。例如， HTTP 协议错误，如:访问拒绝 (401 Access Denied)。</value>
+  </data>
+  <data name="WebExceptionStatus.ProtocolError.Format" xml:space="preserve">
+<value>服务器反回如下错误代码:HTTP {1} ({0})</value>
+    <comment>{0} is a string name from the System.Net.HttpStatusCode enumeration. {1} is an integer, such as 404</comment>
+  </data>
+  <data name="WebExceptionStatus.ProxyNameResolutionFailure" xml:space="preserve">
+<value>无法解释主机名。</value>
+  </data>
+  <data name="WebExceptionStatus.ReceiveFailure" xml:space="preserve">
+<value>没有从服务器收到完整的响应。</value>
+  </data>
+  <data name="WebExceptionStatus.RequestCanceled" xml:space="preserve">
+<value>发生一个内部错误(WebExceptionStatus.RequestCanceled)。</value>
+    <comment>This text is different than what is in the MSDN documentation.</comment>
+  </data>
+  <data name="WebExceptionStatus.SecureChannelFailure" xml:space="preserve">
+<value>发生一个错误在安全通道连接（secure channel link）。</value>
+  </data>
+  <data name="WebExceptionStatus.SendFailure" xml:space="preserve">
+<value>发生一个错误在安全通道连接（secure channel link）。</value>
+  </data>
+  <data name="WebExceptionStatus.ServerProtocolViolation" xml:space="preserve">
+<value>服务哭响应不是一个有效的HTTP响应。</value>
+  </data>
+  <data name="WebExceptionStatus.Success" xml:space="preserve">
+<value>没遇到错误。</value>
+  </data>
+  <data name="WebExceptionStatus.Timeout" xml:space="preserve">
+<value>在超时前没有接收到响应。</value>
+  </data>
+  <data name="WebExceptionStatus.TrustFailure" xml:space="preserve">
+<value>无法证实服务器证书。</value>
+  </data>
+  <data name="WebExceptionStatus.UnknownError" xml:space="preserve">
+<value>生发了一个没有定义的错误。</value>
+  </data>
+  <data name="CurvesEffect.Name" xml:space="preserve">
+<value>曲线</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.Text" xml:space="preserve">
+<value>曲线</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.InputHeader.Text" xml:space="preserve">
+<value>输入柱状图</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.TransferHeader.Text" xml:space="preserve">
+<value>转换图</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.OutputHeader.Text" xml:space="preserve">
+<value>输出柱状图</value>
+  </data>
+  <data name="CurveControlRgb.Red" xml:space="preserve">
+<value>红</value>
+  </data>
+  <data name="CurveControlRgb.Green" xml:space="preserve">
+<value>绿</value>
+  </data>
+  <data name="CurveControlRgb.Blue" xml:space="preserve">
+<value>蓝</value>
+  </data>
+  <data name="CurveControlLuminosity.Luminosity" xml:space="preserve">
+<value>发光度</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.HelpText.Text" xml:space="preserve">
+<value>提示:右击删除控制点。</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.Coordinates.Format" xml:space="preserve">
+    <value>({0}, {1})</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.ResetButton.Text" xml:space="preserve">
+<value>重设(&amp;R)</value>
+  </data>
+  <data name="ColorTransferMode.Luminosity" xml:space="preserve">
+<value>发光度</value>
+  </data>
+  <data name="ColorTransferMode.Rgb" xml:space="preserve">
+<value>RGB</value>
+  </data>
+  <data name="CrashLog.HeaderText.Format" xml:space="preserve">
+<value>建立这个文本文件是因为Paint.NET非正常退出。
+请e-mail 这个文件到 {0} 开发组将诊断并且修理这个问题。
+</value>
+    <comment>{0} is an e-mail address, such as paint.net@hotmail.com</comment>
+  </data>
+  <data name="SwapLayerFunction.Name" xml:space="preserve">
+<value>交换图层</value>
+  </data>
+  <data name="ExecuteFunction.GenericOutOfMemory">
+<value>无足够内存完成操作。</value>
+  </data>
+  <data name="ExecuteFunction.GenericError">
+<value>完成动作时发生一个错误。.</value>   
+  </data>
+  <data name="FontSmoothing.None">
+<value>无</value>
+  </data>
+  <data name="FontSmoothing.Sharp">
+<value>尖锐</value>
+  </data>
+  <data name="FontSmoothing.Smooth">
+<value>光滑</value>
+  </data>
+  <data name="ToolStripChooser.ChooseToolButton.Text">
+<value>工具(&amp;T)</value>
+  </data>
+  <data name="ToleranceConfig.ToleranceLabel.Text">
+<value>容限:</value>
+  </data>
+  <data name="Updates.ExtractingState.GenericError">
+<value>在解压下载文件时遇到一个错误。</value>
+  </data>
+  <data name="Updates.DownloadingState.GenericError">
+<value>下载文件时发现一个没有定义的错误。</value>
+  </data>
+  <data name="Updates.CheckingState.GenericError">
+<value>检查更新时时发现一个没有定义的错误。</value>
+  </data>
+  <data name="UnsavedChangesDialog.Text">
+<value>没有保存的改变</value>
+  </data>
+  <data name="UnsavedChangesDialog.InfoLabel.Text">
+<value>The following images that are open have changes that have not been saved.下面打开的图像被改变过但是还没有保存。点击小图可以在主窗口中显示。 </value>
+  </data>
+  <data name="UnsavedChangesDialog.DocumentListHeader.Text">
+<value>图像</value>
+  </data>
+  <data name="UnsavedChangesDialog.SaveButton.ActionText">
+<value>保存(&amp;S)</value>
+  </data>
+  <data name="UnsavedChangesDialog.SaveButton.ExplanationText">
+<value>保存在上面列表中的图像，然后退出。</value>
+  </data>
+  <data name="UnsavedChangesDialog.DontSaveButton.ActionText">
+<value>不保存(&amp;N)</value>
+  </data>
+  <data name="UnsavedChangesDialog.DontSaveButton.ExplanationText">
+<value>放弃所有没保存的改变，然后退出。</value>
+  </data>
+  <data name="UnsavedChangesDialog.CancelButton.ActionText">
+<value>取消</value>
+  </data>
+  <data name="UnsavedChangesDialog.CancelButton.ExplanationText">
+<value>返回 Paint.NET</value>
+  </data>
+  <data name="TaskButton.Cancel.ActionText">
+<value>取消</value>
+  </data>
+  <data name="TaskButton.Cancel.ExplanationText">
+    <value></value>
+  </data>
+  <data name="ControlShadow.BetaTag.Text.Format">
+<value>这是一个试用版，荐意只用于测试目的。将于 {1} 过期。 这之前一个更新版本将被放置在
+www.getpaint.net</value>
+      <comment>{0} is the full application name, e.g. "Paint.NET v3.0 (Beta 1 Release build 3.0.2460.34921). {1} is a date string.</comment>
+  </data>
+  <data name="ToolChooserStrip.ChooseToolDefaults.Text">
+<value>选择默认值(&amp;D) ... </value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.IntroText.Text">
+<value>你可以在Paint.NET开始时选择工具，默认值用于工具条。</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.LoadFromToolBarButton.Text">
+<value>从工具条调用(&amp;L)</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ResetButton.Text">
+<value>重设(&amp;R)</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.DefaultToolText.Text">
+<value>默认工具:</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Resampling.HeaderLabel.Text">
+<value>移动选择象素</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.BrushPenShapeType.HeaderLabel.Text">
+<value>图形，刷子和填充</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Text.HeaderLabel.Text">
+<value>文本</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Gradient.HeaderLabel.Text">
+<value>渐变</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Tolerance.HeaderLabel.Text">
+    <value>魔术棒， 涂料瓶和重新着色</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.ColorPickerBehavior.HeaderLabel.Text">
+<value>取色工具</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.AlphaBlendingAntialiasing.HeaderLabel.Text">
+<value>光栅</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.Text">
+<value>选择默认</value>
+  </data>
+  <data name="CloseWorkspaceAction.Title">
+<value>没有保存的改变</value>
+  </data>
+  <data name="CloseWorkspaceAction.SaveButton.ActionText">
+<value>保存(&amp;S)</value>
+  </data>
+  <data name="CloseWorkspaceAction.SaveButton.ExplanationText">
+<value>保存并且关闭</value>
+  </data>
+  <data name="CloseWorkspaceAction.DontSaveButton.ActionText">
+<value>不保存(&amp;N)</value>
+  </data>
+  <data name="CloseWorkspaceAction.DontSaveButton.ExplanationText">
+<value>放弃未保存的改变。</value>
+  </data>
+  <data name="CloseWorkspaceAction.CancelButton.ActionText">
+<value>取消</value>
+  </data>
+  <data name="CloseWorkspaceAction.CancelButton.ExplanationText">
+<value>返回Paint.NET。</value>
+  </data>
+  <data name="CloseWorkspaceAction.IntroText.Format">
+<value>{0} 有没有保存的改变。您想如何处理？</value>
+  </data>
+  <data name="GradientType.LinearClamped">
+<value>线性</value>
+  </data>
+  <data name="GradientType.LinearReflected">
+<value>线性 (反射)</value>
+  </data>
+  <data name="GradientType.LinearDiamond">
+<value>钻石</value>
+  </data>
+  <data name="GradientType.Radial">
+<value>放射</value>
+  </data>
+  <data name="GradientType.Conical">
+<value>圆锥</value>
+  </data>
+  <data name="GradientChannels.AllColorChannels.Text">
+<value>色彩模式</value>
+  </data>
+  <data name="GradientChannels.AlphaChannelOnly.Text">
+<value>透明模式</value>
+  </data>
+  <data name="AlphaBlendingSplitButton.BlendingEnabled.Text">
+<value>标准混合</value>
+  </data>
+  <data name="AlphaBlendingSplitButton.BlendingOverwrite.Text">
+<value>覆盖</value>
+  </data>
+  <data name="AntiAliasingSplitButton.Enabled.Text">
+<value>开启反锯齿</value>
+  </data>
+  <data name="AntiAliasingSplitButton.Disabled.Text">
+<value>关闭反锯齿</value>
+  </data>
+  <data name="ToolsControl.ToolToolTip.Format">
+    <value>{0}
+快捷键: {1}</value>
+    <comment>{0} is the tool's name (e.g. "Magic Wand"). {1} is a character that is the shortcut key (e.g. "C")</comment>
+  </data>
+  <data name="ToolConfigStrip.PenSizeIncButton.ToolTipText">
+<value>无效的刷子尺寸
+快捷键: ] (按 Ctrl键每次加 5)</value>
+  </data>
+  <data name="ToolConfigStrip.PenSizeDecButton.ToolTipText">
+<value>减少刷子尺寸
+快捷键: ] (按 Ctrl键每次减 5)</value>
+  </data>
+  <data name="Effects.Render.Submenu.Name" xml:space="preserve">
+    <value>渲染</value>
+  </data>
+  <data name="CloudsEffect.Name">
+    <value>云</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.UsageLabel">
+    <value>可以通过在云窗口中设置前景色和背景色来改变所绘云的颜色。</value>        
+  </data>
+  <data name="CloudsEffect.ConfigDialog.ScaleLabel">
+    <value>比例</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.RoughnessLabel">
+    <value>粗糙</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.SeedHeader.Text">
+    <value>随机增加杂点</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.BlendModeHeader.Text">
+<value>混和方式</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.ReseedButton.Text">
+    <value>重新产生(&amp;R)</value>
+  </data>
+</root>

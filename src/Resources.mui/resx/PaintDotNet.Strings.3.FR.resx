@@ -1,0 +1,2821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Application.ProductName.Bare" xml:space="preserve">
+    <value>Paint.NET</value>
+  </data>
+  <data name="Application.ProductName.Format" xml:space="preserve">
+    <value>{0} v{1}{2}</value>
+    <comment>{0} is Application.ProductName.Bare. {1} is the version number (e.g., "2.6"). {2} is either an empty string, or a version tag constructed with Application.ProductNage.Format (e.g., "Beta 5")</comment>
+  </data>
+  <data name="Application.ProductName.Tag.Format" xml:space="preserve">
+    <value> {0}</value>
+    <comment>{0} is the version tag, e.g. Beta 5</comment>
+  </data>
+  <data name="Application.Copyright.AllRightsReserved" xml:space="preserve">
+    <value>Tous droits réservés.</value>
+  </data>
+  <data name="LayerForm.Text" xml:space="preserve">
+    <value>Calques</value>
+  </data>
+  <data name="LayerForm.AddNewLayerButton.ToolTipText" xml:space="preserve">
+    <value>Ajouter un nouveau calque</value>
+  </data>
+  <data name="LayerForm.DeleteLayerButton.ToolTipText" xml:space="preserve">
+    <value>Supprimer le calque</value>
+  </data>
+  <data name="LayerForm.MergeLayerDownButton.ToolTipText">
+    <value>Fusionner avec le calque inférieur</value>
+  </data>
+  <data name="LayerForm.DuplicateLayerButton.ToolTipText" xml:space="preserve">
+    <value>Dupliquer le calque</value>
+  </data>
+  <data name="LayerForm.MoveLayerUpButton.ToolTipText" xml:space="preserve">
+    <value>Monter le calque</value>
+  </data>
+  <data name="LayerForm.MoveLayerDownButton.ToolTipText" xml:space="preserve">
+    <value>Descendre le calque</value>
+  </data>
+  <data name="LayerForm.PropertiesButton.ToolTipText" xml:space="preserve">
+    <value>Propriétés</value>
+  </data>
+  <data name="HistoryForm.Text" xml:space="preserve">
+    <value>Historique</value>
+  </data>
+  <data name="HistoryForm.RewindButton.ToolTipText" xml:space="preserve">
+    <value>Annuler tout (retour rapide)</value>
+  </data>
+  <data name="HistoryForm.UndoButton.ToolTipText" xml:space="preserve">
+    <value>Annuler (retour pas à pas)</value>
+  </data>
+  <data name="HistoryForm.FastForwardButton.ToolTipText" xml:space="preserve">
+    <value>Répéter tout (avance rapide)</value>
+  </data>
+  <data name="HistoryForm.ClearHistoryButton.ToolTipText" xml:space="preserve">
+    <value>Effacer l'Historique</value>
+  </data>
+  <data name="HistoryForm.RedoButton.ToolTipText" xml:space="preserve">
+    <value>Répéter (avance pas à pas)</value>
+  </data>
+  <data name="SavePaletteDialog.TypeANameLabel.Text">
+    <value>Entrez un nom pour la palette :</value>
+  </data>
+  <data name="SavePaletteDialog.PalettesLabel.Text">
+    <value>Palettes qui ont déjà été enregistrées :</value>
+  </data>
+  <data name="SavePaletteDialog.Text">
+    <value>Enregistrer la palette actuelle</value>
+  </data>
+  <data name="ColorsForm.Text" xml:space="preserve">
+    <value>Couleurs</value>
+  </data>
+  <data name="ColorsForm.ColorAddButton.ToolTipText">
+    <value>Ajouter la couleur à la palette</value>
+  </data>
+  <data name="ColorsForm.ColorDeleteButton.ToolTipText">
+    <value>Supprimer la couleur de la palette</value>
+  </data>
+  <data name="ColorPalette.SaveHeader">
+    <value>; Fichier palette Paint.NET
+; Les lignes qui commencent par un point-virgule sont des commentaires
+; Les couleurs sont représentées par des nombres hexadécimaux de 8 chiffres : aarrvvbb
+; Par exemple, la couleur verte est représentée par FF00FF00
+; La valeur alpha ('aa') représente la transparence, FF étant complètement opaque, et 00 complètement transparent.
+; Une palette comprend obligatoirement quatre-vingt seize (96) couleurs. S'il y en a moins, les couleurs
+; restantes seront le blanc (FFFFFFFF) ; s'il y en a plus, les couleurs en trop ne seront pas prises en compte.</value>
+    <comment>This is written to the beginning of palette files, which are stored in text files (*.txt)</comment>
+  </data>
+  <data name="SystemLayer.UserDataDirName">
+    <value>Mes fichiers Paint.NET</value>
+    <comment>This is a directory that will be created in the My Documents folder.</comment>
+  </data>
+  <data name="ColorPalettes.UserDataSubDirName">
+    <value>Palettes</value>
+    <comment>This is a directory that will be created in the directory that SystemLayer.UserDataDirName refers to.</comment>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.ToolTipText">
+    <value>Gérer les palettes de couleurs</value>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.SaveCurrentPaletteAs.Text">
+    <value>Enregistrer la &amp;palette actuelle sous...</value>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.OpenPalettesFolder.Text">
+    <value>&amp;Ouvrir le dossier des palettes...</value>
+  </data>
+  <data name="ColorsForm.ColorPalettesButton.ResetToDefaultPalette.Text">
+    <value>Restaurer la palette par défaut</value>
+  </data>
+  <data name="ColorsForm.RedLabel.Text" xml:space="preserve">
+    <value>R :</value>
+  </data>
+  <data name="ColorsForm.BlueLabel.Text" xml:space="preserve">
+    <value>B :</value>
+  </data>
+  <data name="ColorsForm.GreenLabel.Text" xml:space="preserve">
+    <value>V :</value>
+  </data>
+  <data name="ColorsForm.HexLabel.Text" xml:space="preserve">
+    <value>Hexa :</value>
+  </data>
+  <data name="ColorsForm.HueLabel.Text" xml:space="preserve">
+    <value>T :</value>
+  </data>
+  <data name="ColorsForm.SaturationLabel.Text" xml:space="preserve">
+    <value>S :</value>
+  </data>
+  <data name="ColorsForm.ValueLabel.Text" xml:space="preserve">
+    <value>V :</value>
+  </data>
+  <data name="ColorsForm.RgbHeader.Text" xml:space="preserve">
+    <value>RVB</value>
+  </data>
+  <data name="ColorsForm.HsvHeader.Text" xml:space="preserve">
+    <value>TSV</value>
+  </data>
+  <data name="ColorsForm.AlphaHeader.Text" xml:space="preserve">
+    <value>Transparence - Alpha</value>
+  </data>
+  <data name="ColorsForm.MoreLessButton.Text.Less" xml:space="preserve">
+    <value>Moins</value>
+  </data>
+  <data name="ColorsForm.MoreLessButton.Text.More" xml:space="preserve">
+    <value>Plus</value>
+  </data>
+  <data name="WhichUserColor.Primary" xml:space="preserve">
+    <value>Primaire</value>
+  </data>
+  <data name="WhichUserColor.Secondary" xml:space="preserve">
+    <value>Secondaire</value>
+  </data>
+  <data name="MainToolBarForm.Text" xml:space="preserve">
+    <value>Outils</value>
+  </data>
+  <data name="AboutDialog.Text.Format" xml:space="preserve">
+    <value>A propos de {0}</value>
+  </data>
+  <data name="Form.OkButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Form.CancelButton.Text" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Form.SaveButton.Text">
+    <value>Enregi&amp;strer</value>
+  </data>
+  <data name="Form.ResetButton.Text">
+    <value>&amp;Réinitialiser</value>
+  </data>
+  <data name="Form.CloseButton.Text">
+    <value>Fermer</value>
+  </data>
+  <data name="AboutDialog.CreditsLabel.Text" xml:space="preserve">
+    <value>Crédits :</value>
+  </data>
+  <data name="BrushConfigWidget.SolidBrush.Text" xml:space="preserve">
+    <value>Couleur unie</value>
+  </data>
+  <data name="HatchStyle.Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="HatchStyle.Min" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="HatchStyle.Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="HatchStyle.ForwardDiagonal" xml:space="preserve">
+    <value>Diagonale avant</value>
+  </data>
+  <data name="HatchStyle.BackwardDiagonal" xml:space="preserve">
+    <value>Diagonale arrière</value>
+  </data>
+  <data name="HatchStyle.Cross" xml:space="preserve">
+    <value>Quadrillage</value>
+  </data>
+  <data name="HatchStyle.LargeGrid" xml:space="preserve">
+    <value>Grands carreaux</value>
+  </data>
+  <data name="HatchStyle.Max" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="HatchStyle.DiagonalCross" xml:space="preserve">
+    <value>Diagonales croisées</value>
+  </data>
+  <data name="HatchStyle.Percent05" xml:space="preserve">
+    <value>5%</value>
+  </data>
+  <data name="HatchStyle.Percent10" xml:space="preserve">
+    <value>10%</value>
+  </data>
+  <data name="HatchStyle.Percent20" xml:space="preserve">
+    <value>20%</value>
+  </data>
+  <data name="HatchStyle.Percent25" xml:space="preserve">
+    <value>25%</value>
+  </data>
+  <data name="HatchStyle.Percent30" xml:space="preserve">
+    <value>30%</value>
+  </data>
+  <data name="HatchStyle.Percent40" xml:space="preserve">
+    <value>40%</value>
+  </data>
+  <data name="HatchStyle.Percent50" xml:space="preserve">
+    <value>50%</value>
+  </data>
+  <data name="HatchStyle.Percent60" xml:space="preserve">
+    <value>60%</value>
+  </data>
+  <data name="HatchStyle.Percent70" xml:space="preserve">
+    <value>70%</value>
+  </data>
+  <data name="HatchStyle.Percent75" xml:space="preserve">
+    <value>75%</value>
+  </data>
+  <data name="HatchStyle.Percent80" xml:space="preserve">
+    <value>80%</value>
+  </data>
+  <data name="HatchStyle.Percent90" xml:space="preserve">
+    <value>90%</value>
+  </data>
+  <data name="HatchStyle.LightDownwardDiagonal" xml:space="preserve">
+    <value>Diagonales serrées vers le bas</value>
+  </data>
+  <data name="HatchStyle.LightUpwardDiagonal" xml:space="preserve">
+    <value>Diagonales vers le haut (blanc/noir)</value>
+  </data>
+  <data name="HatchStyle.DarkDownwardDiagonal" xml:space="preserve">
+    <value>Diagonales vers le bas (noir/blanc)</value>
+  </data>
+  <data name="HatchStyle.DarkUpwardDiagonal" xml:space="preserve">
+    <value>Diagonales vers le haut (noir/blanc)</value>
+  </data>
+  <data name="HatchStyle.WideDownwardDiagonal" xml:space="preserve">
+    <value>Diagonales larges vers le bas</value>
+  </data>
+  <data name="HatchStyle.WideUpwardDiagonal" xml:space="preserve">
+    <value>Diagonales larges vers le haut</value>
+  </data>
+  <data name="HatchStyle.LightVertical" xml:space="preserve">
+    <value>Rayures verticales (blanc/noir)</value>
+  </data>
+  <data name="HatchStyle.LightHorizontal" xml:space="preserve">
+    <value>Rayures horizontales (blanc/noir)</value>
+  </data>
+  <data name="HatchStyle.NarrowVertical" xml:space="preserve">
+    <value>Rayures étroites verticales</value>
+  </data>
+  <data name="HatchStyle.NarrowHorizontal" xml:space="preserve">
+    <value>Rayures étroites horizontales</value>
+  </data>
+  <data name="HatchStyle.DarkVertical" xml:space="preserve">
+    <value>Rayures verticales (noir/blanc)</value>
+  </data>
+  <data name="HatchStyle.DarkHorizontal" xml:space="preserve">
+    <value>Rayures horizontales (noir/blanc)</value>
+  </data>
+  <data name="HatchStyle.DashedDownwardDiagonal" xml:space="preserve">
+    <value>Diagonales en pointillés vers le bas</value>
+  </data>
+  <data name="HatchStyle.DashedUpwardDiagonal" xml:space="preserve">
+    <value>Diagonales en pointillés vers le haut</value>
+  </data>
+  <data name="HatchStyle.DashedHorizontal" xml:space="preserve">
+    <value>Tirets horizontaux</value>
+  </data>
+  <data name="HatchStyle.DashedVertical" xml:space="preserve">
+    <value>Tirets verticaux</value>
+  </data>
+  <data name="HatchStyle.SmallConfetti" xml:space="preserve">
+    <value>Petits confettis</value>
+  </data>
+  <data name="HatchStyle.LargeConfetti" xml:space="preserve">
+    <value>Grands confettis</value>
+  </data>
+  <data name="HatchStyle.ZigZag" xml:space="preserve">
+    <value>Zig Zag</value>
+  </data>
+  <data name="HatchStyle.Wave" xml:space="preserve">
+    <value>Vague</value>
+  </data>
+  <data name="HatchStyle.DiagonalBrick" xml:space="preserve">
+    <value>Briques diagonales</value>
+  </data>
+  <data name="HatchStyle.HorizontalBrick" xml:space="preserve">
+    <value>Briques horizontales</value>
+  </data>
+  <data name="HatchStyle.Weave" xml:space="preserve">
+    <value>Tressé</value>
+  </data>
+  <data name="HatchStyle.Plaid" xml:space="preserve">
+    <value>Écossais</value>
+  </data>
+  <data name="HatchStyle.Divot" xml:space="preserve">
+    <value>Sillage</value>
+  </data>
+  <data name="HatchStyle.DottedGrid" xml:space="preserve">
+    <value>Quadrillage en pointillé</value>
+  </data>
+  <data name="HatchStyle.DottedDiamond" xml:space="preserve">
+    <value>Treillis en pointillés</value>
+  </data>
+  <data name="HatchStyle.Shingle" xml:space="preserve">
+    <value>Tuiles</value>
+  </data>
+  <data name="HatchStyle.Trellis" xml:space="preserve">
+    <value>Pointillés</value>
+  </data>
+  <data name="HatchStyle.Sphere" xml:space="preserve">
+    <value>Sphères</value>
+  </data>
+  <data name="HatchStyle.SmallGrid" xml:space="preserve">
+    <value>Petits carreaux</value>
+  </data>
+  <data name="HatchStyle.SmallCheckerBoard" xml:space="preserve">
+    <value>Petit damier</value>
+  </data>
+  <data name="HatchStyle.LargeCheckerBoard" xml:space="preserve">
+    <value>Grand damier</value>
+  </data>
+  <data name="HatchStyle.OutlinedDiamond" xml:space="preserve">
+    <value>Treillis blanc</value>
+  </data>
+  <data name="HatchStyle.SolidDiamond" xml:space="preserve">
+    <value>Carrelage</value>
+  </data>
+  <data name="BrushConfigWidget.FillStyleLabel.Text" xml:space="preserve">
+    <value>Remplissage :</value>
+  </data>
+  <data name="CanvasSizeAction.Name" xml:space="preserve">
+    <value>Taille de la zone de dessin</value>
+  </data>
+  <data name="CanvasSizeAction.ResizeDocument.OutOfMemory" xml:space="preserve">
+    <value>Mémoire insuffisante pour redimensionner la zone de dessin.</value>
+  </data>
+  <data name="AnchorEdge.TopLeft" xml:space="preserve">
+    <value>Supérieur gauche</value>
+  </data>
+  <data name="AnchorEdge.Top" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="AnchorEdge.TopRight" xml:space="preserve">
+    <value>Supérieur droit</value>
+  </data>
+  <data name="AnchorEdge.Left" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="AnchorEdge.Middle" xml:space="preserve">
+    <value>Milieu</value>
+  </data>
+  <data name="AnchorEdge.Right" xml:space="preserve">
+    <value>Droite</value>
+  </data>
+  <data name="AnchorEdge.BottomLeft" xml:space="preserve">
+    <value>Inférieur gauche</value>
+  </data>
+  <data name="AnchorEdge.Bottom" xml:space="preserve">
+    <value>Bas </value>
+  </data>
+  <data name="AnchorEdge.BottomRight" xml:space="preserve">
+    <value>Inférieur droit</value>
+  </data>
+  <data name="CanvasSizeDialog.Text" xml:space="preserve">
+    <value>Taille de la zone de dessin</value>
+  </data>
+  <data name="CanvasSizeDialog.AnchorHeader.Text" xml:space="preserve">
+    <value>Ancrer</value>
+  </data>
+  <data name="CanvasSizeDialog.NewSpaceLabel.Text" xml:space="preserve">
+    <value>Le nouvel espace sera rempli avec la couleur secondaire.</value>
+  </data>
+  <data name="CloneStampTool.Name" xml:space="preserve">
+    <value>Tampon de clonage</value>
+  </data>
+  <data name="CloneStampTool.HelpText" xml:space="preserve">
+    <value>Maintenez la touche CTRL enfoncée et cliquez avec le bouton gauche pour sélectionner une origine. Après, cliquez avec le bouton gauche et dessinez pour copier</value>
+  </data>
+  <data name="ColorDisplayWidget.SwapIconBox.ToolTipText" xml:space="preserve">
+    <value>Echanger les couleurs
+Touche de raccourci : X</value>
+  </data>
+  <data name="ColorDisplayWidget.BlackAndWhiteIconBox.ToolTipText" xml:space="preserve">
+    <value>Noir et blanc</value>
+  </data>
+  <data name="ColorDisplayWidget.ForeColorRectangle.ToolTipText" xml:space="preserve">
+    <value>Primaire</value>
+  </data>
+  <data name="ColorDisplayWidget.BackColorRectangle.ToolTipText" xml:space="preserve">
+    <value>Secondaire</value>
+  </data>
+  <data name="ColorPickerTool.Name" xml:space="preserve">
+    <value>Sélecteur de couleurs</value>
+  </data>
+  <data name="ColorPickerTool.HelpText" xml:space="preserve">
+    <value>Cliquez à l'aide du bouton gauche pour définir la couleur primaire, le bouton droit servant à définir la couleur secondaire</value>
+  </data>
+  <data name="CommonAction.New" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="CommonAction.Open" xml:space="preserve">
+    <value>Ouvrir</value>
+  </data>
+  <data name="CommonAction.Save" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="CommonAction.Print" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="CommonAction.Cut" xml:space="preserve">
+    <value>Couper</value>
+  </data>
+  <data name="CommonAction.Copy" xml:space="preserve">
+    <value>Copier</value>
+  </data>
+  <data name="CommonAction.Paste" xml:space="preserve">
+    <value>Coller</value>
+  </data>
+  <data name="CommonAction.CropToSelection" xml:space="preserve">
+    <value>Rogner selon la sélection</value>
+  </data>
+  <data name="CommonAction.Deselect" xml:space="preserve">
+    <value>Désélectionner</value>
+  </data>
+  <data name="CommonAction.Undo" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="CommonAction.Redo" xml:space="preserve">
+    <value>Répéter</value>
+  </data>
+  <data name="CommonAction.ZoomIn" xml:space="preserve">
+    <value>Zoom avant</value>
+  </data>
+  <data name="CommonAction.ZoomOut" xml:space="preserve">
+    <value>Zoom arrière</value>
+  </data>
+  <data name="CropAction.Name" xml:space="preserve">
+    <value>Rogner selon la sélection</value>
+  </data>
+  <data name="DeselectAction.Name" xml:space="preserve">
+    <value>Désélectionner</value>
+  </data>
+  <data name="ExecuteFunction.ProgressDialog.Description.Text">
+    <value>Veuillez patienter...</value>
+  </data>
+  <data name="LayerPropertyChanging.HistoryMementoNameFormat" xml:space="preserve">
+    <value>Calque {0}</value>
+    <comment>{0} represents the layer index</comment>
+  </data>
+  <data name="DocumentWorkspace.InitializeEffects.DllLoadFailed.Format" xml:space="preserve">
+    <value>Une erreur s'est produite lors du chargement de "{0}". Le fichier est peut être endommagé ou a besoin d'être recompilé.</value>
+    <comment>{0} is a file name</comment>
+  </data>
+  <data name="Generic.OutOfMemory">
+    <value>Mémoire insuffisante pour terminer l'opération.</value>
+  </data>
+  <data name="AddNewBlankLayer.HistoryMementoName" xml:space="preserve">
+    <value>Nouveau calque</value>
+  </data>
+  <data name="AddNewBlankLayer.LayerName.Format" xml:space="preserve">
+    <value>Calque {0}</value>
+    <comment>{0} is the number of the new layer</comment>
+  </data>
+  <data name="DocumentWorkspace.DeleteLayerButtonClicked.MustHaveOneLayer" xml:space="preserve">
+    <value>Une image doit contenir au moins un calque.</value>
+  </data>
+  <data name="DocumentWorkspace.DeleteLayerButtonClicked.Confirmation" xml:space="preserve">
+    <value>Supprimer le calque ?</value>
+  </data>
+  <data name="DeleteLayer.HistoryMementoName" xml:space="preserve">
+    <value>Supprimer le calque</value>
+  </data>
+  <data name="DuplicateLayer.HistoryMementoName" xml:space="preserve">
+    <value>Dupliquer le calque</value>
+  </data>
+  <data name="MergeLayerDown.HistoryMementoName">
+    <value>Fusionner avec le calque inférieur</value>
+  </data>
+  <data name="MoveLayerUp.HistoryMementoName" xml:space="preserve">
+    <value>Monter le calque</value>
+  </data>
+  <data name="MoveLayerDown.HistoryMementoName" xml:space="preserve">
+    <value>Descendre le calque</value>
+  </data>
+  <data name="ClearHistory.Confirmation" xml:space="preserve">
+    <value>Effacer l'historique ?</value>
+  </data>
+  <data name="ClearHistory.HistoryMementoName" xml:space="preserve">
+    <value>Effacer l'Historique</value>
+  </data>
+  <data name="EllipseSelectTool.Name" xml:space="preserve">
+    <value>Ellipse de sélection</value>
+  </data>
+  <data name="EllipseSelectTool.HelpText" xml:space="preserve">
+    <value>Bouton gauche : remplacer. Ctrl+gauche : ajouter. Bouton droit : soustraire. Ctrl+droit: Inverser. Touche Majuscule enfoncée : cercle.</value>
+  </data>
+  <data name="EllipseTool.Name" xml:space="preserve">
+    <value>Ellipse</value>
+  </data>
+  <data name="EllipseTool.HelpText" xml:space="preserve">
+    <value>Cliquez et déplacez pour dessiner une ellipse (bouton droit pour utiliser la couleur secondaire). Maintenez la touche Majuscule enfoncée pour un cercle.</value>
+  </data>
+  <data name="EllipseTool.StatusText.Format" xml:space="preserve">
+    <value>Taille : {0}{1} x {2}{3}, zone : {4} {5}</value>
+  </data>
+  <data name="EraserTool.Name" xml:space="preserve">
+    <value>Gomme</value>
+  </data>
+  <data name="EraserTool.HelpText" xml:space="preserve">
+    <value>Cliquez et faites glisser pour effacer une partie de l'image</value>
+  </data>
+  <data name="EraseSelectionAction.Name" xml:space="preserve">
+    <value>Effacer la sélection</value>
+  </data>
+  <data name="FillSelectionAction.Name">
+    <value>Remplir la sélection</value>
+  </data>
+  <data name="FlattenFunction.Name" xml:space="preserve">
+    <value>Aplatir</value>
+  </data>
+  <data name="FlipDocumentHorizontalAction.Name" xml:space="preserve">
+    <value>Retourner horizontalement (tout)</value>
+  </data>
+  <data name="FlipDocumentVerticalAction.Name" xml:space="preserve">
+    <value>Retourner verticalement (tout)</value>
+  </data>
+  <data name="FlipLayerHorizontalAction.Name" xml:space="preserve">
+    <value>Retourner horizontalement</value>
+  </data>
+  <data name="FlipLayerVerticalAction.Name" xml:space="preserve">
+    <value>Retourner verticalement</value>
+  </data>
+  <data name="FreeformShapeTool.Name" xml:space="preserve">
+    <value>Outil Forme libre</value>
+  </data>
+  <data name="FreeformShapeTool.HelpText" xml:space="preserve">
+    <value>Cliquez avec le bouton gauche pour dessiner une forme libre avec la couleur primaire ; cliquez avec le bouton droit pour utiliser la couleur secondaire</value>
+  </data>
+  <data name="ImportFromFileAction.Name" xml:space="preserve">
+    <value>Importer à partir d'un fichier</value>
+  </data>
+  <data name="ImportFromFileAction.AskForCanvasResize.Confirmation" xml:space="preserve">
+    <value>L'image importée est plus grande que la zone de dessin.
+Voulez-vous ajuster la zone de dessin à la taille de l'image ?</value>
+  </data>
+  <data name="ImportFromFileAction.AskForCanvasResize.OutOfMemory" xml:space="preserve">
+    <value>Paint.NET a manqué d'espace mémoire en essayant de redimensionner l'image.</value>
+  </data>
+  <data name="ImportFromFileAction.ImportOneLayer.OutOfMemory" xml:space="preserve">
+    <value>Paint.NET a manqué d'espace mémoire en essayant de redimensionner le calque.</value>
+  </data>
+  <data name="ImportFromFileAction.ImportOneFile.NewLayer.Format" xml:space="preserve">
+    <value>{0} : {1}</value>
+    <comment>{0} is the file being imported, {1} is the name of a layer within that file</comment>
+  </data>
+  <data name="ImportLayersDialog.Text" xml:space="preserve">
+    <value>Importer des calques</value>
+  </data>
+  <data name="ImportLayersDialog.AllButton.Text" xml:space="preserve">
+    <value>Tout</value>
+  </data>
+  <data name="ImportLayersDialog.NoneButton.Text" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="ImportLayersDialog.LayersToInsertHeader.Text" xml:space="preserve">
+    <value>Calques à insérer</value>
+  </data>
+  <data name="ImportLayersDialog.PreviewHeader.Text" xml:space="preserve">
+    <value>Aperçu</value>
+  </data>
+  <data name="InvertSelectionAction.Name" xml:space="preserve">
+    <value>Inverser la sélection</value>
+  </data>
+  <data name="LassoSelectTool.Name" xml:space="preserve">
+    <value>Sélectionner au lasso</value>
+  </data>
+  <data name="LassoSelectTool.HelpText" xml:space="preserve">
+    <value>Click gauche : remplacer. Ctrl+click gauche: ajouter. Click droit : soustraire. Ctrl+click droit : inverser.</value>
+  </data>
+  <data name="GradientTool.Name">
+    <value>Dégradé</value>
+  </data>
+  <data name="GradientTool.HelpText">
+    <value>Cliquez et faites glisser pour commencer à dessiner. En appuyant sur la touche Majuscule, vous forcez l'angle. Le bouton droit inverse les couleurs.</value>
+  </data>
+  <data name="GradientTool.HelpText.WhileAdjusting.Format">
+    <value>Décalage : {0}{1} x {2}{3}, longueur : {4} {5}, angle: {6}°. En appuyant sur l'autre bouton, vous déplacerez les deux poignées.</value>
+  </data>
+  <data name="GradientTool.HelpText.Adjustable">
+    <value>Déplacez une poignée pour ajuster le dégradé. Cliquez avec le bouton droit pour échanger les couleurs. Appuyez sur Entrée pour finir, ou Esc pour annuler.</value>
+  </data>
+  <data name="LineTool.Name" xml:space="preserve">
+    <value>Droite / Courbe</value>
+  </data>
+  <data name="LineTool.HelpText" xml:space="preserve">
+    <value>Cliquez avec bouton gauche pour dessiner avec la couleur primaire ; cliquez avec le bouton droit pour dessiner avec la couleur secondaire</value>
+  </data>
+  <data name="LineTool.StatusText.Format" xml:space="preserve">
+    <value>Décalage : {0}{1} x {2}{3}, longueur : {4} {5}, angle : {6}°</value>
+  </data>
+  <data name="LineTool.PreCurveHelpText" xml:space="preserve">
+    <value>Faites glisser les poignées pour courber les lignes (bouton droit pour Bézier), ou appuyez sur Entrée pour finir la ligne, ou dessiner ailleurs une nouvelle ligne.</value>
+  </data>
+  <data name="LineTool.CurvingHelpText" xml:space="preserve">
+    <value>Appuyez sur Entrée pour finir la courbe, ou dessinez ailleurs pour une nouvelle courbe. Appuyez sur Ctrl pour afficher ou masquer les poignées.</value>
+  </data>
+  <data name="LoadProgressDialog.Description" xml:space="preserve">
+    <value>Chargement :</value>
+  </data>
+  <data name="MagicWandTool.Name" xml:space="preserve">
+    <value>Baguette magique</value>
+  </data>
+  <data name="MagicWandTool.HelpText" xml:space="preserve">
+    <value>Cliquez pour sélectionner une zone de couleur similaire. Ctrl+bouton gauche pour ajouter, bouton droit pour soustraire, et Ctrl+Maj.+bouton gauche pour inverser (XOR).</value>
+  </data>
+  <data name="MoveTool.Name" xml:space="preserve">
+    <value>Déplacer les pixels sélectionnés</value>
+  </data>
+  <data name="MoveTool.HelpText" xml:space="preserve">
+    <value>Faites glisser la sélection pour la déplacer. Faites glisser les poignées pour ajuster l'échelle. Faites glisser en maintenant le bouton droit enfoncé pour pivoter.</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.Translate" xml:space="preserve">
+    <value>Déplacer les pixels</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.Scale" xml:space="preserve">
+    <value>Redimensionner les pixels</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.Rotate" xml:space="preserve">
+    <value>Faire pivoter les pixels</value>
+  </data>
+  <data name="MoveTool.HistoryMemento.DropPixels" xml:space="preserve">
+    <value>Poser les pixels</value>
+  </data>
+  <data name="MoveSelectionTool.Name" xml:space="preserve">
+    <value>Déplacer la sélection</value>
+  </data>
+  <data name="MoveSelectionTool.HelpText" xml:space="preserve">
+    <value>Faites glisser la sélection pour la déplacer. Faites glisser les poignées pour ajuster l'échelle. Faites glisser en maintenant le bouton droit enfoncé pour pivoter.</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.Translate" xml:space="preserve">
+    <value>Déplacer la sélection</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.Scale" xml:space="preserve">
+    <value>Ajuster l'échelle de la sélection</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.Rotate" xml:space="preserve">
+    <value>Faire pivoter la sélection</value>
+  </data>
+  <data name="MoveSelectionTool.HistoryMemento.DropSelection" xml:space="preserve">
+    <value>Fermer la sélection</value>
+  </data>
+  <data name="NewFileDialog.Text" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="PaintBrushTool.Name" xml:space="preserve">
+    <value>Pinceau</value>
+  </data>
+  <data name="PaintBrushTool.HelpText" xml:space="preserve">
+    <value>Cliquez avec le bouton gauche pour dessiner avec la couleur primaire ; cliquez avec le bouton droit pour dessiner avec la couleur secondaire</value>
+  </data>
+  <data name="PaintBucketTool.Name" xml:space="preserve">
+    <value>Pot de peinture</value>
+  </data>
+  <data name="PaintBucketTool.HelpText" xml:space="preserve">
+    <value>Cliquez avec le bouton gauche pour remplir la zone avec la couleur primaire ; cliquez avec le bouton droit pour remplir la zone avec la couleur secondaire</value>
+  </data>
+  <data name="PanTool.Name" xml:space="preserve">
+    <value>Panoramique</value>
+  </data>
+  <data name="PanTool.HelpText" xml:space="preserve">
+    <value>En mode zoom, cliquez et faites glisser pour naviguer dans l'image</value>
+  </data>
+  <data name="PdnInfo.AboutRedirectPage" xml:space="preserve">
+    <value>pdnabout.html</value>
+  </data>
+  <data name="PdnInfo.FullAppName.Format" xml:space="preserve">
+    <value>{0} ({1})</value>
+    <comment>{0} is the product name ("Paint.NET"), {1} is the version string ("2.2.2000.3000")</comment>
+  </data>
+  <data name="PdnInfo.VersionString.Format" xml:space="preserve">
+    <value>{0} {1} build {2}</value>
+    <comment>{0} is the friendly version name (configuration name), such as "Beta 2" or "Final". {1} is Debug or Release. {2} is the product version.</comment>
+  </data>
+  <data name="ProcessorArchitecture.X86" xml:space="preserve">
+    <value>x86</value>
+  </data>
+  <data name="ProcessorArchitecture.X64" xml:space="preserve">
+    <value>x64</value>
+  </data>
+  <data name="PdnInfo.FriendlyVersionString.ConfigWithSpace.Format" xml:space="preserve">
+    <value> {0}</value>
+  </data>
+  <data name="PdnInfo.FriendlyVersionString.Format" xml:space="preserve">
+    <value>version {0}{1}</value>
+    <comment>{0} is the version, such as "2.5". {1} is the configuration ("Beta 5") formatted via PdnInfo.FriendlyVersionString.ConfigWithSpace.Format, or it is an empty string if the configuration is "Final"</comment>
+  </data>
+  <data name="PencilTool.Name" xml:space="preserve">
+    <value>Crayon</value>
+  </data>
+  <data name="PencilTool.HelpText" xml:space="preserve">
+    <value>Cliquez avec le bouton gauche pour dessiner une forme libre, avec des lignes d'un pixel, avec la couleur primaire ; cliquez avec le bouton droit pour utiliser la couleur secondaire</value>
+  </data>
+  <data name="PenConfigWidget.BrushWidthLabel" xml:space="preserve">
+    <value>Largeur du pinceau :</value>
+  </data>
+  <data name="PenConfigWidget.Error.InvalidNumber" xml:space="preserve">
+    <value>Numéro incorrect</value>
+  </data>
+  <data name="PenConfigWidget.Error.TooSmall" xml:space="preserve">
+    <value>La taille est plus petite que 1</value>
+  </data>
+  <data name="PenConfigWidget.Error.TooLarge" xml:space="preserve">
+    <value>La taille est plus grande que 100</value>
+  </data>
+  <data name="ProgressDialog.PercentText.Text.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is a number from 0 to 100</comment>
+  </data>
+  <data name="RecolorTool.Name" xml:space="preserve">
+    <value>Recoloriage</value>
+  </data>
+  <data name="RecolorTool.HelpText" xml:space="preserve">
+    <value>Cliquez avec le bouton gauche pour remplacer la couleur secondaire par la couleur primaire.</value>
+  </data>
+  <data name="SelectionTool.MoveSelection" xml:space="preserve">
+    <value>Déplacer la sélection</value>
+  </data>
+  <data name="SelectionTool.RotateSelection" xml:space="preserve">
+    <value>Faire pivoter la sélection</value>
+  </data>
+  <data name="SelectionTool.ScaleSelection" xml:space="preserve">
+    <value>Ajuster l'échelle de la sélection</value>
+  </data>
+  <data name="RectangleSelectTool.Name" xml:space="preserve">
+    <value>Rectangle de sélection</value>
+  </data>
+  <data name="RectangleSelectTool.HelpText" xml:space="preserve">
+    <value>Bouton gauche : remplacer. Ctrl+bouton gauche : ajouter. Bouton droit : soustraire. Ctrl+bouton droit : inverser. Touche Majuscule enfoncée : carré.</value>
+  </data>
+  <data name="RectangleTool.Name" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="RectangleTool.HelpText" xml:space="preserve">
+    <value>Cliquez et faites glisser pour dessiner un rectangle (bouton droit pour utiliser la couleur secondaire). Maintenez la touche Majuscule enfoncée pour un carré.</value>
+  </data>
+  <data name="RectangleTool.StatusText.Format" xml:space="preserve">
+    <value>Taille : {0}{1} x {2}{3}, zone : {4} {5}</value>
+  </data>
+  <data name="ResizeAction.Name" xml:space="preserve">
+    <value>Redimensionner</value>
+  </data>
+  <data name="ResizeAction.PerformAction.UnspecifiedError" xml:space="preserve">
+    <value>Une erreur non spécifiée s'est produite lors du redimensionnement de l'image.</value>
+  </data>
+  <data name="ResizeAction.PerformAction.OutOfMemory" xml:space="preserve">
+    <value>Mémoire insuffisante pour redimensionner l'image.</value>
+  </data>
+  <data name="ResizeDialog.ResizedImageHeader.Text.Format" xml:space="preserve">
+    <value>Nouvelle taille : {0}</value>
+    <comment>{0} is a byte size, such as 3.8mb</comment>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.NearestNeighbor" xml:space="preserve">
+    <value>Proche voisin</value>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.Bicubic" xml:space="preserve">
+    <value>Bicubique</value>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.SuperSampling" xml:space="preserve">
+    <value>Meilleure qualité</value>
+  </data>
+  <data name="ResizeDialog.ResampleMethod.Bilinear" xml:space="preserve">
+    <value>Bilinéaire</value>
+  </data>
+  <data name="ResizeDialog.Text" xml:space="preserve">
+    <value>Redimensionner</value>
+  </data>
+  <data name="ResizeDialog.AsteriskLabel.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="ResizeDialog.PercentSignLabel.Text" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="ResizeDialog.PixelsLabel1.Text" xml:space="preserve">
+    <value>pixels</value>
+  </data>
+  <data name="ResizeDialog.PixelsLabel2.Text" xml:space="preserve">
+    <value>pixels</value>
+  </data>
+  <data name="ResizeDialog.PercentRB.Text" xml:space="preserve">
+    <value>En &amp;pourcentage :</value>
+  </data>
+  <data name="ResizeDialog.AbsoluteRB.Text" xml:space="preserve">
+    <value>En taille &amp;absolue :</value>
+  </data>
+  <data name="ResizeDialog.PixelSizeHeader.Text" xml:space="preserve">
+    <value>Taille de pixel</value>
+  </data>
+  <data name="ResizeDialog.PrintSizeHeader.Text" xml:space="preserve">
+    <value>Taille du tirage</value>
+  </data>
+  <data name="ResizeDialog.CurrentImageSizeLabel.Text" xml:space="preserve">
+    <value>Taille de l'image actuelle :</value>
+  </data>
+  <data name="ResizeDialog.ResamplingLabel.Text" xml:space="preserve">
+    <value>Ré échantillonnage :</value>
+  </data>
+  <data name="ResizeDialog.NewWidthLabel1.Text" xml:space="preserve">
+    <value>Largeur :</value>
+  </data>
+  <data name="ResizeDialog.NewHeightLabel1.Text" xml:space="preserve">
+    <value>Hauteur :</value>
+  </data>
+  <data name="ResizeDialog.NewWidthLabel2.Text" xml:space="preserve">
+    <value>Largeur :</value>
+  </data>
+  <data name="ResizeDialog.NewHeightLabel2.Text" xml:space="preserve">
+    <value>Hauteur :</value>
+  </data>
+  <data name="ResizeDialog.ConstrainCheckBox.Text" xml:space="preserve">
+    <value>&amp;Conserver les proportions</value>
+  </data>
+  <data name="ResizeDialog.AsteriskTextLabel.SuperSampling" xml:space="preserve">
+    <value>* Superéchantillonnage sera utilisé</value>
+  </data>
+  <data name="ResizeDialog.AsteriskTextLabel.Bicubic" xml:space="preserve">
+    <value>* Bicubique sera utilisé</value>
+  </data>
+  <data name="RotateAction.180CW" xml:space="preserve">
+    <value>180° degrés à droite</value>
+  </data>
+  <data name="RotateAction.270CW" xml:space="preserve">
+    <value>270° degrés à droite</value>
+  </data>
+  <data name="RotateAction.90CW" xml:space="preserve">
+    <value>90° degrés à droite</value>
+  </data>
+  <data name="RotateAction.180CCW" xml:space="preserve">
+    <value>180° degrés à gauche</value>
+  </data>
+  <data name="RotateAction.270CCW" xml:space="preserve">
+    <value>270° degrés à gauche</value>
+  </data>
+  <data name="RotateAction.90CCW" xml:space="preserve">
+    <value>90° degrés à gauche</value>
+  </data>
+  <data name="RotateAction.HistoryMementoName.Format" xml:space="preserve">
+    <value>{0} {1}</value>
+    <comment>{0} is the action name ("Rotate"), {1} is the angle (90 CW)</comment>
+  </data>
+  <data name="RotateAction.Name" xml:space="preserve">
+    <value>Faire pivoter</value>
+  </data>
+  <data name="RoundedRectangleTool.Name" xml:space="preserve">
+    <value>Rectangle à coins arrondis</value>
+  </data>
+  <data name="RoundedRectangleTool.HelpText" xml:space="preserve">
+    <value>Cliquez et faites glisser pour dessiner un rectangle à coins arrondis (bouton droit pour utiliser la couleur secondaire). Maintenez la touche Majuscule enfoncée pour un carré.</value>
+  </data>
+  <data name="RoundedRectangleTool.StatusText.Format" xml:space="preserve">
+    <value>Taille du rectangle englobant : {0}{1} x {2}{3}, surface : {4} {5}</value>
+  </data>
+  <data name="SaveConfigDialog.Text" xml:space="preserve">
+    <value>Enregistrer la configuration</value>
+  </data>
+  <data name="SaveConfigDialog.SettingsHeader.Text" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="SaveConfigDialog.DefaultsButton.Text" xml:space="preserve">
+    <value>&amp;Valeurs par défaut</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Format" xml:space="preserve">
+    <value>Taille du fichier : {0}</value>
+    <comment>{0} is a file size, or some text in parenthesis (such as SaveConfigDialog.FileSizeText.Text.Error)</comment>
+  </data>
+  <data name="SaveConfigDialog.PreviewHeader.Text" xml:space="preserve">
+    <value>Aperçu</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Computing" xml:space="preserve">
+    <value>(calcul en cours)</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Error" xml:space="preserve">
+    <value>(erreur)</value>
+  </data>
+  <data name="SaveConfigDialog.FileSizeText.Text.Computing.Format" xml:space="preserve">
+    <value>(calcul en cours : {0}%)</value>
+    <comment>{0} is a number between 0 and 100</comment>
+  </data>
+  <data name="SaveProgressDialog.Title" xml:space="preserve">
+    <value>Enregistrement en cours</value>
+  </data>
+  <data name="SaveProgressDialog.Description" xml:space="preserve">
+    <value>Enregistrement de :</value>
+  </data>
+  <data name="SelectAllAction.Name" xml:space="preserve">
+    <value>Sélectionner tout</value>
+  </data>
+  <data name="ShapeDrawTypeConfigWidget.OutlineButton.ToolTipText" xml:space="preserve">
+    <value>Dessiner le contour d'une forme</value>
+  </data>
+  <data name="ShapeDrawTypeConfigWidget.InteriorButton.ToolTipText" xml:space="preserve">
+    <value>Dessiner une forme pleine</value>
+  </data>
+  <data name="ShapeDrawTypeConfigWidget.BothButton.ToolTipText" xml:space="preserve">
+    <value>Dessiner une forme pleine avec un contour</value>
+  </data>
+  <data name="SplashForm.StatusLabel.Text" xml:space="preserve">
+    <value>Démarrage en cours...</value>
+  </data>
+  <data name="Startup.UnhandledError.Format" xml:space="preserve">
+    <value>Une erreur non gérée s'est produite, et Paint.NET doit être fermé. Consultez le fichier "{0}" qui a été créé sur votre Bureau pour plus d'informations.</value>
+    <comment>{0} is a filename</comment>
+  </data>
+  <data name="ToolConfigStrip.ResamplingLabel.Text">
+    <value>Qualité :</value>
+  </data>
+  <data name="ResamplingAlgorithm.Bilinear">
+    <value>Lissée</value>
+  </data>
+  <data name="ResamplingAlgorithm.NearestNeighbor">
+    <value>Pixélisée</value>
+  </data>
+  <data name="ResamplingAlgorithm.Bicubic">
+    <value>Bicubique</value>
+  </data>
+  <data name="ResamplingAlgorithm.SuperSampling">
+    <value>Superéchantillonnage</value>
+  </data>
+  <data name="ToolConfigStrip.ColorPickerLabel.Text">
+    <value>Après avoir cliqué :</value>
+  </data>
+  <data name="ColorPickerClickBehavior.NoToolSwitch">
+    <value>Ne pas changer d'outil</value>
+  </data>
+  <data name="ColorPickerClickBehavior.SwitchToLastTool">
+    <value>Basculer vers l'outil précédent</value>
+  </data>
+  <data name="ColorPickerClickBehavior.SwitchToPencilTool">
+    <value>Basculer vers l'outil Crayon</value>
+  </data>
+  <data name="TextConfigWidget.Error.InvalidNumber" xml:space="preserve">
+    <value>Numéro incorrect</value>
+  </data>
+  <data name="TextConfigWidget.Error.TooSmall.Format" xml:space="preserve">
+    <value>La taille est plus petite que {0}</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="TextConfigWidget.Error.TooLarge.Format" xml:space="preserve">
+    <value>La taille est plus grande que {0}</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="TextConfigWidget.FontLabel.Text" xml:space="preserve">
+    <value>Police :</value>
+  </data>
+  <data name="TextConfigWidget.BoldButton.ToolTipText" xml:space="preserve">
+    <value>Gras</value>
+  </data>
+  <data name="TextConfigWidget.ItalicButton.ToolTipText" xml:space="preserve">
+    <value>Italique</value>
+  </data>
+  <data name="TextConfigWidget.UnderlineButton.ToolTipText" xml:space="preserve">
+    <value>Souligné</value>
+  </data>
+  <data name="TextConfigWidget.AlignLeftButton.ToolTipText" xml:space="preserve">
+    <value>Aligner à gauche</value>
+  </data>
+  <data name="TextConfigWidget.AlignCenterButton.ToolTipText" xml:space="preserve">
+    <value>Aligner au centre</value>
+  </data>
+  <data name="TextConfigWidget.AlignRightButton.ToolTipText" xml:space="preserve">
+    <value>Aligner à droite</value>
+  </data>
+  <data name="TextTool.Name" xml:space="preserve">
+    <value>Texte</value>
+  </data>
+  <data name="TextTool.HelpText" xml:space="preserve">
+    <value>Cliquez avec le bouton gauche pour définir la position du curseur de texte, et tapez pour entrer du texte. Le texte est dessiné avec la couleur primaire.</value>
+  </data>
+  <data name="TextTool.StatusText.StartTyping" xml:space="preserve">
+    <value>Faites glisser la poignée pour déplacer le texte. Maintenez la touche Ctrl enfoncée pour masquer la poignée et le curseur. Appuyez sur Ctrl pour afficher ou masquer la poignée.</value>
+  </data>
+  <data name="TextTool.StatusText.TextInfo.Format">
+    <value>Point d'ancrage : {0}{1}, {2}{3}</value>
+  </data>
+  <data name="ToleranceSliderControl.Tolerance" xml:space="preserve">
+    <value>Tolérance </value>
+  </data>
+  <data name="ToleranceSliderControl.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="WorkspaceOptionsConfigWidget.DrawGridToggleButton.ToolTipText" xml:space="preserve">
+    <value>Afficher la grille lors du zoom avant</value>
+  </data>
+  <data name="WorkspaceOptionsConfigWidget.RulersToggleButton.ToolTipText" xml:space="preserve">
+    <value>Règles</value>
+  </data>
+  <data name="ZoomTool.Name" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="ZoomTool.HelpText" xml:space="preserve">
+    <value>Cliquez avec le bouton gauche pour faire un zoom avant, avec le bouton droit pour un zoom arrière, et avec le bouton du milieu pour glisser</value>
+  </data>
+  <data name="ZoomConfigWidget.ZoomInButton.ToolTipText" xml:space="preserve">
+    <value>Zoom avant</value>
+  </data>
+  <data name="ZoomConfigWidget.ZoomOutButton.ToolTipText" xml:space="preserve">
+    <value>Zoom arrière</value>
+  </data>
+  <data name="ZoomBasis.FitToWindow" xml:space="preserve">
+    <value>Fenêtre</value>
+  </data>
+  <data name="ZoomBasis.Selection" xml:space="preserve">
+    <value>Sélection</value>
+  </data>
+  <data name="ZoomBasis.ScaleFactor" xml:space="preserve">
+    <value>Facteur</value>
+  </data>
+  <data name="ZoomConfigWidget.Error.InvalidNumber" xml:space="preserve">
+    <value>Numéro incorrect</value>
+  </data>
+  <data name="ZoomConfigWidget.Error.TooSmall" xml:space="preserve">
+    <value>Le zoom doit être d'au moins 1%</value>
+  </data>
+  <data name="ZoomConfigWidget.Error.TooLarge" xml:space="preserve">
+    <value>Le zoom ne peut pas dépasser 3200%</value>
+  </data>
+  <data name="ZoomConfigWidget.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="StatusBar.Context.Help.Text.Format" xml:space="preserve">
+    <value>{0} : {1}</value>
+    <comment>{0} is the tool's name, {1} is its help text</comment>
+  </data>
+  <data name="AcquireImageAction.Name" xml:space="preserve">
+    <value>Acquérir une image</value>
+  </data>
+  <data name="PasteInToNewImageAction.Error.NoClipboardImage" xml:space="preserve">
+    <value>Le Presse-papiers ne contient pas d'image utilisable.</value>
+  </data>
+  <data name="AcquireImageAction.Error.Clipboard.TransferError" xml:space="preserve">
+    <value>Erreur lors du transfert de l'image à partir du Presse-papiers.</value>
+  </data>
+  <data name="AcquireImageAction.Error.Clipboard.OutOfMemory" xml:space="preserve">
+    <value>Mémoire insuffisante pour copier l'image à partir du Presse-papiers.</value>
+  </data>
+  <data name="StatusBar.Size.Format" xml:space="preserve">
+    <value>{0}{1} x {2}{3}</value>
+    <comment>{0} is width, {1} is units (e.g. cm or px), {2} is height, {3} is units</comment>
+  </data>
+  <data name="Untitled.FriendlyName" xml:space="preserve">
+    <value>Sans titre</value>
+  </data>
+  <data name="MainForm.Title.Format.Normal" xml:space="preserve">
+    <value>{0} ({1}) - {2}</value>
+    <comment>{0} is friendly document name, {1} is zoom level, {2} is application name</comment>
+  </data>
+  <data name="MainForm.Title.Format.Minimized" xml:space="preserve">
+    <value>{0} - {1}</value>
+    <comment>{0} is friendly document name, {1} is application name</comment>
+  </data>
+  <data name="NewImageAction.Error.OutOfMemory" xml:space="preserve">
+    <value>Mémoire insuffisante pour créer une nouvelle image.</value>
+  </data>
+  <data name="NewImageAction.Name" xml:space="preserve">
+    <value>Nouvelle image</value>
+  </data>
+  <data name="LoadImage.Error.ImageTypeNotRecognized" xml:space="preserve">
+    <value>Le type de l'image n'est pas reconnu et ne peut pas être ouvert.</value>
+  </data>
+  <data name="LoadImage.Error.InvalidFileName.Format" xml:space="preserve">
+    <value>Nom de fichier non valide.
+
+"{0}"</value>
+    <comment>{0} is a filename.</comment>
+  </data>
+  <data name="LoadImage.Error.BlankFileName" xml:space="preserve">
+    <value>Le nom de fichier est vide.</value>
+  </data>
+  <data name="LoadImage.Error.ArgumentException" xml:space="preserve">
+    <value>Une erreur s'est produite lors de l'ouverture du fichier.</value>
+  </data>
+  <data name="LoadImage.Error.UnauthorizedAccessException" xml:space="preserve">
+    <value>Accès au fichier demandé refusé (accès non autorisé).</value>
+  </data>
+  <data name="LoadImage.Error.SecurityException" xml:space="preserve">
+    <value>Accès au fichier demandé refusé (erreur de sécurité).</value>
+  </data>
+  <data name="LoadImage.Error.FileNotFoundException" xml:space="preserve">
+    <value>Fichier introuvable.</value>
+  </data>
+  <data name="LoadImage.Error.DirectoryNotFoundException" xml:space="preserve">
+    <value>Répertoire introuvable.</value>
+  </data>
+  <data name="LoadImage.Error.PathTooLongException" xml:space="preserve">
+    <value>Nom de fichier trop long.</value>
+  </data>
+  <data name="LoadImage.Error.IOException" xml:space="preserve">
+    <value>Une erreur s'est produite lors de la lecture du fichier sur le support.</value>
+  </data>
+  <data name="LoadImage.Error.SerializationException" xml:space="preserve">
+    <value>Le fichier est endommagé ou a été enregistré avec une version plus récente de Paint.NET.</value>
+  </data>
+  <data name="LoadImage.Error.OutOfMemoryException" xml:space="preserve">
+    <value>Mémoire insuffisante pour charger l'image.</value>
+  </data>
+  <data name="LoadImage.Error.Exception" xml:space="preserve">
+    <value>Une erreur non spécifiée s'est produite lors de l'ouverture du fichier.</value>
+  </data>
+  <data name="OpenImageAction.Name" xml:space="preserve">
+    <value>Ouvrir image</value>
+  </data>
+  <data name="SavedWithOlderVersion.Format" xml:space="preserve">
+    <value>Cette image a été enregistrée avec une version moins récente de Paint.NET. Si vous l'enregistrez, elle ne sera plus lisible par l'ancienne version.
+
+Enregistrée avec : Paint.NET v{0}
+Version actuelle : Paint.NET v{1}</value>
+    <comment>{0} and {1} are version numbers</comment>
+  </data>
+  <data name="FileDialog.Types.AllImages" xml:space="preserve">
+    <value>Tous les types d'images</value>
+  </data>
+  <data name="SaveAsDialog.Title" xml:space="preserve">
+    <value>Enregistrer sous</value>
+  </data>
+  <data name="WarnAboutFlattening.Text" xml:space="preserve">
+    <value>Enregistrer l'image dans ce format «l'aplatira», avec perte de toutes les informations de calque et de calques cachés.
+Désirez-vous continuer ?</value>
+  </data>
+  <data name="WarnAboutFlattening.Title" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="SaveImage.Error.UnauthorizedAccessException" xml:space="preserve">
+    <value>Accès refusé. Sélectionnez Fichier-&gt;Enregistrer sous... pour enregistrer votre fichier à un autre emplacement ou sous un autre nom.</value>
+  </data>
+  <data name="SaveImage.Error.SecurityException" xml:space="preserve">
+    <value>Accès refusé. Sélectionnez Fichier-&gt;Enregistrer sous... pour enregistrer votre fichier à un autre emplacement ou sous un autre nom.</value>
+  </data>
+  <data name="SaveImage.Error.DirectoryNotFoundException" xml:space="preserve">
+    <value>Répertoire non trouvé. Sélectionnez Fichier-&gt;Enregistrer sous... pour enregistrer votre fichier à un autre emplacement.</value>
+  </data>
+  <data name="SaveImage.Error.IOException" xml:space="preserve">
+    <value>Une erreur d'E/S s'est produite lors de l'écriture du fichier.</value>
+  </data>
+  <data name="SaveImage.Error.OutOfMemoryException" xml:space="preserve">
+    <value>Mémoire insuffisante pour sauvegarde l'image.</value>
+  </data>
+  <data name="SaveImage.Error.Exception" xml:space="preserve">
+    <value>Une erreur non spécifiée s'est produite lors de l'enregistrement du fichier.</value>
+  </data>
+  <data name="CopyAction.Error.TransferToClipboard" xml:space="preserve">
+    <value>Une erreur s'est produite en copiant l'image vers le Presse-papiers.</value>
+  </data>
+  <data name="CopyAction.Error.OutOfMemory" xml:space="preserve">
+    <value>Mémoire insuffisante pour terminer l'opération dans le Presse-papiers.</value>
+  </data>
+  <data name="CopyAction.Error.Generic" xml:space="preserve">
+    <value>Une erreur s'est produite en copiant vers le Presse-papiers.</value>
+  </data>
+  <data name="CutAction.Name" xml:space="preserve">
+    <value>Couper</value>
+  </data>
+  <data name="Effects.ApplyingDialog.Description" xml:space="preserve">
+    <value>Rendu en cours...</value>
+  </data>
+  <data name="Effects.RepeatMenuItem.Format" xml:space="preserve">
+    <value>Répéter {0}</value>
+    <comment>{0} is the effect name</comment>
+  </data>
+  <data name="Effects.Name.Format.Configurable" xml:space="preserve">
+    <value>{0}...</value>
+    <comment>{0} is the effect name</comment>
+  </data>
+  <data name="PasteAction.Error.TransferFromClipboard" xml:space="preserve">
+    <value>Une erreur s'est produite lors de la lecture de l'image à partir du Presse-papiers.</value>
+  </data>
+  <data name="PasteAction.Error.OutOfMemory" xml:space="preserve">
+    <value>Mémoire insuffisante pour coller à partir du Presse-papiers.</value>
+  </data>
+  <data name="PasteAction.Error.NotRecognized" xml:space="preserve">
+    <value>L'image dans le Presse-papiers n'a pas pu être reconnue. Essayez de la copier à nouveau avec l'application originale qui a été utilisée pour l'acquérir.</value>
+  </data>
+  <data name="PasteAction.Error.NoImage" xml:space="preserve">
+    <value>Le Presse-papiers ne contient pas d'image.</value>
+  </data>
+  <data name="PasteAction.Question.ExpandCanvas" xml:space="preserve">
+    <value>L'image collée est plus grande que la zone de dessin.
+Voulez-vous agrandir la zone de dessin à la taille de l'image ?</value>
+  </data>
+  <data name="NewLayerAction.Error.OutOfMemory" xml:space="preserve">
+    <value>Mémoire insuffisante pour créer un nouveau calque.</value>
+  </data>
+  <data name="FlattenAction.Question.DiscardHiddenLayers" xml:space="preserve">
+    <value>Ignorer les calques cachés ?</value>
+  </data>
+  <data name="StatusBar.Progress.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="StatusBar.Context.SelectedArea.Text.Format" xml:space="preserve">
+    <value>Sélection haut gauche : {0}{1}, {2}{3}. Taille du rectangle englobant : {4}{5} x {6}{7}. Surface : {8} {9} carré</value>
+    <comment>{0} is an X coordinate, {1} is units abbreviation, {2} is Y coordinate, {3} is units abbreviation, {4} is width, {5} is units abbreviation, {6} is height, {7} is units abbreviation, {8} is the area, {9} is plural units (pixels, inches)</comment>
+  </data>
+  <data name="StatusBar.Context.SelectedArea.Text.WithAngle.Format" xml:space="preserve">
+    <value>Sélection haut gauche : {0}{1}, {2}{3}. Taille du rectangle englobant : {4}{5} x {6}{7}. Surface : {8} {9} carré. Angle: {10}°</value>
+    <comment>{0} is an X coordinate, {1} is units abbreviation, {2} is Y coordinate, {3} is units abbreviation, {4} is width, {5} is units abbreviation, {6} is height, {7} is units abbreviation, {8} is the area, {9} is plural units (pixels, inches), {10} is angle of rotation</comment>
+  </data>
+  <data name="WIA.Error.EnableMe" xml:space="preserve">
+    <value>Pour utiliser cette fonctionnalité, vous devez activer le service Acquisition d'image Windows (WIA).</value>
+  </data>
+  <data name="WIA.Error.UnableToLoad" xml:space="preserve">
+    <value>Le fichier bibliothèque d'Acquisition d'image Windows (WIA), "wiaaut.dll" n'est pas disponible. Veuillez consulter le fichier d'aide (menu Aide -&gt; Rubriques d'aide), rubrique Forum Aux Questions (FAQ), pour obtenir des informations de dépannage.</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.InfoText">
+    <value>Que souhaitez-vous faire avec le(s) fichier(s) ?</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.OpenButton.ActionText">
+    <value>&amp;Ouvrir</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.OpenButton.ExplanationText">
+    <value>Ouvrir le(s) fichier(s) dans un/des onglet(s).</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.ImportLayers.ActionText">
+    <value>&amp;Ajouter dans le(s) calque(s)</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.ImportLayers.ExplanationText">
+    <value>Charger et puis ajouter dans un ou des nouveaux calques de l'image actuelle.</value>
+  </data>
+  <data name="DragDrop.OpenOrImport.ImportLayers.ExplanationText.NoImagesYet">
+    <value>Importer dans un ou des nouveaux calques de l'image actuelle.</value>
+  </data>
+  <data name="Menu.File.OpenRecent.None" xml:space="preserve">
+    <value>(aucun)</value>
+  </data>
+  <data name="Menu.File.OpenRecent.ClearThisList" xml:space="preserve">
+    <value>&amp;Effacer cette liste</value>
+  </data>
+  <data name="Menu.File.Text" xml:space="preserve">
+    <value>&amp;Fichier</value>
+  </data>
+  <data name="Menu.File.New.Text" xml:space="preserve">
+    <value>&amp;Nouveau...</value>
+  </data>
+  <data name="Menu.File.Open.Text" xml:space="preserve">
+    <value>&amp;Ouvrir...</value>
+  </data>
+  <data name="Menu.File.OpenRecent.Text" xml:space="preserve">
+    <value>Fichiers &amp;récents</value>
+  </data>
+  <data name="Menu.File.Close.Text">
+    <value>&amp;Fermer</value>
+  </data>
+  <data name="Menu.File.Acquire.Text" xml:space="preserve">
+    <value>&amp;Acquérir</value>
+  </data>
+  <data name="Menu.File.Acquire.FromScannerOrCamera.Text" xml:space="preserve">
+    <value>A partir d'un &amp;scanneur ou d'un appareil photo...</value>
+  </data>
+  <data name="Menu.File.Save.Text" xml:space="preserve">
+    <value>&amp;Enregistrer</value>
+  </data>
+  <data name="Menu.File.SaveAs.Text" xml:space="preserve">
+    <value>Enregistrer &amp;sous...</value>
+  </data>
+  <data name="Menu.File.Print.Text" xml:space="preserve">
+    <value>&amp;Imprimer...</value>
+  </data>
+  <data name="Menu.File.Exit.Text" xml:space="preserve">
+    <value>&amp;Quitter</value>
+  </data>
+  <data name="Menu.Edit.Text" xml:space="preserve">
+    <value>&amp;Edition</value>
+  </data>
+  <data name="Menu.Edit.Undo.Text" xml:space="preserve">
+    <value>&amp;Annuler</value>
+  </data>
+  <data name="Menu.Edit.Redo.Text" xml:space="preserve">
+    <value>&amp;Répéter</value>
+  </data>
+  <data name="Menu.Edit.Cut.Text" xml:space="preserve">
+    <value>Co&amp;uper</value>
+  </data>
+  <data name="Menu.Edit.Copy.Text" xml:space="preserve">
+    <value>Co&amp;pier</value>
+  </data>
+  <data name="Menu.Edit.Paste.Text" xml:space="preserve">
+    <value>C&amp;oller</value>
+  </data>
+  <data name="Menu.Edit.PasteInToNewLayer.Text" xml:space="preserve">
+    <value>Coller dans un nouveau &amp;calque</value>
+  </data>
+  <data name="Menu.Edit.PasteInToNewImage.Text" xml:space="preserve">
+    <value>Coller dans une nouvelle &amp;image</value>
+  </data>
+  <data name="Menu.Edit.EraseSelection.Text" xml:space="preserve">
+    <value>&amp;Effacer la sélection</value>
+  </data>
+  <data name="Menu.Edit.FillSelection.Text" xml:space="preserve">
+    <value>Remplir la &amp;sélection</value>
+  </data>
+  <data name="Menu.Edit.FillSelection.ShortcutKeysDisplayString" xml:space="preserve">
+    <value>Retour arrière</value>
+  </data>
+  <data name="Menu.Edit.InvertSelection.Text" xml:space="preserve">
+    <value>In&amp;verser la sélection</value>
+  </data>
+  <data name="Menu.Edit.SelectAll.Text" xml:space="preserve">
+    <value>Sélectionner &amp;tout</value>
+  </data>
+  <data name="Menu.Edit.Deselect.Text" xml:space="preserve">
+    <value>&amp;Désélectionner</value>
+  </data>
+  <data name="Menu.View.Text" xml:space="preserve">
+    <value>Affic&amp;hage</value>
+  </data>
+  <data name="Menu.View.ZoomIn.Text" xml:space="preserve">
+    <value>Zoom &amp;avant</value>
+  </data>
+  <data name="Menu.View.ZoomIn.ShortcutKeyDisplayString">
+    <value>Ctrl++</value>
+  </data>
+  <data name="Menu.View.ZoomOut.Text" xml:space="preserve">
+    <value>&amp;Zoom arrière</value>
+  </data>
+  <data name="Menu.View.ZoomOut.ShortcutKeyDisplayString">
+    <value>Ctrl+-</value>
+  </data>
+  <data name="Menu.View.ZoomToWindow.Text" xml:space="preserve">
+    <value>Ajuster à la &amp;fenêtre</value>
+  </data>
+  <data name="Menu.View.ZoomToSelection.Text" xml:space="preserve">
+    <value>Zoom sur la &amp;sélection</value>
+  </data>
+  <data name="Menu.View.ActualSize.Text" xml:space="preserve">
+    <value>&amp;Taille réelle</value>
+  </data>
+  <data name="Menu.View.Rulers.Text" xml:space="preserve">
+    <value>&amp;Règles</value>
+  </data>
+  <data name="Menu.View.Grid.Text" xml:space="preserve">
+    <value>&amp;Grille</value>
+  </data>
+  <data name="Menu.View.Units.Text" xml:space="preserve">
+    <value>&amp;Unités</value>
+  </data>
+  <data name="Menu.Image.Text" xml:space="preserve">
+    <value>&amp;Image</value>
+  </data>
+  <data name="Menu.Image.Crop.Text" xml:space="preserve">
+    <value>Rogn&amp;er selon la sélection</value>
+  </data>
+  <data name="Menu.Image.Resize.Text" xml:space="preserve">
+    <value>&amp;Redimensionner...</value>
+  </data>
+  <data name="Menu.Image.CanvasSize.Text" xml:space="preserve">
+    <value>&amp;Taille de la zone de dessin...</value>
+  </data>
+  <data name="Menu.Image.Flip.Text" xml:space="preserve">
+    <value>Retour&amp;ner</value>
+  </data>
+  <data name="Menu.Image.Flip.Horizontal.Text" xml:space="preserve">
+    <value>&amp;Horizontalement</value>
+  </data>
+  <data name="Menu.Image.Flip.Vertical.Text" xml:space="preserve">
+    <value>&amp;Verticalement</value>
+  </data>
+  <data name="Menu.Image.Rotate.Text" xml:space="preserve">
+    <value>&amp;Faire pivoter</value>
+  </data>
+  <data name="Menu.Image.Rotate.90CW.Text" xml:space="preserve">
+    <value>&amp;90° degrés à droite</value>
+  </data>
+  <data name="Menu.Image.Rotate.180CW.Text" xml:space="preserve">
+    <value>&amp;180° degrés à droite</value>
+  </data>
+  <data name="Menu.Image.Rotate.270CW.Text" xml:space="preserve">
+    <value>&amp;270° degrés à droite</value>
+  </data>
+  <data name="Menu.Image.Rotate.90CCW.Text" xml:space="preserve">
+    <value>90° degrés à gauche</value>
+  </data>
+  <data name="Menu.Image.Rotate.180CCW.Text" xml:space="preserve">
+    <value>180° degrés à gauche</value>
+  </data>
+  <data name="Menu.Image.Rotate.270CCW.Text" xml:space="preserve">
+    <value>270° degrés à gauche</value>
+  </data>
+  <data name="Menu.Image.Flatten.Text" xml:space="preserve">
+    <value>&amp;Aplatir</value>
+  </data>
+  <data name="Menu.Layers.Text" xml:space="preserve">
+    <value>&amp;Calques</value>
+  </data>
+  <data name="Menu.Layers.AddNewLayer.Text" xml:space="preserve">
+    <value>&amp;Ajouter un nouveau calque</value>
+  </data>
+  <data name="Menu.Layers.DeleteLayer.Text" xml:space="preserve">
+    <value>&amp;Supprimer le calque</value>
+  </data>
+  <data name="Menu.Layers.DuplicateLayer.Text" xml:space="preserve">
+    <value>&amp;Dupliquer le calque</value>
+  </data>
+  <data name="Menu.Layers.MergeLayerDown.Text">
+    <value>&amp;Fusionner avec le calque inférieur</value>
+  </data>
+  <data name="Menu.Layers.ImportFromFile.Text" xml:space="preserve">
+    <value>&amp;Importer à partir d'un fichier...</value>
+  </data>
+  <data name="Menu.Layers.Adjustments.Text" xml:space="preserve">
+    <value>Aj&amp;ustements</value>
+  </data>
+  <data name="Menu.Layers.Flip.Text" xml:space="preserve">
+    <value>&amp;Retourner</value>
+  </data>
+  <data name="Menu.Layers.Flip.Horizontal.Text" xml:space="preserve">
+    <value>&amp;Horizontalement</value>
+  </data>
+  <data name="Menu.Layers.Flip.Vertical.Text" xml:space="preserve">
+    <value>&amp;Verticalement</value>
+  </data>
+  <data name="Menu.Layers.LayerProperties.Text" xml:space="preserve">
+    <value>&amp;Propriétés du calque...</value>
+  </data>
+  <data name="Menu.Effects.Text" xml:space="preserve">
+    <value>E&amp;ffets</value>
+  </data>
+  <data name="Menu.Tools.Text" xml:space="preserve">
+    <value>&amp;Outils</value>
+  </data>
+  <data name="Menu.Tools.AntiAliasing.Text" xml:space="preserve">
+    <value>&amp;Antialiasing</value>
+  </data>
+  <data name="Menu.Tools.AlphaBlending.Text" xml:space="preserve">
+    <value>&amp;Fusion alpha</value>
+  </data>
+  <data name="Menu.Window.Text" xml:space="preserve">
+    <value>Fe&amp;nêtre</value>
+  </data>
+  <data name="Menu.Window.ResetWindowLocations.Text" xml:space="preserve">
+    <value>&amp;Rétablir les fenêtres</value>
+  </data>
+  <data name="Menu.Window.Translucent.Text" xml:space="preserve">
+    <value>Translucide</value>
+  </data>
+  <data name="Menu.Window.Tools.Text" xml:space="preserve">
+    <value>&amp;Outils</value>
+  </data>
+  <data name="Menu.Window.History.Text" xml:space="preserve">
+    <value>&amp;Historique</value>
+  </data>
+  <data name="Menu.Window.Layers.Text" xml:space="preserve">
+    <value>&amp;Calques</value>
+  </data>
+  <data name="Menu.Window.Colors.Text" xml:space="preserve">
+    <value>C&amp;ouleurs</value>
+  </data>
+  <data name="Menu.Window.OpenMdiList.Text" xml:space="preserve">
+    <value>&amp;Afficher la liste des images</value>
+  </data>
+  <data name="Menu.Window.NextTab.Text" xml:space="preserve">
+    <value>Onglet &amp;suivant</value>
+  </data>
+  <data name="Menu.Window.PreviousTab.Text" xml:space="preserve">
+    <value>Onglet &amp;précédent</value>
+  </data>
+  <data name="Menu.Help.Language.Text" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="Menu.Help.Text" xml:space="preserve">
+    <value>&amp;Aide</value>
+  </data>
+  <data name="Menu.Help.HelpTopics.Text" xml:space="preserve">
+    <value>R&amp;ubriques d'aide</value>
+  </data>
+  <data name="Menu.Help.PdnWebsite.Text" xml:space="preserve">
+    <value>Site &amp;web de Paint.NET...</value>
+  </data>
+  <data name="Menu.Help.Donate.Text" xml:space="preserve">
+    <value>Faire un &amp;don...</value>
+  </data>
+  <data name="Menu.Help.Forum.Text" xml:space="preserve">
+    <value>&amp;Forum...</value>
+  </data>
+  <data name="Menu.Help.Tutorials.Text" xml:space="preserve">
+    <value>D&amp;idacticiels...</value>
+  </data>
+  <data name="Menu.Help.Plugins.Text" xml:space="preserve">
+    <value>&amp;Plug-ins...</value>
+  </data>
+  <data name="Menu.Help.About.Text" xml:space="preserve">
+    <value>À pr&amp;opos de...</value>
+  </data>
+  <data name="Menu.Help.Updates.Text" xml:space="preserve">
+    <value>&amp;Mises à jour</value>
+  </data>
+  <data name="Menu.Help.CheckForUpdates.Text">
+    <value>&amp;Rechercher les mises à jour...</value>
+  </data>
+  <data name="Menu.Help.SendFeedback.Text" xml:space="preserve">
+    <value>Envoyer des commentaires ou un rapport de bogue...</value>
+  </data>
+  <data name="SendFeedback.Email.Body" xml:space="preserve">
+    <value>&lt;&lt; Entrez vos commentaires ou vos informations de rapport de bogue ici (en anglais seulement). &gt;&gt;</value>
+  </data>
+  <data name="SendFeedback.Email.Subject.Format" xml:space="preserve">
+    <value>Commentaires concernant : {0}</value>
+  </data>
+  <data name="ScaleFactor.Percentage.Format" xml:space="preserve">
+    <value>{0}%</value>
+    <comment>{0} is an integer</comment>
+  </data>
+  <data name="Utility.SizeStringFromBytes.GBFormat" xml:space="preserve">
+    <value>{0} Go</value>
+  </data>
+  <data name="Utility.SizeStringFromBytes.MBFormat" xml:space="preserve">
+    <value>{0} Mo</value>
+  </data>
+  <data name="Utility.SizeStringFromBytes.KBFormat" xml:space="preserve">
+    <value>{0} Ko</value>
+  </data>
+  <data name="Utility.SizeStringFromBytes.BytesFormat" xml:space="preserve">
+    <value>{0} octets</value>
+  </data>
+  <data name="BitmapLayer.Properties.BlendOp.Name" xml:space="preserve">
+    <value>Mode fusion</value>
+  </data>
+  <data name="BmpFileType.Name" xml:space="preserve">
+    <value>Bitmap (BMP)</value>
+  </data>
+  <data name="FileTypeCollection.AllImageTypes" xml:space="preserve">
+    <value>Tous les types d'images</value>
+  </data>
+  <data name="JpegSaveConfigWidget.QualityLabel.Text" xml:space="preserve">
+    <value>Qualité :</value>
+  </data>
+  <data name="Layer.Properties.IsBackground.Name" xml:space="preserve">
+    <value>Etat de l'arrière plan</value>
+  </data>
+  <data name="Layer.Properties.Name.Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Layer.Properties.Visible.Name" xml:space="preserve">
+    <value>Visibilité</value>
+  </data>
+  <data name="Layer.Properties.Opacity.Name" xml:space="preserve">
+    <value>Opacité :</value>
+  </data>
+  <data name="Layer.Background.Name" xml:space="preserve">
+    <value>Arrière-plan</value>
+  </data>
+  <data name="LayerPropertiesDialog.Text" xml:space="preserve">
+    <value>Propriétés du calque</value>
+  </data>
+  <data name="LayerPropertiesDialog.VisibleCheckBox.Text" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="LayerPropertiesDialog.NameLabel.Text" xml:space="preserve">
+    <value>Nom :</value>
+  </data>
+  <data name="LayerPropertiesDialog.GeneralHeader.Text" xml:space="preserve">
+    <value>Général</value>
+  </data>
+  <data name="BitmapLayerPropertiesDialog.BlendingHeader.Text" xml:space="preserve">
+    <value>Fusion</value>
+  </data>
+  <data name="BitmapLayerPropertiesDialog.BlendModeLabel.Text" xml:space="preserve">
+    <value>Mode :</value>
+  </data>
+  <data name="BitmapLayerPropertiesDialog.OpacityLabel.Text" xml:space="preserve">
+    <value>Opacité :</value>
+  </data>
+  <data name="UserBlendOps.NormalBlendOp.Name" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="UserBlendOps.MultiplyBlendOp.Name" xml:space="preserve">
+    <value>Multiplicateur</value>
+  </data>
+  <data name="UserBlendOps.AdditiveBlendOp.Name" xml:space="preserve">
+    <value>Additif</value>
+  </data>
+  <data name="UserBlendOps.ColorBurnBlendOp.Name" xml:space="preserve">
+    <value>Densité couleur +</value>
+  </data>
+  <data name="UserBlendOps.ColorDodgeBlendOp.Name" xml:space="preserve">
+    <value>Densité couleur </value>
+  </data>
+  <data name="UserBlendOps.ReflectBlendOp.Name" xml:space="preserve">
+    <value>Reflet</value>
+  </data>
+  <data name="UserBlendOps.GlowBlendOp.Name" xml:space="preserve">
+    <value>Brillance</value>
+  </data>
+  <data name="UserBlendOps.OverlayBlendOp.Name" xml:space="preserve">
+    <value>Superposition</value>
+  </data>
+  <data name="UserBlendOps.NegationBlendOp.Name" xml:space="preserve">
+    <value>Négatif</value>
+  </data>
+  <data name="UserBlendOps.DifferenceBlendOp.Name" xml:space="preserve">
+    <value>Différence</value>
+  </data>
+  <data name="UserBlendOps.ScreenBlendOp.Name" xml:space="preserve">
+    <value>Écran</value>
+  </data>
+  <data name="UserBlendOps.LightenBlendOp.Name" xml:space="preserve">
+    <value>Eclaircissement</value>
+  </data>
+  <data name="UserBlendOps.DarkenBlendOp.Name" xml:space="preserve">
+    <value>Assombrissement</value>
+  </data>
+  <data name="UserBlendOps.XorBlendOp.Name" xml:space="preserve">
+    <value>OU EXCLUSIF</value>
+  </data>
+  <data name="AngleChooserConfigDialog.AngleHeader.Text" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="AutoLevel.Name" xml:space="preserve">
+    <value>Auto-niveau</value>
+  </data>
+  <data name="Effects.Blurring.Submenu.Name" xml:space="preserve">
+    <value>Flous</value>
+  </data>
+  <data name="OutlineEffect.Name">
+    <value>Contour</value>
+  </data>
+  <data name="OutlineEffect.ConfigDialog.ThicknessLabel">
+    <value>Épaisseur</value>
+  </data>
+  <data name="OutlineEffect.ConfigDialog.IntensityLabel">
+    <value>Intensité</value>
+  </data>
+  <data name="MedianEffect.Name">
+    <value>Médiane</value>
+  </data>
+  <data name="MedianEffect.ConfigDialog.RadiusLabel">
+    <value>Cercles</value>
+  </data>
+  <data name="MedianEffect.ConfigDialog.PercentileLabel">
+    <value>Centile</value>
+  </data>
+  <data name="UnfocusEffect.Name">
+    <value>Défocaliser</value>
+  </data>
+  <data name="UnfocusEffect.ConfigDialog.AmountLabel">
+    <value>Cercles</value>
+  </data>
+  <data name="UnfocusEffect.ConfigDialog.UnitsLabel">
+    <value>pixels</value>
+  </data>
+  <data name="ZoomBlurEffect.Name">
+    <value>Flou de zoom</value>
+  </data>
+  <data name="ZoomBlurEffect.ConfigDialog.AmountLabel">
+    <value>Valeur de zoom</value>
+  </data>
+  <data name="BlurEffect.Name" xml:space="preserve">
+    <value>Flou gaussien</value>
+  </data>
+  <data name="GlowEffect.Amount1.Name" xml:space="preserve">
+    <value>Cercles</value>
+  </data>
+  <data name="GlowEffect.Amount2.Name" xml:space="preserve">
+    <value>Luminosité</value>
+  </data>
+  <data name="GlowEffect.Amount3.Name" xml:space="preserve">
+    <value>Contraste</value>
+  </data>
+  <data name="GlowEffect.Name" xml:space="preserve">
+    <value>Eclat</value>
+  </data>
+  <data name="BulgeEffect.Name" xml:space="preserve">
+    <value>Bosse</value>
+  </data>
+  <data name="DistortSubmenu.Name" xml:space="preserve">
+    <value>Déformer</value>
+  </data>
+  <data name="TileEffect.Name" xml:space="preserve">
+    <value>Réflexion mosaïque</value>
+  </data>
+  <data name="TwistEffect.Name" xml:space="preserve">
+    <value>Torsion</value>
+  </data>
+  <data name="BulgeEffect.BulgeAmount.Text" xml:space="preserve">
+    <value>Bosse</value>
+  </data>
+  <data name="TileEffect.Intensity.Text" xml:space="preserve">
+    <value>Courbure</value>
+  </data>
+  <data name="TileEffect.Rotation.Text" xml:space="preserve">
+    <value>Angle de rotation (en degrés)</value>
+  </data>
+  <data name="TileEffect.SquareSize.Text" xml:space="preserve">
+    <value>Taille (pixels)</value>
+  </data>
+  <data name="TwistEffect.Antialias.Text" xml:space="preserve">
+    <value>Qualité</value>
+  </data>
+  <data name="TwistEffect.TwistAmount.Text" xml:space="preserve">
+    <value>Valeur de torsion</value>
+  </data>
+  <data name="PolarInversionEffect.Name" xml:space="preserve">
+    <value>Inversion polaire</value>
+  </data>
+  <data name="PolarInversionEffect.PolarInversionAmount.Text" xml:space="preserve">
+    <value>Valeur </value>
+  </data>
+  <data name="PolarInversionEffect.Quality.Text" xml:space="preserve">
+    <value>Qualité</value>
+  </data>
+  <data name="BrightnessAndContrastAdjustment.Name" xml:space="preserve">
+    <value>Luminosité / Contraste</value>
+  </data>
+  <data name="BrightnessAndContrastAdjustment.Brightness" xml:space="preserve">
+    <value>Luminosité</value>
+  </data>
+  <data name="BrightnessAndContrastAdjustmnet.Contrast" xml:space="preserve">
+    <value>Contraste</value>
+  </data>
+  <data name="DesaturateEffect.Name" xml:space="preserve">
+    <value>Noir et blanc</value>
+  </data>
+  <data name="EdgeDetectEffect.Name" xml:space="preserve">
+    <value>Détection des bords</value>
+  </data>
+  <data name="EmbossEffect.Name" xml:space="preserve">
+    <value>Embosser</value>
+  </data>
+  <data name="FrostedGlassEffect.Name" xml:space="preserve">
+    <value>Verre dépoli</value>
+  </data>
+  <data name="FrostedGlassEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+    <value>Rayon du nuage de points</value>
+  </data>
+  <data name="FrostedGlassEffect.ConfigDialog.SliderUnitsName" xml:space="preserve">
+    <value>pixels</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Name" xml:space="preserve">
+    <value>Teinte / Saturation</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Amount1Label" xml:space="preserve">
+    <value>Teinte</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Amount2Label" xml:space="preserve">
+    <value>Saturation</value>
+  </data>
+  <data name="HueAndSaturationAdjustment.Amount3Label" xml:space="preserve">
+    <value>Intensité</value>
+  </data>
+  <data name="InvertColorsEffect.Name" xml:space="preserve">
+    <value>Inverser les couleurs</value>
+  </data>
+  <data name="LevelsEffect.Name" xml:space="preserve">
+    <value>Niveaux </value>
+  </data>
+  <data name="LevelsEffectConfigDialog.OutputGroupBox.Text" xml:space="preserve">
+    <value>Sortie</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.OutputGammaUpDown.ToolTipText" xml:space="preserve">
+    <value>Gamma de sortie</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchOutHigh.ToolTipText" xml:space="preserve">
+    <value>Point blanc de sortie (double-click pour sélection)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchOutLow.ToolTipText" xml:space="preserve">
+    <value>Point noir de sortie (double-click pour sélection)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.OutputHistogramGroupBox.Text" xml:space="preserve">
+    <value>Histogramme de sortie</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.HistogramOutput.ToolTipText" xml:space="preserve">
+    <value>Cet histogramme est un aperçu de la distribution des couleurs de l'image résultante.</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.InputHistogramGroupBox.Text" xml:space="preserve">
+    <value>Histogramme d'entrée</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.HistogramInput.ToolTipText" xml:space="preserve">
+    <value>Cet histogramme montre la distribution des couleurs de l'image originale.</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.InputGroupBox.Text" xml:space="preserve">
+    <value>Entrée</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchInHigh.ToolTipText" xml:space="preserve">
+    <value>Point blanc d'entrée (double-click pour sélection)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.SwatchInLow.ToolTipText" xml:space="preserve">
+    <value>Point noir d'entrée (double-click pour sélection)</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.RedMaskCheckBox.Text" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.RedMaskCheckBox.ToolTipText" xml:space="preserve">
+    <value>Activer le canal rouge</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.GreenMaskCheckBox.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.GreenMaskCheckBox.ToolTipText" xml:space="preserve">
+    <value>Activer le canal vert</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.BlueMaskCheckBox.Text" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.BlueMaskCheckBox.ToolTipText" xml:space="preserve">
+    <value>Activer le canal bleu</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.AutoButton.Text" xml:space="preserve">
+    <value>Automatique</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.AutoButton.ToolTipText" xml:space="preserve">
+    <value>Ajustement automatique des points d'entrée blanc et noir, et le gamma de sortie pour égaliser l'image</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.ResetButton.Text" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="LevelsEffectConfigDialog.Text" xml:space="preserve">
+    <value>Réglage des niveaux</value>
+  </data>
+  <data name="MotionBlurEffect.Name" xml:space="preserve">
+    <value>Flou de déplacement</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.Text" xml:space="preserve">
+    <value>Flou de déplacement</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.DegreeLabel.Text" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.PixelsLabel.Text" xml:space="preserve">
+    <value>pixels</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.CenteredCheckBox.Text" xml:space="preserve">
+    <value>Centré</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.AngleHeader.Text" xml:space="preserve">
+    <value>ANGLE</value>
+  </data>
+  <data name="MotionBlurEffectConfigDialog.DistanceHeader.Text" xml:space="preserve">
+    <value>Distance </value>
+  </data>
+  <data name="OilPaintingEffect.Name" xml:space="preserve">
+    <value>Peinture à l'huile</value>
+  </data>
+  <data name="OilPaintingEffect.ConfigDialog.Amount1Label" xml:space="preserve">
+    <value>Largeur du pinceau</value>
+  </data>
+  <data name="OilPaintingEffect.ConfigDialog.Amount2Label" xml:space="preserve">
+    <value>Granularité</value>
+  </data>
+  <data name="PixelateEffect.Name" xml:space="preserve">
+    <value>Pixéliser</value>
+  </data>
+  <data name="PixelateEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+    <value>Taille de la cellule</value>
+  </data>
+  <data name="PixelateEffect.ConfigDialog.SliderUnitsName" xml:space="preserve">
+    <value>pixels</value>
+  </data>
+  <data name="RedEyeRemoveEffect.Name" xml:space="preserve">
+    <value>Suppression des yeux rouges</value>
+  </data>
+  <data name="RedEyeRemoveEffect.ConfigDialog.Amount1Label" xml:space="preserve">
+    <value>Tolérance </value>
+  </data>
+  <data name="RedEyeRemoveEffect.ConfigDialog.Amount2Label" xml:space="preserve">
+    <value>Pourcentage de saturation</value>
+  </data>
+  <data name="RedEyeRemoveEffectDialog.UsageHintLabel.Text" xml:space="preserve">
+    <value>Conseil : pour de meilleurs résultats, utilisez d'abord les outils de sélection pour sélectionner chaque œil.</value>
+  </data>
+  <data name="ReliefEffect.Name" xml:space="preserve">
+    <value>Relief</value>
+  </data>
+  <data name="SharpenEffect.Name" xml:space="preserve">
+    <value>Améliorer la netteté</value>
+  </data>
+  <data name="SharpenEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+    <value>Valeur </value>
+  </data>
+  <data name="TwoAmountsConfigDialog.Reset.Text" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="BlurEffect.ConfigDialog.SliderLabel" xml:space="preserve">
+    <value>Cercles</value>
+  </data>
+  <data name="BlurEffect.ConfigDialog.SliderUnitsName" xml:space="preserve">
+    <value>pixels</value>
+  </data>
+  <data name="AngleChooserConfigDialog.DegreeLabel.Text" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="WorkspaceOptionsConfigWidget.UnitsLabel.Text" xml:space="preserve">
+    <value>Unités :</value>
+  </data>
+  <data name="MeasurementUnit.Pixel" xml:space="preserve">
+    <value>Pixel</value>
+  </data>
+  <data name="MeasurementUnit.Inch" xml:space="preserve">
+    <value>Pouce</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter" xml:space="preserve">
+    <value>Centimètre</value>
+  </data>
+  <data name="MeasurementUnit.Pixel.Plural" xml:space="preserve">
+    <value>Pixels</value>
+  </data>
+  <data name="MeasurementUnit.Inch.Plural" xml:space="preserve">
+    <value>Pouces</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter.Plural" xml:space="preserve">
+    <value>Centimètres</value>
+  </data>
+  <data name="MeasurementUnit.Pixel.Abbreviation" xml:space="preserve">
+    <value>px</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter.Abbreviation" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="MeasurementUnit.Inch.Abbreviation" xml:space="preserve">
+    <value>"</value>
+  </data>
+  <data name="StatusBar.CursorInfo.Format" xml:space="preserve">
+    <value>{0}{1}, {2}{3}</value>
+    <comment>{0} is x offset, {1} is units, {2} is y offset, {3} is units</comment>
+  </data>
+  <data name="ResizeAction.ProgressDialog.Description" xml:space="preserve">
+    <value>Redimensionnement en cours...</value>
+  </data>
+  <data name="ResizeDialog.ResolutionLabel.Text" xml:space="preserve">
+    <value>Résolution :</value>
+  </data>
+  <data name="MeasurementUnit.Inch.Ratio" xml:space="preserve">
+    <value>pixels/pouce</value>
+  </data>
+  <data name="MeasurementUnit.Centimeter.Ratio" xml:space="preserve">
+    <value>pixels/cm</value>
+  </data>
+  <data name="MeasurementUnit.Pixel.Ratio" xml:space="preserve">
+    <value>pixels</value>
+  </data>
+  <data name="UpdatesDialog.Text" xml:space="preserve">
+    <value>Mises à jour de Paint.NET</value>
+  </data>
+  <data name="UpdatesDialog.OptionsButton.Text">
+    <value>&amp;Options...</value>
+  </data>
+  <data name="UpdatesDialog.MoreInfoLink.Text" xml:space="preserve">
+    <value>Plus d'infos...</value>
+  </data>
+  <data name="UpdatesDialog.NewVersionLabel.Text">
+    <value>Nouvelle version :</value>
+  </data>
+  <data name="UpdatesDialog.ProgressLabel.Text.Format">
+    <value>{0}%</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.StartupState">
+    <value>Le système de mise à jour de Paint.NET est en cours d'initialisation.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.StartupState">
+    <value>Initialisation en cours</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ReadyToCheckState">
+    <value>Paint.NET est prêt à vérifier la disponibilité de mises à jour.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ReadyToCheckState">
+    <value>Vérifier maintenant</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.CheckingState">
+    <value>Paint.NET est en cours de vérification de disponibilité d'une nouvelle version.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.CheckingState">
+    <value>Vérification en cours</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.UpdateAvailableState">
+    <value>Une nouvelle version de Paint.NET est disponible. Vous pouvez cliquer sur Installer pour télécharger et installer cette mise à jour.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.UpdateAvailableState">
+    <value>&amp;Installer</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.DownloadingState">
+    <value>La mise à jour de Paint.NET est en cours de téléchargement.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.DownloadingState">
+    <value>Téléchargement en cours</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ExtractingState">
+    <value>La mise à jour a été téléchargée et est en cours d'extraction et de vérification.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ExtractingState">
+    <value>Extraction en cours</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ReadyToInstallState">
+    <value>L'application Paint.NET doit être fermée pour installer la mise à jour. Après avoir cliqué sur OK, il vous sera demandé d'enregistrer toute modification si besoin.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ReadyToInstallState">
+    <value>OK</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.InstallingState">
+    <value>Mise à jour en cours d'installation</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.InstallingState">
+    <value>Installation en cours</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.DoneState">
+    <value>Aucune mise à jour n'est actuellement disponible.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.DoneState">
+    <value>Terminé</value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.AbortedState">
+    <value>L'exécution du programme de mise à jour à été interrompu.</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.AbortedState">
+    <value>
+    </value>
+  </data>
+  <data name="UpdatesDialog.InfoText.Text.ErrorState.Format">
+    <value>Une erreur s'est produite lors de la vérification de la disponibilité de mises à jour.
+
+{0}</value>
+  </data>
+  <data name="UpdatesDialog.ContinueButton.Text.ErrorState">
+    <value>
+    </value>
+  </data>
+  <data name="UpdatesDialog.InfoLabel.Text" xml:space="preserve">
+    <value>Une nouvelle version de Paint.NET est disponible. Vous pouvez cliquer sur Installer pour la télécharger et l'installer, ou sur Fermer pour un rappel dans quelques jours.</value>
+  </data>
+  <data name="UpdatesDialog.BetaWarningLabel.Text" xml:space="preserve">
+    <value>Remarque : ceci est une version préliminaire (beta) ; sa stabilité n'est pas garantie.</value>
+  </data>
+  <data name="UpdatesDialog.CloseButton.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="UpdatesDialog.NewVersionZipLabel.Text" xml:space="preserve">
+    <value>Télécharger :</value>
+  </data>
+  <data name="UpdatesDialog.CurrentVersionHeader.Text" xml:space="preserve">
+    <value>Version actuellement installée</value>
+  </data>
+  <data name="UpdatesDialog.NewVersionHeader.Text" xml:space="preserve">
+    <value>Nouvelle version</value>
+  </data>
+  <data name="UpdatesDialog.InstallButton.Text" xml:space="preserve">
+    <value>Installer</value>
+  </data>
+  <data name="UpdatesOptionsDialog.Text">
+    <value>Options de mise à jour de Paint.NET</value>
+  </data>
+  <data name="UpdatesOptionsDialog.SaveButton.Text">
+    <value>Enregi&amp;strer</value>
+  </data>
+  <data name="UpdatesOptionsDialog.AutoCheckBox.Text">
+    <value>Vérifier automatiquement la disponibilité de nouvelles versions de Paint.NET</value>
+  </data>
+  <data name="UpdatesOptionsDialog.BetaCheckBox.Text">
+    <value>Vérifier également la disponibilité de versions préliminaires (beta)</value>
+  </data>
+  <data name="UpdatesOptionsDialog.AllUsersNoticeLabel.Text">
+    <value>Remarque : ces paramètres affecteront tous les utilisateurs utilisant cet ordinateur.</value>
+  </data>
+  <data name="ExpiredDialog.Message" xml:space="preserve">
+    <value>La période d'évaluation (30 jours) de cette version préliminaire de Paint.NET a expiré.
+
+Cliquez sur OK pour visiter le site web de Paint.NET d'où vous pourrez peut-être télécharger une nouvelle version.</value>
+  </data>
+  <data name="ExpiredTaskDialog.InfoText">
+    <value>Cette version préliminaire de Paint.NET a expiré. Pour continuer à utiliser Paint.NET, vous devez installer la dernière version.</value>
+  </data>
+  <data name="ExpiredTaskDialog.CheckForUpdatesTB.ActionText">
+    <value>&amp;Vérifier la disponibilité d'une mise à jour</value>
+  </data>
+  <data name="ExpiredTaskDialog.CheckForUpdatesTB.ExplanationText">
+    <value>Vérifier si une mise à jour et disponible et l'installer.</value>
+  </data>
+  <data name="ExpiredTaskDialog.GoToWebSiteTB.ActionText">
+    <value>&amp;Visiter le site web Paint.NET</value>
+  </data>
+  <data name="ExpiredTaskDialog.GoToWebSiteTB.ExplanationText">
+    <value>Si la vérification de la disponibilité de mises à jour ne fonctionne pas, vous pouvez essayer de visiter le site web et chercher une mise à jour.</value>
+  </data>
+  <data name="ExpiredTaskDialog.DoNotCheckForUpdatesTB.ActionText">
+    <value>&amp;Quitter</value>
+  </data>
+  <data name="ExpiredTaskDialog.DoNotCheckForUpdatesTB.ExplanationText">
+    <value>Quitter Paint.NET sans vérifier la disponibilité d'une mise à jour</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Text" xml:space="preserve">
+    <value>Mises à jour de Paint.NET</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Description.Downloading" xml:space="preserve">
+    <value>Téléchargement en cours...</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Description.Extracting" xml:space="preserve">
+    <value>Extraction en cours ...</value>
+  </data>
+  <data name="DownloadAndUnzipUpdateDialog.Error.Generic" xml:space="preserve">
+    <value>Une erreur s'est produite lors du téléchargement et de l'installation de la nouvelle version. Veuillez réessayer ultérieurement en sélectionnant dans le menu Aide l'option Rechercher les mises à jour</value>
+  </data>
+  <data name="SetLanguage.PleaseRestartApplication" xml:space="preserve">
+    <value>Vous devez redémarrez Paint.NET pour que cette modification soit prise en compte.</value>
+  </data>
+  <data name="AddNoiseEffect.Amount1Label" xml:space="preserve">
+    <value>Intensité</value>
+  </data>
+  <data name="AddNoiseEffect.Amount2Label" xml:space="preserve">
+    <value>Saturation de la couleur</value>
+  </data>
+  <data name="AddNoiseEffect.Name" xml:space="preserve">
+    <value>Ajouter du bruit</value>
+  </data>
+  <data name="ClearOpenRecentList.Dialog.Text" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir effacer la liste des fichiers récents ?</value>
+  </data>
+  <data name="SepiaEffect.Name" xml:space="preserve">
+    <value>Sépia</value>
+  </data>
+  <data name="NonAdminErrorBox.Message" xml:space="preserve">
+    <value>Vous devez être un administrateur système pour exécuter cette opération.</value>
+  </data>
+  <data name="GifSaveConfigWidget.ThresholdLabel.Text" xml:space="preserve">
+    <value>Seuil de transparence :</value>
+  </data>
+  <data name="GifSaveConfigWidget.DitherLabel.Text" xml:space="preserve">
+    <value>Niveau de tramage :</value>
+  </data>
+  <data name="GifSaveConfigWidget.PreMultiplyAlphaCheckBox.Text" xml:space="preserve">
+    <value>Multiplier par le canal alpha</value>
+  </data>
+  <data name="GifSaveConfigWidget.ThresholdInfoLabel.Text">
+    <value>Les pixels avec une valeur alpha inférieure au seuil seront complètement transparents.</value>
+  </data>
+  <data name="SetupWizard.HelpText" xml:space="preserve">
+    <value>Aide du programme d'installation de Paint.NET
+
+Options de ligne de commande :
+
+/skipConfig  -  ignore les options de configuration et le répertoire d'installation. Utilise les propriétés du fichier MSI dans l'ordre suivant : 1. fournies dans la ligne de commande, 2. lues dans le registre (HKLM\Software\Paint.NET), 3. valeurs par défaut. Remarque : l'utilisation de cette option implique l'acceptation du contrat de licence.
+/auto  -  Installation automatique. Implique /skipConfig. N'affiche pas la dernière page de l'Assistant Installation qui résume les résultats de l'installation.
+/createMsi  -  Crée les packages MSI qui peuvent être utilisés à des fins de déploiement (AD/GPO). Toutes les propriétés spécifiées dans la ligne de commande sont groupées dans le package MSI, sans autres transformations nécessaires.
+PROPRIETE=VALEUR  -  Défini une propriété MSI. Consultez le fichier d'aide après installation pour plus d'information. Il n'est pas nécessaire de spécifier /saveMsi pour définir des propriétés.
+
+Le code de retour est 0 en cas de succès, et une valeur différente de zéro en cas d'échec.</value>
+  </data>
+  <data name="SetupWizard.x86Msi.LaunchCondition.NotAllowedOn64bitOS" xml:space="preserve">
+    <value>Un fichier MSI 32 bits ne peut pas être installé sur un système d'exploitation 64 bits.</value>
+  </data>
+  <data name="Error.OSRequirement" xml:space="preserve">
+    <value>Paint.NET nécessite Windows XP SP2, Windows Vista, Windows Server 2003, ou une version ultérieure.</value>
+  </data>
+  <data name="SetupWizard.Error.AdminRequired" xml:space="preserve">
+    <value>Des privilèges d'administration sont requis pour installer Paint.NET.</value>
+  </data>
+  <data name="SetupWizard.CancelButton.Text" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="SetupWizard.BackButton.Text" xml:space="preserve">
+    <value>&lt; &amp;Précédent</value>
+  </data>
+  <data name="SetupWizard.NextButton.Text" xml:space="preserve">
+    <value>&amp;Suivant &gt;</value>
+  </data>
+  <data name="SetupWizard.NextButton.Text.Finished" xml:space="preserve">
+    <value>Terminer</value>
+  </data>
+  <data name="SetupWizard.CancelDialog.Message" xml:space="preserve">
+    <value>L'installation n'est pas encore terminée. Êtes-vous sûr de vouloir quitter le programme d'installation ?</value>
+  </data>
+  <data name="SetupWizard.IntroPage.HeaderText" xml:space="preserve">
+    <value>Assistant Installation</value>
+  </data>
+  <data name="SetupWizard.IntroPage.IntroText.Text.Format" xml:space="preserve">
+    <value>Ce programme d'installation va vous guider lors de l'installation de {0}.
+Sélectionnez la méthode d'installation que vous préférez, puis cliquez sur Suivant.</value>
+    <comment>{0} is the product name.</comment>
+  </data>
+  <data name="SetupWizard.IntroPage.QuickRB.Text" xml:space="preserve">
+    <value>Rapide</value>
+  </data>
+  <data name="SetupWizard.IntroPage.QuickDescription.Text" xml:space="preserve">
+    <value>Ceci est la méthode recommandée pour la plupart des utilisateurs. L'installation se fera avec les options par défaut, ou avec les mêmes options que celles utilisées lors d'une installation précédente.</value>
+  </data>
+  <data name="SetupWizard.IntroPage.CustomRB.Text" xml:space="preserve">
+    <value>Personnalisée</value>
+  </data>
+  <data name="SetupWizard.IntroPage.CustomDescription.Text" xml:space="preserve">
+    <value>Cette méthode vous permet de changer le répertoire d'installation, ainsi que les options d'association de type de fichiers, et de vérification de disponibilité de mises à jour.</value>
+  </data>
+  <data name="SetupWizard.IntroPage.ExpirationWarning.Format" xml:space="preserve">
+    <value>Remarque : ceci est une version préliminaire de Paint.NET qui expirera le {0}.</value>
+    <comment>{0} is a date.</comment>
+  </data>
+  <data name="SetupWizard.LicensePage.HeaderText" xml:space="preserve">
+    <value>Contrat de licence</value>
+  </data>
+  <data name="SetupWizard.LicensePage.IntroText.Text" xml:space="preserve">
+    <value>Consacrez quelques minutes à la lecture du contrat de licence. Si vous acceptez les termes du contrat, cliquez sur J'accepte, puis sur Suivant. Dans le cas contraire, cliquez sur Annuler.</value>
+  </data>
+  <data name="SetupWizard.LicensePage.DontAgreeButton.Text" xml:space="preserve">
+    <value>Je n'&amp;accepte pas</value>
+  </data>
+  <data name="SetupWizard.LicensePage.AgreeButton.Text" xml:space="preserve">
+    <value>&amp;J'accepte</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.HeaderText" xml:space="preserve">
+    <value>Options de configuration</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.LaunchHandlingText.Text" xml:space="preserve">
+    <value>Utilisez ces options pour configurer les paramètres de lancement de Paint.NET.</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.JpgPngBmpCheckBox.Text" xml:space="preserve">
+    <value>Editeur d'image par défaut d'images JPEG, PNG et BMP</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.TgaCheckBox.Text" xml:space="preserve">
+    <value>Editeur d'image par défaut d'images TGA</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.DesktopShortcutCheckBox.Text" xml:space="preserve">
+    <value>Créer un raccourci sur le Bureau</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.UpdatesText.Text" xml:space="preserve">
+    <value>Paint.NET peut vérifier à intervalles réguliers si une nouvelle version est disponible et vous avertir. Aucune information en provenance de votre ordinateur n'est transmise lors de cette opération. Remarque : vous serez averti de la disponibilité de nouvelles versions pendant que Paint.NET s'exécute.</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.CheckForUpdatesCheckBox.Text" xml:space="preserve">
+    <value>Vérifier automatiquement la disponibilité de mises à jour</value>
+  </data>
+  <data name="SetupWizard.OptionsPage.CheckForBetasCheckBox.Text" xml:space="preserve">
+    <value>Vérifier également la disponibilité de versions préliminaires (beta)</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.HeaderText" xml:space="preserve">
+    <value>Sélection du dossier d'installation</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.IntroText.Text.Format" xml:space="preserve">
+    <value>Le programme d'installation installera {0} dans le dossier suivant.
+
+Pour l'installer dans ce dossier, cliquez sur Suivant. Pour l'installer dans un dossier différent, entrez ce dernier ci-dessous ou cliquez sur Parcourir.</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.FolderLabel.Text" xml:space="preserve">
+    <value>Dossier :</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.BrowseButton.Text" xml:space="preserve">
+    <value>P&amp;arcourir...</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.DefaultTargetSubDir" xml:space="preserve">
+    <value>Paint.NET</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.BrowseForFolder.Description" xml:space="preserve">
+    <value>Sélectionnez un dossier d'installation :</value>
+  </data>
+  <data name="SetupWizard.InstallDirPage.BadDirError.Message" xml:space="preserve">
+    <value>Le dossier spécifié n'a pas pu être créé. Vous devez choisir un autre dossier d'installation.</value>
+  </data>
+  <data name="SetupWizard.ReadyToInstallPage.HeaderText" xml:space="preserve">
+    <value>Confirmation de l'installation</value>
+  </data>
+  <data name="SetupWizard.ReadyToInstallPage.IntroText.Text.Format" xml:space="preserve">
+    <value>Le programme d'installation est prêt à installer {0} sur votre ordinateur.
+
+Cliquez sur Suivant pour commencer l'installation.</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.HeaderText.Installing" xml:space="preserve">
+    <value>Installation en cours</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.HeaderText.Success" xml:space="preserve">
+    <value>L'installation a réussi</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.HeaderText.Failure" xml:space="preserve">
+    <value>Erreur</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Uninstalling" xml:space="preserve">
+    <value>Désinstallation d'une version précédente...</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Installing.Format" xml:space="preserve">
+    <value>Installation de {0} en cours...</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Optimizing" xml:space="preserve">
+    <value>Optimisation des performances pour votre système. Cela peut prendre une minute.</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Success.Format" xml:space="preserve">
+    <value>Installation de {0} réussie. Cliquez sur Terminer pour fermer cet Assistant Installation.</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Success.RebootRequired.Format" xml:space="preserve">
+    <value>Installation de {0} réussie. Un redémarrage peut être nécessaire pour une utilisation optimale. Cliquez sur Terminer pour fermer cet Assistant Installation.</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.InfoText.Text.Failure.Format" xml:space="preserve">
+    <value>Une erreur s'est produite lors de l'installation de {0}.</value>
+  </data>
+  <data name="SetupWizard.InstallingPage.PdnDonateBannerImage.Text">
+    <value>Merci d'utiliser Paint.NET. Vous pouvez exprimer votre satisfaction et support pour de futurs développements en effectuant un don.</value>
+  </data>
+  <data name="SetupWizard.CreateMsiPage.HeaderText" xml:space="preserve">
+    <value>Assistant Déploiement</value>
+  </data>
+  <data name="SetupWizard.CreateMsiPage.IntroText.Text.Creating" xml:space="preserve">
+    <value>Création des packages MSI en cours...</value>
+  </data>
+  <data name="SetupWizard.CreateMsiPage.IntroText.Text.Finished" xml:space="preserve">
+    <value>Les packages MSI ont été placés dans le répertoire suivant : '{0}'.</value>
+  </data>
+  <data name="Setup.DesktopShortcut.LinkName" xml:space="preserve">
+    <value>Paint.NET</value>
+  </data>
+  <data name="Setup.DesktopShortcut.Description" xml:space="preserve">
+    <value>Créer, modifier, numériser et imprimer des images et des photographies.</value>
+  </data>
+  <data name="RotateZoomEffect.Name" xml:space="preserve">
+    <value>Faire pivoter / Zoomer</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.FineTuningHeader.Text" xml:space="preserve">
+    <value>Réglage précis</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.KeepBackgroundCheckBox.Text" xml:space="preserve">
+    <value>Conserver l'arrière-plan</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.TileSourceCheckBox.Text" xml:space="preserve">
+    <value>Mosaïque</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.HeaderRoll.Text" xml:space="preserve">
+    <value>Retourner / Faire pivoter</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.AngleLabel.Text" xml:space="preserve">
+    <value>Angle :</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.HeaderPan.Text" xml:space="preserve">
+    <value>Panoramique</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.PanXLabel.Text" xml:space="preserve">
+    <value>Horizontal :</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.PanYLabel.Text" xml:space="preserve">
+    <value>Vertical :</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.PanResetButton.Text" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.ZoomResetButton.Text" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.TwistAngleLabel.Text" xml:space="preserve">
+    <value>Angle de torsion :</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.TwistRadiusLabel.Text" xml:space="preserve">
+    <value>Rayon de torsion :</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.RollResetButton.Text" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.ResetAllButton.Text" xml:space="preserve">
+    <value>&amp;Rétablir tout</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.HeaderZoom.Text" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="RotateZoomEffectConfigDialog.ZoomLabel.Text.Format" xml:space="preserve">
+    <value>{0}x</value>
+  </data>
+  <data name="TgaSaveConfigWidget.BppLabel.Text" xml:space="preserve">
+    <value>Profondeur de couleur :</value>
+  </data>
+  <data name="TgaSaveConfigWidget.RleCompressCheckBox.Text" xml:space="preserve">
+    <value>Compressé (RLE)</value>
+  </data>
+  <data name="TgaSaveConfigWidget.Bpp24Radio.Text" xml:space="preserve">
+    <value>24 bits</value>
+  </data>
+  <data name="TgaSaveConfigWidget.Bpp32Radio.Text" xml:space="preserve">
+    <value>32 bits</value>
+  </data>
+  <data name="LaunchLink.Error" xml:space="preserve">
+    <value>Une erreur s'est produite lors du lancement du lien.</value>
+  </data>
+  <data name="RadialBlurEffect.Name" xml:space="preserve">
+    <value>Flou radial</value>
+  </data>
+  <data name="RadialBlurEffect.ConfigDialog.RadialLabel" xml:space="preserve">
+    <value>Degrés de transversalité :</value>
+  </data>
+  <data name="WebExceptionStatus.ConnectFailure" xml:space="preserve">
+    <value>Le point de service à distance n'a pas pu être contacté au niveau transport.</value>
+  </data>
+  <data name="WebExceptionStatus.ConnectionClosed" xml:space="preserve">
+    <value>La connexion a été fermée prématurément.</value>
+  </data>
+  <data name="WebExceptionStatus.KeepAliveFailure" xml:space="preserve">
+    <value>La connexion pour une requête avec un en-tête de maintien d'activité a été fermée de façon inattendue.</value>
+  </data>
+  <data name="WebExceptionStatus.MessageLengthLimitExceeded" xml:space="preserve">
+    <value>Un message qui dépassait la limite spécifiée a été reçu lors de l'émission d'une requête ou lors de la réception d'une réponse du serveur.</value>
+  </data>
+  <data name="WebExceptionStatus.NameResolutionFailure" xml:space="preserve">
+    <value>Le service de résolution de nom n'a pas pu résoudre le nom d'hôte.</value>
+  </data>
+  <data name="WebExceptionStatus.Pending" xml:space="preserve">
+    <value>Une requête interne asynchrone est en attente.</value>
+  </data>
+  <data name="WebExceptionStatus.PipelineFailure" xml:space="preserve">
+    <value>Une erreur interne .NET s'est produite (WebExceptionStatus.PipelineFailure).</value>
+    <comment>This text is different than what is in the MSDN documentation.</comment>
+  </data>
+  <data name="WebExceptionStatus.ProtocolError" xml:space="preserve">
+    <value>La réponse reçue du serveur était complète mais contenait une erreur au niveau protocole. Par exemple, une erreur de protocole HTTP telle 401 Accès refusé utiliserait cet état.</value>
+  </data>
+  <data name="WebExceptionStatus.ProtocolError.Format" xml:space="preserve">
+    <value>Le serveur a retourné le code d'erreur suivant : HTTP {1} ({0})</value>
+    <comment>{0} is a string name from the System.Net.HttpStatusCode enumeration. {1} is an integer, such as 404</comment>
+  </data>
+  <data name="WebExceptionStatus.ProxyNameResolutionFailure" xml:space="preserve">
+    <value>Le service de résolution de nom n'a pas pu résoudre le nom d'hôte du serveur proxy.</value>
+  </data>
+  <data name="WebExceptionStatus.ReceiveFailure" xml:space="preserve">
+    <value>Une réponse complète du serveur distant n'a pas été reçue.</value>
+  </data>
+  <data name="WebExceptionStatus.RequestCanceled" xml:space="preserve">
+    <value>Une erreur interne s'est produite (WebExceptionStatus.RequestCanceled)</value>
+    <comment>This text is different than what is in the MSDN documentation.</comment>
+  </data>
+  <data name="WebExceptionStatus.SecureChannelFailure" xml:space="preserve">
+    <value>Une erreur s'est produite dans un lien de canal sécurisé.</value>
+  </data>
+  <data name="WebExceptionStatus.SendFailure" xml:space="preserve">
+    <value>Une erreur s'est produite dans un lien de canal sécurisé.</value>
+  </data>
+  <data name="WebExceptionStatus.ServerProtocolViolation" xml:space="preserve">
+    <value>La réponse du serveur n'était pas une réponse HTTP valide.</value>
+  </data>
+  <data name="WebExceptionStatus.Success" xml:space="preserve">
+    <value>Aucune erreur ne s'est produite.</value>
+  </data>
+  <data name="WebExceptionStatus.Timeout" xml:space="preserve">
+    <value>Aucune réponse n'a été reçue pendant le délai d'attente pour une requête.</value>
+  </data>
+  <data name="WebExceptionStatus.TrustFailure" xml:space="preserve">
+    <value>Un certificat de serveur n'a pas pu être validé.</value>
+  </data>
+  <data name="WebExceptionStatus.UnknownError" xml:space="preserve">
+    <value>Une exception de type inconnu s'est produite.</value>
+  </data>
+  <data name="CurvesEffect.Name" xml:space="preserve">
+    <value>Courbes</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.Text" xml:space="preserve">
+    <value>Courbes</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.InputHeader.Text" xml:space="preserve">
+    <value>Histogramme d'entrée</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.TransferHeader.Text" xml:space="preserve">
+    <value>Fonction de couleur</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.OutputHeader.Text" xml:space="preserve">
+    <value>Histogramme de sortie</value>
+  </data>
+  <data name="CurveControlRgb.Red" xml:space="preserve">
+    <value>Rouge</value>
+  </data>
+  <data name="CurveControlRgb.Green" xml:space="preserve">
+    <value>Vert</value>
+  </data>
+  <data name="CurveControlRgb.Blue" xml:space="preserve">
+    <value>Bleu</value>
+  </data>
+  <data name="CurveControlLuminosity.Luminosity" xml:space="preserve">
+    <value>Luminosité</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.HelpText.Text" xml:space="preserve">
+    <value>Conseil : cliquez avec le bouton droit pour enlever les points de contrôle.</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.Coordinates.Format" xml:space="preserve">
+    <value>({0}, {1})</value>
+  </data>
+  <data name="CurvesEffectConfigDialog.ResetButton.Text" xml:space="preserve">
+    <value>&amp;Réinitialiser</value>
+  </data>
+  <data name="ColorTransferMode.Luminosity" xml:space="preserve">
+    <value>Luminosité</value>
+  </data>
+  <data name="ColorTransferMode.Rgb" xml:space="preserve">
+    <value>RVB</value>
+  </data>
+  <data name="CrashLog.HeaderText.Format" xml:space="preserve">
+    <value>Ce fichier texte a été créé car Paint.NET a rencontré un incident.
+Veuillez envoyer ce fichier dans un message électronique à l'adresse {0} de façon à ce que nous puissions diagnostiquer et résoudre le problème.
+</value>
+    <comment>{0} is an e-mail address, such as paint.net@hotmail.com</comment>
+  </data>
+  <data name="SwapLayerFunction.Name" xml:space="preserve">
+    <value>Echanger les calques</value>
+  </data>
+  <data name="ExecuteFunction.GenericOutOfMemory">
+    <value>Mémoire insuffisante pour accomplir l'opération.</value>
+  </data>
+  <data name="ExecuteFunction.GenericError">
+    <value>Une erreur s'est produite lors de l'exécution de l'opération.</value>
+  </data>
+  <data name="FontSmoothing.None">
+    <value>Aucun</value>
+  </data>
+  <data name="FontSmoothing.Sharp">
+    <value>Nette</value>
+  </data>
+  <data name="FontSmoothing.Smooth">
+    <value>Lissée</value>
+  </data>
+  <data name="ToolStripChooser.ChooseToolButton.Text">
+    <value>&amp;Outil :</value>
+  </data>
+  <data name="ToleranceConfig.ToleranceLabel.Text">
+    <value>Tolérance :</value>
+  </data>
+  <data name="Updates.ExtractingState.GenericError">
+    <value>Une erreur s'est produite lors de la décompression du téléchargement.</value>
+  </data>
+  <data name="Updates.DownloadingState.GenericError">
+    <value>Une erreur non spécifiée s'est produite lors du téléchargement de la mise à jour.</value>
+  </data>
+  <data name="Updates.CheckingState.GenericError">
+    <value>Une erreur non spécifiée s'est produite lors la vérification de la disponibilité de mises à jour.</value>
+  </data>
+  <data name="UnsavedChangesDialog.Text">
+    <value>Modifications non enregistrées</value>
+  </data>
+  <data name="UnsavedChangesDialog.InfoLabel.Text">
+    <value>Les images ouvertes suivantes comportent des modifications qui n'ont pas été enregistrés. Vous pouvez cliquer sur la miniature pour visualiser l'image dans la fenêtre principale.</value>
+  </data>
+  <data name="UnsavedChangesDialog.DocumentListHeader.Text">
+    <value>Images</value>
+  </data>
+  <data name="UnsavedChangesDialog.SaveButton.ActionText">
+    <value>Enregi&amp;strer</value>
+  </data>
+  <data name="UnsavedChangesDialog.SaveButton.ExplanationText">
+    <value>Enregistrer les images de la liste ci-dessus et quitter.</value>
+  </data>
+  <data name="UnsavedChangesDialog.DontSaveButton.ActionText">
+    <value>&amp;Ne pas enregistrer</value>
+  </data>
+  <data name="UnsavedChangesDialog.DontSaveButton.ExplanationText">
+    <value>Ignorer toutes les modifications non enregistrées et quitter.</value>
+  </data>
+  <data name="UnsavedChangesDialog.CancelButton.ActionText">
+    <value>Annuler</value>
+  </data>
+  <data name="UnsavedChangesDialog.CancelButton.ExplanationText">
+    <value>Retourner à Paint.NET</value>
+  </data>
+  <data name="TaskButton.Cancel.ActionText">
+    <value>Annuler</value>
+  </data>
+  <data name="TaskButton.Cancel.ExplanationText">
+    <value>
+    </value>
+  </data>
+  <data name="ControlShadow.BetaTag.Text.Format">
+    <value>Ceci est une version préliminaire, uniquement destinée à un usage de test. Expiration le {1}. Une mise à jour sera disponible avant cette date.
+www.getpaint.net</value>
+    <comment>{0} is the full application name, e.g. "Paint.NET v3.0 (Beta 1 Release build 3.0.2460.34921). {1} is a date string.</comment>
+  </data>
+  <data name="ToolChooserStrip.ChooseToolDefaults.Text">
+    <value>&amp;Choisir les outils par défaut ...</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.IntroText.Text">
+    <value>Vous pouvez sélectionner l'outil actif au démarrage de Paint.NET, et quels outils par défaut devraient se trouver dans la barre d'outils.</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.LoadFromToolBarButton.Text">
+    <value>&amp;Charger à partir de la barre d'outils</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ResetButton.Text">
+    <value>&amp;Réinitialiser</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.DefaultToolText.Text">
+    <value>Outil par défaut :</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Resampling.HeaderLabel.Text">
+    <value>Déplacer les pixels sélectionnés</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.BrushPenShapeType.HeaderLabel.Text">
+    <value>Formes, pinceaux et remplissage</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Text.HeaderLabel.Text">
+    <value>Texte</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Gradient.HeaderLabel.Text">
+    <value>Dégradé</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.Tolerance.HeaderLabel.Text">
+    <value>Baguette magique, Pot de peinture, et Recoloriage</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.ColorPickerBehavior.HeaderLabel.Text">
+    <value>Sélecteur de couleurs</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.ToolConfigRow.AlphaBlendingAntialiasing.HeaderLabel.Text">
+    <value>Rastérisation</value>
+  </data>
+  <data name="ChooseToolDefaultsDialog.Text">
+    <value>Choisir les outils par défaut </value>
+  </data>
+  <data name="CloseWorkspaceAction.Title">
+    <value>Modifications non enregistrées</value>
+  </data>
+  <data name="CloseWorkspaceAction.SaveButton.ActionText">
+    <value>Enregi&amp;strer</value>
+  </data>
+  <data name="CloseWorkspaceAction.SaveButton.ExplanationText">
+    <value>Enregistrer l'image, puis la fermer.</value>
+  </data>
+  <data name="CloseWorkspaceAction.DontSaveButton.ActionText">
+    <value>&amp;Ne pas enregistrer</value>
+  </data>
+  <data name="CloseWorkspaceAction.DontSaveButton.ExplanationText">
+    <value>Ignorer les modifications non enregistrées.</value>
+  </data>
+  <data name="CloseWorkspaceAction.CancelButton.ActionText">
+    <value>Annuler</value>
+  </data>
+  <data name="CloseWorkspaceAction.CancelButton.ExplanationText">
+    <value>Retourner sur Paint.NET.</value>
+  </data>
+  <data name="CloseWorkspaceAction.IntroText.Format">
+    <value>{0} a des modifications non enregistrées. Que voulez-vous faire ?</value>
+  </data>
+  <data name="GradientType.LinearClamped">
+    <value>Linaire</value>
+  </data>
+  <data name="GradientType.LinearReflected">
+    <value>Linéaire (réfléchi)</value>
+  </data>
+  <data name="GradientType.LinearDiamond">
+    <value>Losange</value>
+  </data>
+  <data name="GradientType.Radial">
+    <value>Transversal</value>
+  </data>
+  <data name="GradientType.Conical">
+    <value>Conique</value>
+  </data>
+  <data name="GradientChannels.AllColorChannels.Text">
+    <value>Mode Couleur</value>
+  </data>
+  <data name="GradientChannels.AlphaChannelOnly.Text">
+    <value>Mode transparence</value>
+  </data>
+  <data name="AlphaBlendingSplitButton.BlendingEnabled.Text">
+    <value>Fusion normale</value>
+  </data>
+  <data name="AlphaBlendingSplitButton.BlendingOverwrite.Text">
+    <value>Remplacer</value>
+  </data>
+  <data name="AntiAliasingSplitButton.Enabled.Text">
+    <value>Antialiasing activé</value>
+  </data>
+  <data name="AntiAliasingSplitButton.Disabled.Text">
+    <value>Antialiasing désactivé</value>
+  </data>
+  <data name="ToolsControl.ToolToolTip.Format">
+    <value>{0}
+Touche de raccourci : {1}</value>
+    <comment>{0} is the tool's name (e.g. "Magic Wand"). {1} is a character that is the shortcut key (e.g. "C")</comment>
+  </data>
+  <data name="ToolConfigStrip.PenSizeIncButton.ToolTipText">
+    <value>Augmenter la largeur du pinceau
+Touche de raccourci : ] (maintenez la touche Ctrl enfoncée pour augmenter de 5)</value>
+  </data>
+  <data name="ToolConfigStrip.PenSizeDecButton.ToolTipText">
+    <value>Diminuer la largeur du pinceau
+Touche de raccourci : [ (maintenez la touche Ctrl enfoncée pour diminuer de 5)</value>
+  </data>
+  <data name="Effects.Render.Submenu.Name" xml:space="preserve">
+    <value>Rendu</value>
+  </data>
+  <data name="CloudsEffect.Name">
+    <value>Nuages</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.UsageLabel">
+    <value>Pour modifier la couleur de dessin des nuages, sélectionnez les couleurs primaire et secondaire dans la fenêtre Couleurs.</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.ScaleLabel">
+    <value>Échelle</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.RoughnessLabel">
+    <value>Rugosité</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.SeedHeader.Text">
+    <value>Bruit aléatoire</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.BlendModeHeader.Text">
+    <value>Mode fusion</value>
+  </data>
+  <data name="CloudsEffect.ConfigDialog.ReseedButton.Text">
+    <value>Réinitialiser la valeur de départ aléatoire</value>
+  </data>
+</root>

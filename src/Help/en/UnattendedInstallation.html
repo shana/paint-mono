@@ -1,0 +1,351 @@
+<html>
+
+<!-- #BeginTemplate "pdn_help.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- #BeginEditable "title" -->
+<title>Paint.NET Help - Unattended Installation</title>
+<!-- #EndEditable -->
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<body>
+
+<div id="banner">
+	<a href="http://www.getpaint.net/">
+	<img border="0" src="../images/logo.png"></a><p>
+	&nbsp;</div>
+<div id="leftnav">
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="index.html">Overview</a><br>
+		</li>
+		<li><a href="Features.html">Features</a><br>
+		<a href="Tutorials.html">Tutorials</a><br>
+		<a href="WhatsNew.html">What&#39;s New?</a><br>
+		</li>
+	</ul>
+	<h3>Concepts</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="LayersAndBlendModes.html">Layers and Blend Modes</a></li>
+	</ul>
+	<h3>User Interface</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="KeyboardMouseCommands.html">Keyboard &amp; Mouse Commands</a></li>
+		<li><a href="MainWindow.html">Main Window</a></li>
+		<li><a href="ImageList.html">Image List</a></li>
+		<li><a href="MenuBar.html">Menu Bar</a>
+		<ul class="toc">
+			<li><a href="FileMenu.html">File</a></li>
+			<li><a href="EditMenu.html">Edit</a></li>
+			<li><a href="ViewMenu.html">View</a></li>
+			<li><a href="ImageMenu.html">Image</a></li>
+			<li><a href="LayersMenu.html">Layers</a>
+			<ul class="toc">
+				<li class="comment"><a href="RotateZoom.html">Rotate / Zoom</a></li>
+			</ul></li>
+			<li><a href="AdjustmentsMenu.html">Adjustments</a>&nbsp;
+				<ul class="toc">
+				    <li><a href="Curves.html">Curves</a></li>
+					<li><a href="Levels.html">Levels</a></li>
+				</ul></li>
+			<li><a href="EffectsMenu.html">Effects</a></li>
+			<li><a href="WindowMenu.html">Window</a></li>
+			<li><a href="HelpMenu.html">Help</a></li>
+		</ul>
+		</li>
+		<li><a href="Toolbar.html">Toolbar</a></li>
+		<li><a href="ToolsWindow.html">Tools Window</a><ul class="toc">
+			<li><a href="SelectionTools.html">Selection Tools</a></li>
+			<li><a href="MoveTools.html">Move Tools</a><br>
+			<a href="MagicWand.html">Magic Wand</a></li>
+			<li><a href="GradientTool.html">Gradient Tool</a><br>
+			<a href="Paintbrush.html">Paintbrush</a></li>
+			<li><a href="EraserTool.html">Eraser Tool</a></li>
+			<li><a href="PixelTools.html">Pixel Tools</a></li>
+			<li><a href="ShapeTools.html">Shape Tools</a></li>
+			<li><a href="LineCurve.html">Line / Curve Tool</a></li>
+			<li><a href="TextTool.html">Text Tool</a></li>
+			<li><a href="PaintBucket.html">Paint Bucket</a></li>
+			<li><a href="CloneStamp.html">Clone Stamp</a></li>
+			<li><a href="RecolorTool.html">Recolor Tool</a></li>
+		</ul>
+		</li>
+		<li><a href="HistoryWindow.html">History Window</a></li>
+		<li><a href="LayersWindow.html">Layers Window</a></li>
+		<li><a href="ColorsWindow.html">Colors Window</a></li>
+		<li><a href="StatusBar.html">Status Bar</a></li>
+	</ul>
+	</li>
+	<h3>Other</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="FAQ.html">FAQ (Frequently Asked Questions)</a></li>
+		<li><a href="UnattendedInstallation.html">Unattended Installation</a></li>
+		<li><a href="SystemRequirements.html">System Requirements</a></li>
+		<li><a href="WebLinks.html">Web Links</a></li>
+		<li><a href="License.html">License</a></li>
+	</ul>
+</div>
+<div id="content">
+	<!-- #BeginEditable "content" -->
+
+
+	<div id="content0">
+		<h2>Unattended Installation</h2>
+		<p>Paint.NET supports
+		<a target="_top" href="http://en.wikipedia.org/wiki/Unattended_installation">
+		unattended installation</a> which enables you to install Paint.NET with 
+		no user interaction. There are two facilities provided for unattended 
+		installation. The first, MSI-Based Deployment, is designed for use with
+		<a href="http://en.wikipedia.org/wiki/Active_Directory">Active Directory</a> 
+		and <a href="http://en.wikipedia.org/wiki/Group_policy">Group Policy</a> 
+		in order to install Paint.NET on many users&#39; systems on an administrated 
+		network. The second, Automatic Installation, is useful for general 
+		scripting or automation purposes for personal use. This may be useful 
+		when using software such as <a target="_top" href="http://www.autopatcher.com/">
+		AutoPatcher</a> 
+		which you may read about at its
+		<a target="_top" href="http://www.neowin.net/forum/index.php?showforum=89">
+		official forum</a>.</p>
+		<p>Previous versions of Paint.NET were distributed as MSI files which 
+		could be configured using standard
+		<a target="_top" href="http://en.wikipedia.org/wiki/Microsoft_Installer">
+		Windows Installer</a> options. Newer versions, however, are distributed 
+		as EXE files due to more intricate requirements related to 
+		configuration, localization, and updating. You may still do an 
+		installation via an MSI if you use the /createMsi parameter when 
+		launching the installer executable.<br>
+		</p>
+		<h3>MSI-Based Deployment</h3>
+		<p>Using the /createMsi command-line parameter detailed below, you may 
+		create MSI packages useful for AD/GPO deployment.</p>
+		<p>Two MSI packages will be created when you use this command, one for 
+		each CPU architecture (x86 and
+		<a href="http://en.wikipedia.org/wiki/X64">x64</a>). The x86 MSI is for 
+		32-bit Intel/AMD systems and is what most systems will use. The x64 MSI 
+		is for Intel/AMD systems that have both a 64-bit CPU and a 64-bit &quot;x64&quot; 
+		edition of Windows.</p>
+		<p>Please note that the x86 MSI (PaintDotNet.x86.msi) will not function 
+		on 64-bit systems, and so you should plan your deployment accordingly.</p>
+		<p>Also, the MSI properties listed in the 2nd table below may be 
+		configured on the command-line when using /createMsi. These MSI 
+		properties will be automatically patched into the MSI&#39;s that are 
+		generated so no further transforms should be necessary.</p>
+		<h4>Automatic Installation</h4>
+		<p>To do an automatic installation, use the /auto or /skipConfig 
+		command-line parameter detailed below.</p>
+		<h3>Command-Line Syntax</h3>
+		<p>The setup package supports the following command-line syntax, where 
+		PaintDotNet_3_0.exe is the setup package downloaded from our
+		<a target="_top" href="http://www.getpaint.net">website</a>:</p>
+		<p class="fixed">&nbsp;&nbsp;&nbsp; PaintDotNet_3_0.exe [/skipConfig | 
+		/auto | /createMsi] [PROPERTY=VALUE ...]</p>
+		<p>Description of options:<br>
+		</p>
+		<table border="1" width="80%" cellspacing="0">
+			<tr>
+				<td width="20%" class="fixed">
+				<p>/skipConfig</p>
+				</td>
+				<td height="28" width="552">
+				<p>Skips configuration of options and install directory. Uses 
+				MSI properties in the following order of precedence: 1. supplied 
+				on command-line, 2. read from HKLM\Software\Paint.NET, 3. 
+				default values.</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="20%" class="fixed">
+				<p>/auto</p>
+				</td>
+				<td height="33" width="552">
+				<p>Like /skipConfig, but does not show the final wizard page 
+				that details the result of installation. This option provides a 
+				completely automated install that requires no user interaction 
+				to start or finish the installation.</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="20%" class="fixed">
+				/createMsi</td>
+				<td height="33" width="552">
+				This will create three MSI packages in a folder on your desktop 
+				called PaintDotNetMsi. These MSI&#39;s are each targeted at a 
+				specific OS/CPU platform type (x86 or x64). These may be 
+				deployed via standard AD/GPO mechanisms, and are already patched 
+				with the MSI properties that you specify using the 
+				PROPERTY=VALUE command-line options (if any). <br>
+&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="20%" class="fixed">
+				<p>PROPERTY=VALUE</p>
+				</td>
+				<td height="33" width="552">
+				<p>Sets an MSI property named PROPERTY to equal VALUE. You may 
+				specify multiple property values. See below for a list of 
+				applicable properties.<br>
+				<b>NOTE:</b> If VALUE has a space in it, you must enclose the 
+				entire PROPERTY=VALUE text inside quotation marks. For example, 
+				to set the hypothetical TEST property equal to &quot;1 2 3&quot;, you 
+				would specify &quot;TEST=1 2 3&quot; on the command-line, including the 
+				quotation marks.</p>
+				</td>
+			</tr>
+		</table>
+		<p>For a default automatic installation it is sufficient to just use the 
+		/auto command-line. Further customization is possible by changing the 
+		values of the MSI properties, where &quot;1&quot; is used for enabling a behavior 
+		or action, and &quot;0&quot; is used for disabling it:<br>
+		</p>
+		<table border="1" width="80%" cellspacing="0" id="table1">
+			<tr>
+				<td width="15%">
+				<p align="center"><b>MSI Property Name</b></td>
+				<th height="28" width="272" align="center">
+				<p>Default Value</p>
+				</th>
+				<td height="28" width="853">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="15%" class="fixed">
+				<p>TARGETDIR</p>
+				</td>
+				<td height="28" width="272" align="center" class="fixed">
+				<p>%PROGRAMFILES%\Paint.NET</p>
+				</td>
+				<td height="28" width="853">
+				<p>Specifies the directory to install Paint.NET to. 
+				%PROGRAMFILES% usually stands for C:\Program Files.</p>
+				</a></td>
+			</tr>
+			<tr>
+				<td width="15%" class="fixed">
+				<p>CHECKFORUPDATES</p>
+				</td>
+				<td height="33" width="272" align="center" class="fixed">
+				<p>1 (0 when /createMsi is specified)</p>
+				</td>
+				<td height="33" width="853">
+				<p>Enables (1) or disables (0) automatic update checking. Please 
+				note that checking for updates is only enabled and allowed in 
+				the first place for users that are in the local Administrators 
+				group. It is not possible to enable this for users that are not 
+				in the Administrators group.</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="15%" class="fixed">
+				<p>CHECKFORBETAS</p>
+				</td>
+				<td height="33" width="272" align="center" class="fixed">
+				<p>0</p>
+				</td>
+				<td height="33" width="853">
+				<p>When checking for updates, also check for pre-release 
+				(&quot;beta&quot;) versions.</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="15%" class="fixed">
+				<p>JPGPNGBMPEDITOR</p>
+				</td>
+				<td height="33" width="272" align="center" class="fixed">
+				<p>1</p>
+				</td>
+				<td height="33" width="853">
+				<p>Register as the default editor for JPG, PNG, and BMP image 
+				types. Note that this registers Paint.NET for the &quot;Edit&quot; verb, 
+				which does not change the default double-click behavior in 
+				Windows.</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="15%" class="fixed">
+				<p>TGAEDITOR</p>
+				</td>
+				<td height="33" width="272" align="center" class="fixed">
+				<p>1</p>
+				</td>
+				<td height="33" width="853">
+				<p>Register as the default editor for TGA image types. Note that 
+				this registers Paint.NET for the &quot;Edit&quot; verb, which does not 
+				change the default double-click behavior in Windows.</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="15%" class="fixed">
+				<p>DESKTOPSHORTCUT</p>
+				</td>
+				<td height="33" width="272" align="center" class="fixed">
+				<p>1</p>
+				</td>
+				<td height="33" width="853">
+				<p>Create a shortcut on the desktop for launching Paint.NET.</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="15%" class="fixed">
+				PROGRAMSGROUP</td>
+				<td height="33" width="272" align="center" class="fixed">
+				(blank)</td>
+				<td height="33" width="853">
+				This configures which Start menu Programs group the Paint.NET 
+				shortcut will be placed into. By default this is blank which 
+				places the shortcut &quot;loose&quot; at the top of the hierarchy among 
+				other shortcuts such as Windows Media Player and Internet 
+				Explorer.<p>This is commonly used to place the Paint.NET 
+				shortcut into a group such as &quot;Graphics Applications&quot; or 
+				something similar. If you want to place Paint.NET in a 
+				group-within-a-group, use syntax similar to that for file paths. 
+				For example, to place Paint.NET into the &quot;Graphics&quot; group inside 
+				of the &quot;Applications&quot; group (i.e., &quot;Start menu -&gt; All Programs 
+				-&gt; Applications -&gt; Graphics&quot;) specify 
+				&quot;PROGRAMSGROUP=Applications\Graphics&quot;.</td>
+			</tr>
+		</table>
+		<h3><br>
+		Examples</h3>
+		<p></p>
+		<p>To install Paint.NET with the default options, to the default 
+		installation directory, with no user interaction:</p>
+		<blockquote>
+			<p class="fixed">PaintDotNet_3_0.exe /auto</p>
+		</blockquote>
+		<p>To install Paint.NET to a directory called D:\PDN, and not create a 
+		desktop shortcut:</p>
+		<blockquote>
+			<p></p>
+			<p class="fixed">PaintDotNet_3_0.exe /auto TARGETDIR=D:\PDN 
+			DESKTOPSHORTCUT=0</p>
+		</blockquote>
+		<p></p>
+		<p>To install Paint.NET to a directory called E:\Image Apps\Paint.NET, 
+		and to check for betas during update checking. <b>Note</b> that the 
+		entire TARGETDIR parameter must be enclosed in quotations when the 
+		target directory contains one or more space!</p>
+		<p></p>
+		<p></p>
+		<blockquote>
+			<p class="fixed">PaintDotNet_3_0.exe /auto &quot;TARGETDIR=E:\Image 
+			Apps\Paint.NET&quot; CHECKFORBETAS=1</p>
+		</blockquote>
+	</div>
+	<!-- #EndEditable -->
+	<h4><br>
+	<br>
+	</h4>
+	<p align="center">
+	<font color="#808080" size="1">Copyright <font face="Times New Roman">© 2007 </font>
+	Rick Brewster, Tom Jackson, and past contributors. Portions Copyright
+	<font face="Times New Roman">© 2007 </font>Microsoft Corporation. All Rights 
+	Reserved.</font><font size="1"> <br>
+	</font>
+</div>
+</b>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

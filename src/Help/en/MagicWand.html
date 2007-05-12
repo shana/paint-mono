@@ -1,0 +1,258 @@
+<html>
+
+<!-- #BeginTemplate "pdn_help.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- #BeginEditable "title" -->
+<title>Paint.NET Help - Magic Wand</title>
+<!-- #EndEditable -->
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<body>
+
+<div id="banner">
+	<a href="http://www.getpaint.net/">
+	<img border="0" src="../images/logo.png"></a><p>
+	&nbsp;</div>
+<div id="leftnav">
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="index.html">Overview</a><br>
+		</li>
+		<li><a href="Features.html">Features</a><br>
+		<a href="Tutorials.html">Tutorials</a><br>
+		<a href="WhatsNew.html">What&#39;s New?</a><br>
+		</li>
+	</ul>
+	<h3>Concepts</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="LayersAndBlendModes.html">Layers and Blend Modes</a></li>
+	</ul>
+	<h3>User Interface</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="KeyboardMouseCommands.html">Keyboard &amp; Mouse Commands</a></li>
+		<li><a href="MainWindow.html">Main Window</a></li>
+		<li><a href="ImageList.html">Image List</a></li>
+		<li><a href="MenuBar.html">Menu Bar</a>
+		<ul class="toc">
+			<li><a href="FileMenu.html">File</a></li>
+			<li><a href="EditMenu.html">Edit</a></li>
+			<li><a href="ViewMenu.html">View</a></li>
+			<li><a href="ImageMenu.html">Image</a></li>
+			<li><a href="LayersMenu.html">Layers</a>
+			<ul class="toc">
+				<li class="comment"><a href="RotateZoom.html">Rotate / Zoom</a></li>
+			</ul></li>
+			<li><a href="AdjustmentsMenu.html">Adjustments</a>&nbsp;
+				<ul class="toc">
+				    <li><a href="Curves.html">Curves</a></li>
+					<li><a href="Levels.html">Levels</a></li>
+				</ul></li>
+			<li><a href="EffectsMenu.html">Effects</a></li>
+			<li><a href="WindowMenu.html">Window</a></li>
+			<li><a href="HelpMenu.html">Help</a></li>
+		</ul>
+		</li>
+		<li><a href="Toolbar.html">Toolbar</a></li>
+		<li><a href="ToolsWindow.html">Tools Window</a><ul class="toc">
+			<li><a href="SelectionTools.html">Selection Tools</a></li>
+			<li><a href="MoveTools.html">Move Tools</a><br>
+			<a href="MagicWand.html">Magic Wand</a></li>
+			<li><a href="GradientTool.html">Gradient Tool</a><br>
+			<a href="Paintbrush.html">Paintbrush</a></li>
+			<li><a href="EraserTool.html">Eraser Tool</a></li>
+			<li><a href="PixelTools.html">Pixel Tools</a></li>
+			<li><a href="ShapeTools.html">Shape Tools</a></li>
+			<li><a href="LineCurve.html">Line / Curve Tool</a></li>
+			<li><a href="TextTool.html">Text Tool</a></li>
+			<li><a href="PaintBucket.html">Paint Bucket</a></li>
+			<li><a href="CloneStamp.html">Clone Stamp</a></li>
+			<li><a href="RecolorTool.html">Recolor Tool</a></li>
+		</ul>
+		</li>
+		<li><a href="HistoryWindow.html">History Window</a></li>
+		<li><a href="LayersWindow.html">Layers Window</a></li>
+		<li><a href="ColorsWindow.html">Colors Window</a></li>
+		<li><a href="StatusBar.html">Status Bar</a></li>
+	</ul>
+	</li>
+	<h3>Other</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="FAQ.html">FAQ (Frequently Asked Questions)</a></li>
+		<li><a href="UnattendedInstallation.html">Unattended Installation</a></li>
+		<li><a href="SystemRequirements.html">System Requirements</a></li>
+		<li><a href="WebLinks.html">Web Links</a></li>
+		<li><a href="License.html">License</a></li>
+	</ul>
+</div>
+<div id="content">
+	<!-- #BeginEditable "content" -->
+	<h2>Magic Wand</h2>
+	<p>The Magic Wand tool allows you to select areas of color similar to the 
+	way the other selection tools allow you to select a given shape. Unlike the 
+	other selection tools, however, the Magic Wand tool takes into consideration 
+	factors such as the actual content of the image and the current <a href="Toolbar.html#Tolerance">
+	tolerance</a> setting. In many cases, all that needs to be done to select a 
+	given area of the image is to simply click on it.</p>
+	<p>You may think of the Magic Wand as working similarly to the Paint Bucket, 
+	except that instead of filling the area with color it will select that area.</p>
+	<h3><a name="Tolerance"></a>Tolerance</h3>
+	<p>Similar to the <a href="PaintBucket.html">Paint Bucket</a> tool, Magic 
+	Wand&#39;s results can be adjusted by tuning the 
+	<a href="Toolbar.html#Tolerance">tolerance</a>. The effect of adjusting the 
+	tolerance value is shown below:</p>
+	<p align="center">
+		<table>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="center" colspan="2">
+					<img src="../images/MagicWand_tol25.jpg" border="1">
+				</td>
+				<td>&nbsp;</td>
+				<td align="center" colspan="2">
+					<img src="../images/MagicWand_tol50.jpg" border="1">
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td colspan="2" width="1%">
+					Magic Wand with tolerance set to 25%. The selection doesn&#39;t 
+					capture enough of the image: the tolerance is too low.
+				</td>
+				<td>&nbsp;</td>
+				<td colspan="2" width="1%">
+					Magic Wand with tolerance set to 50%. The selection captures 
+					too much of the image: the tolerance is too high.
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+				<td align="center" colspan="3">
+					<img src="../images/MagicWand_tol31.jpg" border="1">
+				</td>
+				<td colspan="2">&nbsp;</td>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+				<td colspan="3" width="1%">
+					Magic Wand with a tolerance value of 31%. The selection 
+					properly captures the area of interest, no more, no less.
+				</td>
+				<td colspan="2">&nbsp;</td>
+			</tr>
+		</table>
+	</p>
+	<h2><a name="AdvancedUse"></a>Advanced Use</h2>
+	<h3><a name="SelectionBuilding"></a>Selection Building</h3>
+	<p>Sometimes it is not possible to select a given region using only one 
+	click. Frequently, getting just the right selection can be difficult when 
+	the desired area is not near one solid color. To make selections like this, 
+	it works well to repeatedly use the Magic Wand with a low tolerance value, 
+	extending the selection each time to capture slightly more of the desired 
+	region with each click.</p>
+	<p align="center">
+		<table>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="center">
+					<img src="../images/MagicWand_Collect1.jpg" border="1">
+				</td>
+				<td>&nbsp;</td>
+				<td align="center">
+					<img src="../images/MagicWand_Collect3.jpg" border="1">
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td colspan="3" width="1%">
+					Magic wand being used multiple times, extending the 
+					selection each time by clicking a new area while holding 
+					Ctrl.
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</p>
+	<h3><a name="SelectionByExclusion"></a>Selection By Exclusion</h3>
+	<p>It also works well to make a basic selection with a tool such as the 
+	lasso tool, then use Magic Wand to refine the selection. This method is 
+	particularly effective when the subject is identified by the lack of fine 
+	detail outside of a given region.</p>
+	<p align="center">
+		<table>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="center">
+					&nbsp;</td>
+				<td align="center">
+					<img src="../images/MagicWand_Exclude1.jpg" border="1">
+				</td>
+				<td>&nbsp;</td>
+				<td align="center">
+					<img src="../images/MagicWand_Exclude2.jpg" border="1">
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td colspan="4" width="1%">
+					An initial selection is made using the lasso tool, then the 
+					Magic Wand tool is used to exclude the area that is not 
+					intended to be selected by clicking in the region to exclude 
+					with the right mouse button. 
+
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</p>
+	<h3><a name="GlobalSelections"></a>Global Selections</h3>
+	<p>The Magic Wand normally limits the selection to only include the areas of 
+	the image that are touching and are of a similar enough color. It is 
+	possible, however, to make a selection based only on color, ignoring all 
+	boundaries and requirements for contiguity. This can be accomplished by 
+	simply holding Shift while performing any of the other Magic Wand tasks 
+	(including selection subtraction and extension).</p>
+	<p align="center">
+			<table>
+				<tr>
+					<td>&nbsp;</td>
+					<td align="center">
+						<img border="1" src="../images/MagicWand_Noncontiguous.png">
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td width="1%">
+						This selection was made by performing a Select All (<a href="EditMenu.html#SelectAll">Edit
+						<font face="Times New Roman">→</font> Select All</a>), 
+						then holding Shift while right clicking to exclude all 
+						black areas of the image. Note that many disconnected 
+						areas of black have been deselected.
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+	</p>
+	<!-- #EndEditable -->
+	<h4><br>
+	<br>
+	</h4>
+	<p align="center">
+	<font color="#808080" size="1">Copyright <font face="Times New Roman">© 2007 </font>
+	Rick Brewster, Tom Jackson, and past contributors. Portions Copyright
+	<font face="Times New Roman">© 2007 </font>Microsoft Corporation. All Rights 
+	Reserved.</font><font size="1"> <br>
+	</font>
+</div>
+</b>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

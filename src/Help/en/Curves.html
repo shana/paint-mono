@@ -1,0 +1,178 @@
+<html>
+
+<!-- #BeginTemplate "pdn_help.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- #BeginEditable "title" -->
+<title>Paint.NET Help - Curves</title>
+<!-- #EndEditable -->
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<body>
+
+<div id="banner">
+	<a href="http://www.getpaint.net/">
+	<img border="0" src="../images/logo.png"></a><p>
+	&nbsp;</div>
+<div id="leftnav">
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="index.html">Overview</a><br>
+		</li>
+		<li><a href="Features.html">Features</a><br>
+		<a href="Tutorials.html">Tutorials</a><br>
+		<a href="WhatsNew.html">What&#39;s New?</a><br>
+		</li>
+	</ul>
+	<h3>Concepts</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="LayersAndBlendModes.html">Layers and Blend Modes</a></li>
+	</ul>
+	<h3>User Interface</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="KeyboardMouseCommands.html">Keyboard &amp; Mouse Commands</a></li>
+		<li><a href="MainWindow.html">Main Window</a></li>
+		<li><a href="ImageList.html">Image List</a></li>
+		<li><a href="MenuBar.html">Menu Bar</a>
+		<ul class="toc">
+			<li><a href="FileMenu.html">File</a></li>
+			<li><a href="EditMenu.html">Edit</a></li>
+			<li><a href="ViewMenu.html">View</a></li>
+			<li><a href="ImageMenu.html">Image</a></li>
+			<li><a href="LayersMenu.html">Layers</a>
+			<ul class="toc">
+				<li class="comment"><a href="RotateZoom.html">Rotate / Zoom</a></li>
+			</ul></li>
+			<li><a href="AdjustmentsMenu.html">Adjustments</a>&nbsp;
+				<ul class="toc">
+				    <li><a href="Curves.html">Curves</a></li>
+					<li><a href="Levels.html">Levels</a></li>
+				</ul></li>
+			<li><a href="EffectsMenu.html">Effects</a></li>
+			<li><a href="WindowMenu.html">Window</a></li>
+			<li><a href="HelpMenu.html">Help</a></li>
+		</ul>
+		</li>
+		<li><a href="Toolbar.html">Toolbar</a></li>
+		<li><a href="ToolsWindow.html">Tools Window</a><ul class="toc">
+			<li><a href="SelectionTools.html">Selection Tools</a></li>
+			<li><a href="MoveTools.html">Move Tools</a><br>
+			<a href="MagicWand.html">Magic Wand</a></li>
+			<li><a href="GradientTool.html">Gradient Tool</a><br>
+			<a href="Paintbrush.html">Paintbrush</a></li>
+			<li><a href="EraserTool.html">Eraser Tool</a></li>
+			<li><a href="PixelTools.html">Pixel Tools</a></li>
+			<li><a href="ShapeTools.html">Shape Tools</a></li>
+			<li><a href="LineCurve.html">Line / Curve Tool</a></li>
+			<li><a href="TextTool.html">Text Tool</a></li>
+			<li><a href="PaintBucket.html">Paint Bucket</a></li>
+			<li><a href="CloneStamp.html">Clone Stamp</a></li>
+			<li><a href="RecolorTool.html">Recolor Tool</a></li>
+		</ul>
+		</li>
+		<li><a href="HistoryWindow.html">History Window</a></li>
+		<li><a href="LayersWindow.html">Layers Window</a></li>
+		<li><a href="ColorsWindow.html">Colors Window</a></li>
+		<li><a href="StatusBar.html">Status Bar</a></li>
+	</ul>
+	</li>
+	<h3>Other</h3>
+	<ul class="toc" style="margin-left: 0; padding-left: 0;">
+		<li><a href="FAQ.html">FAQ (Frequently Asked Questions)</a></li>
+		<li><a href="UnattendedInstallation.html">Unattended Installation</a></li>
+		<li><a href="SystemRequirements.html">System Requirements</a></li>
+		<li><a href="WebLinks.html">Web Links</a></li>
+		<li><a href="License.html">License</a></li>
+	</ul>
+</div>
+<div id="content">
+	<!-- #BeginEditable "content" -->
+	<h2>Curves Adjustment</h2>
+	<p><img align="right" src="Images\CurvesNull.png" />The Curves adjustment 
+	can be used to adjust the colors of an image with a very high degree of 
+	control. Curves allows you to fine tune the intensity of every shade in an 
+	image. In particular, it can be used to highlight or dim only certain ranges 
+	of intensity present in an image in a way that <a href="Levels.html">Levels</a> 
+	and
+	<a href="AdjustmentsMenu.html">Brightness / Contrast</a> cannot.</p>
+	<p>Unlike <a href="Levels.html">Levels</a> and <a href="AdjustmentsMenu.html">
+	Brightness / Contrast</a>, Curves can be used to freely adjust the exactly 
+	how bright each shade of intensity in an image can be. In fact, the colors 
+	of an image can be completely inverted using curves.</p>
+	<h3><a name="Interface"></a>Interface</h3>
+	<p>Curves lets you remaps the colors of and image using control points on a 
+	graph, as shown on the right and in the examples below. When the Curves 
+	dialog first appears, it will have the graph shown on the right. This graph 
+	is simply a function in the mathematical sense. The horizontal values are 
+	the intensity input, and the vertical values are the intensity output.</p>
+	<p>Simply, this means that reshaping the right half of the curve effects the 
+	brighter half of the image, reshaping the left half effects the darker half 
+	of and image. Moving a curve above its default position on the diagonal 
+	guide line will cause the affected areas to brighten, moving a curve below 
+	its default position on the diagonal guide line will cause affected areas to 
+	darken.</p>
+	<p>Control points are used to affect the curve. Control points are added by 
+	clicking anywhere that there is not currently a control point. Control 
+	points may be removed by right-clicking on the desired control point. To 
+	move a control point, simple click and drag the control point to the desired 
+	new location. Note that it is not possible to have two control points 
+	vertically in line with each other, as this would mean that a given 
+	intensity of color would be both brightened and darkened (which isn&#39;t 
+	possible).</p>
+	<p>Below is an example of using Curves to adjust an image. The original 
+	image is shown on the left, and the image adjusted with Curves is shown on 
+	the right. The curve drawn in the Curves adjustment shows that the darker 
+	shades of the image should be darkened and the lighter shades should be 
+	lightened. The result is a picture that has deeper darks and bolder brights, 
+	while still preserving all the definition of the original image. </p>
+	<p align="center"><img src="Images/CurvesLuminosity.png"></p>
+	<p align="center">
+	<img border="1" src="../images/CurvesSampleBase.jpg"> <img border="1" src="../images/CurvesSampleLuminosity.jpg"></p>
+	<h3><a name="MultichannelAdjustments"></a>Multichannel Adjustments</h3>
+	<p>By default, Curves uses the luminosity of an image to adjust the 
+	intensities. Alternatively, this can be performed using the Red, Green, and 
+	Blue channels of an image by selecting &quot;RGB&quot; from the drop down list near 
+	the top of the dialog box.<br>
+	<br>
+	When this mode is selected, new control points will apply to the color 
+	channels selected with the checkboxes near the bottom of the dialog. To work 
+	with an individual channel or pair of channels, simple change which channels 
+	are selected using the checkboxes.</p>
+	<p>The picture below has been adjusted with Curves to increase the contrast 
+	and saturation of the image, and to specifically compensate for the already 
+	saturated portions of the dog&#39;s fur by lowering the intensity of some of the 
+	brighter reds. Note that the image has bolder colors, deeper dark areas, and 
+	does not appear as grey as the original.</p>
+	<p align="center"><img src="Images/CurvesRGB.png"></p>
+	<p align="center"><img border="1" src="../images/CurvesSampleBase.jpg"> <img border="1" src="../images/CurvesSampleRGB.jpg"></p>
+	<h3><a name="OtherPossibilities"></a>Other Possibilities</h3>
+	<p>As stated above, you can even use Curves to invert an image. In the 
+	example below, a picture of a car was adjusted using Curves to produce a 
+	result that is not possible with the other adjustments, such as
+	<a href="Levels.html">Levels</a> or Hue / Saturation:</p>
+	<p align="center"><img src="Images/CurvesExtreme.png"></p>
+	<p align="center">
+	<img border="1" src="../images/CurvesBMWBase.jpg"> <img border="1" src="../images/CurvesBMWExtreme.jpg"></p>
+
+
+
+
+	<!-- #EndEditable -->
+	<h4><br>
+	<br>
+	</h4>
+	<p align="center">
+	<font color="#808080" size="1">Copyright <font face="Times New Roman">© 2007 </font>
+	Rick Brewster, Tom Jackson, and past contributors. Portions Copyright
+	<font face="Times New Roman">© 2007 </font>Microsoft Corporation. All Rights 
+	Reserved.</font><font size="1"> <br>
+	</font>
+</div>
+</b>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
