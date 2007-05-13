@@ -52,6 +52,7 @@ To build it you must:
 
 I *welcome* any contributions along the lines of making this work with plain Makefiles, as it would solve some of the above mentioned problems.
 
+
 = Original Source =
 
 To track the changes and assist us in writing a 'Lessons in Porting' document, the original source code as obtained from http://www.getpaint.net is checked into this directory:
