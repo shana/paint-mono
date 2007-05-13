@@ -663,15 +663,7 @@ namespace PaintDotNet.SystemLayer
 
         public static void ShowComboBox(ComboBox comboBox, bool show)
         {
-            IntPtr hWnd = comboBox.Handle;
-
-            SafeNativeMethods.SendMessageW(
-                hWnd,
-                NativeConstants.CB_SHOWDROPDOWN,
-                show ? new IntPtr(1) : IntPtr.Zero,
-                IntPtr.Zero);
-
-            GC.KeepAlive(comboBox);
+		comboBox.DroppedDown = show;
         }
     }
 }

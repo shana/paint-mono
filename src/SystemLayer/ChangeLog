@@ -1,5 +1,7 @@
 2007-05-12  Miguel de Icaza  <miguel@novell.com>
 
+	* UI.cs: Implement a way simpler ShowComboBox.
+
 	* PdnGraphics.cs: Add patch from Sebastien from 1.0 port. 
 
 	

@@ -2391,7 +2391,7 @@ namespace PaintDotNet
                     }
                 }
 
-                catch (ArgumentException)
+                catch (ArgumentException e)
                 {
                     if (fileName.Length == 0)
                     {
@@ -2399,7 +2399,7 @@ namespace PaintDotNet
                     }
                     else
                     {
-                        Utility.ErrorBox(owner, PdnResources.GetString("LoadImage.Error.ArgumentException"));
+                        Utility.ErrorBox(owner, PdnResources.GetString("LoadImage.Error.ArgumentException") + e.ToString ());
                     }
                 }
 
