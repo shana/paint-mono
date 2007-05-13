@@ -74,3 +74,5 @@ This is the vendor/pdn_src_3_0 branch.
 = Contributing =
 
 If you want to contribute to this effort, please mail me your login information, and I will add you to this project. 
+
+Alternatively, you can contact other members of the administration group.
