@@ -16,11 +16,11 @@ In places that must be revisited in the future (unfinished implementation, stubs
 The port is good enough to start the application, but many features are still not tested and there are many P/Invokes that remain in the source code.   I have not really spent much time trying to test it, but testing will exhibit many features that must be ported to Linux. 
 
 What needs to be done:
-* Test the application.
-* File issues for every issue found.
-** If it is a Paint.Net issue, file in http://code.google.com/p/paint-mono/issues/list
-** If it is a Mono issue, file in http://www.mono-project.com/Bugs
-* Provide fixes in either Paint.NET or Mono's Windows.Form implementation.
+    * Test the application.
+    * File issues for every issue found.
+        * If it is a Paint.Net issue, file in http://code.google.com/p/paint-mono/issues/list
+        * If it is a Mono issue, file in http://www.mono-project.com/Bugs
+    * Provide fixes in either Paint.NET or Mono's Windows.Form implementation.
 
 Repeat until we are done, and the application is working like a charm.
 
