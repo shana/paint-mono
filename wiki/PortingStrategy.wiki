@@ -24,13 +24,20 @@ There are a number of cases where Paint.NET is using P/Invoke, in some cases it 
 In some other cases the P/Invokes are used to call into features in the various Windows.Forms controls that is not exposed in the Windows.Forms API but is part of the underlying Win32 control.   In these cases, sometimes the functionality is also part of the internals of Mono's Managed Windows.Forms implementation.   In those cases you can access the internal features by using Reflection and Invoke, for example, consider this code that replaces the call to P/Invoke with an internal call
 
 {{{
-	MethodInfo drop_down = typeof (ComboBox).GetMethod ("DropDownListBox", BindingFlags.Instance|BindingFlags.NonPublic);
+	MethodInfo drop_down = typeof (ComboBox).GetMethod ("DropDownListBox",
+                BindingFlags.Instance|BindingFlags.NonPublic);
 	if (drop_down == null){
 		Console.WriteLine ("ShowComboBox: Warning, no DropDownlistBox found");
 		return;
 	}
 	drop_down.Invoke (comboBox, new object [0]);
 }}}
+
+This was just an illustration, a better way is to just call the method that takes care of this on the comboBox:
+{{{
+        comboBox.Dropped = value;
+}}}
+
 == Directions ==
 
 The port is good enough to start the application, but many features are still not tested and there are many P/Invokes that remain in the source code.   I have not really spent much time trying to test it, but testing will exhibit many features that must be ported to Linux. 
