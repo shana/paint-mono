@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -630,7 +630,7 @@ namespace PaintDotNet
         private object tag = null;
 
         /// <summary>
-        /// Reports the version of Paint.NET that this file was saved with.
+        /// Reports the version of Mono Paint that this file was saved with.
         /// This is reset when SaveToStream is used. This can be used to
         /// determine file format compatibility if necessary.
         /// </summary>
@@ -1375,7 +1375,7 @@ namespace PaintDotNet
             XmlDocument headerXml = null;
             if (pdn21Format)
             {
-                // This is a Paint.NET v2.1+ file.  
+                // This is a Mono Paint v2.1+ file.  
                 int low = stream.ReadByte();
 
                 if (low == -1)
@@ -1456,7 +1456,7 @@ namespace PaintDotNet
             }
             else
             {
-                throw new FormatException("file is not a valid Paint.NET document");
+                throw new FormatException("file is not a valid Mono Paint document");
             }
 
             document = (Document)docObject;

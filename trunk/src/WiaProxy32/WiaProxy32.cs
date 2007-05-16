@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -18,13 +18,13 @@ namespace WiaProxy32
 {
     class WiaProxy32
     {
-        const string helpText = @"WiaProxy32 for Paint.NET
+        const string helpText = @"WiaProxy32 for Mono Paint
 
 Purpose:
-Paint.NET uses the Windows Image Acquisition Automation Layer, which is
+Mono Paint uses the Windows Image Acquisition Automation Layer, which is
 contained in wiaaut.dll. This DLL requires Windows XP SP1 or newer. However,
 try as we might we could not find a 64-bit version of this DLL. So, in order
-to get printing and scanning for 64-bit Paint.NET, we have implemented this
+to get printing and scanning for 64-bit Mono Paint, we have implemented this
 out-of-process proxy for wiaaut.dll that implements the functionality
 required by the PaintDotNet.SystemLayer.ScanningAndPrinting class.
 

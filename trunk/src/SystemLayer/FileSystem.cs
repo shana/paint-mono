@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -550,7 +550,7 @@ namespace PaintDotNet.SystemLayer
         {
             // Determine root path of where we store our persisted data
             string localSettingsDir = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            string tempDirRoot = Path.Combine(localSettingsDir, "Paint.NET");
+            string tempDirRoot = Path.Combine(localSettingsDir, "Mono Paint");
 
             DirectoryInfo tempDirRootInfo = new DirectoryInfo(tempDirRoot);
 

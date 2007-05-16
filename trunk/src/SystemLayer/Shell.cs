@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -24,7 +24,7 @@ namespace PaintDotNet.SystemLayer
     public static class Shell
     {
         /// <summary>
-        /// Repairs the installation of Paint.NET by replacing any files that have gone missing.
+        /// Repairs the installation of Mono Paint by replacing any files that have gone missing.
         /// This method should only be called after it has been determined that the files are missing,
         /// and not as a way to determine which files are missing.
         /// This is used, for instance, if the resource files, such as PaintDotNet.Strings.3.resources,
@@ -67,12 +67,12 @@ namespace PaintDotNet.SystemLayer
                 {
                     MessageBox.Show(
                         null,
-                        "Paint.NET has detected that some important installation files are missing. Repairing " +
+                        "Mono Paint has detected that some important installation files are missing. Repairing " +
                         "this requires administrator privilege. Please run the 'PdnRepair.exe' program in the installation " +
                         "directory after logging in with a user that has administrator privilege." + Environment.NewLine + 
                         Environment.NewLine + 
                         "The missing files are: " + missingFilesSB.ToString(),
-                        "Paint.NET",
+                        "Mono Paint",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
 
@@ -82,14 +82,14 @@ namespace PaintDotNet.SystemLayer
                 const int hMargin = 8;
                 const int vMargin = 8;
                 Form form = new Form();
-                form.Text = "Paint.NET";
+                form.Text = "Mono Paint";
                 form.ClientSize = new Size(400, 10);
                 form.StartPosition = FormStartPosition.CenterScreen;
 
                 Label infoLabel = new Label();
                 form.Controls.Add(infoLabel);
                 infoLabel.Text = 
-                    "Paint.NET has detected that some important installation files are missing. If you click " +
+                    "Mono Paint has detected that some important installation files are missing. If you click " +
                     "the Repair button it will attempt to repair this and then continue loading." + Environment.NewLine + 
                     Environment.NewLine +
                     "The missing files are: " + missingFilesSB.ToString();
@@ -229,16 +229,16 @@ namespace PaintDotNet.SystemLayer
             /// <summary>
             /// Returns immediately after executing without waiting for the task to finish.
             /// However, another task will be spawned that will wait for the requested task
-            /// to finish, and it will then relaunch Paint.NET if the task was successful.
-            /// This is only intended to be used by the Paint.NET updater so that it can
-            /// relaunch Paint.NET with the same user and privilege-level that initiated
+            /// to finish, and it will then relaunch Mono Paint if the task was successful.
+            /// This is only intended to be used by the Mono Paint updater so that it can
+            /// relaunch Mono Paint with the same user and privilege-level that initiated
             /// the update.
             /// </summary>
             RelaunchPdnOnExit
         }
 
         /// <summary>
-        /// Uses the shell to execute the command. This method must only be used by Paint.NET
+        /// Uses the shell to execute the command. This method must only be used by Mono Paint
         /// and not by plugins.
         /// </summary>
         /// <param name="parent">
@@ -437,7 +437,7 @@ namespace PaintDotNet.SystemLayer
         /// </summary>
         /// <remarks>
         /// This method will not present an error dialog if the URL could not be launched.
-        /// Note: This method must only be used by Paint.NET, and not any plugins. It may
+        /// Note: This method must only be used by Mono Paint, and not any plugins. It may
         /// change or be removed in future versions.
         /// </remarks>
         public static bool LaunchUrl(IWin32Window owner, string url)
@@ -456,7 +456,7 @@ namespace PaintDotNet.SystemLayer
             return true;
         }
 
-        [Obsolete("Use PdnInfo.OpenUrl() instead. Shell.LaunchUrl() must only be used by Paint.NET code, not by plugins.", true)]
+        [Obsolete("Use PdnInfo.OpenUrl() instead. Shell.LaunchUrl() must only be used by Mono Paint code, not by plugins.", true)]
         public static bool OpenUrl(IWin32Window owner, string url)
         {
             return LaunchUrl(owner, url);

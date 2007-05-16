@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -97,9 +97,9 @@ namespace PaintDotNet
             Console.WriteLine("exit code was " + dwExitCode);
 
             // Retrieve paint.net's location from the registry
-            Console.Write(@"Retrieving install directory from registry, HKLM \ Software \ Paint.NET \ TARGETDIR ... ");
+            Console.Write(@"Retrieving install directory from registry, HKLM \ Software \ Mono Paint \ TARGETDIR ... ");
 
-            const string subKeyName = @"SOFTWARE\Paint.NET";
+            const string subKeyName = @"SOFTWARE\Mono Paint";
             RegistryKey key = Registry.LocalMachine.OpenSubKey(subKeyName, false);
 
             if (key == null)

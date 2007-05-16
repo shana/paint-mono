@@ -47,11 +47,11 @@ namespace PaintDotNet
 
         // Fallback strings are used in case the resources file is unavailable.
         public const string CrashLogHeaderTextFormatFallback =
-            @"This text file was created because Paint.NET crashed.
+            @"This text file was created because Mono Paint crashed.
 Please e-mail this file to {0} so we can diagnose and fix the problem.
 ";
 
         public const string StartupUnhandledErrorFormatFallback =
-            "There was an unhandled error, and Paint.NET must be closed. Refer to the file '{0}', which has been placed on your desktop, for more information.";
+            "There was an unhandled error, and Mono Paint must be closed. Refer to the file '{0}', which has been placed on your desktop, for more information.";
     }
 }

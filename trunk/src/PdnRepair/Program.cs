@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -83,7 +83,7 @@ namespace PdnRepair
             bool success = true;
             int returnVal = 0;
 
-            Console.WriteLine("Paint.NET Repair Tool");
+            Console.WriteLine("Mono Paint Repair Tool");
             Console.WriteLine();
 
             if (success)
@@ -104,8 +104,8 @@ namespace PdnRepair
             RegistryKey key = null;
             if (success)
             {
-                Console.Write(@"* Opening registry key, HKEY_LOCAL_MACHINE\SOFTWARE\Paint.NET: ");
-                key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Paint.NET", false);
+                Console.Write(@"* Opening registry key, HKEY_LOCAL_MACHINE\SOFTWARE\Mono Paint: ");
+                key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Mono Paint", false);
 
                 if (key != null)
                 {
