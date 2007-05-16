@@ -21,7 +21,7 @@ namespace PaintDotNet
         public const string CopyrightFormat = 
             "Copyright © 2007 Rick Brewster, Tom Jackson, and past contributors. Portions Copyright © 2007 Microsoft Corporation. {0}";
 
-        public const string FeedbackEmail = "paint.net@hotmail.com";
+        public const string FeedbackEmail = "mono-paint-port@groups.google.com";
 
         public const string WebsiteUrl = "http://www.getpaint.net";
 
