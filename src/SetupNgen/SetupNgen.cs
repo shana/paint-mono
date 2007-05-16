@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -521,7 +521,7 @@ namespace PaintDotNet
 
                 string linkName = PaintDotNet.PdnResources.GetString("Setup.DesktopShortcut.LinkName");
                 string description = PaintDotNet.PdnResources.GetString("Setup.DesktopShortcut.Description");
-                string desktopLinkPath = Path.Combine(desktopDir, linkName) + ".lnk"; // if we just use ChangeExtension it will overwrite the .NET part of Paint.NET :)
+                string desktopLinkPath = Path.Combine(desktopDir, linkName) + ".lnk"; // if we just use ChangeExtension it will overwrite the .NET part of Mono Paint :)
                 string programsShortcutDir = Path.Combine(programsDir, programsShortcutGroup);
                 string programsLinkPath = Path.Combine(programsShortcutDir, linkName) + ".lnk";
                 string workingDirectory = PdnInfo.GetApplicationDir();
@@ -551,7 +551,7 @@ namespace PaintDotNet
                 
                 // Programs shortcut
                 const string programsShortcutPathKey = "ProgramsShortcutPath";
-                const string pdnKey = @"SOFTWARE\Paint.NET";
+                const string pdnKey = @"SOFTWARE\Mono Paint";
                     
                 if (delete && !skipCleanup)
                 {
@@ -625,7 +625,7 @@ namespace PaintDotNet
                 const string shellExtensionGuid = "{D292F82A-50BE-4351-96CC-E86F3F8049DA}";
                 const string regKeyName = @"CLSID\" + shellExtensionGuid;
                 const string regKeyWow64Name = @"Wow6432Node\" + regKeyName;
-                const string shellExtension_regName = "Paint.NET Shell Extension";
+                const string shellExtension_regName = "Mono Paint Shell Extension";
                 const string inProcServer32 = "InProcServer32";
                 const string threadingModel = "ThreadingModel";
                 const string apartment = "Apartment";

@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -28,7 +28,7 @@ namespace PaintDotNet.SystemLayer
     public sealed class Settings
         : ISimpleCollection<string, string>
     {
-        private const string hkcuKey = @"SOFTWARE\Paint.NET";
+        private const string hkcuKey = @"SOFTWARE\Mono Paint";
 
         public static readonly Settings SystemWide = new Settings(Microsoft.Win32.Registry.LocalMachine);
         public static readonly Settings CurrentUser = new Settings(Microsoft.Win32.Registry.CurrentUser);

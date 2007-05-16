@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -21,10 +21,10 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("Paint.NET Resources")]
+[assembly: AssemblyTitle("Mono Paint Resources")]
 [assembly: AssemblyDescription("Image and photo editing software written in C#.")]
-[assembly: AssemblyCompany("Paint.NET Team")]
-[assembly: AssemblyProduct("Paint.NET")]
+[assembly: AssemblyCompany("Mono Paint Team")]
+[assembly: AssemblyProduct("Mono Paint")]
 [assembly: AssemblyCopyright("Copyright © 2007 Rick Brewster, Tom Jackson, and past contributors. Portions Copyright © 2007 Microsoft Corporation. All Rights Reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -43,7 +43,7 @@ using System.Runtime.InteropServices;
 
 // Change this to say "Final" for final builds. Otherwise the titlebar will contain
 // a long version string. Final versions should just say the ApplicationProduct
-// attribute (i.e., "Paint.NET" instead of "Paint.NET (Beta 2 build: 1.0.*.*)"
+// attribute (i.e., "Mono Paint" instead of "Paint.NET (Beta 2 build: 1.0.*.*)"
 // Use this to hold the current milestone title, such as "Milestone 2" or "Beta 3"
 [assembly: AssemblyConfiguration("Final")]
 

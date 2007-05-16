@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -15,10 +15,10 @@ using System.Runtime.CompilerServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("Paint.NET Setup Front-End")]
+[assembly: AssemblyTitle("Mono Paint Setup Front-End")]
 [assembly: AssemblyDescription("Image and photo editing software written in C#.")]
-[assembly: AssemblyCompany("Paint.NET Team")]
-[assembly: AssemblyProduct("Paint.NET")]
+[assembly: AssemblyCompany("Mono Paint Team")]
+[assembly: AssemblyProduct("Mono Paint")]
 [assembly: AssemblyCopyright("Copyright © 2007 Rick Brewster, Tom Jackson, and past contributors. Portions Copyright © 2007 Microsoft Corporation. All Rights Reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

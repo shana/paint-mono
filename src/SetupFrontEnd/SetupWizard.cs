@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Paint.NET                                                                   //
+// Mono Paint                                                                   //
 // Copyright (C) Rick Brewster, Tom Jackson, and past contributors.            //
 // Portions Copyright (C) Microsoft Corporation. All Rights Reserved.          //
 // See src/Resources/Files/License.txt for full licensing and attribution      //
@@ -32,8 +32,8 @@ namespace PaintDotNet.Setup
     public class SetupWizard 
         : System.Windows.Forms.Form
     {
-        private const string mutexName = "Paint.NET.SetupWizard";
-        private const string regSubKey = @"SOFTWARE\Paint.NET";
+        private const string mutexName = "Mono Paint.SetupWizard";
+        private const string regSubKey = @"SOFTWARE\Mono Paint";
 
         private Button nextButton;
         private Button backButton;
@@ -874,14 +874,14 @@ namespace PaintDotNet.Setup
                     setupWizard.ShowDialog();
                 }
 
-                // When we do an update, Paint.NET launches our installer with the /restartPdnOnExit
-                // flag. This tells us to run Paint.NET when the update is finished. This accomplishes
+                // When we do an update, Mono Paint launches our installer with the /restartPdnOnExit
+                // flag. This tells us to run Mono Paint when the update is finished. This accomplishes
                 // two things:
                 //
                 // 1. Adds a slight amount of continuity for the user. When they're installing an update
-                //    they'll probably want to start-up Paint.NET right away. So we do it for them.
+                //    they'll probably want to start-up Mono Paint right away. So we do it for them.
                 // 2. Cleans up (deletes) the downloaded setup file. Otherwise, the user has to make sure
-                //    that they immediately re-run Paint.NET under the same user account in order to
+                //    that they immediately re-run Mono Paint under the same user account in order to
                 //    clean this up.
                 // 
                 // #2 does introduce a slight race condition, so PaintDotNet.exe will actually retry
