@@ -143,6 +143,9 @@ namespace PaintDotNet.Updates
         /// </remarks>
         public static bool ShouldCheckForUpdates()
         {
+	    Console.WriteLine ("PORT: Have not implemented ShouldCheckForUpdates");
+	    return false;
+
             bool shouldCheckForUpdates;
             bool autoCheckForUpdates = ("1" == Settings.SystemWide.GetString(PdnSettings.AutoCheckForUpdates, "0"));
 
