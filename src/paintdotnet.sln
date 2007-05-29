@@ -1,37 +1,37 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 9.00
 #MonoDevelop
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "./Resources/Resources.csproj", "{0B173113-1F9B-4939-A62F-A176336F13AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources/Resources.csproj", "{0B173113-1F9B-4939-A62F-A176336F13AC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AE3E7C54-B864-4C89-9CC1-89DBE2042E02} = {AE3E7C54-B864-4C89-9CC1-89DBE2042E02}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "paintdotnet", "./paintdotnet.csproj", "{34920450-488E-41DF-8565-AA22C2A56902}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "paintdotnet", "paintdotnet.csproj", "{34920450-488E-41DF-8565-AA22C2A56902}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2E4E8805-00F7-4B18-A967-C23994BBCE75} = {2E4E8805-00F7-4B18-A967-C23994BBCE75}
 		{446DDC4A-1CC8-4F55-BDF2-21BB387574D1} = {446DDC4A-1CC8-4F55-BDF2-21BB387574D1}
 		{E37739E9-1A6D-4252-81CD-148379AD0832} = {E37739E9-1A6D-4252-81CD-148379AD0832}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StylusReader", "./StylusReader/StylusReader.csproj", "{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StylusReader", "StylusReader/StylusReader.csproj", "{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemLayer", "./SystemLayer/SystemLayer.csproj", "{80572820-93A5-4278-A513-D902BEA2639C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemLayer", "SystemLayer/SystemLayer.csproj", "{80572820-93A5-4278-A513-D902BEA2639C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdnRepair", "./PdnRepair/PdnRepair.csproj", "{D4BEAD6A-0A65-4FAC-9ECE-B6A71EA5A884}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdnRepair", "PdnRepair/PdnRepair.csproj", "{D4BEAD6A-0A65-4FAC-9ECE-B6A71EA5A884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdnLib", "./PdnLib/PdnLib.csproj", "{1EADE568-A866-4DD4-9898-0A151E3F0E26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdnLib", "PdnLib/PdnLib.csproj", "{1EADE568-A866-4DD4-9898-0A151E3F0E26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Help", "./Help/Help.csproj", "{056DF4A6-8466-4D9D-81F9-F65283126285}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Help", "Help/Help.csproj", "{056DF4A6-8466-4D9D-81F9-F65283126285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effects", "./Effects/Effects.csproj", "{2E4E8805-00F7-4B18-A967-C23994BBCE75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effects", "Effects/Effects.csproj", "{2E4E8805-00F7-4B18-A967-C23994BBCE75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "./Data/Data.csproj", "{66681BB0-955D-451D-A466-94C045B1CF4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data/Data.csproj", "{66681BB0-955D-451D-A466-94C045B1CF4A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6D06E18A-6A4A-49FF-BB33-2C722D051BE8} = {6D06E18A-6A4A-49FF-BB33-2C722D051BE8}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiaProxy32", "./WiaProxy32/WiaProxy32.csproj", "{446DDC4A-1CC8-4F55-BDF2-21BB387574D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiaProxy32", "WiaProxy32/WiaProxy32.csproj", "{446DDC4A-1CC8-4F55-BDF2-21BB387574D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources.mui", "./Resources.mui/Resources.mui.csproj", "{5ED3F986-A73E-44C5-AC1A-BD101472CB01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources.mui", "Resources.mui/Resources.mui.csproj", "{5ED3F986-A73E-44C5-AC1A-BD101472CB01}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6D06E18A-6A4A-49FF-BB33-2C722D051BE8} = {6D06E18A-6A4A-49FF-BB33-2C722D051BE8}
 	EndProjectSection

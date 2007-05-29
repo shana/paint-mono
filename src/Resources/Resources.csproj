@@ -28,7 +28,7 @@
     </UpgradeBackupLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>./bin/Debug/</OutputPath>
+    <OutputPath>bin/Debug</OutputPath>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <BaseAddress>331350016</BaseAddress>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
@@ -55,7 +55,7 @@
     <AssemblyName>PaintDotNet.Resources</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>./bin/Release/</OutputPath>
+    <OutputPath>bin/Release</OutputPath>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <BaseAddress>331350016</BaseAddress>
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
