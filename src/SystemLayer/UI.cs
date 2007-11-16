@@ -72,23 +72,7 @@ namespace PaintDotNet.SystemLayer
         /// </remarks>
         public static void EnableDpiAware()
         {
-            if (OS.IsVistaOrLater)
-            {
-                try
-                {
-                    bool bResult = SafeNativeMethods.SetProcessDPIAware();
-
-                    if (!bResult)
-                    {
-                        NativeMethods.ThrowOnWin32Error("SetProcessDPIAware() returned false");
-                    }
-                }
-
-                catch (Exception)
-                {
-                    // Ignore any error
-                }
-            }
+			// Nothing on Linux for now.
         }
 
         /// <summary>
@@ -221,21 +205,7 @@ namespace PaintDotNet.SystemLayer
         // Based off code found here: http://vbnet.mvps.org/index.html?code/hooks/fileopensavedlghooklvview.htm
         private static void EnableThumbnailView(FileDialog ofd)
         {
-            // HACK: Must verify this still works with each new revision of .NET
-            Type ofdType = typeof(FileDialog);
-            FieldInfo fi = ofdType.GetField("dialogHWnd", BindingFlags.Instance | BindingFlags.NonPublic);
-
-            if (fi != null)
-            {
-                object dialogHWndObject = fi.GetValue(ofd);
-                IntPtr dialogHWnd = (IntPtr)dialogHWndObject;
-                IntPtr hwndLV = SafeNativeMethods.FindWindowExW(dialogHWnd, IntPtr.Zero, "SHELLDLL_DefView", null);
-
-                if (hwndLV != IntPtr.Zero)
-                {
-                    SafeNativeMethods.SendMessageW(hwndLV, NativeConstants.WM_COMMAND, new IntPtr(NativeConstants.SHVIEW_THUMBNAIL), IntPtr.Zero);
-                }
-            }
+            
         }
 
         private delegate void EtvDelegate(FileDialog ofd);
@@ -293,25 +263,6 @@ namespace PaintDotNet.SystemLayer
             Disabled
         }
 
-        private static IntPtr OpenTheme(Control hostControl)
-        {
-            IntPtr hTheme;
-            IntPtr hModule = SafeNativeMethods.LoadLibraryW("uxtheme.dll");
-
-            if (hModule == IntPtr.Zero)
-            {
-                hTheme = IntPtr.Zero;
-            }
-            else
-            {
-                hTheme = SafeNativeMethods.OpenThemeData(hostControl.Handle, "Button");
-                SafeNativeMethods.FreeLibrary(hModule);
-            }
-
-            GC.KeepAlive(hostControl);
-            return hTheme;
-        }
-
         // TODO: Use VisualStyles stuff in .NET 2.0 instead
         /// <summary>
         /// Draws a button in the appropriate system theme (Aero vs. Luna vs. Classic).
@@ -328,54 +279,7 @@ namespace PaintDotNet.SystemLayer
             int height, 
             UI.ButtonState state)
         {
-            IntPtr hTheme = OpenTheme(hostControl);
-
-            if (hTheme != IntPtr.Zero)
-            {
-                NativeStructs.RECT rect = new NativeStructs.RECT();
-                rect.left = x;
-                rect.top = y;
-                rect.right = x + width;
-                rect.bottom = y + height;
-
-                int iState;
-                switch (state)
-                {
-                    case UI.ButtonState.Disabled:
-                        iState = NativeConstants.PBS_DISABLED;
-                        break;
-
-                    case UI.ButtonState.Hot:
-                        iState = NativeConstants.PBS_HOT;
-                        break;
-
-                    default:
-                    case UI.ButtonState.Normal:
-                        iState = NativeConstants.PBS_NORMAL;
-                        break;
-
-                    case UI.ButtonState.Pressed:
-                        iState = NativeConstants.PBS_PRESSED;
-                        break;
-                }
-
-                IntPtr hdc = g.GetHdc();
-
-                SafeNativeMethods.DrawThemeBackground(
-                    hTheme,
-                    hdc,
-                    NativeConstants.BP_PUSHBUTTON,
-                    iState,
-                    ref rect,
-                    ref rect);
-
-                g.ReleaseHdc(hdc);
-
-                SafeNativeMethods.CloseThemeData(hTheme);
-                hTheme = IntPtr.Zero;
-            }
-            else
-            {
+            
                 System.Windows.Forms.ButtonState swfState;
 
                 switch (state)
@@ -396,7 +300,7 @@ namespace PaintDotNet.SystemLayer
                 }
 
                 ControlPaint.DrawButton(g, x, y, width, height, swfState);
-            }
+            
 
             GC.KeepAlive(hostControl);
         }
@@ -421,13 +325,14 @@ namespace PaintDotNet.SystemLayer
         /// </remarks>
         private static void SetControlRedrawImpl(Control control, bool enabled)
         {
-		if (ywarn_shown)
-			return;
-		Console.WriteLine ("UI.SetControlRedrawImpl: Not implemented");
-		ywarn_shown = true;
-	}
-	static bool ywarn_shown;
-	    
+			if (ywarn_shown)
+				return;
+			Console.WriteLine ("UI.SetControlRedrawImpl: Not implemented");
+			ywarn_shown = true;
+		}
+	
+		static bool ywarn_shown;
+	    	
         private static Dictionary<Control, int> controlRedrawStack = new Dictionary<Control, int>();
 
         /// <summary>
@@ -565,7 +470,7 @@ namespace PaintDotNet.SystemLayer
 #endif
 		return new Rectangle[1] { new Rectangle(0, 0, control.Width, control.Height) };
         }
-	static bool xwarn_shown;
+		static bool xwarn_shown;
 
         /// <summary>
         /// Sets a form's opacity.
@@ -583,7 +488,7 @@ namespace PaintDotNet.SystemLayer
                 throw new ArgumentOutOfRangeException("opacity", "must be in the range [0, 1]");
             }
 
-	    form.Opacity = opacity;
+			form.Opacity = opacity;
 	    
         }
 
@@ -630,8 +535,17 @@ namespace PaintDotNet.SystemLayer
             }
         }
 
+		static bool warn_enable_shield_shown = false;
+		
         public static void EnableShield(Button button, bool enableShield)
         {
+			if (!warn_enable_shield_shown){
+				Console.WriteLine ("EnableShieldButton not implemented");
+				warn_enable_shield_shown = true;
+				return;
+			}
+			
+#if false
             IntPtr hWnd = button.Handle;
 
             SafeNativeMethods.SendMessageW(
@@ -641,29 +555,33 @@ namespace PaintDotNet.SystemLayer
                 enableShield ? new IntPtr(1) : IntPtr.Zero);
 
             GC.KeepAlive(button);
+#endif
         }
 
         // TODO: get rid of this somehow! (this will happen when Layers window is rewritten, post-3.0)
         public static bool HideHorizontalScrollBar(Control c)
         {
-		if (!warn_shown){
-			Console.WriteLine ("PORT: HideHorizontalScrollBar missing");
-			warn_shown = true;
-		}
-		return true;
+			if (!warn_shown){		
+				Console.WriteLine ("PORT: HideHorizontalScrollBar missing");
+				warn_shown = true;
+			}	
+			return true;
         }
         static bool warn_shown;
 
         public static void RestoreWindow(IWin32Window window)
         {
+#if false
             IntPtr hWnd = window.Handle;
             SafeNativeMethods.ShowWindow(hWnd, NativeConstants.SW_RESTORE);
             GC.KeepAlive(window);
+#endif
+			Console.WriteLine ("PORT: RestoreWindow not implemented");
         }
 
         public static void ShowComboBox(ComboBox comboBox, bool show)
-        {
-		comboBox.DroppedDown = show;
+		{
+			comboBox.DroppedDown = show;
         }
     }
 }
