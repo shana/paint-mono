@@ -7,6 +7,8 @@
 // .                                                                           //
 /////////////////////////////////////////////////////////////////////////////////
 
+// Unix port Copyright 2007 Novell, Inc.
+
 using Microsoft.Win32;
 using System;
 using System.ComponentModel;
@@ -18,6 +20,8 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace PaintDotNet.SystemLayer
 {
@@ -177,31 +181,7 @@ namespace PaintDotNet.SystemLayer
         /// </remarks>
         public static void BrowseFolder(IWin32Window parent, string folderPath)
         {
-            NativeStructs.SHELLEXECUTEINFO sei = new NativeStructs.SHELLEXECUTEINFO();
-
-            sei.cbSize = (uint)Marshal.SizeOf(typeof(NativeStructs.SHELLEXECUTEINFO));
-            sei.fMask = NativeConstants.SEE_MASK_NO_CONSOLE;
-            sei.lpVerb = "open";
-            sei.lpFile = folderPath;
-            sei.nShow = NativeConstants.SW_SHOWNORMAL;
-            sei.hwnd = parent.Handle;
-
-            bool bResult = NativeMethods.ShellExecuteExW(ref sei);
-
-            if (bResult)
-            {
-                if (sei.hProcess != IntPtr.Zero)
-                {
-                    SafeNativeMethods.CloseHandle(sei.hProcess);
-                    sei.hProcess = IntPtr.Zero;
-                }
-            }
-            else
-            {
-                NativeMethods.ThrowOnWin32Error("ShellExecuteW returned FALSE");
-            }
-
-            GC.KeepAlive(parent);
+			Process.Start ("xdg-open", folderPath);
         }
 
         [Obsolete("Do not use this method.", true)]
@@ -303,104 +283,20 @@ namespace PaintDotNet.SystemLayer
                 throw new SecurityException("Executable requires administrator privilege, but user is not an administrator and cannot elevate");
             }
 
-            NativeStructs.SHELLEXECUTEINFO sei = new NativeStructs.SHELLEXECUTEINFO();
-            sei.cbSize = (uint)Marshal.SizeOf(typeof(NativeStructs.SHELLEXECUTEINFO));
-
-            sei.fMask =
-                NativeConstants.SEE_MASK_NOCLOSEPROCESS |
-                NativeConstants.SEE_MASK_NO_CONSOLE |
-                NativeConstants.SEE_MASK_FLAG_DDEWAIT;
-
-            if (requireAdmin && !Security.IsAdministrator)
-            {
-                sei.lpVerb = runAs;
-            }
-
-            string dir;
-
-            try
-            {
-                dir = Path.GetDirectoryName(exePath);
-            }
-
-            catch (Exception)
-            {
-                dir = null;
-            }
-
-            sei.lpDirectory = dir;
-
-            sei.lpFile = exePath;
-            sei.lpParameters = args;
-            sei.nShow = NativeConstants.SW_SHOWNORMAL;
-
-            if (parent != null)
-            {
-                sei.hwnd = parent.Handle;
-            }
-
-            string updateMonitorExePath = null;
-            if (executeWaitType == ExecuteWaitType.RelaunchPdnOnExit)
-            {
-                RelaunchPdnHelperPart1(out updateMonitorExePath);
-            }
-
-            bool bResult = NativeMethods.ShellExecuteExW(ref sei);
-
-            if (bResult)
-            {
-                if (executeWaitType == ExecuteWaitType.WaitForExit)
-                {
-                    SafeNativeMethods.WaitForSingleObject(sei.hProcess, NativeConstants.INFINITE);
-                }
-                else if (executeWaitType == ExecuteWaitType.RelaunchPdnOnExit)
-                {
-                    bool bResult2 = SafeNativeMethods.SetHandleInformation(
-                        sei.hProcess, 
-                        NativeConstants.HANDLE_FLAG_INHERIT, 
-                        NativeConstants.HANDLE_FLAG_INHERIT);
-
-                    RelaunchPdnHelperPart2(updateMonitorExePath, sei.hProcess);
-
-                    // Ensure that we don't close the process handle right away in the next few lines of code.
-                    // It must be inherited by the child process.
-                    sei.hProcess = IntPtr.Zero; 
-                }
-                else if (executeWaitType == ExecuteWaitType.ReturnImmediately)
-                {
-                }
-
-                if (sei.hProcess != IntPtr.Zero)
-                {
-                    SafeNativeMethods.CloseHandle(sei.hProcess);
-                    sei.hProcess = IntPtr.Zero;
-                }
-            }
-            else
-            {
-                int dwError = Marshal.GetLastWin32Error();
-
-                if (dwError != NativeConstants.ERROR_CANCELLED)
-                {
-                    NativeMethods.ThrowOnWin32Error("ShellExecuteW returned FALSE");
-                }
-
-                if (updateMonitorExePath != null)
-                {
-                    try
-                    {
-                        File.Delete(updateMonitorExePath);
-                    }
-
-                    catch (Exception)
-                    {
-                    }
-
-                    updateMonitorExePath = null;
-                }
-            }
-
-            GC.KeepAlive(parent);
+			switch (executeWaitType){
+			case ExecuteWaitType.ReturnImmediately:
+				Process.Start (exePath, args);
+				return;
+				
+			case ExecuteWaitType.RelaunchPdnOnExit:
+				Console.WriteLine ("PORT: Execute does not support RelaunchPdnOnExit yet"); 
+				goto case ExecuteWaitType.WaitForExit;
+				
+			case ExecuteWaitType.WaitForExit:	
+				Process child = Process.Start (exePath, args);
+				child.WaitForExit ();
+				return;
+			}
         }
 
         private static void RelaunchPdnHelperPart1(out string updateMonitorExePath)
@@ -442,17 +338,8 @@ namespace PaintDotNet.SystemLayer
         /// </remarks>
         public static bool LaunchUrl(IWin32Window owner, string url)
         {
-            try
-            {
-                Execute(owner, "\"" + url + "\"", null, false, ExecuteWaitType.ReturnImmediately);
-            }
-
-            catch (Exception ex)
-            {
-                Tracing.Ping("Exception while launching url, '" + url + "':" + ex.ToString());
-                return false;
-            }
-
+			Process.Start ("xdg-open", url);
+            
             return true;
         }
 
@@ -462,24 +349,71 @@ namespace PaintDotNet.SystemLayer
             return LaunchUrl(owner, url);
         }
 
+		public static XmlNode make (XmlDocument d, string name, string value)
+		{
+			XmlNode e = d.CreateElement (name);
+			e.InnerText = value;
+			return e;
+		}
+
+		//
+		// This is a hack, we should be probing the file for its type
+		// but this will do for now
+		//
+		public static string GetMimeType (string filename)
+		{
+			Console.WriteLine ("PORT: GetMimeType is lame, its using the extension for the values, instead of probing the file");
+			
+			string s = filename.ToLower ();
+			switch (Path.GetExtension (s)){
+			case "png":
+				return "image/png";
+			case "jpg":
+			case "jpeg":
+			case "jpe":
+				return "image/jpeg";
+			case "gif":
+				return "image/gif";
+			case "tiff":
+				return "image/tiff";
+			case "bmp":
+				return "image/bmp";
+			}
+			return "image/generic";
+		}
+		
         public static void AddToRecentDocumentsList(string fileName)
         {
-            IntPtr bstrFileName = IntPtr.Zero;
-
-            try
-            {
-                bstrFileName = Marshal.StringToBSTR(fileName);
-                NativeMethods.SHAddToRecentDocs(NativeConstants.SHARD_PATHW, bstrFileName);
-            }
-
-            finally
-            {
-                if (bstrFileName != IntPtr.Zero)
-                {
-                    Marshal.FreeBSTR(bstrFileName);
-                    bstrFileName = IntPtr.Zero;
-                }
-            }
+            XmlDocument d = new XmlDocument ();
+			XmlNode top = null;
+			
+			
+			string home = Environment.GetFolderPath (Environment.SpecialFolder.Personal);
+			string recent_files = Path.Combine (home, ".recently-used");
+			
+			try {
+				d.Load (recent_files);
+				top = d.SelectSingleNode ("/RecentFiles");
+				if (top == null)
+					throw new Exception ();
+			} catch {
+				top = d.CreateElement ("RecentFiles");
+				d.AppendChild (top);
+			}
+			XmlNode recent = d.CreateElement ("RecentItem");
+			top.AppendChild (recent);
+			
+			DateTime unix_epoch = new DateTime (1970, 1, 1, 0, 0, 0);
+			
+			recent.AppendChild (make (d, "URI", new Uri (fileName).ToString ()));
+			recent.AppendChild (make (d, "Mime-Type", GetMimeType (fileName)));
+			recent.AppendChild (make (d, "Timestamp", (DateTime.Now-unix_epoch).Seconds.ToString ()));
+			
+			try {
+				d.Save (recent_files);
+			} catch {
+				Console.WriteLine ("error saving the ~/.recently-used file");
+			}
         }
     }
 }

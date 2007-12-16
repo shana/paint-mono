@@ -28,7 +28,7 @@
     </UpgradeBackupLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\..\..\..\\cvs\pdn3\src\Help\bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\..\\cvs\pdn3\src\Help\..\..\..\..\\cvs\pdn3\src\Help\..\..\..\..\\cvs\pdn3\src\Help\bin\Debug\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
@@ -55,7 +55,7 @@
     <RootNamespace>Help</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\..\..\..\\cvs\pdn3\src\Help\bin\Release\</OutputPath>
+    <OutputPath>..\..\..\..\\cvs\pdn3\src\Help\..\..\..\..\\cvs\pdn3\src\Help\..\..\..\..\\cvs\pdn3\src\Help\bin\Release\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>

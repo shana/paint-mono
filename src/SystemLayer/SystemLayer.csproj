@@ -28,7 +28,7 @@
     </UpgradeBackupLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\..\..\..\\cvs\pdn3\src\SystemLayer\bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\..\\cvs\pdn3\src\SystemLayer\..\..\..\..\\cvs\pdn3\src\SystemLayer\..\..\..\..\\cvs\pdn3\src\SystemLayer\bin\Debug\</OutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <BaseAddress>318767104</BaseAddress>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -56,7 +56,7 @@
     <RootNamespace>PaintDotNet.SystemLayer</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\..\..\..\\cvs\pdn3\src\SystemLayer\bin\Release\</OutputPath>
+    <OutputPath>..\..\..\..\\cvs\pdn3\src\SystemLayer\..\..\..\..\\cvs\pdn3\src\SystemLayer\..\..\..\..\\cvs\pdn3\src\SystemLayer\bin\Release\</OutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <BaseAddress>318767104</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
@@ -96,6 +96,7 @@
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Mono.Posix" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
