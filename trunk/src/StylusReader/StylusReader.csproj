@@ -28,7 +28,7 @@
     </UpgradeBackupLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\..\..\..\\cvs\pdn3\src\StylusReader\..\..\..\..\\cvs\pdn3\src\StylusReader\..\..\..\..\\cvs\pdn3\src\StylusReader\..\..\..\..\\cvs\pdn3\src\StylusReader\..\..\..\..\\cvs\pdn3\src\StylusReader\bin\Debug\</OutputPath>
+    <OutputPath>..\StylusReader\..\StylusReader\..\StylusReader\..\StylusReader\..\StylusReader\bin\Debug\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>322961408</BaseAddress>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -54,7 +54,7 @@
     <RootNamespace>PaintDotNet</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\..\..\..\\cvs\pdn3\src\StylusReader\..\..\..\..\\cvs\pdn3\src\StylusReader\..\..\..\..\\cvs\pdn3\src\StylusReader\..\..\..\..\\cvs\pdn3\src\StylusReader\..\..\..\..\\cvs\pdn3\src\StylusReader\bin\Release\</OutputPath>
+    <OutputPath>..\StylusReader\..\StylusReader\..\StylusReader\..\StylusReader\..\StylusReader\bin\Release\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>322961408</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
