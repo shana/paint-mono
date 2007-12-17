@@ -27,7 +27,7 @@
     </UpgradeBackupLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\bin\Debug\</OutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <BaseAddress>301989888</BaseAddress>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -58,7 +58,7 @@
     <RootNamespace>PaintDotNet</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\bin\Release\</OutputPath>
+    <OutputPath>..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\..\..\..\\cvs\pdn3\src\bin\Release\</OutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <BaseAddress>301989888</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
