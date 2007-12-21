@@ -1,0 +1,6 @@
+Name: Data
+Description: Data
+Version: 0.1
+
+Requires: 
+Libs: -r:@prefix@/lib/@PACKAGE@/PaintDotNet.Data.dll

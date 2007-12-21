@@ -1,0 +1,6 @@
+Name: SystemLayer
+Description: SystemLayer
+Version: 0.1
+
+Requires: 
+Libs: -r:@prefix@/lib/@PACKAGE@/PaintDotNet.SystemLayer.dll

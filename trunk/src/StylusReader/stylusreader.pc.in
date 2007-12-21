@@ -1,0 +1,6 @@
+Name: StylusReader
+Description: StylusReader
+Version: 0.1
+
+Requires: 
+Libs: -r:@prefix@/lib/@PACKAGE@/PaintDotNet.StylusReader.dll
