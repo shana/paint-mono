@@ -11,10 +11,10 @@ include $(top_srcdir)/rules.make
 
 #Warning: This is an automatically generated file, do not edit!
 ifeq ($(CONFIG),DEBUG_ANY_CPU)
- SUBDIRS =  StylusReader SystemLayer Resources PdnLib Data WiaProxy32 Effects . 
+ SUBDIRS =  StylusReader SystemLayer Resources.mui Resources PdnLib Data WiaProxy32 Effects . 
 endif
 ifeq ($(CONFIG),RELEASE_ANY_CPU)
- SUBDIRS =  StylusReader SystemLayer Resources PdnLib Data WiaProxy32 Effects . 
+ SUBDIRS =  StylusReader SystemLayer Resources.mui Resources PdnLib Data WiaProxy32 Effects . 
 endif
 ifeq ($(CONFIG),RELEASE_AND_PACKAGE_ANY_CPU)
  SUBDIRS =  Resources.mui PdnRepair StylusReader SystemLayer Resources PdnLib WiaProxy32 Data Effects . 
