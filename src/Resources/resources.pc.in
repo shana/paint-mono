@@ -1,0 +1,6 @@
+Name: Resources
+Description: Resources
+Version: 0.1
+
+Requires: 
+Libs: -r:@prefix@/lib/@PACKAGE@/PaintDotNet.Resources.dll
