@@ -61,7 +61,7 @@ cd src
 make 
 make install
 
-Alternatively, you can use MonoDevelop to build Paint.NET.   To use it, just open the src/paintdotnet.sln solution and rebuild the solution (press F5) to run.
+Alternatively, you can use !MonoDevelop to build Paint.NET.   To use it, just open the src/paintdotnet.sln solution and rebuild the solution (press F5) to run.
 
 = Original Source =
 
