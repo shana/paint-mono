@@ -26,9 +26,9 @@ Repeat until we are done, and the application is working like a charm.
 
 == Current State ==
 
-It is currently possible to startup Paint.NET and do some simple painting operations, but I have not ported all of my changes from the old 2.72 port to 3.0 so there are many things that do not work.   I will post the old patch that I had here so that it can be used as a reference and to avoid duplicating work that was already done. 
+Paint.NET starts up, it is possible to load and save files, and run many of the effects.   There are still a few bugs left and the SystemLayer work has not been completed, so a few things might break every once in a while.
 
-Since Paint.NET is a .NET 2.0 application it is best if you use Mono 1.2.4, and ideally use the trunk release of Mono from subversion as the 2.0 support is rapidly evolving in that branch. 
+It is recommended that you start with Mono 1.2.6, although a few features (saving) requires Mono from SVN as there were a few bugs that prevented it from running correctly. 
 
 == P/Invoke ==
 
@@ -54,14 +54,14 @@ This was just an illustration, a better way is to just call the method that take
 
 = Building Paint.NET on Linux =
 
-To build Paint.NET you will need to use Mono Develop from our subversion repository.  I know that this is suboptimal, but it is the only easy way of building Paint.NET without writing Makefiles from scratch.
+First, you should check the code out from SVN, once you have the source code, the easiest way of testing it is to use the standard Unix source configuration and installation setup:
 
-To build it you must:
-    * Open the src/paintdotnet.sln solution
-    * Rebuild the solution.
+cd src
+./configure
+make 
+make install
 
-I *welcome* any contributions along the lines of making this work with plain Makefiles, as it would solve some of the above mentioned problems.
-
+Alternatively, you can use MonoDevelop to build Paint.NET.   To use it, just open the src/paintdotnet.sln solution and rebuild the solution (press F5) to run.
 
 = Original Source =
 
