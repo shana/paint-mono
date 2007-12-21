@@ -47,28 +47,6 @@
     <Compile Include="Stub.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PaintDotNet.Strings.3.DE.resources">
-    </Content>
-    <Content Include="PaintDotNet.Strings.3.ES.resources">
-    </Content>
-    <Content Include="PaintDotNet.Strings.3.FR.resources">
-    </Content>
-    <Content Include="PaintDotNet.Strings.3.JA.resources">
-    </Content>
-    <Content Include="PaintDotNet.Strings.3.KO.resources">
-    </Content>
-    <Content Include="PaintDotNet.Strings.3.PT-BR.resources">
-    </Content>
-    <Content Include="PaintDotNet.Strings.3.ZH-CN.resources">
-    </Content>
-    <Content Include="Resources\de\Files.AboutCredits.rtf" />
-    <Content Include="Resources\es\Files.AboutCredits.rtf" />
-    <Content Include="Resources\fr\Files.AboutCredits.rtf" />
-    <Content Include="Resources\fr\Images.PayPalDonate.gif" />
-    <Content Include="Resources\ja\Files.AboutCredits.rtf" />
-    <Content Include="Resources\ko\Files.AboutCredits.rtf" />
-    <Content Include="Resources\pt-br\Files.AboutCredits.rtf" />
-    <Content Include="Resources\zh-cn\Files.AboutCredits.rtf" />
     <None Include="resx\PaintDotNet.Strings.3.DE.resx">
       <SubType>Designer</SubType>
     </None>
@@ -90,6 +68,21 @@
     <None Include="resx\PaintDotNet.Strings.3.ZH-CN.resx">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Resources\de\Files.AboutCredits.rtf" />
+    <None Include="Resources\es\Files.AboutCredits.rtf" />
+    <None Include="Resources\fr\Files.AboutCredits.rtf" />
+    <None Include="Resources\fr\Images.PayPalDonate.gif" />
+    <None Include="Resources\ja\Files.AboutCredits.rtf" />
+    <None Include="Resources\ko\Files.AboutCredits.rtf" />
+    <None Include="Resources\pt-br\Files.AboutCredits.rtf" />
+    <None Include="Resources\zh-cn\Files.AboutCredits.rtf" />
+    <None Include="PaintDotNet.Strings.3.DE.resources" />
+    <None Include="PaintDotNet.Strings.3.ES.resources" />
+    <None Include="PaintDotNet.Strings.3.FR.resources" />
+    <None Include="PaintDotNet.Strings.3.JA.resources" />
+    <None Include="PaintDotNet.Strings.3.KO.resources" />
+    <None Include="PaintDotNet.Strings.3.PT-BR.resources" />
+    <None Include="PaintDotNet.Strings.3.ZH-CN.resources" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
