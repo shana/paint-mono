@@ -9,7 +9,7 @@ top_srcdir=..
 include $(top_srcdir)/Makefile.include
 include $(top_srcdir)/config.make
 
-#include $(srcdir)/custom-hooks.make
+include $(srcdir)/custom-hooks.make
 
 ifeq ($(CONFIG),DEBUG_ANY_CPU)
 ASSEMBLY_COMPILER_COMMAND = gmcs
@@ -67,13 +67,13 @@ DATA_FILES =
 RESOURCES = 
 
 EXTRAS = \
-	PaintDotNet.Strings.3.DE.resources \
-	PaintDotNet.Strings.3.ES.resources \
-	PaintDotNet.Strings.3.FR.resources \
-	PaintDotNet.Strings.3.JA.resources \
-	PaintDotNet.Strings.3.KO.resources \
-	PaintDotNet.Strings.3.PT-BR.resources \
-	PaintDotNet.Strings.3.ZH-CN.resources \
+	resx/PaintDotNet.Strings.3.DE.resx \
+	resx/PaintDotNet.Strings.3.ES.resx \
+	resx/PaintDotNet.Strings.3.FR.resx \
+	resx/PaintDotNet.Strings.3.JA.resx \
+	resx/PaintDotNet.Strings.3.KO.resx \
+	resx/PaintDotNet.Strings.3.PT-BR.resx \
+	resx/PaintDotNet.Strings.3.ZH-CN.resx \
 	Resources/de/Files.AboutCredits.rtf \
 	Resources/es/Files.AboutCredits.rtf \
 	Resources/fr/Files.AboutCredits.rtf \
@@ -82,13 +82,13 @@ EXTRAS = \
 	Resources/ko/Files.AboutCredits.rtf \
 	Resources/pt-br/Files.AboutCredits.rtf \
 	Resources/zh-cn/Files.AboutCredits.rtf \
-	resx/PaintDotNet.Strings.3.DE.resx \
-	resx/PaintDotNet.Strings.3.ES.resx \
-	resx/PaintDotNet.Strings.3.FR.resx \
-	resx/PaintDotNet.Strings.3.JA.resx \
-	resx/PaintDotNet.Strings.3.KO.resx \
-	resx/PaintDotNet.Strings.3.PT-BR.resx \
-	resx/PaintDotNet.Strings.3.ZH-CN.resx \
+	PaintDotNet.Strings.3.DE.resources \
+	PaintDotNet.Strings.3.ES.resources \
+	PaintDotNet.Strings.3.FR.resources \
+	PaintDotNet.Strings.3.JA.resources \
+	PaintDotNet.Strings.3.KO.resources \
+	PaintDotNet.Strings.3.PT-BR.resources \
+	PaintDotNet.Strings.3.ZH-CN.resources \
 	resources.mui.in 
 
 REFERENCES =  \
