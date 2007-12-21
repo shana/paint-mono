@@ -12,29 +12,29 @@ ifeq ($(CONFIG),DEBUG_ANY_CPU)
 ASSEMBLY_COMPILER_COMMAND = gmcs
 ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -unsafe -warn:4 -optimize- -debug "-define:DEBUG;TRACE"
 
-ASSEMBLY = ../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/bin/Debug/PaintDotNet.exe
+ASSEMBLY = bin/Debug/PaintDotNet.exe
 ASSEMBLY_MDB = $(ASSEMBLY).mdb
 COMPILE_TARGET = winexe
 PROJECT_REFERENCES =  \
-	../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/bin/Debug/PaintDotNet.Data.dll \
-	../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/bin/Debug/PaintDotNet.Effects.dll \
-	../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/bin/Debug/PdnLib.dll \
-	../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/bin/Debug/PaintDotNet.Resources.dll \
-	../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/bin/Debug/PaintDotNet.SystemLayer.dll
-BUILD_DIR = ../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/bin/Debug/
+	Data/bin/Debug/PaintDotNet.Data.dll \
+	Effects/bin/Debug/PaintDotNet.Effects.dll \
+	PdnLib/bin/Debug/PdnLib.dll \
+	Resources/bin/Debug/PaintDotNet.Resources.dll \
+	SystemLayer/bin/Debug/PaintDotNet.SystemLayer.dll
+BUILD_DIR = bin/Debug/
 
-PAINTDOTNET_SYSTEMLAYER_DLL_SOURCE=../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/bin/Debug/PaintDotNet.SystemLayer.dll
-PAINTDOTNET_DATA_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/bin/Debug/PaintDotNet.Data.dll.mdb
-PAINTDOTNET_STYLUSREADER_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/bin/Debug/PaintDotNet.StylusReader.dll.mdb
-PAINTDOTNET_EFFECTS_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/bin/Debug/PaintDotNet.Effects.dll.mdb
-PAINTDOTNET_STYLUSREADER_DLL_SOURCE=../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/bin/Debug/PaintDotNet.StylusReader.dll
-PAINTDOTNET_RESOURCES_DLL_SOURCE=../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/bin/Debug/PaintDotNet.Resources.dll
-PDNLIB_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/bin/Debug/PdnLib.dll.mdb
-PAINTDOTNET_DATA_DLL_SOURCE=../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/bin/Debug/PaintDotNet.Data.dll
-PDNLIB_DLL_SOURCE=../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/bin/Debug/PdnLib.dll
-PAINTDOTNET_EFFECTS_DLL_SOURCE=../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/bin/Debug/PaintDotNet.Effects.dll
-PAINTDOTNET_SYSTEMLAYER_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/bin/Debug/PaintDotNet.SystemLayer.dll.mdb
-PAINTDOTNET_RESOURCES_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/bin/Debug/PaintDotNet.Resources.dll.mdb
+PAINTDOTNET_SYSTEMLAYER_DLL_SOURCE=SystemLayer/bin/Debug/PaintDotNet.SystemLayer.dll
+PAINTDOTNET_DATA_DLL_MDB_SOURCE=Data/bin/Debug/PaintDotNet.Data.dll.mdb
+PAINTDOTNET_STYLUSREADER_DLL_MDB_SOURCE=StylusReader/bin/Debug/PaintDotNet.StylusReader.dll.mdb
+PAINTDOTNET_EFFECTS_DLL_MDB_SOURCE=Effects/bin/Debug/PaintDotNet.Effects.dll.mdb
+PAINTDOTNET_STYLUSREADER_DLL_SOURCE=StylusReader/bin/Debug/PaintDotNet.StylusReader.dll
+PAINTDOTNET_RESOURCES_DLL_SOURCE=Resources/bin/Debug/PaintDotNet.Resources.dll
+PDNLIB_DLL_MDB_SOURCE=PdnLib/bin/Debug/PdnLib.dll.mdb
+PAINTDOTNET_DATA_DLL_SOURCE=Data/bin/Debug/PaintDotNet.Data.dll
+PDNLIB_DLL_SOURCE=PdnLib/bin/Debug/PdnLib.dll
+PAINTDOTNET_EFFECTS_DLL_SOURCE=Effects/bin/Debug/PaintDotNet.Effects.dll
+PAINTDOTNET_SYSTEMLAYER_DLL_MDB_SOURCE=SystemLayer/bin/Debug/PaintDotNet.SystemLayer.dll.mdb
+PAINTDOTNET_RESOURCES_DLL_MDB_SOURCE=Resources/bin/Debug/PaintDotNet.Resources.dll.mdb
 MICROSOFT_INK_DLL_SOURCE=Microsoft.Ink/Microsoft.Ink.dll
 
 endif
@@ -43,29 +43,29 @@ ifeq ($(CONFIG),RELEASE_ANY_CPU)
 ASSEMBLY_COMPILER_COMMAND = gmcs
 ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -unsafe -warn:4 -optimize+ -debug -define:DEBUG "-define:TRACE"
 
-ASSEMBLY = ../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/bin/Release/PaintDotNet.exe
+ASSEMBLY = bin/Release/PaintDotNet.exe
 ASSEMBLY_MDB = $(ASSEMBLY).mdb
 COMPILE_TARGET = winexe
 PROJECT_REFERENCES =  \
-	../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/bin/Release/PaintDotNet.Data.dll \
-	../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/bin/Release/PaintDotNet.Effects.dll \
-	../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/bin/Release/PdnLib.dll \
-	../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/bin/Release/PaintDotNet.Resources.dll \
-	../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll
-BUILD_DIR = ../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/bin/Release/
+	Data/bin/Release/PaintDotNet.Data.dll \
+	Effects/bin/Release/PaintDotNet.Effects.dll \
+	PdnLib/bin/Release/PdnLib.dll \
+	Resources/bin/Release/PaintDotNet.Resources.dll \
+	SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll
+BUILD_DIR = bin/Release/
 
-PAINTDOTNET_SYSTEMLAYER_DLL_SOURCE=../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll
-PAINTDOTNET_DATA_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/bin/Release/PaintDotNet.Data.dll.mdb
-PAINTDOTNET_STYLUSREADER_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/bin/Release/PaintDotNet.StylusReader.dll.mdb
-PAINTDOTNET_EFFECTS_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/bin/Release/PaintDotNet.Effects.dll.mdb
-PAINTDOTNET_STYLUSREADER_DLL_SOURCE=../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/bin/Release/PaintDotNet.StylusReader.dll
-PAINTDOTNET_RESOURCES_DLL_SOURCE=../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/bin/Release/PaintDotNet.Resources.dll
-PDNLIB_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/bin/Release/PdnLib.dll.mdb
-PAINTDOTNET_DATA_DLL_SOURCE=../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/bin/Release/PaintDotNet.Data.dll
-PDNLIB_DLL_SOURCE=../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/bin/Release/PdnLib.dll
-PAINTDOTNET_EFFECTS_DLL_SOURCE=../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/bin/Release/PaintDotNet.Effects.dll
-PAINTDOTNET_SYSTEMLAYER_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll.mdb
-PAINTDOTNET_RESOURCES_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/bin/Release/PaintDotNet.Resources.dll.mdb
+PAINTDOTNET_SYSTEMLAYER_DLL_SOURCE=SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll
+PAINTDOTNET_DATA_DLL_MDB_SOURCE=Data/bin/Release/PaintDotNet.Data.dll.mdb
+PAINTDOTNET_STYLUSREADER_DLL_MDB_SOURCE=StylusReader/bin/Release/PaintDotNet.StylusReader.dll.mdb
+PAINTDOTNET_EFFECTS_DLL_MDB_SOURCE=Effects/bin/Release/PaintDotNet.Effects.dll.mdb
+PAINTDOTNET_STYLUSREADER_DLL_SOURCE=StylusReader/bin/Release/PaintDotNet.StylusReader.dll
+PAINTDOTNET_RESOURCES_DLL_SOURCE=Resources/bin/Release/PaintDotNet.Resources.dll
+PDNLIB_DLL_MDB_SOURCE=PdnLib/bin/Release/PdnLib.dll.mdb
+PAINTDOTNET_DATA_DLL_SOURCE=Data/bin/Release/PaintDotNet.Data.dll
+PDNLIB_DLL_SOURCE=PdnLib/bin/Release/PdnLib.dll
+PAINTDOTNET_EFFECTS_DLL_SOURCE=Effects/bin/Release/PaintDotNet.Effects.dll
+PAINTDOTNET_SYSTEMLAYER_DLL_MDB_SOURCE=SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll.mdb
+PAINTDOTNET_RESOURCES_DLL_MDB_SOURCE=Resources/bin/Release/PaintDotNet.Resources.dll.mdb
 MICROSOFT_INK_DLL_SOURCE=Microsoft.Ink/Microsoft.Ink.dll
 
 endif
@@ -74,29 +74,29 @@ ifeq ($(CONFIG),RELEASE_AND_PACKAGE_ANY_CPU)
 ASSEMBLY_COMPILER_COMMAND = gmcs
 ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -unsafe -warn:4 -optimize+ -debug -define:DEBUG "-define:TRACE"
 
-ASSEMBLY = ../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/bin/Release/PaintDotNet.exe
+ASSEMBLY = bin/Release/PaintDotNet.exe
 ASSEMBLY_MDB = $(ASSEMBLY).mdb
 COMPILE_TARGET = winexe
 PROJECT_REFERENCES =  \
-	../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/bin/Release/PaintDotNet.Data.dll \
-	../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/bin/Release/PaintDotNet.Effects.dll \
-	../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/bin/Release/PdnLib.dll \
-	../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/bin/Release/PaintDotNet.Resources.dll \
-	../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll
-BUILD_DIR = ../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/../../..//cvs/pdn3/src/bin/Release/
+	Data/bin/Release/PaintDotNet.Data.dll \
+	Effects/bin/Release/PaintDotNet.Effects.dll \
+	PdnLib/bin/Release/PdnLib.dll \
+	Resources/bin/Release/PaintDotNet.Resources.dll \
+	SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll
+BUILD_DIR = bin/Release/
 
-PAINTDOTNET_SYSTEMLAYER_DLL_SOURCE=../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll
-PAINTDOTNET_DATA_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/bin/Release/PaintDotNet.Data.dll.mdb
-PAINTDOTNET_STYLUSREADER_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/bin/Release/PaintDotNet.StylusReader.dll.mdb
-PAINTDOTNET_EFFECTS_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/bin/Release/PaintDotNet.Effects.dll.mdb
-PAINTDOTNET_STYLUSREADER_DLL_SOURCE=../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/../../../..//cvs/pdn3/src/StylusReader/bin/Release/PaintDotNet.StylusReader.dll
-PAINTDOTNET_RESOURCES_DLL_SOURCE=../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/bin/Release/PaintDotNet.Resources.dll
-PDNLIB_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/bin/Release/PdnLib.dll.mdb
-PAINTDOTNET_DATA_DLL_SOURCE=../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/../../../..//cvs/pdn3/src/Data/bin/Release/PaintDotNet.Data.dll
-PDNLIB_DLL_SOURCE=../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/../../../..//cvs/pdn3/src/PdnLib/bin/Release/PdnLib.dll
-PAINTDOTNET_EFFECTS_DLL_SOURCE=../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/../../../..//cvs/pdn3/src/Effects/bin/Release/PaintDotNet.Effects.dll
-PAINTDOTNET_SYSTEMLAYER_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/../../../..//cvs/pdn3/src/SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll.mdb
-PAINTDOTNET_RESOURCES_DLL_MDB_SOURCE=../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/../../../..//cvs/pdn3/src/Resources/bin/Release/PaintDotNet.Resources.dll.mdb
+PAINTDOTNET_SYSTEMLAYER_DLL_SOURCE=SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll
+PAINTDOTNET_DATA_DLL_MDB_SOURCE=Data/bin/Release/PaintDotNet.Data.dll.mdb
+PAINTDOTNET_STYLUSREADER_DLL_MDB_SOURCE=StylusReader/bin/Release/PaintDotNet.StylusReader.dll.mdb
+PAINTDOTNET_EFFECTS_DLL_MDB_SOURCE=Effects/bin/Release/PaintDotNet.Effects.dll.mdb
+PAINTDOTNET_STYLUSREADER_DLL_SOURCE=StylusReader/bin/Release/PaintDotNet.StylusReader.dll
+PAINTDOTNET_RESOURCES_DLL_SOURCE=Resources/bin/Release/PaintDotNet.Resources.dll
+PDNLIB_DLL_MDB_SOURCE=PdnLib/bin/Release/PdnLib.dll.mdb
+PAINTDOTNET_DATA_DLL_SOURCE=Data/bin/Release/PaintDotNet.Data.dll
+PDNLIB_DLL_SOURCE=PdnLib/bin/Release/PdnLib.dll
+PAINTDOTNET_EFFECTS_DLL_SOURCE=Effects/bin/Release/PaintDotNet.Effects.dll
+PAINTDOTNET_SYSTEMLAYER_DLL_MDB_SOURCE=SystemLayer/bin/Release/PaintDotNet.SystemLayer.dll.mdb
+PAINTDOTNET_RESOURCES_DLL_MDB_SOURCE=Resources/bin/Release/PaintDotNet.Resources.dll.mdb
 MICROSOFT_INK_DLL_SOURCE=Microsoft.Ink/Microsoft.Ink.dll
 
 endif
@@ -483,41 +483,41 @@ $(ASSEMBLY) $(ASSEMBLY_MDB): $(build_sources) $(build_resources) $(build_datafil
 
 install-local: $(ASSEMBLY) $(ASSEMBLY_MDB) $(PAINTDOTNET_SYSTEMLAYER_DLL) $(PAINTDOTNET_DATA_DLL_MDB) $(PAINTDOTNET_STYLUSREADER_DLL_MDB) $(PAINTDOTNET_EFFECTS_DLL_MDB) $(PAINTDOTNET) $(PAINTDOTNET_STYLUSREADER_DLL) $(PAINTDOTNET_RESOURCES_DLL) $(PDNLIB_DLL_MDB) $(PAINTDOTNET_DATA_DLL) $(PDNLIB_DLL) $(PAINTDOTNET_EFFECTS_DLL) $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB) $(PAINTDOTNET_RESOURCES_DLL_MDB) $(MICROSOFT_INK_DLL)
 	make pre-install-local-hook prefix=$(prefix)
-	mkdir -p $(prefix)/lib/$(PACKAGE)
-	cp $(ASSEMBLY) $(ASSEMBLY_MDB) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PAINTDOTNET_SYSTEMLAYER_DLL)' || cp $(PAINTDOTNET_SYSTEMLAYER_DLL) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PAINTDOTNET_DATA_DLL_MDB)' || cp $(PAINTDOTNET_DATA_DLL_MDB) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PAINTDOTNET_STYLUSREADER_DLL_MDB)' || cp $(PAINTDOTNET_STYLUSREADER_DLL_MDB) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PAINTDOTNET_EFFECTS_DLL_MDB)' || cp $(PAINTDOTNET_EFFECTS_DLL_MDB) $(prefix)/lib/$(PACKAGE)
-	mkdir -p $(prefix)/bin
-	test -z '$(PAINTDOTNET)' || cp $(PAINTDOTNET) $(prefix)/bin
-	test -z '$(PAINTDOTNET_STYLUSREADER_DLL)' || cp $(PAINTDOTNET_STYLUSREADER_DLL) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PAINTDOTNET_RESOURCES_DLL)' || cp $(PAINTDOTNET_RESOURCES_DLL) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PDNLIB_DLL_MDB)' || cp $(PDNLIB_DLL_MDB) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PAINTDOTNET_DATA_DLL)' || cp $(PAINTDOTNET_DATA_DLL) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PDNLIB_DLL)' || cp $(PDNLIB_DLL) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PAINTDOTNET_EFFECTS_DLL)' || cp $(PAINTDOTNET_EFFECTS_DLL) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PAINTDOTNET_SYSTEMLAYER_DLL_MDB)' || cp $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB) $(prefix)/lib/$(PACKAGE)
-	test -z '$(PAINTDOTNET_RESOURCES_DLL_MDB)' || cp $(PAINTDOTNET_RESOURCES_DLL_MDB) $(prefix)/lib/$(PACKAGE)
-	test -z '$(MICROSOFT_INK_DLL)' || cp $(MICROSOFT_INK_DLL) $(prefix)/lib/$(PACKAGE)
+	mkdir -p $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	cp $(ASSEMBLY) $(ASSEMBLY_MDB) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PAINTDOTNET_SYSTEMLAYER_DLL)' || cp $(PAINTDOTNET_SYSTEMLAYER_DLL) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PAINTDOTNET_DATA_DLL_MDB)' || cp $(PAINTDOTNET_DATA_DLL_MDB) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PAINTDOTNET_STYLUSREADER_DLL_MDB)' || cp $(PAINTDOTNET_STYLUSREADER_DLL_MDB) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PAINTDOTNET_EFFECTS_DLL_MDB)' || cp $(PAINTDOTNET_EFFECTS_DLL_MDB) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	mkdir -p $(DESTDIR)$(prefix)/bin
+	test -z '$(PAINTDOTNET)' || cp $(PAINTDOTNET) $(DESTDIR)$(prefix)/bin
+	test -z '$(PAINTDOTNET_STYLUSREADER_DLL)' || cp $(PAINTDOTNET_STYLUSREADER_DLL) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PAINTDOTNET_RESOURCES_DLL)' || cp $(PAINTDOTNET_RESOURCES_DLL) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PDNLIB_DLL_MDB)' || cp $(PDNLIB_DLL_MDB) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PAINTDOTNET_DATA_DLL)' || cp $(PAINTDOTNET_DATA_DLL) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PDNLIB_DLL)' || cp $(PDNLIB_DLL) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PAINTDOTNET_EFFECTS_DLL)' || cp $(PAINTDOTNET_EFFECTS_DLL) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PAINTDOTNET_SYSTEMLAYER_DLL_MDB)' || cp $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(PAINTDOTNET_RESOURCES_DLL_MDB)' || cp $(PAINTDOTNET_RESOURCES_DLL_MDB) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
+	test -z '$(MICROSOFT_INK_DLL)' || cp $(MICROSOFT_INK_DLL) $(DESTDIR)$(prefix)/lib/$(PACKAGE)
 	make post-install-local-hook prefix=$(prefix)
 
 uninstall-local: $(ASSEMBLY) $(ASSEMBLY_MDB) $(PAINTDOTNET_SYSTEMLAYER_DLL) $(PAINTDOTNET_DATA_DLL_MDB) $(PAINTDOTNET_STYLUSREADER_DLL_MDB) $(PAINTDOTNET_EFFECTS_DLL_MDB) $(PAINTDOTNET) $(PAINTDOTNET_STYLUSREADER_DLL) $(PAINTDOTNET_RESOURCES_DLL) $(PDNLIB_DLL_MDB) $(PAINTDOTNET_DATA_DLL) $(PDNLIB_DLL) $(PAINTDOTNET_EFFECTS_DLL) $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB) $(PAINTDOTNET_RESOURCES_DLL_MDB) $(MICROSOFT_INK_DLL)
 	make pre-uninstall-local-hook prefix=$(prefix)
-	rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(ASSEMBLY))
-	test -z '$(ASSEMBLY_MDB)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(ASSEMBLY_MDB))
-	test -z '$(PAINTDOTNET_SYSTEMLAYER_DLL)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_SYSTEMLAYER_DLL))
-	test -z '$(PAINTDOTNET_DATA_DLL_MDB)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_DATA_DLL_MDB))
-	test -z '$(PAINTDOTNET_STYLUSREADER_DLL_MDB)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_STYLUSREADER_DLL_MDB))
-	test -z '$(PAINTDOTNET_EFFECTS_DLL_MDB)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_EFFECTS_DLL_MDB))
-	test -z '$(PAINTDOTNET)' || rm -f $(prefix)/bin/$(notdir $(PAINTDOTNET))
-	test -z '$(PAINTDOTNET_STYLUSREADER_DLL)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_STYLUSREADER_DLL))
-	test -z '$(PAINTDOTNET_RESOURCES_DLL)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_RESOURCES_DLL))
-	test -z '$(PDNLIB_DLL_MDB)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PDNLIB_DLL_MDB))
-	test -z '$(PAINTDOTNET_DATA_DLL)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_DATA_DLL))
-	test -z '$(PDNLIB_DLL)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PDNLIB_DLL))
-	test -z '$(PAINTDOTNET_EFFECTS_DLL)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_EFFECTS_DLL))
-	test -z '$(PAINTDOTNET_SYSTEMLAYER_DLL_MDB)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB))
-	test -z '$(PAINTDOTNET_RESOURCES_DLL_MDB)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_RESOURCES_DLL_MDB))
-	test -z '$(MICROSOFT_INK_DLL)' || rm -f $(prefix)/lib/$(PACKAGE)/$(notdir $(MICROSOFT_INK_DLL))
+	rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(ASSEMBLY))
+	test -z '$(ASSEMBLY_MDB)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(ASSEMBLY_MDB))
+	test -z '$(PAINTDOTNET_SYSTEMLAYER_DLL)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_SYSTEMLAYER_DLL))
+	test -z '$(PAINTDOTNET_DATA_DLL_MDB)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_DATA_DLL_MDB))
+	test -z '$(PAINTDOTNET_STYLUSREADER_DLL_MDB)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_STYLUSREADER_DLL_MDB))
+	test -z '$(PAINTDOTNET_EFFECTS_DLL_MDB)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_EFFECTS_DLL_MDB))
+	test -z '$(PAINTDOTNET)' || rm -f $(DESTDIR)$(prefix)/bin/$(notdir $(PAINTDOTNET))
+	test -z '$(PAINTDOTNET_STYLUSREADER_DLL)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_STYLUSREADER_DLL))
+	test -z '$(PAINTDOTNET_RESOURCES_DLL)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_RESOURCES_DLL))
+	test -z '$(PDNLIB_DLL_MDB)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PDNLIB_DLL_MDB))
+	test -z '$(PAINTDOTNET_DATA_DLL)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_DATA_DLL))
+	test -z '$(PDNLIB_DLL)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PDNLIB_DLL))
+	test -z '$(PAINTDOTNET_EFFECTS_DLL)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_EFFECTS_DLL))
+	test -z '$(PAINTDOTNET_SYSTEMLAYER_DLL_MDB)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB))
+	test -z '$(PAINTDOTNET_RESOURCES_DLL_MDB)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(PAINTDOTNET_RESOURCES_DLL_MDB))
+	test -z '$(MICROSOFT_INK_DLL)' || rm -f $(DESTDIR)$(prefix)/lib/$(PACKAGE)/$(notdir $(MICROSOFT_INK_DLL))
 	make post-uninstall-local-hook prefix=$(prefix)
