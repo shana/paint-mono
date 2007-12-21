@@ -2,7 +2,7 @@
 VERSION=0.1
 PACKAGE=paintdotnet
 prefix=/usr/local
-config=DEBUG_ANY_CPU
+config=RELEASE_AND_PACKAGE_ANY_CPU
 configurations=" DEBUG_ANY_CPU RELEASE_ANY_CPU RELEASE_AND_PACKAGE_ANY_CPU"
 common_packages=""
 
