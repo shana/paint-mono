@@ -135,8 +135,7 @@ REFERENCES =  \
 	System.Drawing \
 	System.Windows.Forms \
 	System.Xml \
-	Mono.Posix \
-	System.Xml.Linq
+	Mono.Posix 
 
 DLL_REFERENCES = 
 

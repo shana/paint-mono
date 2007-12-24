@@ -21,7 +21,6 @@ using System.Security;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
-using System.Xml.Linq;
 
 namespace PaintDotNet.SystemLayer
 {
