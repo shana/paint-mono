@@ -31,63 +31,17 @@ namespace PaintDotNet.SystemLayer
         /// </remarks>
         public static bool IsSymbolFont(Font font)
         {
-            NativeStructs.LOGFONT logFont = new NativeStructs.LOGFONT();
-            font.ToLogFont(logFont);
-            return logFont.lfCharSet == NativeConstants.SYMBOL_CHARSET;
+		// Could be improved, right now, we dont even bother looking up the font.
+		return false;
         }
 
         private static IntPtr CreateFontObject(Font font, bool antiAliasing)
         {
-            NativeStructs.LOGFONT logFont = new NativeStructs.LOGFONT();
-            font.ToLogFont(logFont);
-
-            int nHeight = logFont.lfHeight;
-            int nWidth = logFont.lfWidth;
-            int nEscapement = logFont.lfEscapement;
-            int nOrientation = logFont.lfOrientation;
-            int fnWeight = logFont.lfWeight;
-            uint fdwItalic = logFont.lfItalic;
-            uint fdwUnderline = logFont.lfUnderline;
-            uint fdwStrikeOut = logFont.lfStrikeOut;
-            uint fdwCharSet = logFont.lfCharSet;
-            uint fdwOutputPrecision = logFont.lfOutPrecision;
-            uint fdwClipPrecision = logFont.lfClipPrecision;
-            uint fdwQuality;
-            
-            if (antiAliasing)
-            {
-                fdwQuality = NativeConstants.ANTIALIASED_QUALITY;
-            }
-            else
-            {
-                fdwQuality = NativeConstants.NONANTIALIASED_QUALITY;
-            }
-
-            uint fdwPitchAndFamily = logFont.lfPitchAndFamily;
-            string lpszFace = logFont.lfFaceName;
-
-            IntPtr hFont = SafeNativeMethods.CreateFontW(
-                nHeight,
-                nWidth,
-                nEscapement,
-                nOrientation,
-                fnWeight,
-                fdwItalic,
-                fdwUnderline,
-                fdwStrikeOut,
-                fdwCharSet,
-                fdwOutputPrecision,
-                fdwClipPrecision,
-                fdwQuality,
-                fdwPitchAndFamily,
-                lpszFace);
-
-            if (hFont == IntPtr.Zero)
-            {
-                NativeMethods.ThrowOnWin32Error("CreateFontW returned NULL");
-            }
-
-            return hFont;
+	    // FIXME: 
+	    // this currently ignores antiAliasing
+	    // low-priority, as this method is never actually used
+		
+		return font.ToHfont ();
         }
 
         /// <summary>
@@ -99,8 +53,6 @@ namespace PaintDotNet.SystemLayer
         /// <param name="antiAliasing">Whether the font should be rendered with anti-aliasing.</param>
         public static Size MeasureString(Graphics g, Font font, string text, bool antiAliasing, FontSmoothing fontSmoothing)
         {
-            if (fontSmoothing == FontSmoothing.Smooth && antiAliasing)
-            {
                 PixelOffsetMode oldPOM = g.PixelOffsetMode;
                 g.PixelOffsetMode = PixelOffsetMode.Half;
 
@@ -116,70 +68,6 @@ namespace PaintDotNet.SystemLayer
                 g.PixelOffsetMode = oldPOM;
                 g.TextRenderingHint = oldTRH;
                 return Size.Ceiling(sf);
-            }
-            else if (fontSmoothing == FontSmoothing.Sharp || !antiAliasing)
-            {
-                IntPtr hdc = IntPtr.Zero;
-                IntPtr hFont = IntPtr.Zero;
-                IntPtr hOldObject = IntPtr.Zero;
-
-                try
-                {
-                    hdc = g.GetHdc();
-                    hFont = CreateFontObject(font, antiAliasing);
-                    hOldObject = SafeNativeMethods.SelectObject(hdc, hFont);
-
-                    NativeStructs.RECT rect = new NativeStructs.RECT();
-                    rect.left = 0;
-                    rect.top = 0;
-                    rect.right = rect.left;
-                    rect.bottom = rect.top;
-
-                    int result = SafeNativeMethods.DrawTextW(
-                        hdc, 
-                        text, 
-                        text.Length, 
-                        ref rect,
-                        NativeConstants.DT_CALCRECT | 
-                            NativeConstants.DT_LEFT | 
-                            NativeConstants.DT_NOCLIP |
-                            NativeConstants.DT_NOPREFIX | 
-                            NativeConstants.DT_SINGLELINE | 
-                            NativeConstants.DT_TOP);
-
-                    if (result == 0)
-                    {
-                        NativeMethods.ThrowOnWin32Error("DrawTextW returned 0");
-                    }
-
-                    return new Size(rect.right - rect.left, rect.bottom - rect.top);
-                }
-
-                finally
-                {
-                    if (hOldObject != IntPtr.Zero)
-                    {
-                        SafeNativeMethods.SelectObject(hdc, hOldObject);
-                        hOldObject = IntPtr.Zero;
-                    }
-
-                    if (hFont != IntPtr.Zero)
-                    {
-                        SafeNativeMethods.DeleteObject(hFont);
-                        hFont = IntPtr.Zero;
-                    }
-
-                    if (hdc != IntPtr.Zero)
-                    {
-                        g.ReleaseHdc(hdc);
-                        hdc = IntPtr.Zero;
-                    }
-                }
-            }
-            else
-            {
-                throw new InvalidEnumArgumentException("fontSmoothing = " + (int)fontSmoothing);
-            }
         }
 
         /// <summary>
@@ -192,8 +80,6 @@ namespace PaintDotNet.SystemLayer
         /// <param name="antiAliasing">Whether the font should be rendered with anti-aliasing.</param>
         public static void DrawText(Graphics g, Font font, string text, Point pt, bool antiAliasing, FontSmoothing fontSmoothing)
         {
-            if (fontSmoothing == FontSmoothing.Smooth && antiAliasing)
-            {
                 PixelOffsetMode oldPOM = g.PixelOffsetMode;
                 g.PixelOffsetMode = PixelOffsetMode.Half;
 
@@ -207,67 +93,6 @@ namespace PaintDotNet.SystemLayer
 
                 g.PixelOffsetMode = oldPOM;
                 g.TextRenderingHint = oldTRH;
-            }
-            else if (fontSmoothing == FontSmoothing.Sharp || !antiAliasing)
-            {
-                IntPtr hdc = IntPtr.Zero;
-                IntPtr hFont = IntPtr.Zero;
-                IntPtr hOldObject = IntPtr.Zero;
-
-                try
-                {
-                    hdc = g.GetHdc();
-                    hFont = CreateFontObject(font, antiAliasing);
-                    hOldObject = SafeNativeMethods.SelectObject(hdc, hFont);
-
-                    NativeStructs.RECT rect = new NativeStructs.RECT();
-                    rect.left = pt.X;
-                    rect.top = pt.Y;
-                    rect.right = rect.left;
-                    rect.bottom = rect.top;
-
-                    int result = SafeNativeMethods.DrawTextW(
-                        hdc, 
-                        text, 
-                        text.Length, 
-                        ref rect,
-                        NativeConstants.DT_LEFT | 
-                            NativeConstants.DT_NOCLIP | 
-                            NativeConstants.DT_NOPREFIX |
-                            NativeConstants.DT_SINGLELINE | 
-                            NativeConstants.DT_TOP);
-
-                    if (result == 0)
-                    {
-                        NativeMethods.ThrowOnWin32Error("DrawTextW returned 0");
-                    }
-                }
-
-                finally
-                {
-                    if (hOldObject != IntPtr.Zero)
-                    {
-                        SafeNativeMethods.SelectObject(hdc, hOldObject);
-                        hOldObject = IntPtr.Zero;
-                    }
-
-                    if (hFont != IntPtr.Zero)
-                    {
-                        SafeNativeMethods.DeleteObject(hFont);
-                        hFont = IntPtr.Zero;
-                    }
-
-                    if (hdc != IntPtr.Zero)
-                    {
-                        g.ReleaseHdc(hdc);
-                        hdc = IntPtr.Zero;
-                    }
-                }
-            }
-            else
-            {
-                throw new InvalidEnumArgumentException("fontSmoothing = " + (int)fontSmoothing);
-            }
         }
     }
 }
