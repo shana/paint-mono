@@ -96,7 +96,6 @@
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Mono.Posix" />
-    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
