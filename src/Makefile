@@ -1,5 +1,5 @@
 
-EXTRA_DIST = paintdotnet.make rules.make configure Makefile.include Interop.WIA/Interop.WIA.dll Microsoft.Ink/Microsoft.Ink.dll
+EXTRA_DIST = paintdotnet.make rules.make configure Makefile.include Interop.WIA/Interop.WIA.dll Microsoft.Ink/Microsoft.Ink.dll bin/Debug/PaintDotNet.Strings.3.resources
 
 all: all-recursive
 

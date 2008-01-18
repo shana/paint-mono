@@ -1,5 +1,5 @@
 
-EXTRA_DIST = Makefile
+EXTRA_DIST =  Makefile
 
 # Warning: This is an automatically generated file, do not edit!
 
@@ -8,8 +8,6 @@ top_srcdir=..
 
 include $(top_srcdir)/Makefile.include
 include $(top_srcdir)/config.make
-
-#include $(srcdir)/custom-hooks.make
 
 ifeq ($(CONFIG),DEBUG_ANY_CPU)
 ASSEMBLY_COMPILER_COMMAND = gmcs
@@ -127,7 +125,6 @@ PAINTDOTNET_SYSTEMLAYER_DLL_MDB = $(BUILD_DIR)/PaintDotNet.SystemLayer.dll.mdb
 PAINTDOTNET_RESOURCES_DLL_MDB = $(BUILD_DIR)/PaintDotNet.Resources.dll.mdb
 MICROSOFT_INK_DLL = $(BUILD_DIR)/Microsoft.Ink.dll
 
-
 FILES = \
 	AddNoiseEffect.cs \
 	AmountEffectConfigDialog.cs \
@@ -227,58 +224,22 @@ CLEANFILES += $(PROGRAMFILES) $(LINUX_PKGCONFIG)
 #Targets
 all: $(ASSEMBLY) $(PROGRAMFILES) $(LINUX_PKGCONFIG)  $(top_srcdir)/config.make
 
-$(PAINTDOTNET_SYSTEMLAYER_DLL): $(PAINTDOTNET_SYSTEMLAYER_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_DATA_DLL_MDB): $(PAINTDOTNET_DATA_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_STYLUSREADER_DLL_MDB): $(PAINTDOTNET_STYLUSREADER_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_STYLUSREADER_DLL): $(PAINTDOTNET_STYLUSREADER_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(EFFECTS_PC): effects.pc
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_RESOURCES_DLL): $(PAINTDOTNET_RESOURCES_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PDNLIB_DLL_MDB): $(PDNLIB_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_DATA_DLL): $(PAINTDOTNET_DATA_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PDNLIB_DLL): $(PDNLIB_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_SYSTEMLAYER_DLL_MDB): $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_RESOURCES_DLL_MDB): $(PAINTDOTNET_RESOURCES_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(MICROSOFT_INK_DLL): $(MICROSOFT_INK_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
+#include $(srcdir)/custom-hooks.make
 
 
 
-effects.pc: effects.pc.in $(top_srcdir)/config.make
-	sed -e "s,@prefix@,$(prefix)," -e "s,@PACKAGE@,$(PACKAGE)," < effects.pc.in > effects.pc
+$(eval $(call emit-deploy-target,PAINTDOTNET_SYSTEMLAYER_DLL))
+$(eval $(call emit-deploy-target,PAINTDOTNET_DATA_DLL_MDB))
+$(eval $(call emit-deploy-target,PAINTDOTNET_STYLUSREADER_DLL_MDB))
+$(eval $(call emit-deploy-target,PAINTDOTNET_STYLUSREADER_DLL))
+$(eval $(call emit-deploy-wrapper,EFFECTS_PC,effects.pc))
+$(eval $(call emit-deploy-target,PAINTDOTNET_RESOURCES_DLL))
+$(eval $(call emit-deploy-target,PDNLIB_DLL_MDB))
+$(eval $(call emit-deploy-target,PAINTDOTNET_DATA_DLL))
+$(eval $(call emit-deploy-target,PDNLIB_DLL))
+$(eval $(call emit-deploy-target,PAINTDOTNET_SYSTEMLAYER_DLL_MDB))
+$(eval $(call emit-deploy-target,PAINTDOTNET_RESOURCES_DLL_MDB))
+$(eval $(call emit-deploy-target,MICROSOFT_INK_DLL))
 
 
 $(build_xamlg_list): %.xaml.g.cs: %.xaml
@@ -287,8 +248,6 @@ $(build_xamlg_list): %.xaml.g.cs: %.xaml
 $(build_resx_resources) : %.resources: %.resx
 	resgen2 '$<' '$@'
 
-
-
 $(ASSEMBLY) $(ASSEMBLY_MDB): $(build_sources) $(build_resources) $(build_datafiles) $(DLL_REFERENCES) $(PROJECT_REFERENCES) $(build_xamlg_list)
 	make pre-all-local-hook prefix=$(prefix)
 	mkdir -p $(dir $(ASSEMBLY))
@@ -296,7 +255,6 @@ $(ASSEMBLY) $(ASSEMBLY_MDB): $(build_sources) $(build_resources) $(build_datafil
 	$(ASSEMBLY_COMPILER_COMMAND) $(ASSEMBLY_COMPILER_FLAGS) -out:$(ASSEMBLY) -target:$(COMPILE_TARGET) $(build_sources_embed) $(build_resources_embed) $(build_references_ref)
 	make $(CONFIG)_AfterBuild
 	make post-all-local-hook prefix=$(prefix)
-
 
 install-local: $(ASSEMBLY) $(ASSEMBLY_MDB) $(PAINTDOTNET_SYSTEMLAYER_DLL) $(PAINTDOTNET_DATA_DLL_MDB) $(PAINTDOTNET_STYLUSREADER_DLL_MDB) $(PAINTDOTNET_STYLUSREADER_DLL) $(EFFECTS_PC) $(PAINTDOTNET_RESOURCES_DLL) $(PDNLIB_DLL_MDB) $(PAINTDOTNET_DATA_DLL) $(PDNLIB_DLL) $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB) $(PAINTDOTNET_RESOURCES_DLL_MDB) $(MICROSOFT_INK_DLL)
 	make pre-install-local-hook prefix=$(prefix)

@@ -1,5 +1,5 @@
 
-EXTRA_DIST = Makefile
+EXTRA_DIST = $(srcdir)/custom-hooks.make Makefile
 
 # Warning: This is an automatically generated file, do not edit!
 
@@ -8,8 +8,6 @@ top_srcdir=..
 
 include $(top_srcdir)/Makefile.include
 include $(top_srcdir)/config.make
-
-include $(srcdir)/custom-hooks.make
 
 ifeq ($(CONFIG),DEBUG_ANY_CPU)
 ASSEMBLY_COMPILER_COMMAND = gmcs
@@ -58,7 +56,6 @@ BINARIES = \
 
 RESOURCES_MUI = $(BUILD_DIR)/resources.mui
 
-
 FILES = \
 	Stub.cs 
 
@@ -101,15 +98,11 @@ CLEANFILES += $(BINARIES)
 #Targets
 all: $(ASSEMBLY) $(BINARIES)  $(top_srcdir)/config.make
 
-$(RESOURCES_MUI): resources.mui
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-	chmod u+x '$@'
+include $(srcdir)/custom-hooks.make
 
 
 
-resources.mui: resources.mui.in $(top_srcdir)/config.make
-	sed -e "s,@prefix@,$(prefix)," -e "s,@PACKAGE@,$(PACKAGE)," < resources.mui.in > resources.mui
+$(eval $(call emit-deploy-wrapper,RESOURCES_MUI,resources.mui,x))
 
 
 $(build_xamlg_list): %.xaml.g.cs: %.xaml
@@ -118,8 +111,6 @@ $(build_xamlg_list): %.xaml.g.cs: %.xaml
 $(build_resx_resources) : %.resources: %.resx
 	resgen2 '$<' '$@'
 
-
-
 $(ASSEMBLY) $(ASSEMBLY_MDB): $(build_sources) $(build_resources) $(build_datafiles) $(DLL_REFERENCES) $(PROJECT_REFERENCES) $(build_xamlg_list)
 	make pre-all-local-hook prefix=$(prefix)
 	mkdir -p $(dir $(ASSEMBLY))
@@ -127,7 +118,6 @@ $(ASSEMBLY) $(ASSEMBLY_MDB): $(build_sources) $(build_resources) $(build_datafil
 	$(ASSEMBLY_COMPILER_COMMAND) $(ASSEMBLY_COMPILER_FLAGS) -out:$(ASSEMBLY) -target:$(COMPILE_TARGET) $(build_sources_embed) $(build_resources_embed) $(build_references_ref)
 	make $(CONFIG)_AfterBuild
 	make post-all-local-hook prefix=$(prefix)
-
 
 install-local: $(ASSEMBLY) $(ASSEMBLY_MDB) $(RESOURCES_MUI)
 	make pre-install-local-hook prefix=$(prefix)
