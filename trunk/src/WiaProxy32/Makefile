@@ -1,5 +1,5 @@
 
-EXTRA_DIST = Makefile
+EXTRA_DIST =  Makefile
 
 # Warning: This is an automatically generated file, do not edit!
 
@@ -8,8 +8,6 @@ top_srcdir=..
 
 include $(top_srcdir)/Makefile.include
 include $(top_srcdir)/config.make
-
-#include $(srcdir)/custom-hooks.make
 
 ifeq ($(CONFIG),DEBUG_ANY_CPU)
 ASSEMBLY_COMPILER_COMMAND = gmcs
@@ -106,7 +104,6 @@ WIAPROXY32 = $(BUILD_DIR)/wiaproxy32
 MICROSOFT_INK_DLL = $(BUILD_DIR)/Microsoft.Ink.dll
 PAINTDOTNET_SYSTEMLAYER_DLL = $(BUILD_DIR)/PaintDotNet.SystemLayer.dll
 
-
 FILES = \
 	WiaProxy32.cs \
 	Properties/AssemblyInfo.cs 
@@ -129,47 +126,19 @@ CLEANFILES += $(PROGRAMFILES) $(BINARIES)
 #Targets
 all: $(ASSEMBLY) $(PROGRAMFILES) $(BINARIES)  $(top_srcdir)/config.make
 
-$(PAINTDOTNET_RESOURCES_DLL_MDB): $(PAINTDOTNET_RESOURCES_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_STYLUSREADER_DLL_MDB): $(PAINTDOTNET_STYLUSREADER_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_STYLUSREADER_DLL): $(PAINTDOTNET_STYLUSREADER_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_RESOURCES_DLL): $(PAINTDOTNET_RESOURCES_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_SYSTEMLAYER_DLL_MDB): $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(INTEROP_WIA_DLL): $(INTEROP_WIA_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(WIAPROXY32): wiaproxy32
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-	chmod u+x '$@'
-
-$(MICROSOFT_INK_DLL): $(MICROSOFT_INK_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_SYSTEMLAYER_DLL): $(PAINTDOTNET_SYSTEMLAYER_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
+#include $(srcdir)/custom-hooks.make
 
 
 
-wiaproxy32: wiaproxy32.in $(top_srcdir)/config.make
-	sed -e "s,@prefix@,$(prefix)," -e "s,@PACKAGE@,$(PACKAGE)," < wiaproxy32.in > wiaproxy32
+$(eval $(call emit-deploy-target,PAINTDOTNET_RESOURCES_DLL_MDB))
+$(eval $(call emit-deploy-target,PAINTDOTNET_STYLUSREADER_DLL_MDB))
+$(eval $(call emit-deploy-target,PAINTDOTNET_STYLUSREADER_DLL))
+$(eval $(call emit-deploy-target,PAINTDOTNET_RESOURCES_DLL))
+$(eval $(call emit-deploy-target,PAINTDOTNET_SYSTEMLAYER_DLL_MDB))
+$(eval $(call emit-deploy-target,INTEROP_WIA_DLL))
+$(eval $(call emit-deploy-wrapper,WIAPROXY32,wiaproxy32,x))
+$(eval $(call emit-deploy-target,MICROSOFT_INK_DLL))
+$(eval $(call emit-deploy-target,PAINTDOTNET_SYSTEMLAYER_DLL))
 
 
 $(build_xamlg_list): %.xaml.g.cs: %.xaml
@@ -178,8 +147,6 @@ $(build_xamlg_list): %.xaml.g.cs: %.xaml
 $(build_resx_resources) : %.resources: %.resx
 	resgen2 '$<' '$@'
 
-
-
 $(ASSEMBLY) $(ASSEMBLY_MDB): $(build_sources) $(build_resources) $(build_datafiles) $(DLL_REFERENCES) $(PROJECT_REFERENCES) $(build_xamlg_list)
 	make pre-all-local-hook prefix=$(prefix)
 	mkdir -p $(dir $(ASSEMBLY))
@@ -187,7 +154,6 @@ $(ASSEMBLY) $(ASSEMBLY_MDB): $(build_sources) $(build_resources) $(build_datafil
 	$(ASSEMBLY_COMPILER_COMMAND) $(ASSEMBLY_COMPILER_FLAGS) -out:$(ASSEMBLY) -target:$(COMPILE_TARGET) $(build_sources_embed) $(build_resources_embed) $(build_references_ref)
 	make $(CONFIG)_AfterBuild
 	make post-all-local-hook prefix=$(prefix)
-
 
 install-local: $(ASSEMBLY) $(ASSEMBLY_MDB) $(PAINTDOTNET_RESOURCES_DLL_MDB) $(PAINTDOTNET_STYLUSREADER_DLL_MDB) $(PAINTDOTNET_STYLUSREADER_DLL) $(PAINTDOTNET_RESOURCES_DLL) $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB) $(INTEROP_WIA_DLL) $(WIAPROXY32) $(MICROSOFT_INK_DLL) $(PAINTDOTNET_SYSTEMLAYER_DLL)
 	make pre-install-local-hook prefix=$(prefix)

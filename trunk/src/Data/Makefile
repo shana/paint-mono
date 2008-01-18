@@ -1,5 +1,5 @@
 
-EXTRA_DIST = Makefile
+EXTRA_DIST =  Makefile
 
 # Warning: This is an automatically generated file, do not edit!
 
@@ -8,8 +8,6 @@ top_srcdir=..
 
 include $(top_srcdir)/Makefile.include
 include $(top_srcdir)/config.make
-
-#include $(srcdir)/custom-hooks.make
 
 ifeq ($(CONFIG),DEBUG_ANY_CPU)
 ASSEMBLY_COMPILER_COMMAND = gmcs
@@ -114,7 +112,6 @@ PDNLIB_DLL = $(BUILD_DIR)/PdnLib.dll
 MICROSOFT_INK_DLL = $(BUILD_DIR)/Microsoft.Ink.dll
 PAINTDOTNET_SYSTEMLAYER_DLL = $(BUILD_DIR)/PaintDotNet.SystemLayer.dll
 
-
 FILES = \
 	AssemblyInfo.cs \
 	BitmapLayer.cs \
@@ -179,50 +176,20 @@ CLEANFILES += $(PROGRAMFILES) $(LINUX_PKGCONFIG)
 #Targets
 all: $(ASSEMBLY) $(PROGRAMFILES) $(LINUX_PKGCONFIG)  $(top_srcdir)/config.make
 
-$(PAINTDOTNET_RESOURCES_DLL_MDB): $(PAINTDOTNET_RESOURCES_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_STYLUSREADER_DLL_MDB): $(PAINTDOTNET_STYLUSREADER_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_STYLUSREADER_DLL): $(PAINTDOTNET_STYLUSREADER_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(DATA_PC): data.pc
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PDNLIB_DLL_MDB): $(PDNLIB_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_RESOURCES_DLL): $(PAINTDOTNET_RESOURCES_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_SYSTEMLAYER_DLL_MDB): $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PDNLIB_DLL): $(PDNLIB_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(MICROSOFT_INK_DLL): $(MICROSOFT_INK_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
-
-$(PAINTDOTNET_SYSTEMLAYER_DLL): $(PAINTDOTNET_SYSTEMLAYER_DLL_SOURCE)
-	mkdir -p $(BUILD_DIR)
-	cp '$<' '$@'
+#include $(srcdir)/custom-hooks.make
 
 
 
-data.pc: data.pc.in $(top_srcdir)/config.make
-	sed -e "s,@prefix@,$(prefix)," -e "s,@PACKAGE@,$(PACKAGE)," < data.pc.in > data.pc
+$(eval $(call emit-deploy-target,PAINTDOTNET_RESOURCES_DLL_MDB))
+$(eval $(call emit-deploy-target,PAINTDOTNET_STYLUSREADER_DLL_MDB))
+$(eval $(call emit-deploy-target,PAINTDOTNET_STYLUSREADER_DLL))
+$(eval $(call emit-deploy-wrapper,DATA_PC,data.pc))
+$(eval $(call emit-deploy-target,PDNLIB_DLL_MDB))
+$(eval $(call emit-deploy-target,PAINTDOTNET_RESOURCES_DLL))
+$(eval $(call emit-deploy-target,PAINTDOTNET_SYSTEMLAYER_DLL_MDB))
+$(eval $(call emit-deploy-target,PDNLIB_DLL))
+$(eval $(call emit-deploy-target,MICROSOFT_INK_DLL))
+$(eval $(call emit-deploy-target,PAINTDOTNET_SYSTEMLAYER_DLL))
 
 
 $(build_xamlg_list): %.xaml.g.cs: %.xaml
@@ -231,8 +198,6 @@ $(build_xamlg_list): %.xaml.g.cs: %.xaml
 $(build_resx_resources) : %.resources: %.resx
 	resgen2 '$<' '$@'
 
-
-
 $(ASSEMBLY) $(ASSEMBLY_MDB): $(build_sources) $(build_resources) $(build_datafiles) $(DLL_REFERENCES) $(PROJECT_REFERENCES) $(build_xamlg_list)
 	make pre-all-local-hook prefix=$(prefix)
 	mkdir -p $(dir $(ASSEMBLY))
@@ -240,7 +205,6 @@ $(ASSEMBLY) $(ASSEMBLY_MDB): $(build_sources) $(build_resources) $(build_datafil
 	$(ASSEMBLY_COMPILER_COMMAND) $(ASSEMBLY_COMPILER_FLAGS) -out:$(ASSEMBLY) -target:$(COMPILE_TARGET) $(build_sources_embed) $(build_resources_embed) $(build_references_ref)
 	make $(CONFIG)_AfterBuild
 	make post-all-local-hook prefix=$(prefix)
-
 
 install-local: $(ASSEMBLY) $(ASSEMBLY_MDB) $(PAINTDOTNET_RESOURCES_DLL_MDB) $(PAINTDOTNET_STYLUSREADER_DLL_MDB) $(PAINTDOTNET_STYLUSREADER_DLL) $(DATA_PC) $(PDNLIB_DLL_MDB) $(PAINTDOTNET_RESOURCES_DLL) $(PAINTDOTNET_SYSTEMLAYER_DLL_MDB) $(PDNLIB_DLL) $(MICROSOFT_INK_DLL) $(PAINTDOTNET_SYSTEMLAYER_DLL)
 	make pre-install-local-hook prefix=$(prefix)
