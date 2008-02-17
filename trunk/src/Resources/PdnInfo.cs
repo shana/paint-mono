@@ -153,6 +153,8 @@ namespace PaintDotNet
         {
             get
             {
+		return false;
+
                 if (!PdnInfo.IsFinalBuild || PdnInfo.IsDebugBuild)
                 {
                     if (DateTime.Now > PdnInfo.ExpirationDate)
