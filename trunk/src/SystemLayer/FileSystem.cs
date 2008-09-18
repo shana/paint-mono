@@ -468,7 +468,19 @@ namespace PaintDotNet.SystemLayer
 
 	public static FileStream OpenStreamingFile (string fileName, FileAccess fileAccess)
 	{
-	    return new FileStream (fileName, FileMode.Create, fileAccess);
+		switch (fileAccess) {
+			case FileAccess.Read:
+				return new FileStream (fileName, FileMode.Open, fileAccess);
+			break;
+			case FileAccess.ReadWrite:
+				return new FileStream (fileName, FileMode.OpenOrCreate, fileAccess);
+			break;
+			case FileAccess.Write:
+				return new FileStream (fileName, FileMode.CreateNew, fileAccess);
+			break;
+			default:
+				throw new InvalidEnumArgumentException ();
+		}
 	}
 
         [CLSCompliant(false)]
