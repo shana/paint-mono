@@ -442,7 +442,7 @@ namespace PaintDotNet
             }
 #endif
 
-            return *(x + (ColorBgra *)(((byte *)scan0.VoidStar) + (y * stride)));
+            return *((ColorBgra *)(((byte *)scan0.VoidStar) + (y * stride)) + x);
         }
 
         /// <summary>
@@ -511,7 +511,7 @@ namespace PaintDotNet
             }
 #endif
 
-            return unchecked(x + (ColorBgra *)(((byte *)scan0.VoidStar) + (y * stride)));
+            return unchecked((ColorBgra *)(((byte *)scan0.VoidStar) + (y * stride)) + x);
         }
 
         /// <summary>
