@@ -1,0 +1,3 @@
+2008-10-05  Andreia Gaita  <avidigal@novell.com>
+
+	* PdnLib/Surface.cs: fix for compiler bug #431827 (fixes issue #10)
