@@ -33,6 +33,9 @@ namespace PaintDotNet
 
         private PictureBox wheelPictureBox; 
 
+		PointF[] dots;
+		HsvColor[] hues;
+
         private HsvColor hsvColor;
         public HsvColor HsvColor
         {
@@ -154,6 +157,11 @@ namespace PaintDotNet
 
             int wheelDiameter = (int)ComputeDiameter(Size);
 
+			/* Something about drawing the wheel on a large bitmap and then having 
+			   the picturebox resize it is not working right, the bottom gets flattened*/
+			// renderBitmap = new Bitmap(Math.Max(1, (wheelDiameter * 4) / 3),
+            // Math.Max(1, (wheelDiameter * 4) / 3), PixelFormat.Format24bppRgb);
+			
             renderBitmap = new Bitmap(Math.Max(1, (wheelDiameter * 4) / 3), 
                                       Math.Max(1, (wheelDiameter * 4) / 3), PixelFormat.Format24bppRgb);
 
@@ -169,14 +177,49 @@ namespace PaintDotNet
             float radius = ComputeRadius(new Size(width, height));
             PointF[] points = GetCirclePoints(Math.Max(1.0f, (float)radius - 1), new PointF(radius, radius));
             
-            using (PathGradientBrush pgb = new PathGradientBrush(points))
-            {
-                pgb.CenterColor = new HsvColor(0, 0, 100).ToColor();
-                pgb.CenterPoint = new PointF(radius, radius);
-                pgb.SurroundColors = GetColors();
+//            using (PathGradientBrush pgb = new PathGradientBrush(points))
+//            {
+//                pgb.CenterColor = new HsvColor(0, 0, 100).ToColor();
+//                pgb.CenterPoint = new PointF(radius, radius);
+//                pgb.SurroundColors = GetColors();
+//
+//                g.FillEllipse(pgb, 0, 0, radius * 2, radius * 2);
+//            }
+			PointF c = new PointF(radius, radius);
+			Color hsv = new HsvColor(0, 0, 100).ToColor ();
 
-                g.FillEllipse(pgb, 0, 0, radius * 2, radius * 2);
-            }
+			if (dots == null) {
+				dots = new PointF[360];
+				hues = new HsvColor[360];
+				for (int i = 0; i < 360; i++) {
+					float theta = ((float)i / (float)360) * 2 * (float)Math.PI;
+					dots[i] = SphericalToCartesian(radius, theta);
+					dots[i].X += c.X;
+					dots[i].Y += c.Y;					
+					hues[i] = new HsvColor (i + 1, 100, 100);
+				}
+			}
+
+			for (int i = 0; i < 360; i++) {
+				
+				float wid = 1;
+				float xx;
+				float yy;
+				if (i < 359) {
+					xx = Math.Abs (dots[i].X - dots[i + 1].X);
+					yy = Math.Abs (dots[i].Y - dots[i + 1].Y);
+				} else {
+					xx = Math.Abs (dots[i].X - dots[0].X);
+					yy = Math.Abs (dots[i].Y - dots[0].Y);
+				}
+				wid = (float)Math.Sqrt (xx * xx + yy * yy);
+				using (LinearGradientBrush b = new LinearGradientBrush (c, dots[i], hsv, hues[i].ToColor ())) {
+					using (Pen p = new Pen (b, wid)) {
+						g.DrawLine (p, c, dots[i]);
+					}
+				}
+			}
+			
         }
 
         private static float ComputeRadius(Size size)

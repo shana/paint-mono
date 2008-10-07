@@ -1,0 +1,5 @@
+2008-10-07  Andreia Gaita  <avidigal@novell.com>
+
+	* ColorWheel.cs: Implement the color wheel using a linear brush instead
+	  of a path gradient brush (path gradients are not supported on
+	  libgdiplus)
