@@ -17,6 +17,8 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Drawing.Imaging;
+using Mono.Unix;
+using Mono.Unix.Native;
 
 namespace PaintDotNet.SystemLayer
 {
@@ -60,7 +62,7 @@ namespace PaintDotNet.SystemLayer
         /// <exception cref="OutOfMemoryException">Thrown if the memory manager could not fulfill the request for a memory block at least as large as <b>bytes</b>.</exception>
         public static IntPtr Allocate(ulong bytes)
         {
-		return System.Runtime.InteropServices.Marshal.AllocHGlobal ((IntPtr)bytes);
+			return System.Runtime.InteropServices.Marshal.AllocHGlobal ((IntPtr)bytes);
         }
 
         /// <summary>
@@ -73,16 +75,19 @@ namespace PaintDotNet.SystemLayer
         /// granularity is the page size of the system (usually 4K). Blocks allocated with this method may also
         /// be protected using the ProtectBlock method.
         /// </remarks>
-        public static IntPtr AllocateLarge(ulong bytes)
-        {
-	    if (!warn_shown){
-		    warn_shown = true;
-		    Console.WriteLine ("PORT: Memory.AllocateLarge probably should call mmap to allocate");
-	    }
-	    return System.Runtime.InteropServices.Marshal.AllocHGlobal ((IntPtr) bytes);
-        }
-	static bool warn_shown;
+		public static IntPtr AllocateLarge(ulong bytes)
+		{
+			IntPtr block = Syscall.mmap (IntPtr.Zero, bytes, 
+			                             MmapProts.PROT_READ | MmapProts.PROT_WRITE, 
+			                             MmapFlags.MAP_ANONYMOUS, -1, 0);
+			if (block == IntPtr.Zero)
+				throw new OutOfMemoryException ("mmap returned a null pointer");
 
+			if (bytes > 0)
+				System.GC.AddMemoryPressure ((long)bytes);
+	    	return block;
+		}
+		
         /// <summary>
         /// Allocates a bitmap of the given height and width. Pixel data may be read/written directly, 
         /// and it may be drawn to the screen using PdnGraphics.DrawBitmap().
@@ -137,32 +142,49 @@ namespace PaintDotNet.SystemLayer
 		System.Runtime.InteropServices.Marshal.FreeHGlobal (block);
         }
 
-        /// <summary>
-        /// Frees a block of memory previous allocated with AllocateLarge().
-        /// </summary>
-        /// <param name="block">The block to free.</param>
-        /// <param name="bytes">The size of the block.</param>
-        public static void FreeLarge(IntPtr block, ulong bytes)
-        {
-	  System.Runtime.InteropServices.Marshal.FreeHGlobal (block);
-        }
+		/// <summary>
+		/// Frees a block of memory previous allocated with AllocateLarge().
+		/// </summary>
+		/// <param name="block">The block to free.</param>
+		/// <param name="bytes">The size of the block.</param>
+		public static void FreeLarge(IntPtr block, ulong bytes)
+		{
+			int retval = Syscall.munmap (block, bytes);
+			UnixMarshal.ThrowExceptionForLastErrorIf (retval);
+			if (bytes > 0)
+				System.GC.RemoveMemoryPressure ((long)bytes);
+		}
 
-        /// <summary>
-        /// Sets protection on a block previously allocated with AllocateLarge.
-        /// </summary>
-        /// <param name="block">The starting memory address to set protection for.</param>
-        /// <param name="size">The size of the block.</param>
-        /// <param name="readAccess">Whether to allow read access.</param>
-        /// <param name="writeAccess">Whether to allow write access.</param>
-        /// <remarks>
-        /// You may not specify false for read access without also specifying false for write access.
-        /// Note to implementors: This method is not guaranteed to actually set read/write-ability 
-        /// on a block of memory, and may instead be implemented as a no-op after parameter validation.
-        /// </remarks>
-        public static void ProtectBlockLarge(IntPtr block, ulong size, bool readAccess, bool writeAccess)
-        {
-		Console.WriteLine ("PORT: Memory.ProtectBlockLarge: should use mmap instead of alloc, and use mprotect here");
-        }
+		/// <summary>
+		/// Sets protection on a block previously allocated with AllocateLarge.
+		/// </summary>
+		/// <param name="block">The starting memory address to set protection for.</param>
+		/// <param name="size">The size of the block.</param>
+		/// <param name="readAccess">Whether to allow read access.</param>
+		/// <param name="writeAccess">Whether to allow write access.</param>
+		/// <remarks>
+		/// You may not specify false for read access without also specifying false for write access.
+		/// Note to implementors: This method is not guaranteed to actually set read/write-ability 
+		/// on a block of memory, and may instead be implemented as a no-op after parameter validation.
+		/// </remarks>
+		public static void ProtectBlockLarge(IntPtr block, ulong size, bool readAccess, bool writeAccess)
+		{
+			MmapProts prot;
+			if (readAccess && writeAccess)
+				prot = MmapProts.PROT_READ | MmapProts.PROT_WRITE;
+			else if (readAccess && !writeAccess)
+				prot = MmapProts.PROT_READ;
+			else if (!readAccess && !writeAccess)
+				prot = MmapProts.PROT_NONE;
+			else
+				throw new InvalidOperationException("May not specify a page to be write-only");
+
+#if DEBUGSPEW
+            Tracing.Ping("ProtectBlockLarge: block #" + block.ToString() + ", read: " + readAccess + ", write: " + writeAccess);
+#endif
+
+			Syscall.mprotect (block, size, prot);
+		}
 
         /// <summary>
         /// Copies bytes from one area of memory to another. Since this function only
