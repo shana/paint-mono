@@ -1,3 +1,7 @@
+2008-10-09  Andreia Gaita  <avidigal@novell.com>
+
+	* Memory.cs: Use mmap for large memory allocation and implement ProtectBlockLarge
+
 2008-09-18  Andreia Gaita  <avidigal@novell.com>
 
 	* SystemLayer/FileSystem.cs: Implement OpenStreamingFile (fixes pdn issue #9)
