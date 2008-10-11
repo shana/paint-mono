@@ -318,6 +318,7 @@ namespace PaintDotNet
                 if (this.justPaintWhite > 0)
                 {
                     PdnGraphics.FillRectangles(e.Graphics, Color.White, rects);
+                    Invalidate ();
                 }
                 else
                 {
