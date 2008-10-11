@@ -1,3 +1,8 @@
+2008-10-11  Andreia Gaita  <avidigal@novell.com>
+
+	* PdnLib/SurfaceBox.cs: Do an extra Invalidate when the surface is
+	  first painted so the area gets painted properly (see issue #3)
+
 2008-10-05  Andreia Gaita  <avidigal@novell.com>
 
 	* PdnLib/Surface.cs: fix for compiler bug #431827 (fixes issue #10)
