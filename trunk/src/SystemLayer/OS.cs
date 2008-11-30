@@ -19,7 +19,7 @@ namespace PaintDotNet.SystemLayer
         {
             get
             {
-                return Environment.OSVersion.Version.Major >= 6;
+                return false;
             }
         }
 

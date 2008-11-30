@@ -43,19 +43,6 @@ namespace PaintDotNet.SystemLayer
                 activeFlags |= ThreadBackgroundFlags.Cpu;
             }
 
-            if (Environment.OSVersion.Version >= OS.WindowsVista &&
-                (flags & ThreadBackgroundFlags.IO) == ThreadBackgroundFlags.IO &&
-                (activeFlags & ThreadBackgroundFlags.IO) != ThreadBackgroundFlags.IO)
-            {
-                IntPtr hThread = SafeNativeMethods.GetCurrentThread();
-                bool bResult = SafeNativeMethods.SetThreadPriority(hThread, NativeConstants.THREAD_MODE_BACKGROUND_BEGIN);
-
-                if (!bResult)
-                {
-                    NativeMethods.ThrowOnWin32Error("SetThreadPriority(THREAD_MODE_BACKGROUND_BEGIN) returned FALSE");
-                }
-            }
-
             activeFlags |= flags;
 
             ++count;
@@ -87,20 +74,6 @@ namespace PaintDotNet.SystemLayer
                 {
                     this.currentThread.Priority = this.oldThreadPriority;
                     activeFlags &= ~ThreadBackgroundFlags.Cpu;
-                }
-
-                if (Environment.OSVersion.Version >= OS.WindowsVista &&
-                    (activeFlags & ThreadBackgroundFlags.IO) == ThreadBackgroundFlags.IO)
-                {
-                    IntPtr hThread = SafeNativeMethods.GetCurrentThread();
-                    bool bResult = SafeNativeMethods.SetThreadPriority(hThread, NativeConstants.THREAD_MODE_BACKGROUND_END);
-
-                    if (!bResult)
-                    {
-                        NativeMethods.ThrowOnWin32Error("SetThreadPriority(THREAD_MODE_BACKGROUND_END) returned FALSE");
-                    }
-
-                    activeFlags &= ~ThreadBackgroundFlags.IO;
                 }
             }
         }
